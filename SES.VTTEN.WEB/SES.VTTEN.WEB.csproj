@@ -102,6 +102,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="AdminCP\AJAXExtensionsToolbox.dll" />
     <Content Include="AdminCP\css\960.css" />
     <Content Include="AdminCP\css\facebox.css" />
@@ -823,6 +824,8 @@
     <Content Include="AdminCP\PageUC\ucUser.ascx" />
     <Content Include="AdminCP\TourCatTL.aspx" />
     <Content Include="AdminCP\TourTypeTL.aspx" />
+    <Content Include="AlbumDetail.aspx" />
+    <Content Include="Albums.aspx" />
     <Content Include="assets\loader.gif" />
     <Content Include="assets\next.png" />
     <Content Include="assets\pause.png" />
@@ -1660,8 +1663,12 @@
     <Content Include="ckfinder\_samples\sample.css" />
     <Content Include="ckfinder\_samples\standalone.html" />
     <Content Include="ckfinder\_samples\standalone_v1.html" />
+    <Content Include="Contact.aspx" />
     <Content Include="css\Style.css" />
+    <Content Include="Custom-Tour.aspx" />
+    <Content Include="Customer-Reviews.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Destination.aspx" />
     <Content Include="fancybox\blank.gif" />
     <Content Include="fancybox\demo\1_b.jpg" />
     <Content Include="fancybox\demo\1_s.jpg" />
@@ -1716,6 +1723,9 @@
     <Content Include="fancybox\source\jquery.fancybox.js" />
     <Content Include="fancybox\source\jquery.fancybox.pack.js" />
     <Content Include="Homepage.aspx" />
+    <Content Include="Hotel-Booking.aspx" />
+    <Content Include="Hotel-Category.aspx" />
+    <Content Include="Hotel.aspx" />
     <Content Include="images\1312598393_1_banner.jpg" />
     <Content Include="images\Banner-image1.jpg" />
     <Content Include="images\Banner-image2.jpg" />
@@ -1855,11 +1865,25 @@
     <Content Include="Module\ucTourCateLeftMenu.ascx" />
     <Content Include="Module\ucTravelGuideHome.ascx" />
     <Content Include="Module\ucTravelNewsHome.ascx" />
+    <Content Include="News.aspx" />
     <Content Include="obj\Debug\SES.VTTEN.WEB.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\SES.VTTEN.WEB.dll" />
     <Content Include="obj\Debug\ses.vtten.web.dll.licenses" />
     <Content Include="obj\Debug\SES.VTTEN.WEB.pdb" />
     <Content Include="preview.css" />
+    <Content Include="Promotions.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="Tour-Booking.aspx" />
+    <Content Include="Tour-Category.aspx" />
+    <Content Include="Tour-Destination.aspx" />
+    <Content Include="Tour.aspx" />
+    <Content Include="Travel-Guide.aspx" />
+    <Content Include="Travel-Guides.aspx" />
+    <Content Include="Travel-News.aspx" />
+    <Content Include="Travel-Review.aspx" />
+    <Content Include="VideoDetail.aspx" />
+    <Content Include="Videos.aspx" />
+    <Content Include="Vietnam-Destination.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1871,6 +1895,12 @@
     <Content Include="wt-rotatorpage.css" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminCP\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2341,6 +2371,36 @@
     <Compile Include="AdminCP\TourTypeTL.aspx.designer.cs">
       <DependentUpon>TourTypeTL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AlbumDetail.aspx.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumDetail.aspx.designer.cs">
+      <DependentUpon>AlbumDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Albums.aspx.cs">
+      <DependentUpon>Albums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Albums.aspx.designer.cs">
+      <DependentUpon>Albums.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom-Tour.aspx.cs">
+      <DependentUpon>Custom-Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom-Tour.aspx.designer.cs">
+      <DependentUpon>Custom-Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer-Reviews.aspx.cs">
+      <DependentUpon>Customer-Reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer-Reviews.aspx.designer.cs">
+      <DependentUpon>Customer-Reviews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2348,12 +2408,42 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Destination.aspx.cs">
+      <DependentUpon>Destination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Destination.aspx.designer.cs">
+      <DependentUpon>Destination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HanoiViet.Master.cs">
+      <DependentUpon>HanoiViet.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HanoiViet.Master.designer.cs">
+      <DependentUpon>HanoiViet.Master</DependentUpon>
+    </Compile>
     <Compile Include="Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel-Booking.aspx.cs">
+      <DependentUpon>Hotel-Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel-Booking.aspx.designer.cs">
+      <DependentUpon>Hotel-Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel-Category.aspx.cs">
+      <DependentUpon>Hotel-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel-Category.aspx.designer.cs">
+      <DependentUpon>Hotel-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.aspx.cs">
+      <DependentUpon>Hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.aspx.designer.cs">
+      <DependentUpon>Hotel.aspx</DependentUpon>
     </Compile>
     <Compile Include="ListTour.aspx.cs">
       <DependentUpon>ListTour.aspx</DependentUpon>
@@ -2537,8 +2627,92 @@
     <Compile Include="Module\ucTravelNewsHome.ascx.designer.cs">
       <DependentUpon>ucTravelNewsHome.ascx</DependentUpon>
     </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotions.aspx.cs">
+      <DependentUpon>Promotions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotions.aspx.designer.cs">
+      <DependentUpon>Promotions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Booking.aspx.cs">
+      <DependentUpon>Tour-Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Booking.aspx.designer.cs">
+      <DependentUpon>Tour-Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Category.aspx.cs">
+      <DependentUpon>Tour-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Category.aspx.designer.cs">
+      <DependentUpon>Tour-Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Destination.aspx.cs">
+      <DependentUpon>Tour-Destination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour-Destination.aspx.designer.cs">
+      <DependentUpon>Tour-Destination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour.aspx.cs">
+      <DependentUpon>Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tour.aspx.designer.cs">
+      <DependentUpon>Tour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Guide.aspx.cs">
+      <DependentUpon>Travel-Guide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Guide.aspx.designer.cs">
+      <DependentUpon>Travel-Guide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Guides.aspx.cs">
+      <DependentUpon>Travel-Guides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Guides.aspx.designer.cs">
+      <DependentUpon>Travel-Guides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-News.aspx.cs">
+      <DependentUpon>Travel-News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-News.aspx.designer.cs">
+      <DependentUpon>Travel-News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Review.aspx.cs">
+      <DependentUpon>Travel-Review.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Travel-Review.aspx.designer.cs">
+      <DependentUpon>Travel-Review.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ultility.cs" />
+    <Compile Include="VideoDetail.aspx.cs">
+      <DependentUpon>VideoDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VideoDetail.aspx.designer.cs">
+      <DependentUpon>VideoDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vietnam-Destination.aspx.cs">
+      <DependentUpon>Vietnam-Destination.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vietnam-Destination.aspx.designer.cs">
+      <DependentUpon>Vietnam-Destination.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -2562,6 +2736,7 @@
     <None Include="fancybox\.gitattributes" />
     <None Include="fancybox\CHANGELOG.md" />
     <None Include="fancybox\README.md" />
+    <Content Include="HanoiViet.Master" />
     <None Include="img\slider_fancy.svg" />
     <Content Include="Master.Master" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
