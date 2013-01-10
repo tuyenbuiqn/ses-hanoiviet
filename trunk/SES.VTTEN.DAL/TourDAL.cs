@@ -397,8 +397,7 @@ namespace SES.VTTEN.DAL
                 if (!Convert.IsDBNull(dr["IsOutPromotion"]))
                     objTourDO.IsMenu = Convert.ToBoolean(dr["IsOutPromotion"]);
                 if (!Convert.IsDBNull(dr["IsInboundTour"]))
-                    objTourDO.Published = Convert.ToBoolean(dr["IsInboundTour"]);
-
+                    objTourDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
             }
             return objTourDO;
         }
@@ -477,7 +476,7 @@ namespace SES.VTTEN.DAL
                     if (!Convert.IsDBNull(dr["IsOutPromotion"]))
                         objTourDO.IsMenu = Convert.ToBoolean(dr["IsOutPromotion"]);
                     if (!Convert.IsDBNull(dr["IsInboundTour"]))
-                        objTourDO.Published = Convert.ToBoolean(dr["IsInboundTour"]);
+                        objTourDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
 
                     arrTourDO.Add(objTourDO);
                 }
