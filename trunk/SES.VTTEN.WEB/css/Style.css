@@ -1,0 +1,607 @@
+﻿body {
+	font-family: Arial,Tahoma,Times New Roman;
+	font-size : 12px;
+	margin: 0;
+	padding:0;
+	border:none;
+	background-color:#FFFFFF;
+	
+}
+ul, p
+{
+	margin:0;
+	padding:0;
+}
+a
+{
+	text-decoration:none;
+}
+li
+{
+	list-style:none;
+}
+
+#wrap
+{
+	width:972px;
+	height:auto;
+	margin:auto;
+}	
+.inner
+{
+    background: url(../image/background.jpg) repeat-y;
+    width: 1006px;
+    height: auto;
+    float: left;
+}	
+
+.detail
+{
+    width: 948px;
+    float:left;
+    margin-left: 29px;
+    background: url(../image/backgroundMenu.png) no-repeat;
+}
+
+
+#head
+{
+ width: 948px;
+ height: 426px;
+float:left;
+ background: url(../image/head.jpg);
+}
+.logo-out
+{
+    width: 242px;
+    
+    height: 77px;
+    background: url(../image/back1.png);
+    margin-top: 30px;
+    float: left;
+}
+.logo
+{
+    width: 56px;
+    
+    margin: 5px 0px 0px 30px;
+}
+.hanoiviettravel
+{
+    margin-top: 5px;
+    
+    display: block;
+    margin-left: 16px;
+    color: #54a583;
+    font-size: 11px;
+}
+.haytanhuong
+{
+    display: block;
+    color: #c71b4c;
+    font-weight: bold;
+    margin-top: 22px;
+}
+.tungphutgiay
+{
+    color: #c71b4c;
+    
+    font-weight: bold;
+    margin-left: 27px;
+    margin-top: 1px;
+    display: block;
+}
+.toplink
+{
+ width: 706px;
+ height: 31px;
+ float: left;
+ margin: 52px 0px 30px 0px;
+ background: rgba(89, 143, 197, 1);
+}
+
+.toplink li
+{
+	
+	float:left;
+	margin: 0px 0px 0 40px;
+	list-style:none;
+	padding-right:8px;
+}
+.toplink li:last-child
+{
+	border:none;
+}
+
+.toplink a
+{
+	color: #dee0e3;
+	font-size: 12px;
+	font-family:Tahoma;
+	font-weight:bold;
+	
+	display: block;
+	margin-top: 8px;
+}
+.toplink a:hover
+{
+	color: Red;
+}
+.toplink a:hover
+{
+	font-weight:bold;
+}
+#logoheadleft
+{
+	width:93px;
+	height:83px;
+	float:left;
+	margin-left:24px;
+	margin-top:2px;
+	
+}
+.logo-left
+{
+    width: 98px;
+    
+    height: 77px;
+    float: left;
+}
+.logo-right
+{
+    float: left;
+    
+    width: 130px;
+}
+.foot-head
+{
+    background: rgba(0, 0, 0, 0.5);
+    
+    width: 948px;
+    height: 95px;
+    margin-top: 331px;
+}
+.under
+{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.box
+{
+	float: left;
+	margin: 0px 15px 0px 20px;
+	width: 200px;
+	height: 240px;
+}
+.box-title
+{
+	float: left;
+	width: 100%;
+	height: 27px;
+	background: #5eb7ce;
+	font-weight:bold;
+	color: #01346d;
+	font-size: 12px;
+	border: 1px solid #5EB7CE;
+}
+.box-title p
+{
+	margin: 7px 0px 0px 10px;
+}
+.detail-box
+{
+	float: left;
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #5eb7ce;
+	margin-top: 5px;
+	text-align: center;
+	height: 200px;
+}
+.detail-box .TimKiemTour
+{
+	color: #0578c1;
+	font-size: 11px;
+	text-align: left;
+}
+.detail-box .TimKiemTour .ddl
+{
+	width: 100%;
+}
+.detail-box .TimKiemTour td
+{
+	height: 24px;
+}
+.detail-box .TimKiemTour .lnk
+{
+	float: right;
+}
+.divTinKhuyenMai .detail-box img
+{
+	width: 190px;
+	height: 125px;
+	padding: 5px;
+}
+.divTinKhuyenMai .detail-box p
+{
+	color: #ff0f28;
+	font-size: 12px;
+	text-align: justify;
+	padding: 5px 5px 0px 5px;
+}
+.divAlbum .detail-box img.albumImgBig
+{
+	width: 190px;
+	height: 125px;
+	padding: 5px;
+}
+.divAlbum .detail-box p
+{
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+}
+.divAlbum .detail-box img.albumImgSmall
+{
+	width: 60px;
+	height: 57px;
+	text-align: left;
+}
+.divHoTroOnLine .detail-box img.HoTroOnLine
+{
+	float: left;
+	width: 100%;
+}
+.divHoTroOnLine .detail-box p.CongCuHoTro
+{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+.divHoTroOnLine .detail-box p.CongCuHoTro img
+{
+	margin: 0px 7px 0px 7px;
+}
+.divHoTroOnLine
+{
+	position: relative;
+}
+.divHoTroOnLine .detail-box p.Mobile
+{
+	float: left;
+	width: 80%;
+	padding: 5px 0px 5px 0px;
+	position: absolute;
+	left: 25px;
+	top: 200px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#ListTour
+{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px dotted #9fb4a0;
+}
+#ListTour .ListTourBox
+{
+	float: left;
+	color: #111111;
+	font-size: 12px;
+	width: 275px;
+	height: 245px;
+	margin: 0px 20px 0px 20px;
+	position: relative;
+}
+#ListTour .ListTourBox p.ListTourBox-title
+{
+	
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#ListTour .ListTourBox p.ListTourBox-title a
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #0075a6;
+	width: 100%;
+}
+#ListTour .ListTourBox p.ListTourBox-title a:hover
+{
+	color: Red;
+}
+#ListTour .ListTourBox .ImagesTour
+{
+	float: left;
+	width: 100%;
+}
+#ListTour .ListTourBox .ImagesTour img.imgListTourBox-prev
+{
+	position: absolute;
+	left: -10px;
+	top: 70px;
+}
+#ListTour .ListTourBox .ImagesTour img.imgListTourBox-next
+{
+	position: absolute;
+	right: -15px;
+	top: 70px;
+}
+#ListTour .ListTourBox a img.imgListTourBox
+{
+	float: left;
+	width: 100%;
+	padding: 2px;
+	border: 1px solid #5EB7CE;
+}
+#ListTour .ListTourBox .Time-Price-ListTourBox
+{
+	float: left;
+	width: 100%;
+	margin-top: 8px;
+	margin-bottom: 5px;
+}
+#ListTour .ListTourBox .Time-Price-ListTourBox p
+{
+	color:  #bc2a05;
+	width: 50%;
+	font-size: 12px;
+	font-weight:bold;
+	float: left;
+}
+#ListTour .ListTourBox .Time-Price-ListTourBox p.Time-ListTourBox
+{
+	text-align: left;
+	text-transform:uppercase;
+}
+#ListTour .ListTourBox .Time-Price-ListTourBox p.Price-ListTourBox
+{
+	text-align: right;
+}
+#ListTour .ListTourBox .MoTa-ListTourBox
+{
+	float: left;
+	width: 100%;
+}
+#ListTour .ListTourBox .MoTa-ListTourBox p
+{
+	font-size: 12px;
+	color: #111111;
+	text-align: left;
+}
+#footer
+{
+	float: left;
+	width: 100%;
+	color: #004a5d;
+	margin-bottom: 20px;
+}
+#footer #copyright, #footer .footerRight
+{
+	float: left;
+	width: 50%;
+}
+#footer #copyright p.company
+{
+	text-transform:uppercase;
+	font-size: 12px;
+	color: #119350;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+#footer #copyright p
+{
+	float: left;
+	width: 100%;
+	font-size: 11px;
+	padding-left: 20px;
+}
+#footer .footerRight #MenuBottom
+{
+	float:  left;
+	width: 100%;
+	text-align: right;
+	margin-bottom: 10px;
+}
+#footer .footerRight #MenuBottom ul.bottomlink
+{
+	width: 100%;
+	float: left;
+}
+#footer .footerRight #MenuBottom ul.bottomlink li
+{
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0px 9px 0px 9px;
+	border-left: 1px solid #002f7e;
+}
+#footer .footerRight #MenuBottom ul.bottomlink li.liTop
+{
+	border: none;
+}
+#footer .footerRight #MenuBottom ul.bottomlink li a
+{
+	color: #002f7e;
+	float: left;
+	width: 100%;
+}
+#footer .footerRight #MenuBottom ul.bottomlink li a:hover
+{
+	color: Red;
+}
+#footer .footerRight img
+{
+	float: right;
+	text-align: right;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+#footer .footerRight p
+{
+	float: right;
+	width: 100%;
+	text-align: right;
+	margin-right: 20px;
+}
+#Conten
+{
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+}
+#Conten #DanhSachTour
+{
+	float: left;
+	width: 695px;
+	margin-top:10px;
+	padding-left: 10px;
+}
+
+#Conten #DanhSachTour .DanhSachTour-title
+{
+	float: left;
+	width: 100%;
+	height: 26px;
+	border-bottom: 2px solid #5a90c6;
+}
+#Conten #DanhSachTour .DanhSachTour-title div
+{
+	float: left;
+	height: 26px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background: #5a90c6;
+	font-weight: bold;
+}
+#Conten #DanhSachTour .DanhSachTour-title div p
+{
+	margin: 5px 5px 0px 5px;
+}
+#Conten #DanhSachTour .DanhSachTour-box
+{
+	float: left;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	border: 1px solid #5EB7CE;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail
+{
+	float: left;
+	width: 61.5%;
+	padding-left: 5px;
+	position: relative;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p
+{
+	float: left;
+	width: 100%;
+	text-align: left;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.Title
+{
+	font-size: 14px;
+	color: #be2020;
+	font-weight: bold;
+	padding: 5px 0px 10px 0px;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.Price, #Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.Code, #Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.Time
+{
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.MoTaChung
+{
+	font-size: 12px;
+	color: #be2020;
+	padding: 10px 0px 5px 0px;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail p.description
+{
+	font-size: 12px;
+	color: #000000;
+	text-align: justify;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTour-detail .Action
+{
+	position: absolute;
+	right: 0px;
+	top: 29px;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTourImg
+{
+	margin: 5px 5px 15px 5px;
+	float: left;
+	padding: 2px;
+	border: 1px solid #CCCCCC;
+}
+#Conten #DanhSachTour .DanhSachTour-box .DanhSachTourImg img
+{
+	width: 245px;
+	height: 157px;
+	float: left;
+}
+#Conten .under
+{
+	float: left;
+	width: 242px;
+	margin-top: 10px;
+}
+#Conten .under .divDanhMucTour
+{
+	float: left;
+    margin: 0px 15px 5px 20px;
+    width: 200px;
+}
+#Conten .under .divDanhMucTour .divDanhMucTour-title
+{
+	background: #5999dd;
+    color: #01346D;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 27px;
+    width: 100%;
+}
+#Conten .under .divDanhMucTour .divDanhMucTour-title p
+{
+	margin: 7px 0 0 10px;
+	text-transform:uppercase;
+}
+#Conten .under .divDanhMucTour ul
+{
+	float: left;
+	background: #5999dd;
+	padding: 0px 10px 0px 10px;
+}
+#Conten .under .divDanhMucTour ul li
+{
+	text-transform:uppercase;
+	margin-top: 7px;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #d9d5d5;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+#Conten .under .divDanhMucTour ul li a
+{
+	float: left;
+	width: 100%;
+	color: #FFFFFF;
+}
+#Conten .under .divDanhMucTour ul li a:hover
+{
+	color: Red;
+}
