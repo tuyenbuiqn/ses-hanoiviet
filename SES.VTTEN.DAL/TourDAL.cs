@@ -146,6 +146,10 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourDO.IsOutPromotion;
             Sqlcomm.Parameters.Add(Sqlparam);
 
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = objTourDO.IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
             int result = base.ExecuteNoneQuery(Sqlcomm);
 
             if (!Convert.IsDBNull(Sqlcomm.Parameters["@ID"]))
@@ -263,6 +267,10 @@ namespace SES.VTTEN.DAL
 
             Sqlparam = new SqlParameter("@IsOutPromotion", SqlDbType.Bit);
             Sqlparam.Value = objTourDO.IsOutPromotion;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = objTourDO.IsInboundTour;
             Sqlcomm.Parameters.Add(Sqlparam);
 
             Sqlparam = new SqlParameter("@ErrorCode", SqlDbType.Int);
@@ -388,6 +396,8 @@ namespace SES.VTTEN.DAL
 
                 if (!Convert.IsDBNull(dr["IsOutPromotion"]))
                     objTourDO.IsMenu = Convert.ToBoolean(dr["IsOutPromotion"]);
+                if (!Convert.IsDBNull(dr["IsInboundTour"]))
+                    objTourDO.Published = Convert.ToBoolean(dr["IsInboundTour"]);
 
             }
             return objTourDO;
@@ -466,6 +476,8 @@ namespace SES.VTTEN.DAL
 
                     if (!Convert.IsDBNull(dr["IsOutPromotion"]))
                         objTourDO.IsMenu = Convert.ToBoolean(dr["IsOutPromotion"]);
+                    if (!Convert.IsDBNull(dr["IsInboundTour"]))
+                        objTourDO.Published = Convert.ToBoolean(dr["IsInboundTour"]);
 
                     arrTourDO.Add(objTourDO);
                 }
