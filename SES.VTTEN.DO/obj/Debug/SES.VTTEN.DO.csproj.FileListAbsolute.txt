@@ -1,0 +1,30 @@
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN\SES.VTTEN.DO\bin\Debug\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN\SES.VTTEN.DO\obj\Debug\ResolveAssemblyReference.cache
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN\SES.VTTEN.DO\obj\Debug\SES.VTTEN.DO.pdb
