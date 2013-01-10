@@ -1,0 +1,255 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HanoiViet.master.cs"
+    Inherits="SES.VTTEN.WEB.HanoiViet" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="Module/ucMnuTravel.ascx" TagName="ucMnuTravel" TagPrefix="uc1" %>
+<%@ Register Src="Module/ucSlideHome.ascx" TagName="ucSlideHome" TagPrefix="uc2" %>
+<%@ Register Src="Module/ucSlidePage.ascx" TagName="ucSlidePage" TagPrefix="uc3" %>
+<%@ Register Src="Module/ucMnuHotel.ascx" TagName="ucMnuHotel" TagPrefix="uc4" %>
+<%@ Register Src="Module/ucMnuTravelGuide.ascx" TagName="ucMnuTravelGuide" TagPrefix="uc5" %>
+<%@ Register Src="Module/ucMnuContact.ascx" TagName="ucMnuContact" TagPrefix="uc6" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link rel="Stylesheet" type="text/css" href="/css/style.css" />
+    <meta name="Generator" content="Design by SES.VN! - Copyright (C) 2011.(http://www.ses.vn)" />
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
+
+    <!-- Add jQuery library -->
+    <!-- Add mousewheel plugin (this is optional) -->
+
+    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.0" type="text/css"
+        media="screen" />
+
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3"
+        type="text/css" media="screen" />
+
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
+
+    	<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
+
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6"
+        type="text/css" media="screen" />
+
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/skin.css" />
+
+    <script type="text/javascript">
+
+    jQuery(document).ready(function() {
+        jQuery('#carouselTour').jcarousel();
+        
+    });
+
+    </script>
+
+    <script type="text/javascript">
+	$(document).ready(function() {
+	$(".fancybox-tourimg").fancybox({
+		prevEffect		: 'elastic',
+		nextEffect		: 'elastic',
+		closeBtn		: true,
+		helpers		: {
+			title	: { type : 'float' },
+			buttons	: {}
+		}
+	});
+});
+    </script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+});
+</script>
+    
+
+    <script src="/js/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+				$('#menux').tabify();
+				
+			});
+    </script>
+
+    <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+
+    <script type="text/javascript" src="/js/common.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/preview.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" src="/js/jquery.wt-rotator.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://support.hanoiviettravel.com/client.php?key=L2BE7CBFCV64B8E6EM1B37614"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <%-- <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+    <div class="wrap">
+        <div class="full">
+            <div id="head">
+                <div id="head-left">
+                    <div id="left">
+                        <a href="/Default.aspx" title="Hanoi VietTravel">
+                            <img id="logoheadleft" src="/images/logohnv.png"/>
+                        </a>
+                    </div>
+                    <div id="right">
+                        <div id="hotlineoncall">
+                            HOT LINE ON CALL</div>
+                        <div id="tel">
+                        </div>
+                        <div id="telnumber">
+                            ++84(4)3.9999981</div>
+                            <div class="slogan-text">
+                                Bring your life to our sense
+                            </div>
+                    </div>
+                </div>
+                <div id="head-right">
+                    <div id="head-menu">
+                        <ul class="toplink">
+                            <li><a href="/Videos/0/Video-Vietnam.aspx">Video</a></li>
+                            <li><a href="/Contact.aspx">Contact</a></li>
+                            <li><a href="javascript:Live_a0d8ce4977a8181e82e404634d9ab475_Admin.StartChatPanel();">Live Support</a></li>
+                        </ul>
+                    </div>
+                    <div id="headimg">
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="mnupa">
+                <ul id="topnav">
+                    <li class="navli"><a class="topnav-a" href="/Default.aspx">HOME</a></li>
+                    <li class="navli"><a class="topnav-a" href="/About/3/About-Hanoi-VietTravel.aspx">ABOUT
+                        US</a></li>
+                    <li class="navli"><a class="link" id="navTravel" href="/Tour-Category/0/Vietnam.aspx">
+                        TRAVEL</a>
+                        <uc1:ucMnuTravel ID="ucMnuTravel1" runat="server" />
+                    </li>
+                    <li class="navli"><a class="topnav-a" href="/Hotel-Category/0/Default.aspx">HOTEL &
+                        RESORTS</a>
+                        <uc4:ucMnuHotel ID="ucMnuHotel1" runat="server" />
+                    </li>
+                    <li class="navli"><a class="topnav-a" href="/Travel-Guides/1/Default.aspx">TRAVEL GUIDE
+                    </a>
+                        <uc5:ucMnuTravelGuide ID="ucMnuTravelGuide1" runat="server" />
+                    </li>
+                    <li class="navli"><a class="topnav-a" href="/Promotions/0/Default.aspx">PROMOTIONS</a></li>
+                    <li class="navli"><a class="topnav-a" href="/Contact.aspx">CONTACT US </a>
+                        <uc6:ucMnuContact ID="ucMnuContact1" runat="server" />
+                    </li>
+                </ul>
+                <a href="#">
+                    <img id="vietnam" src="/images/CoVietNam.jpg"></a>
+            </div>
+            <uc2:ucSlideHome ID="ucSlideHome1" runat="server" />
+            <uc3:ucSlidePage ID="ucSlidePage1" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="foot">
+                <div class="footdiv">
+                    <div id="leftfoot">
+                        <div class="footcaption">
+                            ABOUT HANOI VIETTRAVEL</div>
+                        <ul class="RightBoxmenu" style="width: 255px;">
+                            <asp:Repeater ID="rptAbout" runat="server">
+                                <ItemTemplate>
+                                    <li><a href="/About/<%#Eval("ContentID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>">
+                                        <%#Eval("Title") %></a></li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                    </div>
+                    <div id="rightfoot">
+                        <div id="Info">
+                            <div class="footcaption">
+                                INFORMATIONS</div>
+                            <div id="footimg1">
+                            </div>
+                            <p>
+                                <asp:Label runat="server" ID="lblFooter" Text=""></asp:Label>
+                            </p>
+                        </div>
+                        <div id="conect">
+                            <div class="footcaption">
+                                CONNECT US</div>
+                            <div id="footimg2">
+                            </div>
+                            <div id="footimg3">
+                                <div id="fimg3">
+                                </div>
+                                <div id="border">
+                                    <p>
+                                        VIEW LOCATION</p>
+                                    <%--<a class="fancybox-media" href="http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=204794878507480962331.0004c9f7fc98d55129627">click here to view us</a>--%>
+                                    <a target="_blank" class="fancybox-media" href="http://maps.google.com/maps/ms?ie=UTF&msa=0&msid=204794878507480962331.0004c9f7fc98d55129627">click here to view us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footdiv" style="border: none;">
+                    <ul class="footmenu">
+                        <li><a href="/Default.aspx">Home</a></li>
+                        <li><a href="/About/3/About-Hanoi-VietTravel.aspx">About US</a></li>
+                        <li><a href="/Tour-Category/0/Vietnam.aspx">Travel</a></li>
+                        <li><a href="/Hotel-Category/0/Default.aspx">Hotel & Resort</a></li>
+                        <li><a href="/Travel-Guides/1/Default.aspx">Travel guide</a></li>
+                        <li><a href="/Promotions/0/Default.aspx">Promotions</a></li>
+                        <li><a href="/Custom-Tour/0/Customize-your-own-trips.aspx">Customize tour</a></li>
+                        <li><a href="/Contact.aspx">Contact us</a></li>
+                    </ul>
+                    <div id="copyright" style="width: 100%; margin: 0; text-align: center;">
+                        © 2009 Hanoi VietTravel. <a style="display: none; color: #fff;" href="http://www.ses.vn"
+                            title="Thiết kế website, dịch vụ SEO, We design">Designed by SES.VN </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div runat="server" id="spOnline" style="border-top-left-radius: 3px 3px; position: fixed;
+        color: #000; font-size: 12px; z-index: 9998; width: 230px; bottom: 0px; right: 0px;
+        background-color: white; border: solid #0980B2 1px;">
+        <div id="nicksp" style="display: block;" onmouseover="document.getElementById('spnick').style.display='block';"
+        onmouseout="document.getElementById('spnick').style.display='none';">
+            <img style="cursor: pointer;" src="/images/support-online.png">
+            <div class="Support-Nick" id="spnick" style="width: 230px; display:none;">
+             <div  style="margin-left:30px; float:left;">
+             <span id='liveadmin'></span></div>
+                    <a title="click on the icon chat with Hanoi Viet Travel" href="skype:nguyenlaneliz?chat">
+                        <img src="/images/skype.png" style=" margin-left: 27px;" width="36"
+                            height="36" /></a> 
+                    <a title="click on the icon chat with Hanoi Viet Travel" href="ymsgr:SendIM?lannguyen_1981">
+                        <img src="/images/yahoo.png" style="margin-left: 27px;" width="42"
+                                    height="39" /></a>
+                <img style="margin-left: 20px;" src="/images/phone.png" />
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
