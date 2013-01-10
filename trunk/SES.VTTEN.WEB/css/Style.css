@@ -656,3 +656,75 @@ float:left;
 	float: left;
 	background: white;
 }
+/*outpromotion*/
+#OutPromotion
+{
+	color: #1964b1;
+	font-size: 20px;
+	font-family: Arial;
+	width: 720px;
+	height: 50px;
+	float: left;
+}
+#OutPromotion p
+{
+	float: left;
+	margin-top: 10px;
+	margin-left: 0px;
+}
+#OP-Image
+{
+	width: 696px;
+	height: 212px;
+	margin-top: 1px;
+	margin-left: 12px;
+	float: left;
+}
+.OPI-Image
+{
+	width: 220px;
+	height: 102px;
+}
+.OPI
+{
+	width: 219px;
+	height: 194px;
+	border-style: solid;
+	border-color: #D8D8D8;
+	float: left;
+	border-width: 1px;
+	margin-right: 11px;
+	float: left;
+}
+
+.OPI-Caption
+{
+	width: 220px;
+	height: 28px;
+	border-bottom-color: #a72300;
+	border-bottom-style: solid;
+}
+
+.OPI-Caption a
+{
+	color: #D60808;
+	margin-left: 5px;
+	margin-top: 7px;
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	float: left;
+}
+
+.OPI-Detail
+{
+	width: 215px;
+	height: 59px;
+	float: left;
+	color: #1964b1;
+	font-family: Tahoma;
+	font-size: 11px;
+	float: left;
+	padding: 5px 5px 5px 5px;
+	line-height: 13px;
+}
