@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SES.VTTEN.WEB", "SES.VTTEN.WEB\SES.VTTEN.WEB.csproj", "{F1C8B4FA-589D-46A5-ADDA-FE8E470DB377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SES.VTTEN.BL", "SES.VTTEN.BL\SES.VTTEN.BL.csproj", "{87499451-AD2D-4F72-A493-62057252C95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SES.VTTEN.DAL", "SES.VTTEN.DAL\SES.VTTEN.DAL.csproj", "{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SES.VTTEN.DO", "SES.VTTEN.DO\SES.VTTEN.DO.csproj", "{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1C8B4FA-589D-46A5-ADDA-FE8E470DB377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C8B4FA-589D-46A5-ADDA-FE8E470DB377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C8B4FA-589D-46A5-ADDA-FE8E470DB377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C8B4FA-589D-46A5-ADDA-FE8E470DB377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87499451-AD2D-4F72-A493-62057252C95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87499451-AD2D-4F72-A493-62057252C95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87499451-AD2D-4F72-A493-62057252C95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87499451-AD2D-4F72-A493-62057252C95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -605,3 +605,54 @@ float:left;
 {
 	color: Red;
 }
+/*album*/
+#VietNamPhotosCaption
+{
+	width: 230px;
+	height: 30px;
+	float: right;
+}
+#VietNamPhotosCaption p
+{
+	font-family: Arial;
+	font-size: 13.69px;
+	color: #004cbc;
+	font-weight: bold;
+	margin: 7px 0px 0px 5px;
+}
+#VietNamPhotosCaption p a
+{
+	font-family: Arial;
+	font-size: 13.69px;
+	color: #004cbc;
+	font-weight: bold;
+}
+
+.bimage
+{
+	width: 200px;
+	height: 135px;
+
+	float: left;
+}
+.bimage img
+{
+	width: 190px;
+	height: 125px;
+    margin:5px;
+	float: left;
+}
+.SmallImage
+{
+	width: 61px;
+	height: 57px;
+	margin: 2px;
+}
+.Simage
+{
+	width: 61px;
+	height: 57px;
+	margin: 2px;
+	float: left;
+	background: white;
+}
