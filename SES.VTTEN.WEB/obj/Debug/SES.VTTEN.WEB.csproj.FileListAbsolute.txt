@@ -1,0 +1,66 @@
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.pdb
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.BL.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.DO.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.BL.pdb
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.pdb
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\bin\SES.VTTEN.DO.pdb
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\obj\Debug\ResolveAssemblyReference.cache
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll.licenses
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll
+E:\SES Project\Vietrantour English\Project\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.BL.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DO.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.BL.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DO.pdb
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\ResolveAssemblyReference.cache
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll.licenses
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll
+E:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.BL.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DO.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.BL.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\SES.VTTEN.DO.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\ResolveAssemblyReference.cache
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll.licenses
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\CKEditor.NET.pdb
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\CKFinder.dll
+D:\SES Project\HANOIVIETTRAVEL\SES.VTTEN.WEB\bin\CKFinder.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\CKFinder.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.BL.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.BL.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\CKFinder.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\obj\Debug\ResolveAssemblyReference.cache
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll.licenses
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll
+D:\Works\Ses-vn\Website\Projects\hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\obj\Debug\ResolveAssemblyReference.cache
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll.licenses
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\obj\Debug\SES.VTTEN.WEB.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.WEB.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.BL.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DO.dll
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.BL.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DAL.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\SES.VTTEN.DO.pdb
+D:\Works\Ses-vn\Website\Projects\ses-hanoiviet\SES.VTTEN.WEB\bin\CKFinder.pdb
