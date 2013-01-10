@@ -5,6 +5,25 @@
 <head runat="server">
     <title>Hanoiviettravel</title>
     <link rel="Stylesheet" type="text/css" href="/css/Style.css" />
+    <meta name="Generator" content="Design by SES.VN! - Copyright (C) 2011.(http://www.ses.vn)" />
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <!--Album slide homepage-->
+   <%--   <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    <link type='text/css' href='/css/basic.css' rel='stylesheet' media='screen' />--%>
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                controlNav: false,
+                directionNav: false,
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--End album slide homepage-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
