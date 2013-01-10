@@ -159,10 +159,8 @@
                 Is Menu</td>
             <td>
             <asp:CheckBox runat="server" ID="cbIsMenu" />
-                </td>
-                 <td>
-                Tour trong nước</td>
-            <td>
+                &nbsp;&nbsp;&nbsp;
+                Tour trong nước
             <asp:CheckBox runat="server" ID="cbIsInboundTour" />
                 </td>
         </tr>
