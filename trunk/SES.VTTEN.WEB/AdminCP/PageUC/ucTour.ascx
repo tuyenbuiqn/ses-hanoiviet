@@ -160,6 +160,11 @@
             <td>
             <asp:CheckBox runat="server" ID="cbIsMenu" />
                 </td>
+                 <td>
+                Tour trong nước</td>
+            <td>
+            <asp:CheckBox runat="server" ID="cbIsInboundTour" />
+                </td>
         </tr>
         <tr>
             <td colspan="4">

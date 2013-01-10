@@ -61,6 +61,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             cbTourType.Value = objtour.TourTypeID.ToString();
             cbisFrontPage.Checked = objtour.IsFrontPage;
             cbIsMenu.Checked = objtour.IsMenu;
+            cbIsInboundTour.Checked = objtour.IsInboundTour;
             if (!string.IsNullOrEmpty(objtour.TourImage))
             {
                 hplImage1.Visible = true;
@@ -161,6 +162,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objtour.TourCode = txtTourCode.Text;
             objtour.IsFrontPage = cbisFrontPage.Checked;
             objtour.IsMenu = cbIsMenu.Checked;
+            objtour.IsInboundTour = cbIsMenu.Checked;
             if (!string.IsNullOrEmpty(fulImage.FileName))
             {
                 string FileName = string.Format("{0}{1}", fulImage.FileName.Substring(0, fulImage.FileName.LastIndexOf(".")) + "-" + DateTime.Now.ToString("dd-MM-yyyy-hhmmss"), fulImage.FileName.Substring(fulImage.FileName.LastIndexOf(".")));
