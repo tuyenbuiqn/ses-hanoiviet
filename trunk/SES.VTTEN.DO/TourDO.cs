@@ -76,6 +76,7 @@ namespace SES.VTTEN.DO
 		#endregion
 
 		#region Public Properties
+
 					public Int32 TourID
 		{
 			get
@@ -353,6 +354,7 @@ namespace SES.VTTEN.DO
                 _IsOutPromotion = value;
             }
         }
+        public Boolean IsInboundTour { get; set; }
         #endregion
 
 	}
