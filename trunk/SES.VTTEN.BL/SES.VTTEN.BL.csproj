@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87499451-AD2D-4F72-A493-62057252C95B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SES.VTTEN.BL</RootNamespace>
+    <AssemblyName>SES.VTTEN.BL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvertBL.cs" />
+    <Compile Include="BookingBL.cs" />
+    <Compile Include="BookingCustomerBL.cs" />
+    <Compile Include="ChatContentBL.cs" />
+    <Compile Include="cmsAlbumBL.cs" />
+    <Compile Include="cmsAlbumDetailBL.cs" />
+    <Compile Include="ConfigBL.cs" />
+    <Compile Include="ContactBL.cs" />
+    <Compile Include="ContentBL.cs" />
+    <Compile Include="ContentTypeBL.cs" />
+    <Compile Include="CustomerBL.cs" />
+    <Compile Include="CustomerReviewBL.cs" />
+    <Compile Include="CustomizeTourBL.cs" />
+    <Compile Include="CustomTourBL.cs" />
+    <Compile Include="CustomtourDestinationBL.cs" />
+    <Compile Include="DestinationBL.cs" />
+    <Compile Include="FooterTagBL.cs" />
+    <Compile Include="GroupsBL.cs" />
+    <Compile Include="HotDealBL.cs" />
+    <Compile Include="HotelBL.cs" />
+    <Compile Include="HotelRoomBL.cs" />
+    <Compile Include="LinkBL.cs" />
+    <Compile Include="MediaBL.cs" />
+    <Compile Include="ModuleBL.cs" />
+    <Compile Include="NationBL.cs" />
+    <Compile Include="NewsBL.cs" />
+    <Compile Include="PhotoAlbumBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoomCatBL.cs" />
+    <Compile Include="RoomTypeBL.cs" />
+    <Compile Include="ServiceBL.cs" />
+    <Compile Include="SessionChatBL.cs" />
+    <Compile Include="SlideBL.cs" />
+    <Compile Include="TourBL.cs" />
+    <Compile Include="TourBookingBL.cs" />
+    <Compile Include="TourCategoryBL.cs" />
+    <Compile Include="TourDepartureBL.cs" />
+    <Compile Include="TourDestinationBL.cs" />
+    <Compile Include="TourHotelPackageBL.cs" />
+    <Compile Include="TourPaxPackageBL.cs" />
+    <Compile Include="TourPriceBL.cs" />
+    <Compile Include="TourScheduleBL.cs" />
+    <Compile Include="TourTypeBL.cs" />
+    <Compile Include="UserDestinationBL.cs" />
+    <Compile Include="UsersBL.cs" />
+    <Compile Include="VideoBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SES.VTTEN.DAL\SES.VTTEN.DAL.csproj">
+      <Project>{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}</Project>
+      <Name>SES.VTTEN.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SES.VTTEN.DO\SES.VTTEN.DO.csproj">
+      <Project>{2200FFA4-D9C8-41AB-A0A2-95FFA09BFF40}</Project>
+      <Name>SES.VTTEN.DO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
