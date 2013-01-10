@@ -3,6 +3,7 @@
 
 <%@ Register Src="Module/ucSupportOnline.ascx" TagName="ucSupportOnline" TagPrefix="uc1" %>
 <%@ Register Src="Module/ucHomepageAlbums.ascx" TagName="ucHomepageAlbums" TagPrefix="uc2" %>
+<%@ Register src="Module/ucHomeTopTour.ascx" tagname="ucHomeTopTour" tagprefix="uc3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -113,7 +114,8 @@
         <!--End Support online-->
     </div>
     <div id="ListTour">
-        <div class="ListTourBox">
+
+ <%--       <div class="ListTourBox">
             <p class="ListTourBox-title">
                 <a href="#" title="title">Tây Ban Nha - Thụy Sĩ - Pháp - Ý - Vatican </a>
             </p>
@@ -274,6 +276,7 @@
                     Đà Lạt vào xuân đẹp vô ngần, cảnh sắc trong lành mát mẻ níu chân du khách...
                 </p>
             </div>
-        </div>
+        </div>--%>
+        <uc3:ucHomeTopTour ID="ucHomeTopTour1" runat="server" />
     </div>
 </asp:Content>

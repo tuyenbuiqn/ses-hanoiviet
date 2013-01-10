@@ -103,6 +103,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.LinkButton lnkTimKiem;
         
         /// <summary>
+        /// ucHomepageAlbums1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SES.VTTEN.WEB.Module.ucHomepageAlbums ucHomepageAlbums1;
+        
+        /// <summary>
         /// ucSupportOnline1 control.
         /// </summary>
         /// <remarks>
@@ -112,12 +121,12 @@ namespace SES.VTTEN.WEB {
         protected global::SES.VTTEN.WEB.Module.ucSupportOnline ucSupportOnline1;
         
         /// <summary>
-        /// ucHomepageAlbums1 control.
+        /// ucHomeTopTour1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucHomepageAlbums ucHomepageAlbums1;
+        protected global::SES.VTTEN.WEB.Module.ucHomeTopTour ucHomeTopTour1;
     }
 }
