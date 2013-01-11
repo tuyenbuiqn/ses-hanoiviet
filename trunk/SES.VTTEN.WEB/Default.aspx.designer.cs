@@ -121,12 +121,12 @@ namespace SES.VTTEN.WEB {
         protected global::SES.VTTEN.WEB.Module.ucSupportOnline ucSupportOnline1;
         
         /// <summary>
-        /// ucHomeTopTour1 control.
+        /// ucHomepageTourCate1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucHomeTopTour ucHomeTopTour1;
+        protected global::SES.VTTEN.WEB.Module.ucHomepageTourCate ucHomepageTourCate1;
     }
 }
