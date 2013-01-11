@@ -103,7 +103,7 @@
 }
 
 .jcarousel-skin-tango .jcarousel-item-placeholder {
-    background: #fff;
+    background: #D5E6D6;
     color: #000;
 }
 
@@ -113,33 +113,33 @@
 .jcarousel-skin-tango .jcarousel-next-horizontal {
     position: absolute;
     top: 75px;
-	right: -10px;
+	right: -14px;
     width: 11px;
-    height: 15px;
+    height: 25px;
     cursor: pointer;
-    background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+    background: transparent url(../image/next-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
     left: 13px;
     right: auto;
-    background: transparent url(next-horizontal.png) no-repeat 0 0;
+    background: transparent url(next-horizontal.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
 .jcarousel-skin-tango .jcarousel-next-horizontal:focus {
-   background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+   background: transparent url(../image/next-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal:active {
-    background: transparent url(../images/next-horizontal.png) no-repeat 0 0;
+    background: transparent url(../image/next-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
-    background: transparent url(../images/next-horizontal-dis.png) no-repeat 0 0;
+    background: transparent url(../image/next-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal {
@@ -147,24 +147,24 @@
     top: 75px;
 	left: -13px;
     width: 11px;
-    height: 15px;
+    height: 25px;
     cursor: pointer;
-   background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+   background: transparent url(../image/prev-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
     left: auto;
     right: 13px;
-    background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+    background: transparent url(../image/prev-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 
 .jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
-    background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+    background: transparent url(../image/prev-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal:active {
-    background: transparent url(../images/prev-horizontal.png) no-repeat 0 0;
+    background: transparent url(../image/prev-button.png) no-repeat;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
@@ -172,7 +172,7 @@
 .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
 .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
     cursor: default;
-    background: transparent url(../images/prev-horizontal-dis.png) no-repeat 0 0;
+    background: transparent url(../image/prev-button.png) no-repeat ;
 }
 
 /**
