@@ -32,20 +32,21 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
         {
             objTourType = new TourTypeBL().Select(objTourType);
             txtDes.Text = objTourType.Description;
-            
+
             txtOder.Text = objTourType.OrderID.ToString();
             txtTitle.Text = objTourType.Title;
             txtURL.Text = objTourType.Alias;
             cbActive.Checked = objTourType.Published;
             ckbIsHomepage.Checked = objTourType.IsHomepage;
+            cbkIsInboundTour.Checked = objTourType.IsInboundTour;
             if (objTourType.ParentID != 0)
                 cbParent.Value = objTourType.ParentID.ToString();
             else
-                {
+            {
                 cbParent.Text = "None";
                 cbRoot.Checked = true;
-                }
-            
+            }
+
         }
 
         protected void btSave_Click(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
         private void SetObject()
         {
             objTourType.Description = txtDes.Text;
-         
+
             try
             {
                 objTourType.OrderID = int.Parse(txtOder.Text);
@@ -77,7 +78,8 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objTourType.IsHomepage = ckbIsHomepage.Checked;
             objTourType.Title = txtTitle.Text;
             objTourType.Alias = Functions.Change_AV(txtTitle.Text);
-                        if (cbRoot.Checked)
+            objTourType.IsInboundTour = cbkIsInboundTour.Checked;
+            if (cbRoot.Checked)
                 objTourType.ParentID = 0;
             else
             {
