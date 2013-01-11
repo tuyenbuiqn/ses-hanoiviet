@@ -92,6 +92,13 @@ namespace SES.VTTEN.WEB.Module
             {
                 lblTitle.Text = "<a href='/Albums/0/vietnam-photo.aspx' title='Vietnam Travel Photos'> Vietnam Travel Photos</a>";
             }
+            else if (Module.Equals("AlbumDetail"))
+            {
+                lblTitle.Text = "<a href='/Albums/0/vietnam-photo.aspx' title='Vietnam Travel Photos'> Vietnam Travel Photos » </a>";
+                int AlbumID = int.Parse(Request.QueryString["ID"].ToString());
+                cmsAlbumDO objAlbum = new cmsAlbumBL().Select(new cmsAlbumDO{AlbumID = AlbumID});
+                lblTitle.Text += "<a href='/AlbumDetail/" + AlbumID + "/" + FriendlyUrl(objAlbum.Title) + "' title ='" + objAlbum.Title + "'>" + objAlbum.Title + "</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {

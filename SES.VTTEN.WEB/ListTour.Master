@@ -87,6 +87,30 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox-tourimg").fancybox({
+                prevEffect: 'elastic',
+                nextEffect: 'elastic',
+                closeBtn: true,
+                helpers: {
+                    title: { type: 'float' },
+                    buttons: {}
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fancybox-media').fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                helpers: {
+                    media: {}
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
