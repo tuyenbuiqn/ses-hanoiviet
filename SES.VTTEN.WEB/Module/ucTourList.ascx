@@ -9,7 +9,7 @@
                 <p class="Time">Duration: <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%></p>
                 <p class="Code">Trip Code: <%#Eval("TourCode")%></p>
                 <p class="MoTaChung">Mô tả chung:</p>
-                <p class="description"><%#WordCut(Eval("MetaDes").ToString())%></p>
+                <p class="descriptions"><%#WordCut(Eval("MetaDes").ToString())%></p>
                 <div class="Action">
                     <a href="/Tour-Booking/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>">
                         <img  alt="lnkBookNow" title="BookNow" style="border: 0px;" src="/image/IconBookNow.png" />
