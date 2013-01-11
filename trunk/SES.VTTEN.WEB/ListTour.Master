@@ -5,9 +5,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>ListTour-hanoiviettravel</title>
-    <asp:ContentPlaceHolder ID="head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/tourstyle.css" rel="stylesheet" type="text/css" />
+
+    <link href="/css/CssSlide/bar.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CssSlide/dark.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CssSlide/default.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CssSlide/light.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CssSlide/nivo-slider.css" rel="stylesheet" type="text/css" />
+    <link href="/css/CssSlide/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.slider').nivoSlider();
+        });
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,7 +35,7 @@
                      <div class="logo-out">
                         <div class="logo-left">
                             <a href="#">
-                                <img src="../image/logo.png" class="logo" alt="hanoiviettravel" />
+                                <img src="/image/logo.png" class="logo" alt="hanoiviettravel" />
                             </a> 
                             <span class="hanoiviettravel">
                                 Hanoi Viet Travel
@@ -36,8 +53,15 @@
                         <li><a href="#">Thông tin cần thiết</a></li>
                     </ul>
                 </div>
-                <div id="head">
-                    <div class="foot-head">
+                <div id="slideListTour">
+                    <div class="slider-wrapper theme-default">
+                        <div class="slider">
+                            <asp:Repeater ID="rptListImage" runat="server">
+                                <ItemTemplate>
+                                       <a href='<%# Eval("SlideUrl") %>'> <img src='<%#"/Media/" + Eval("SlideImg") %>'/></a>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
                 </div>
                 <div id="Conten">
