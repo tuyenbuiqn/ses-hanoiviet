@@ -109,10 +109,11 @@
                         </div>
                     </div>
                     <ul class="toplink">
-                        <li><a href="#">Trang Chủ</a></li>
-                        <li><a href="#">Giới thiệu</a></li>
-                        <li><a href="#">Diễn đàn</a></li>
-                        <li><a href="#">Thông tin cần thiết</a></li>
+                      <li><a href="/Default.aspx" title="hanoivietravel">Trang Chủ</a></li>
+                        <li><a href="#">Du lịch Việt Nam</a></li>
+                        <li><a href="#">Du lịch Nước ngoài</a></li>
+                        <li><a href="#">Thắng cảnh Nổi tiếng</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
                     </ul>
                 </div>
                 <div id="slideListTour">
