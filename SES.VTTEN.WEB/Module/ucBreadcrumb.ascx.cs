@@ -20,7 +20,7 @@ namespace SES.VTTEN.WEB.Module
         protected void Page_Load(object sender, EventArgs e)
         {
             TourDO objTour = new TourDO();
-
+            HotelDO objHotel = new HotelDO();
             string url = Request.Url.AbsolutePath;
             url = url.Substring(1, url.Length - 1);
             string url1 = url.Replace(".", "/");
@@ -40,6 +40,17 @@ namespace SES.VTTEN.WEB.Module
             else if (Module == "Custom-Tour")
             {
                 lblTitle.Text = "<a href='/Custom-Tour.aspx' title='customize tour'> Customize tour</a>";
+            }
+            if (Module == "Hotel-Booking")
+            {
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    int hotelID = int.Parse(Request.QueryString["ID"]);
+
+                    objHotel.HotelID = hotelID;
+                    objHotel = new HotelBL().Select(objHotel);
+                    lblTitle.Text = "<a href='/Hotel-Booking/" + hotelID + "/" + FriendlyUrl(objHotel.Alias) + "' title ='" + objHotel.Title + "'> Booking: " + objHotel.Title + "</a>";
+                }
             }
         }
         protected string FriendlyUrl(string strTitle)
