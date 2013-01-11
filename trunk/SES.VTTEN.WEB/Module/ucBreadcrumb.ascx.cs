@@ -61,6 +61,18 @@ namespace SES.VTTEN.WEB.Module
                     lblTitle.Text = "<a href='/Travel-Guides/" + ContentTypeID + "/default.aspx' title='" + objTT.Title + "'>" + objTT.Title + "</a>";
                }
             }
+            else if (Module.Equals("Travel-Guide"))
+            {
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    ContentDO objContent = new ContentDO();
+                    int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
+                    objContent.ContentID = ContentTypeID;
+                    objContent = new ContentBL().Select(objContent);
+                    lblTitle.Text = "<a href='/Travel-Guides/1/default.aspx' title = 'travel-guides'>Travel Guides » </a>";
+                    lblTitle.Text += "<a href='/Travel-Guide/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" + objContent.Title + "</a>";
+                }
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
