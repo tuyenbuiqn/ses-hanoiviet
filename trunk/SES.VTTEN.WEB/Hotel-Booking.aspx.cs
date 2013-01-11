@@ -51,12 +51,17 @@ namespace SES.VTTEN.WEB
 
         private string SetMailBody()
         {
+            string sGioiTinh = "";
+            if (rdoGender.SelectedValue.Equals("Male"))
+                sGioiTinh = "Ông";
+            if (rdoGender.SelectedValue.Equals("Female"))
+                sGioiTinh = "Bà";
             string body = "";
             body += "<h2>Bạn nhận được email liên hệ từ khách hàng: " + txtFullName.Text + "</h2>";
             body += "<h4>Thông tin liên của khách hàng</h4>";
             body += "<table>";
 
-            body += "<tr><td style='width:100px;'>Họ tên:</td><td style='font-weight:bold;padding-left:5px;'>" + rdoGender.SelectedValue + " " + txtFullName.Text + "</td></tr>";
+            body += "<tr><td style='width:100px;'>Họ tên:</td><td style='font-weight:bold;padding-left:5px;'>" + sGioiTinh + " " + txtFullName.Text + "</td></tr>";
             body += "<tr><td style='width:100px;'>Email:</td><td style='font-weight:bold;padding-left:5px;'>" + txtEmail.Text + "</td></tr>";
             body += "<tr><td style='width:100px;'>Địa chỉ:</td><td style='font-weight:bold;padding-left:5px;'>" + txtAddress.Text + "</td></tr>";
             body += "<tr><td style='width:100px;'>Điện thoại:</td><td style='font-weight:bold;padding-left:5px;'>" + txtPhone.Text + "</td></tr>";
@@ -74,15 +79,11 @@ namespace SES.VTTEN.WEB
 
             body += "<h4>Thông tin thêm</h4>";
             body += "<p>Where did you hear about us:" + ddlHear.Text + "</p>";
-
+            body += "<h4>* Lưu ý: Định dạng ngày tháng(MM/dd/yyyy)</h4>";
             body += "<br /><br /> <h3>Vui lòng cập nhật lại phần quản trị để xem đầy đủ thông tin hơn!</h3>";
             body += "<br /><br /> <h3>Đây là email tự động, vui lòng không trả lời thư này!</h3>";
-
-
             return body;
         }
-
-
         protected void btnBooking_Click(object sender, EventArgs e)
         {
             BookingDO objBK = new BookingDO();
@@ -118,8 +119,6 @@ namespace SES.VTTEN.WEB
             new BookingBL().Insert(objBK);
             Ultility.sendsMails(txtFullName.Text,SetMailBody(),"Thông tin đặt phòng từ khách hàng " + txtFullName.Text,1,int.Parse(Request.QueryString["ID"].ToString()));
             Ultility.Alert("Thanks for choosing us, we will contact soon!", "/Default.aspx");
-
         }
-
     }
 }
