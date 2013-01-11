@@ -819,3 +819,30 @@ float:left;
 	width: 496px;
 	margin-left: 10px;
 }
+#Conten #DanhSachTour .divTourDetail .DanhSachTour-box .DanhSachTour-detail
+{
+	width: 50%;
+}
+#Conten #DanhSachTour .divTourDetail .DetailImgNho
+{
+	float: left;
+	width: 93px;
+}
+#Conten #DanhSachTour .divTourDetail .DetailImgNho img
+{
+	float: left;
+	width: 85px;
+	height: 50px;
+	margin: 3px;
+}
+#Conten #DanhSachTour .divTourDetail .DetailImgBig
+{
+	 float: left;
+	 width: 244px;
+	 height: 164px;
+}
+#Conten #DanhSachTour .divTourDetail .DetailImgBig img
+{
+	width: 240px; height: 160px;
+	 padding: 2px; border: 1px solid #CCCCCC !important;
+}
