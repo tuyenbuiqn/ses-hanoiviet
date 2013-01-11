@@ -17,59 +17,69 @@ namespace SES.VTTEN.WEB
 {
     public partial class Promotions : System.Web.UI.Page
     {
+        string sReturn = "";
+        TourTypeDO objTT = new TourTypeDO();
+        TourTypeDO objTD = new TourTypeDO();
         protected void Page_Load(object sender, EventArgs e)
         {
-            LoadRPT();
-        }
-        public string FriendlyUrl(string s)
-        {
-            return Ultility.Change_AV(s);
-        }
-        public string Duration(string day, string night)
-        {
-
-            if (day == "1" || day == "0")
-                day = day + " day";
-            else day = day + " days";
-            if (night == "1" || night == "0")
-                night = night + " night";
-            else night = night + " nights";
-            return day + " " + night;
-        }
-        private void LoadRPT()
-        {
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
-            {              
-                int TourID = int.Parse(Request.QueryString["ID"].ToString());
-                rptTourCatDataSource();
-                TourDO objTT = new TourBL().Select(new TourDO { TourID = TourID });
+            {
+                int TourTypeID = int.Parse(Request.QueryString["ID"].ToString());
+                if (TourTypeID == 0)
+                {
+                    lblTitle.Text = "Tour khuyến mại";
+                }
+                else
+                {
+                    lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID);
+                }
+                if (!IsPostBack)
+                {
+                    try
+                    {
+                        objTD = new TourTypeBL().Select(new TourTypeDO { TourTypeID = TourTypeID });
+                    }
+                    catch (Exception)
+                    {
+                    }
+                    if (objTD != null)
+                    {
+                        HtmlMeta metaDesc = new HtmlMeta();
+                        metaDesc.Name = "description";
+                        metaDesc.Content = objTD.Description;
+                        Page.Header.Controls.Add(metaDesc);
 
-                    lblCatName.Text = "Promotion Tours";
-                    Page.Title = lblCatName.Text + Ultility.Webtile();
-                    
+                        HtmlMeta metaKey = new HtmlMeta();
+                        metaKey.Name = "keywords";
+                        metaKey.Content = objTD.Alias;
+                        Page.Header.Controls.Add(metaKey);
+
+                        Page.Title = objTD.Title;
+                    }
+                }
             }
         }
-        public string WordCut(string text)
+
+        public string TourCate(int TourTypeID)
         {
-            return Ultility.WordCut(text, 290, new char[] { ' ', '.', ',', ';' }) + "...";
+            try
+            {
+                objTT = new TourTypeBL().Select(new TourTypeDO { TourTypeID = TourTypeID });
+            }
+            catch (Exception)
+            {
+            }
+
+            if (objTT.ParentID == 0)
+            {
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias.ToString() + ".aspx\" title=\"" + objTT.Alias.ToString() + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+            }
+            else
+            {
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias.ToString() + ".aspx\" title=\"" + objTT.Alias.ToString() + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+                TourCate(objTT.ParentID);
+            }
+            return sReturn;
         }
-
-        protected void rptTourCatDataSource()
-        {
-
-            CollectionPager1.MaxPages = 10000;
-
-            CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
-
-            CollectionPager1.DataSource = new TourBL().SelectSaleOff(20).DefaultView; ;
-
-            CollectionPager1.BindToControl = rptTourCat;
-            rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
-            rptTourCat.DataBind();
-        }
-
-
-    
-
     }
 }

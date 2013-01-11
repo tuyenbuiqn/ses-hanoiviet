@@ -49,8 +49,6 @@ namespace SES.VTTEN.WEB
             meta.Content = objCustomerReview.Description;
             Page.Header.Controls.Add(meta);
 
-
-
             lblDescription.Text = objCustomerReview.Detail;
            
             hplIMG.Attributes.Add("title", objCustomerReview.Title);
