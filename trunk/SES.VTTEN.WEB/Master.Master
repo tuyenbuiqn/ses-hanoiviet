@@ -24,11 +24,7 @@
     <!--Tour slide homepage-->
     <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/skin.css" />
-    <script type="text/javascript">
-          jQuery(document).ready(function () {
-              jQuery('#carouselTour').jcarousel();
-          });
-    </script>
+   
    <!--End Tour slide homepage-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -36,6 +32,8 @@
 <body>
     <form id="form1" runat="server">
     <div id="wrap">
+    <asp:Label ID="lblscr" runat="server"></asp:Label>
+    <asp:Label ID="lblscrOut" runat="server"></asp:Label>
         <div class="inner">
             <div class="detail">
                 <div id="head">
