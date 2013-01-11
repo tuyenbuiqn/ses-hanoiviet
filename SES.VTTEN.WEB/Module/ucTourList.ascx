@@ -27,15 +27,15 @@
 </asp:Repeater>
 <div style="width: 100%;float: right; text-align: right;">
     <div class="collection">
-        <cp:CollectionPager LabelText="Page:&amp;nbsp;&amp;nbsp;" 
+        <cp:CollectionPager LabelText="" 
             FirstText="&amp;nbsp;&amp;nbsp;<<" BackText="< &amp;nbsp;"
             LastText=">>" NextText=">" ShowFirstLast="True" ControlCssClass="collectionpager"
-            PagingMode="PostBack" runat="server" BackNextLinkSeparator="" BackNextLocation="Right"
+            PagingMode="PostBack" runat="server" BackNextLinkSeparator="" BackNextLocation="Split"
             PageNumbersDisplay="Numbers" ResultsLocation="None" BackNextDisplay="HyperLinks"
             ID="CollectionPager1" BackNextButtonStyle="" BackNextStyle="margin-left:5px;"
             ControlStyle="" PageNumbersSeparator="&amp;nbsp;" ShowLabel="True">
         </cp:CollectionPager>
-        <div class="collectPage">
+        <div class="collectPage">Page: 
         </div>
     </div>
 </div>
