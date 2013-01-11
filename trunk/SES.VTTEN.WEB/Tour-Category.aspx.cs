@@ -26,7 +26,14 @@ namespace SES.VTTEN.WEB
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
             {
                 int TourTypeID = int.Parse(Request.QueryString["ID"].ToString());
-                lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID);
+                if (TourTypeID == 0)
+                {
+                    lblTitle.Text = "Danh sách tour";
+                }
+                else
+                {
+                    lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID);
+                }
                 if (!IsPostBack)
                 {
                     try
