@@ -19,15 +19,14 @@ namespace SES.VTTEN.WEB.Module
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            TourDO objTour = new TourDO();
-            HotelDO objHotel = new HotelDO();
             string url = Request.Url.AbsolutePath;
             url = url.Substring(1, url.Length - 1);
             string url1 = url.Replace(".", "/");
             string Module = url1.Substring(0, url1.IndexOf("/"));
 
-            if (Module == "Tour-Booking")
+            if (Module.Equals("Tour-Booking"))
             {
+                TourDO objTour = new TourDO();
                 if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
                 {
                     int TourID = int.Parse(Request.QueryString["ID"]);
@@ -37,12 +36,13 @@ namespace SES.VTTEN.WEB.Module
                     lblTitle.Text = "<a href='/Tour-Booking/" + TourID + "/" + FriendlyUrl(objTour.Alias) + "' title ='" + objTour.Title + "'> Booking: " + objTour.Title + "</a>";
                 }
             }
-            else if (Module == "Custom-Tour")
+            else if (Module.Equals("Custom-Tour"))
             {
                 lblTitle.Text = "<a href='/Custom-Tour.aspx' title='customize tour'> Customize tour</a>";
             }
-            if (Module == "Hotel-Booking")
+            else if (Module.Equals("Hotel-Booking"))
             {
+                HotelDO objHotel = new HotelDO();
                 if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
                 {
                     int hotelID = int.Parse(Request.QueryString["ID"]);
@@ -51,6 +51,15 @@ namespace SES.VTTEN.WEB.Module
                     objHotel = new HotelBL().Select(objHotel);
                     lblTitle.Text = "<a href='/Hotel-Booking/" + hotelID + "/" + FriendlyUrl(objHotel.Alias) + "' title ='" + objHotel.Title + "'> Booking: " + objHotel.Title + "</a>";
                 }
+            }
+            else if (Module.Equals("Travel-Guides"))
+            {
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
+                    ContentTypeDO objTT = new ContentTypeBL().Select(new ContentTypeDO { ContentTypeID = ContentTypeID });
+                    lblTitle.Text = "<a href='/Travel-Guides/" + ContentTypeID + "/default.aspx' title='" + objTT.Title + "'>" + objTT.Title + "</a>";
+               }
             }
         }
         protected string FriendlyUrl(string strTitle)
