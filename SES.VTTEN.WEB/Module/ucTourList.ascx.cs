@@ -66,7 +66,7 @@ namespace SES.VTTEN.WEB.Module
 
             CollectionPager1.MaxPages = 10000;
 
-            CollectionPager1.PageSize = 2; // số items hiển thị trên một trang
+            CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
 
             CollectionPager1.DataSource = new TourBL().SelectbyTourType(TourTypeID).DefaultView;
 
