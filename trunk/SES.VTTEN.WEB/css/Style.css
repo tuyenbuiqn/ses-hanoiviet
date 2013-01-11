@@ -463,7 +463,7 @@ float:left;
 	float: left;
 	width: 695px;
 	margin-top:10px;
-	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #Conten #DanhSachTour .DanhSachTour-title
@@ -553,7 +553,7 @@ float:left;
 #Conten .under
 {
 	float: left;
-	width: 242px;
+	width: 235px;
 	margin-top: 10px;
 }
 #Conten .under .divDanhMucTour
