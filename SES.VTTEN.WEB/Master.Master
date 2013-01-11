@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="SES.VTTEN.WEB.Master" %>
 
+<%@ Register Src="Module/ucFooter.ascx" TagName="ucFooter" TagPrefix="uc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -24,16 +25,15 @@
     <!--Tour slide homepage-->
     <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/skin.css" />
-   
-   <!--End Tour slide homepage-->
+    <!--End Tour slide homepage-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="wrap">
-    <asp:Label ID="lblscr" runat="server"></asp:Label>
-    <asp:Label ID="lblscrOut" runat="server"></asp:Label>
+        <asp:Label ID="lblscr" runat="server"></asp:Label>
+        <asp:Label ID="lblscrOut" runat="server"></asp:Label>
         <div class="inner">
             <div class="detail">
                 <div id="head">
@@ -59,35 +59,7 @@
                 </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
-                <div id="footer">
-                    <div id="copyright">
-                        <p class="company">
-                            CÔNG TY TNHH DU LỊCH HÀ NỘI VIỆT TRAVEL</p>
-                        <p>
-                            Trụ sở chính : No 007 , 261/1 Yen Duyen Road, Hoang Mai Dis Hanoi city</p>
-                        <p>
-                            Phone : ++84(4)3.9999981 Hotline : ++84 943627667</p>
-                        <p>
-                            Emergency lines : 24 / 24 : ++84.943627667 Ms Lan</p>
-                        <p>
-                            Email: booking@hanoiviettravel.com, Skype: nguyenlaneliz Yahoo : lannguyen_1981</p>
-                    </div>
-                    <div class="footerRight">
-                        <div id="MenuBottom">
-                            <ul class="bottomlink">
-                                <li class="liTop"><a href="#">Trang Chủ</a></li>
-                                <li><a href="#">Khuyến mãi</a></li>
-                                <li><a href="#">Du lịch</a></li>
-                                <li><a href="#">Khách sạn</a></li>
-                                <li><a href="#">Dịch vụ khách hang</a></li>
-                            </ul>
-                        </div>
-                        <img alt="DoiTac" src="/image/imgDoiTac.png" />
-                        <p class="textCopyright">
-                            © 2009 Hanoi VietTravel.
-                        </p>
-                    </div>
-                </div>
+                <uc1:ucFooter ID="ucFooter1" runat="server" />
             </div>
         </div>
     </div>
