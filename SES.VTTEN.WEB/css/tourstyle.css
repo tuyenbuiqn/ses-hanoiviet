@@ -1,11 +1,17 @@
-﻿h1
+﻿.travel-h1
 {
 	font-size: 20px;
 	font-weight: normal;
 	line-height: 1.15;
 	color: #1C5DA3;
+	float: right;
+	width: 100%;
+	margin: 5px 0 0 0;
 }
-
+.travel-h1 span
+{
+	float: right;
+}
 
 /* end validate form */
 .thinline7
@@ -205,4 +211,31 @@ input.error
 .breadcrumb-box p a:hover
 {
 	color: #EFEFEF;
+}
+.regions
+{
+	float: left;
+	width: 537px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+.regions-title
+{
+	float: left;
+	font-weight: bold;
+	width: 57px;
+	line-height: 25px;
+}
+.regions-checkbox
+{
+	float: left;
+	width: 480px;
+}
+.span_custome
+{
+	float: left;
+	padding-left: 5px;
+	width: 180px;
+	margin-top: 2px;
+	font-weight: bold;
 }

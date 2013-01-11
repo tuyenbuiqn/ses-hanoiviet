@@ -744,3 +744,28 @@ float:left;
 	padding: 5px 5px 5px 5px;
 	line-height: 13px;
 }
+.collectionpager
+{
+	float: right;
+}
+.collectionpager a
+{
+	color: white;
+	padding: 0px 4px;
+	margin: 0 0px;
+	background: #069;
+	text-decoration: none;
+}
+.collectPage
+{
+	float: right;
+	width: 5%;
+	margin-right: 5px;
+	font-weight: bold;
+}
+.collection
+{
+	float: right;
+	width: 95%;
+	margin-left: 5px;
+}
