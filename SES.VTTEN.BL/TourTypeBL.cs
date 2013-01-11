@@ -103,6 +103,10 @@ namespace SES.VTTEN.BL
         {
             return objTourTypeDAL.SelectAllParentHomePublish(IsHomepage, Published);
         }
+        public DataTable GetTourCateHomepage(bool isInboundTour)
+        {
+            return objTourTypeDAL.GetTourCateHomepage(isInboundTour);
+        }
     }
 
 }

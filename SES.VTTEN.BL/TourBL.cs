@@ -111,7 +111,10 @@ namespace SES.VTTEN.BL
         {
             return objTourDAL.SelectTourByParentAndRecordNumber(TourTypeID, RecordNumber);
         }
-
+        public DataTable SelectTourByParentAndRecordNumberHomepage(int TourTypeID, int RecordNumber)
+        {
+            return objTourDAL.SelectTourByParentAndRecordNumberHomepage(TourTypeID, RecordNumber);
+        }
         public DataTable SelectSaleOff(int p)
         {
             return objTourDAL.SelectSaleOff(p);

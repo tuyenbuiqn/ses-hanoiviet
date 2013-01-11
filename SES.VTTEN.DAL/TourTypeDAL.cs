@@ -70,6 +70,10 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourTypeDO.IsHomepage;
             Sqlcomm.Parameters.Add(Sqlparam);
 
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = objTourTypeDO.IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
 
             Sqlparam = new SqlParameter("@ID", SqlDbType.Int);
             Sqlparam.Direction = ParameterDirection.ReturnValue;
@@ -124,7 +128,9 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourTypeDO.IsHomepage;
             Sqlcomm.Parameters.Add(Sqlparam);
 
-
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = objTourTypeDO.IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
 
             Sqlparam = new SqlParameter("@ErrorCode", SqlDbType.Int);
             Sqlparam.Direction = ParameterDirection.ReturnValue;
@@ -204,9 +210,10 @@ namespace SES.VTTEN.DAL
                     objTourTypeDO.ParentID = Convert.ToInt32(dr["ParentID"]);
                 if (!Convert.IsDBNull(dr["OrderID"]))
                     objTourTypeDO.OrderID = Convert.ToInt32(dr["OrderID"]);
-
                 if (!Convert.IsDBNull(dr["IsHomepage"]))
                     objTourTypeDO.IsHomepage = Convert.ToBoolean(dr["IsHomepage"]);
+                if (!Convert.IsDBNull(dr["IsInboundTour"]))
+                    objTourTypeDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
 
             }
             return objTourTypeDO;
@@ -244,6 +251,8 @@ namespace SES.VTTEN.DAL
                         objTourTypeDO.OrderID = Convert.ToInt32(dr["OrderID"]);
                     if (!Convert.IsDBNull(dr["IsHomepage"]))
                         objTourTypeDO.IsHomepage = Convert.ToBoolean(dr["IsHomepage"]);
+                    if (!Convert.IsDBNull(dr["IsInboundTour"]))
+                        objTourTypeDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
                     arrTourTypeDO.Add(objTourTypeDO);
                 }
             }
@@ -367,6 +376,8 @@ namespace SES.VTTEN.DAL
                     objTourTypeDO.Published = Convert.ToBoolean(dr["Published"]);
                 if (!Convert.IsDBNull(dr["IsHomepage"]))
                     objTourTypeDO.IsHomepage = Convert.ToBoolean(dr["IsHomepage"]);
+                if (!Convert.IsDBNull(dr["IsInboundTour"]))
+                    objTourTypeDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
 
             }
             return objTourTypeDO;
@@ -424,6 +435,27 @@ namespace SES.VTTEN.DAL
 
             Sqlparam = new SqlParameter("@ParentID", SqlDbType.Int);
             Sqlparam.Value = ParentID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
+        public DataTable GetTourCateHomepage(bool isInboundTour)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spTourType_GetHomeTour";
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = isInboundTour;
             Sqlcomm.Parameters.Add(Sqlparam);
 
             DataSet ds = base.GetDataSet(Sqlcomm);
