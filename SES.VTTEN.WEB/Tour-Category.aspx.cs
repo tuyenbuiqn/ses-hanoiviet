@@ -36,17 +36,20 @@ namespace SES.VTTEN.WEB
                     catch (Exception)
                     {
                     }
-                    HtmlMeta metaDesc = new HtmlMeta();
-                    metaDesc.Name = "description";
-                    metaDesc.Content = objTD.Description.ToString();
-                    Page.Header.Controls.Add(metaDesc);
+                    if (objTD != null)
+                    {
+                        HtmlMeta metaDesc = new HtmlMeta();
+                        metaDesc.Name = "description";
+                        metaDesc.Content = objTD.Description;
+                        Page.Header.Controls.Add(metaDesc);
 
-                    HtmlMeta metaKey = new HtmlMeta();
-                    metaKey.Name = "keywords";
-                    metaKey.Content = objTD.Alias.ToString();
-                    Page.Header.Controls.Add(metaKey);
+                        HtmlMeta metaKey = new HtmlMeta();
+                        metaKey.Name = "keywords";
+                        metaKey.Content = objTD.Alias;
+                        Page.Header.Controls.Add(metaKey);
 
-                    Page.Title = objTD.Title.ToString();
+                        Page.Title = objTD.Title;
+                    }
                 }
             }
             
