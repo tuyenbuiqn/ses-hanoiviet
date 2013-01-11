@@ -7,10 +7,10 @@
 	background-color:#FFFFFF;
 	
 }
-ul, p
+ul, p, h1, h2, h3, h4, h5
 {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 a
 {
@@ -768,4 +768,54 @@ float:left;
 	float: right;
 	width: 95%;
 	margin-left: 5px;
+}
+
+.tourcatx
+{
+	float: left;
+	width: 695px;
+	padding: 10px 0 20px 0;
+	border-bottom: 1px solid #B9CFD4;
+	margin-bottom: 5px;
+}
+.texttourcatx
+{
+	float: left;
+	width: 695px;
+	line-height: 16px;
+	margin-top: 10px;
+	text-align: justify;
+}
+.thinlinex
+{
+	width: 695px;
+	height: 1px;
+	background-color: #CCC;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	float: left;
+}
+.tittourcatx
+{
+	float: left;
+	width: 695px;
+}
+.tittourcatxy
+{
+	float: left;
+	width: 480px;
+}
+.imgtourcatx
+{
+	float: left;
+	width: 180px;
+	height: 103px;
+	padding: 2px;
+	border: 1px solid #D3D3D3;
+}
+.contenttourcatx
+{
+	float: left;
+	width: 496px;
+	margin-left: 10px;
 }
