@@ -101,8 +101,8 @@ namespace SES.VTTEN.WEB
 
             body += "<h4>Thông tin thêm</h4>";
             body += "<p>Where did you hear about us:" + ddlHear.Text + "</p>";
-            body += "<h4>* Lưu ý: Định dạng ngày tháng(MM/dd/yyyy)</h4>";
-            body += "<br /><br /> <h3>Vui lòng cập nhật lại phần quản trị để xem đầy đủ thông tin hơn!</h3>";
+            body += "<br /><h4>* Lưu ý: Định dạng ngày tháng(MM/dd/yyyy)</h4>";
+            body += "<br /> <h3>Vui lòng cập nhật lại phần quản trị để xem đầy đủ thông tin hơn!</h3>";
             body += "<br /><br /> <h3>Đây là email tự động, vui lòng không trả lời thư này!</h3>";
 
             return body;
