@@ -263,9 +263,71 @@ input.error
 }
 .in1toursub10 a
 {
-	color:Black;
+	color: Black;
 }
 .in1toursub10 a:hover
 {
-	color:Red;
-	}
+	color: Red;
+}
+.Album
+{
+	width: 110px;
+	float: left;
+	margin: 10px;
+	height: 80px;
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-bottom: 25px;
+}
+.Album-Cover
+{
+}
+.Album-Cover img
+{
+	width: 110px;
+	height: 80px;
+}
+.Album-Title
+{
+	margin: 10px 0;
+}
+.Album-Title a
+{
+	color: Blue;
+}
+.Album-Title a:hover
+{
+	color: Red;
+}
+
+.Album-video
+{
+	width: 140px;
+	float: left;
+	margin: 15px;
+	height: 120px;
+	padding: 2px;
+	border: 1px solid #CCC;
+	margin-bottom: 25px;
+}
+.Album-Cover-video
+{
+}
+.Album-Cover-video img
+{
+	width: 140px;
+	height: 120px;
+}
+.Album-Title-video
+{
+	margin: 10px 0;
+}
+.Album-Title-video a
+{
+	color: Blue;
+}
+.Album-Title-video a:hover
+{
+	color: Red;
+}
+

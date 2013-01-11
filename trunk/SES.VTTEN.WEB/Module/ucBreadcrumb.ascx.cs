@@ -88,6 +88,10 @@ namespace SES.VTTEN.WEB.Module
                     lblTitle.Text = "<a href='/About/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" +   objContent.Title + "</a>";
                 }
             }
+            else if (Module.Equals("Albums"))
+            {
+                lblTitle.Text = "<a href='/Albums/0/vietnam-photo.aspx' title='Vietnam Travel Photos'> Vietnam Travel Photos</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
