@@ -605,6 +605,31 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
+        public DataTable SelectTourByParentAndRecordNumberHomepage(int TourTypeID, int RecordNumber)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spcmsTour_SelectByCateAndRecordNumber";
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@TourTypeID", SqlDbType.Int);
+            Sqlparam.Value = TourTypeID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@RecordNumber", SqlDbType.Int);
+            Sqlparam.Value = RecordNumber;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
 
 
         public DataTable SelectbyDes(int ID)
