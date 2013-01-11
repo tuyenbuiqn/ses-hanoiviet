@@ -6,7 +6,9 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head1" runat="server">
+<%@ Register src="Module/ucBreadcrumb.ascx" tagname="ucBreadcrumb" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
     <script language="javascript" type="text/javascript">
         function AcceptTermsCheckBoxValidation(oSrouce, args) {
@@ -21,9 +23,10 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>
+    <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
+    <%--<h1>
         TRAVEL BOOKING FORM
-    </h1>
+    </h1>--%>
     <div class="thinline7">
     </div>
     <div class="contentourdt1">
