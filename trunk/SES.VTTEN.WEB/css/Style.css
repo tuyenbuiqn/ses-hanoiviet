@@ -492,6 +492,14 @@ float:left;
 {
 	margin: 5px 5px 0px 5px;
 }
+#Conten #DanhSachTour .DanhSachTour-title div p a
+{
+	color: #FFFFFF;
+}
+#Conten #DanhSachTour .DanhSachTour-title div p a:hover
+{
+	color: #EFEFEF;
+}
 #Conten #DanhSachTour .DanhSachTour-box
 {
 	float: left;
