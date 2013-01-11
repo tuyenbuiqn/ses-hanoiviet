@@ -40,7 +40,7 @@ namespace SES.VTTEN.DO
         private Boolean _IsHomepage;
 
 		#endregion
-
+        public Boolean IsInboundTour { get; set; }
 		#region Public Properties
 					public Int32 TourTypeID
 		{
