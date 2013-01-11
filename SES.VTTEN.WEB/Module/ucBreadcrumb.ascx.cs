@@ -99,6 +99,16 @@ namespace SES.VTTEN.WEB.Module
                 cmsAlbumDO objAlbum = new cmsAlbumBL().Select(new cmsAlbumDO{AlbumID = AlbumID});
                 lblTitle.Text += "<a href='/AlbumDetail/" + AlbumID + "/" + FriendlyUrl(objAlbum.Title) + "' title ='" + objAlbum.Title + "'>" + objAlbum.Title + "</a>";
             }
+            else if (Module.Equals("Destination"))
+            {
+                lblTitle.Text = "<a href='/Destinations/1/Default.aspx' title='Danh lam thắng cảnh'> Danh lam thắng cảnh » </a>";
+                int DestinationID = int.Parse(Request.QueryString["ID"].ToString());
+                DestinationDO objDestination = new DestinationDO();
+                objDestination.DestinationID = DestinationID;
+
+                objDestination = new DestinationBL().Select(objDestination);
+                lblTitle.Text += "<a href='/Destination/" + DestinationID + "/" + FriendlyUrl(objDestination.Title) + "' title ='" + objDestination.Title + "'>" + objDestination.Title + "</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
