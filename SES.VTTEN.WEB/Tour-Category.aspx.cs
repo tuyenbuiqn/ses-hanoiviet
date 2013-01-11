@@ -20,13 +20,36 @@ namespace SES.VTTEN.WEB
     {
         string sReturn = "";
         TourTypeDO objTT = new TourTypeDO();
+        TourTypeDO objTD = new TourTypeDO();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
             {
                 int TourTypeID = int.Parse(Request.QueryString["ID"].ToString());
                 lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID);
+                if (!IsPostBack)
+                {
+                    try
+                    {
+                        objTD = new TourTypeBL().Select(new TourTypeDO { TourTypeID = TourTypeID });
+                    }
+                    catch (Exception)
+                    {
+                    }
+                    HtmlMeta metaDesc = new HtmlMeta();
+                    metaDesc.Name = "description";
+                    metaDesc.Content = objTD.Description.ToString();
+                    Page.Header.Controls.Add(metaDesc);
+
+                    HtmlMeta metaKey = new HtmlMeta();
+                    metaKey.Name = "keywords";
+                    metaKey.Content = objTD.Alias.ToString();
+                    Page.Header.Controls.Add(metaKey);
+
+                    Page.Title = objTD.Title.ToString();
+                }
             }
+            
         }
         public string TourCate(int TourTypeID)
         {
