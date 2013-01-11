@@ -334,7 +334,8 @@ float:left;
 #ListTour .ListTourBox a img.imgListTourBox
 {
 	float: left;
-	width: 100%;
+	width: 269px;
+	height:139px;
 	padding: 2px;
 	border: 1px solid #5EB7CE;
 }
@@ -373,6 +374,11 @@ float:left;
 	color: #111111;
 	text-align: left;
 }
+.list-tour-box-inbound
+{
+	width:100%;
+	float:left;
+	}
 #footer
 {
 	float: left;
