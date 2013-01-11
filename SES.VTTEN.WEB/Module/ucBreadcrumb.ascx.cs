@@ -36,13 +36,11 @@ namespace SES.VTTEN.WEB.Module
                     objTour = new TourBL().Select(objTour);
                     lblTitle.Text = "<a href='/Tour-Booking/" + TourID + "/" + FriendlyUrl(objTour.Alias) + "' title ='" + objTour.Title + "'> Booking: " + objTour.Title + "</a>";
                 }
-               
             }
-            else if (Module == "About")
+            else if (Module == "Custom-Tour")
             {
+                lblTitle.Text = "<a href='/Custom-Tour.aspx' title='customize tour'> Customize tour</a>";
             }
-
-           
         }
         protected string FriendlyUrl(string strTitle)
         {
