@@ -6,7 +6,7 @@
     <div class="footerRight">
         <div id="MenuBottom">
             <ul class="bottomlink">
-                <li class="liTop"><a href="#">Trang Chủ</a></li>
+                <li class="liTop"><a href="/Default.aspx" title="Hanoi vietravel">Trang Chủ</a></li>
                 <li><a href="#">Khuyến mãi</a></li>
                 <li><a href="#">Du lịch</a></li>
                 <li><a href="#">Khách sạn</a></li>
