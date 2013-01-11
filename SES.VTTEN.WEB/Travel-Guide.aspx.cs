@@ -19,44 +19,30 @@ namespace SES.VTTEN.WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
             {
                 int ContentID = int.Parse(Request.QueryString["ID"].ToString());
-
                 ContentDetailDataSource(ContentID);
-
             }
-
         }
         public string FriendlyUrl(string s)
         {
             return Ultility.Change_AV(s);
         }
-
         protected void ContentDetailDataSource(int ContentID)
         {
             ContentDO objContent = new ContentDO();
             objContent.ContentID = ContentID;
-
             objContent = new ContentBL().Select(objContent);
-
             lblContentName.Text = objContent.Title;
-
             Page.Title = objContent.Title + Ultility.Webtile();
             HtmlMeta meta = new HtmlMeta();
             meta.Name = "description";
             meta.Content = objContent.MetaDes;
             Page.Header.Controls.Add(meta);
-
-
-           
             lblDescription.Text = objContent.ContentDetail;
-
             rptRelatedContent.DataSource = new DataView(new ContentBL().SelectNumberType(10, 1), "ContentID<>" + objContent.ContentID, "", DataViewRowState.CurrentRows);
             rptRelatedContent.DataBind();
-
-
         }
     }
 }

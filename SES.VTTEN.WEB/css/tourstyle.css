@@ -239,3 +239,33 @@ input.error
 	margin-top: 2px;
 	font-weight: bold;
 }
+.toursub2
+{
+	float: left;
+	width: 695px;
+	margin-top: 20px;
+}
+.toursub3
+{
+	float: left;
+	width: 695px;
+	margin-top: 10px;
+}
+.toursub2 h3
+{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.25;
+	color: #1C5DA3;
+}
+.in1toursub10
+{
+}
+.in1toursub10 a
+{
+	color:Black;
+}
+.in1toursub10 a:hover
+{
+	color:Red;
+	}
