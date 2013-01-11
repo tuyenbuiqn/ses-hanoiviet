@@ -73,6 +73,10 @@ namespace SES.VTTEN.WEB.Module
                     lblTitle.Text += "<a href='/Travel-Guide/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" + objContent.Title + "</a>";
                 }
             }
+            else if (Module.Equals("Contact"))
+            {
+                lblTitle.Text = "<a href='/Contact.aspx' title='contact us'> Liên hệ</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
