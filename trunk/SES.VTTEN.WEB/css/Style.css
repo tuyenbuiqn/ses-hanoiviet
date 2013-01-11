@@ -549,6 +549,8 @@ float:left;
 	float: left;
 	padding: 2px;
 	border: 1px solid #CCCCCC;
+	width: 245px;
+	height: 157px;
 }
 #Conten #DanhSachTour .DanhSachTour-box .DanhSachTourImg img
 {
