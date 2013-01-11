@@ -3,8 +3,8 @@
 
 <%@ Register Src="Module/ucSupportOnline.ascx" TagName="ucSupportOnline" TagPrefix="uc1" %>
 <%@ Register Src="Module/ucHomepageAlbums.ascx" TagName="ucHomepageAlbums" TagPrefix="uc2" %>
-<%@ Register src="Module/ucHomeTopTour.ascx" tagname="ucHomeTopTour" tagprefix="uc3" %>
-<%@ Register src="Module/ucHomepageTourCate.ascx" tagname="ucHomepageTourCate" tagprefix="uc4" %>
+<%@ Register Src="Module/ucHomeTopTour.ascx" TagName="ucHomeTopTour" TagPrefix="uc3" %>
+<%@ Register Src="Module/ucHomepageTourCate.ascx" TagName="ucHomepageTourCate" TagPrefix="uc4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -100,10 +100,9 @@
                     TIN KHUYẾN MẠI</p>
             </div>
             <div class="detail-box">
-                <img alt="Tin Khuyen Mai" src="image/TinKhuyenMai.png" width="190" height="125" />
+                <asp:Image ID="imgPromo" runat="server" />
                 <p style="color: Red;">
-                    Kỳ Nghỉ 3 Ngày 2 Đêm Dành Cho 2 Người Tại Khách Sạn 4 Sao Sammy Đà Lạt, Loại Phòng
-                    Deluxe
+                    <asp:Label ID="lblPromo" runat="server" Text="Label"></asp:Label>
                 </p>
             </div>
         </div>
@@ -115,7 +114,7 @@
         <!--End Support online-->
     </div>
     <div id="ListTour">
-       <%-- <uc3:ucHomeTopTour ID="ucHomeTopTour1" runat="server" />--%>
+        <%-- <uc3:ucHomeTopTour ID="ucHomeTopTour1" runat="server" />--%>
         <uc4:ucHomepageTourCate ID="ucHomepageTourCate1" runat="server" />
     </div>
 </asp:Content>
