@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListTour.aspx.cs" Inherits="Hanoiviettravel_VN.ListTour" %>
 
+<%@ Register src="Module/ucTourList.ascx" tagname="ucTourList" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,119 +42,6 @@
                     </div>
                 </div>
                 <div id="Conten">
-                    <div id="DanhSachTour">
-                        <div class="DanhSachTour-title">
-                            <div>
-                                <p>Trang chủ >> Tour Nội địa >> Tour du lịch trăng mật</p>
-                            </div>
-                            <img style="border: 0px;" src="/image/ImgTitleIcon.png" />
-                        </div>
-                        <div class="DanhSachTour-box">
-                            <div class="DanhSachTour-detail">
-                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
-                                <p class="Price">Giá Tour: 4.610.000đ</p>
-                                <p class="Time">Duration: 7 Days 6 Nights</p>
-                                <p class="Code">Trip Code: PT08</p>
-                                <p class="MoTaChung">Mô tả chung:</p>
-                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
-                                <div class="Action">
-                                    <asp:LinkButton ID="LinkButton7" runat="server">
-                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
-                                    </asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton8" runat="server">
-                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                           <a href="#" class="DanhSachTourImg" >
-                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
-                            </a>
-                        </div>
-                        <div class="DanhSachTour-box">
-                            <div class="DanhSachTour-detail">
-                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
-                                <p class="Price">Giá Tour: 4.610.000đ</p>
-                                <p class="Time">Duration: 7 Days 6 Nights</p>
-                                <p class="Code">Trip Code: PT08</p>
-                                <p class="MoTaChung">Mô tả chung:</p>
-                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
-                                <div class="Action">
-                                    <asp:LinkButton ID="LinkButton1" runat="server">
-                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
-                                    </asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton2" runat="server">
-                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                            <a href="#" class="DanhSachTourImg" >
-                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
-                            </a>
-                        </div>
-                        <div class="DanhSachTour-box">
-                            <div class="DanhSachTour-detail">
-                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
-                                <p class="Price">Giá Tour: 4.610.000đ</p>
-                                <p class="Time">Duration: 7 Days 6 Nights</p>
-                                <p class="Code">Trip Code: PT08</p>
-                                <p class="MoTaChung">Mô tả chung:</p>
-                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
-                                <div class="Action">
-                                    <asp:LinkButton ID="LinkButton3" runat="server">
-                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
-                                    </asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton4" runat="server">
-                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                            <a href="#" class="DanhSachTourImg" >
-                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
-                            </a>
-                        </div>
-                        <div class="DanhSachTour-box">
-                            <div class="DanhSachTour-detail">
-                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
-                                <p class="Price">Giá Tour: 4.610.000đ</p>
-                                <p class="Time">Duration: 7 Days 6 Nights</p>
-                                <p class="Code">Trip Code: PT08</p>
-                                <p class="MoTaChung">Mô tả chung:</p>
-                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
-                                <div class="Action">
-                                    <asp:LinkButton ID="LinkButton5" runat="server">
-                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
-                                    </asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton6" runat="server">
-                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                            <a href="#" class="DanhSachTourImg" >
-                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
-                            </a>
-                        </div>
-                        <div class="DanhSachTour-box">
-                            <div class="DanhSachTour-detail">
-                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
-                                <p class="Price">Giá Tour: 4.610.000đ</p>
-                                <p class="Time">Duration: 7 Days 6 Nights</p>
-                                <p class="Code">Trip Code: PT08</p>
-                                <p class="MoTaChung">Mô tả chung:</p>
-                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
-                                <div class="Action">
-                                    <asp:LinkButton ID="LinkButton9" runat="server">
-                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
-                                    </asp:LinkButton>
-                                    <asp:LinkButton ID="LinkButton10" runat="server">
-                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
-                                    </asp:LinkButton>
-                                </div>
-                            </div>
-                            <a href="#" class="DanhSachTourImg" >
-                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
-                            </a>
-                        </div>
-                    </div>
                     <div class="under">
                         <div class="divDanhMucTour">
                             <div class="divDanhMucTour-title">
@@ -280,6 +169,123 @@
                             </div>
                         </div>
                     </div>
+                    <div id="DanhSachTour">
+                        <div class="DanhSachTour-title">
+                            <div>
+                                <p>Trang chủ >> Tour Nội địa >> Tour du lịch trăng mật</p>
+                            </div>
+                            <img style="border: 0px;" src="/image/ImgTitleIcon.png" />
+                        </div>
+
+                        <%--<div class="DanhSachTour-box">
+
+                            <div class="DanhSachTour-detail">
+                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
+                                <p class="Price">Giá Tour: 4.610.000đ</p>
+                                <p class="Time">Duration: 7 Days 6 Nights</p>
+                                <p class="Code">Trip Code: PT08</p>
+                                <p class="MoTaChung">Mô tả chung:</p>
+                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
+                                <div class="Action">
+                                    <asp:LinkButton ID="LinkButton7" runat="server">
+                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                                    </asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton8" runat="server">
+                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                           <a href="#" class="DanhSachTourImg" >
+                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
+                            </a>
+                        </div>
+                        <div class="DanhSachTour-box">
+                            <div class="DanhSachTour-detail">
+                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
+                                <p class="Price">Giá Tour: 4.610.000đ</p>
+                                <p class="Time">Duration: 7 Days 6 Nights</p>
+                                <p class="Code">Trip Code: PT08</p>
+                                <p class="MoTaChung">Mô tả chung:</p>
+                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
+                                <div class="Action">
+                                    <asp:LinkButton ID="LinkButton1" runat="server">
+                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                                    </asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton2" runat="server">
+                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                            <a href="#" class="DanhSachTourImg" >
+                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
+                            </a>
+                        </div>
+                        <div class="DanhSachTour-box">
+                            <div class="DanhSachTour-detail">
+                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
+                                <p class="Price">Giá Tour: 4.610.000đ</p>
+                                <p class="Time">Duration: 7 Days 6 Nights</p>
+                                <p class="Code">Trip Code: PT08</p>
+                                <p class="MoTaChung">Mô tả chung:</p>
+                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
+                                <div class="Action">
+                                    <asp:LinkButton ID="LinkButton3" runat="server">
+                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                                    </asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton4" runat="server">
+                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                            <a href="#" class="DanhSachTourImg" >
+                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
+                            </a>
+                        </div>
+                        <div class="DanhSachTour-box">
+                            <div class="DanhSachTour-detail">
+                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
+                                <p class="Price">Giá Tour: 4.610.000đ</p>
+                                <p class="Time">Duration: 7 Days 6 Nights</p>
+                                <p class="Code">Trip Code: PT08</p>
+                                <p class="MoTaChung">Mô tả chung:</p>
+                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
+                                <div class="Action">
+                                    <asp:LinkButton ID="LinkButton5" runat="server">
+                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                                    </asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton6" runat="server">
+                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                            <a href="#" class="DanhSachTourImg" >
+                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
+                            </a>
+                        </div>
+                        <div class="DanhSachTour-box">
+                            <div class="DanhSachTour-detail">
+                                <a href="#" ><p class="Title">Hành Trình Về Nguồn Thăm Quê Bác (T12/2012)</p></a>
+                                <p class="Price">Giá Tour: 4.610.000đ</p>
+                                <p class="Time">Duration: 7 Days 6 Nights</p>
+                                <p class="Code">Trip Code: PT08</p>
+                                <p class="MoTaChung">Mô tả chung:</p>
+                                <p class="description">Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm đẹp nhất miền trung. Tắm biển, thưởng thức hải sản tươi sống : Cua, Ghẹ, Mực Một Nắng,…(tự túc) Dùng điểm tâm. Khởi hành đi Dốc Lết – 1 trong những bãi tắm...</p>
+                                <div class="Action">
+                                    <asp:LinkButton ID="LinkButton9" runat="server">
+                                        <img  alt="lnkBookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                                    </asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton10" runat="server">
+                                        <img  alt="lnkCustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                            <a href="#" class="DanhSachTourImg" >
+                                <img alt="DanhSachTour-Img" src="/image/DanhSachTourImg.png" />
+                            </a>
+                        </div>--%>
+                        <uc1:ucTourList ID="ucTourList1" runat="server" />
+                    </div>
+                    
                 </div>
                 <div id="footer">
                     <div id="copyright">
