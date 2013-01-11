@@ -572,6 +572,10 @@ float:left;
 	width: 235px;
 	margin-top: 10px;
 }
+#Conten .under select
+{
+	width: 100%;
+}
 #Conten .under .divDanhMucTour
 {
 	float: left;
