@@ -1,5 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ListTour.master.cs" Inherits="SES.VTTEN.WEB.ListTour" %>
 
+<%@ Register src="Module/ucFooter.ascx" tagname="ucFooter" tagprefix="uc1" %>
+
+<%@ Register src="Module/ucSupportOnline.ascx" tagname="ucSupportOnline" tagprefix="uc2" %>
+
+<%@ Register src="Module/ucHomepageAlbums.ascx" tagname="ucHomepageAlbums" tagprefix="uc3" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +16,7 @@
     <link href="/css/Style.css" rel="stylesheet" type="text/css" />
     <link href="/css/tourstyle.css" rel="stylesheet" type="text/css" />
 
+    <!--slide tour-->
     <link href="/css/CssSlide/bar.css" rel="stylesheet" type="text/css" />
     <link href="/css/CssSlide/dark.css" rel="stylesheet" type="text/css" />
     <link href="/css/CssSlide/default.css" rel="stylesheet" type="text/css" />
@@ -25,6 +32,23 @@
         });
 
     </script>
+    <!--end slide tour-->
+
+    <!--Album slide homepage-->
+    <script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                controlNav: false,
+                directionNav: false,
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--End album slide homepage-->
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -162,7 +186,8 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="box divHoTroOnLine">
+                        <uc2:ucSupportOnline ID="ucSupportOnline1" runat="server" />
+                        <%--<div class="box divHoTroOnLine">
                             <div class="box-title">
                                 <p>HỖ TRỢ TRỰC TUYẾN</p>
                             </div>   
@@ -177,8 +202,8 @@
                                     (+84)0986.786.577
                                 </p>
                             </div>
-                        </div>
-                        <div class="box divAlbum">
+                        </div>--%>
+                        <%--<div class="box divAlbum">
                             <div class="box-title">
                                 <p>ALBUM ẢNH</p>
                             </div>
@@ -190,7 +215,10 @@
                                     <img alt="AlBum" class="albumImgSmall" src="/image/Allbum4.png" width="60" height="57" />
                                 </p>
                             </div>
-                        </div>
+                        </div>--%>
+
+                        <uc3:ucHomepageAlbums ID="ucHomepageAlbums1" runat="server" />
+
                     </div>
                     <div id="DanhSachTour">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -198,27 +226,8 @@
                         </asp:ContentPlaceHolder>
                     </div>
                 </div>
-                <div id="footer">
-                    <div id="copyright">
-                        <p class="company">CÔNG TY TNHH DU LỊCH HÀ NỘI VIỆT TRAVEL</p>
-                        <p> Trụ sở chính : No 007 , 261/1 Yen Duyen Road,  Hoang Mai Dis  Hanoi city</p>                        <p>Phone : ++84(4)3.9999981 Hotline : ++84 943627667</p>                        <p>Emergency lines : 24 / 24 : ++84.943627667 Ms Lan</p>                        <p>Email: booking@hanoiviettravel.com, Skype: nguyenlaneliz  Yahoo : lannguyen_1981</p>
-                        
-                    </div>
-                    <div class="footerRight">
-                        <div id="MenuBottom">
-                            <ul class="bottomlink">
-                                <li class="liTop"><a href="#">Trang Chủ</a></li>
-                                <li><a href="#">Khuyến mãi</a></li>
-                                <li><a href="#">Du lịch</a></li>
-                                <li><a href="#">Khách sạn</a></li>
-                                <li><a href="#">Dịch vụ khách hang</a></li>
-                            </ul>
-                        </div>
-                        <img alt="DoiTac" src="/image/imgDoiTac.png" />
-                        <p class="textCopyright">
-                            © 2009 Hanoi VietTravel.
-                        </p>
-                    </div>
+                <div style="float: left; width: 100%;">
+                    <uc1:ucFooter ID="ucFooter1" runat="server" />
                 </div>
             </div>
         </div>
