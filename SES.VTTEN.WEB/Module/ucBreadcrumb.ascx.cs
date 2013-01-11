@@ -77,6 +77,17 @@ namespace SES.VTTEN.WEB.Module
             {
                 lblTitle.Text = "<a href='/Contact.aspx' title='contact us'> Liên hệ</a>";
             }
+            else if (Module.Equals("About"))
+            {
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    ContentDO objContent = new ContentDO();
+                    int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
+                    objContent.ContentID = ContentTypeID;
+                    objContent = new ContentBL().Select(objContent);
+                    lblTitle.Text = "<a href='/About/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" +   objContent.Title + "</a>";
+                }
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
