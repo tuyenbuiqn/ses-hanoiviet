@@ -42,8 +42,9 @@ namespace SES.VTTEN.WEB
             objHotel = new HotelBL().Select(objHotel);
 
             lblHotelName.Text = objHotel.Title;
-            lblStarRate.Text = objHotel.StarRates.ToString() ;
-            lblHotelPrice.Text = "US $" + objHotel.HotelStartPrice.ToString();
+            lblHotelNameTitle.Text = objHotel.Title;
+            //lblStarRate.Text = objHotel.StarRates.ToString() ;
+            lblHotelPrice.Text = objHotel.HotelStartPrice.ToString();
             lblDescription.Text = objHotel.Description;
 
             Page.Title = objHotel.Title + Ultility.Webtile();
@@ -56,14 +57,13 @@ namespace SES.VTTEN.WEB
 
             lblFullDescription.Text = objHotel.Detail;
 
-            lblStarRate.Text = Ultility.StarRate(objHotel.StarRates);
-           
+            //lblStarRate.Text = Ultility.StarRate(objHotel.StarRates);
             lblHotelInformation.Text = objHotel.ContactInfo;
             //lblHotelNoneInclude.Text = objHotel.NonInclude;
             lblRecommended.Text = objHotel.MetaDes;
             hplImg.NavigateUrl = "/Media/" + objHotel.HotelImage;
             ImgHotel.ImageUrl = "/Media/" + objHotel.HotelImage;
-            rpImage.DataSource = new MediaBL().SelectByObject("Hotel", objHotel.HotelID, 6);
+            rpImage.DataSource = new MediaBL().SelectByObject("Hotel", objHotel.HotelID, 3);
             rpImage.DataBind();
 
             hplImg.Attributes.Add("rel", "Hotelimg");
