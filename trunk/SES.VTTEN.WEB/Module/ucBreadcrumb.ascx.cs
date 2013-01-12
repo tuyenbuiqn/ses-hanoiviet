@@ -109,6 +109,10 @@ namespace SES.VTTEN.WEB.Module
                 objDestination = new DestinationBL().Select(objDestination);
                 lblTitle.Text += "<a href='/Destination/" + DestinationID + "/" + FriendlyUrl(objDestination.Title) + "' title ='" + objDestination.Title + "'>" + objDestination.Title + "</a>";
             }
+            else if (Module.Equals("Destinations"))
+            {
+                lblTitle.Text = "<a href='/Destinations/1/Default.aspx' title='Danh lam thắng cảnh'> Danh lam thắng cảnh</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
