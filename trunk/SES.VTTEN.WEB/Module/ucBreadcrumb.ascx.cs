@@ -113,6 +113,10 @@ namespace SES.VTTEN.WEB.Module
             {
                 lblTitle.Text = "<a href='/Destinations/1/Default.aspx' title='Danh lam thắng cảnh'> Danh lam thắng cảnh</a>";
             }
+            else if (Module.Equals("Videos"))
+            {
+                lblTitle.Text = "<a href='/Videos/0/Default.aspx' title='travel video'> Videos</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
