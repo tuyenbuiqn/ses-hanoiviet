@@ -59,7 +59,7 @@ namespace SES.VTTEN.WEB.Module
                     int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
                     ContentTypeDO objTT = new ContentTypeBL().Select(new ContentTypeDO { ContentTypeID = ContentTypeID });
                     lblTitle.Text = "<a href='/Travel-Guides/" + ContentTypeID + "/default.aspx' title='" + objTT.Title + "'>" + objTT.Title + "</a>";
-               }
+                }
             }
             else if (Module.Equals("Travel-Guide"))
             {
@@ -85,7 +85,7 @@ namespace SES.VTTEN.WEB.Module
                     int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
                     objContent.ContentID = ContentTypeID;
                     objContent = new ContentBL().Select(objContent);
-                    lblTitle.Text = "<a href='/About/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" +   objContent.Title + "</a>";
+                    lblTitle.Text = "<a href='/About/" + ContentTypeID + "/" + FriendlyUrl(objContent.Title) + "' title='" + objContent.Title + "'>" + objContent.Title + "</a>";
                 }
             }
             else if (Module.Equals("Albums"))
@@ -95,19 +95,25 @@ namespace SES.VTTEN.WEB.Module
             else if (Module.Equals("AlbumDetail"))
             {
                 lblTitle.Text = "<a href='/Albums/0/vietnam-photo.aspx' title='Vietnam Travel Photos'> Vietnam Travel Photos » </a>";
-                int AlbumID = int.Parse(Request.QueryString["ID"].ToString());
-                cmsAlbumDO objAlbum = new cmsAlbumBL().Select(new cmsAlbumDO{AlbumID = AlbumID});
-                lblTitle.Text += "<a href='/AlbumDetail/" + AlbumID + "/" + FriendlyUrl(objAlbum.Title) + "' title ='" + objAlbum.Title + "'>" + objAlbum.Title + "</a>";
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    int AlbumID = int.Parse(Request.QueryString["ID"].ToString());
+                    cmsAlbumDO objAlbum = new cmsAlbumBL().Select(new cmsAlbumDO { AlbumID = AlbumID });
+                    lblTitle.Text += "<a href='/AlbumDetail/" + AlbumID + "/" + FriendlyUrl(objAlbum.Title) + "' title ='" + objAlbum.Title + "'>" + objAlbum.Title + "</a>";
+                }
             }
             else if (Module.Equals("Destination"))
             {
                 lblTitle.Text = "<a href='/Destinations/1/Default.aspx' title='Danh lam thắng cảnh'> Danh lam thắng cảnh » </a>";
-                int DestinationID = int.Parse(Request.QueryString["ID"].ToString());
-                DestinationDO objDestination = new DestinationDO();
-                objDestination.DestinationID = DestinationID;
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    int DestinationID = int.Parse(Request.QueryString["ID"].ToString());
+                    DestinationDO objDestination = new DestinationDO();
+                    objDestination.DestinationID = DestinationID;
 
-                objDestination = new DestinationBL().Select(objDestination);
-                lblTitle.Text += "<a href='/Destination/" + DestinationID + "/" + FriendlyUrl(objDestination.Title) + "' title ='" + objDestination.Title + "'>" + objDestination.Title + "</a>";
+                    objDestination = new DestinationBL().Select(objDestination);
+                    lblTitle.Text += "<a href='/Destination/" + DestinationID + "/" + FriendlyUrl(objDestination.Title) + "' title ='" + objDestination.Title + "'>" + objDestination.Title + "</a>";
+                }
             }
             else if (Module.Equals("Destinations"))
             {
@@ -116,6 +122,17 @@ namespace SES.VTTEN.WEB.Module
             else if (Module.Equals("Videos"))
             {
                 lblTitle.Text = "<a href='/Videos/0/Default.aspx' title='travel video'> Videos</a>";
+            }
+            else if (Module.Equals("VideoDetail"))
+            {
+                lblTitle.Text = "<a href='/Videos/0/Default.aspx' title='travel video'> Videos » </a>";
+                if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
+                {
+                    int AlbumID = int.Parse(Request.QueryString["ID"].ToString());
+                    cmsAlbumDO objAlbum = new cmsAlbumBL().Select(new cmsAlbumDO { AlbumID = AlbumID });
+                    lblTitle.Text += "<a href='/VideoDetail/" + AlbumID + "/" + FriendlyUrl(objAlbum.Title) + "' title='" + objAlbum.Title + "'>" + objAlbum.Title + "</a>";
+                }
+
             }
         }
         protected string FriendlyUrl(string strTitle)
