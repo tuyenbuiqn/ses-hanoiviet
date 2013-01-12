@@ -28,22 +28,22 @@
     <div class="contentourdt1">
         <div class="field" style="color: #2c82ad; float: left; font-size: 12px; margin: 15px 0;
             font-weight: bold;">
-            Contact Information</div>
+            THÔNG TIN LIÊN HỆ</div>
         <div class="field_book">
-            <span class="span_120">Full name :</span>
+            <span class="span_120">Họ tên :</span>
             <asp:TextBox CssClass="input_book_250" ID="txtFullName" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ValidationGroup="abc" runat="server"
                 ControlToValidate="txtFullName" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
         <div class="field_book">
-            <span class="span_120">Gender :</span>
+            <span class="span_120">Giới tính :</span>
             <asp:RadioButtonList ID="rdoGender" runat="server" RepeatDirection="Horizontal" Width="120px">
-                <asp:ListItem Selected="True" Value="True">Male</asp:ListItem>
-                <asp:ListItem Value="False">Female</asp:ListItem>
+                <asp:ListItem Selected="True" Value="True">Nam</asp:ListItem>
+                <asp:ListItem Value="False">Nữ</asp:ListItem>
             </asp:RadioButtonList>
         </div>
         <div class="field_book">
-            <span class="span_120">Day of Birth :</span>
+            <span class="span_120">Ngày sinh :</span>
             <%--<dxe:ASPxDateEdit ID="txtDOB" CssClass="input_book_100" Width="102px" runat="server">
                         </dxe:ASPxDateEdit>--%>
             &nbsp;<asp:DropDownList ID="ddlDay" runat="server" Width="40px" ValidationGroup="DOB">
@@ -65,28 +65,28 @@
                 runat="server" ErrorMessage="Please input E-mail"></asp:RegularExpressionValidator>
         </div>
         <div class="field_book">
-            <span class="span_120">Country :</span>
+            <span class="span_120">Quốc gia :</span>
             <asp:TextBox CssClass="input_book_250" ID="txtCountry" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="abc" runat="server"
                 ControlToValidate="txtCountry" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
         <div class="field_book">
-            <span class="span_120">Address :</span>
+            <span class="span_120">Địa chỉ :</span>
             <asp:TextBox CssClass="input_book_250" ID="txtAddress" runat="server"></asp:TextBox>
         </div>
         <div class="field_book">
-            <span class="span_120">Phone No :</span>
+            <span class="span_120">Số điện thoại :</span>
             <asp:TextBox CssClass="input_book_250" ID="txtPhone" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ValidationGroup="abc" runat="server"
                 ControlToValidate="txtPhone" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
         <div class="field_book">
-            <span class="span_120">Fax No :</span>
+            <span class="span_120">Số Fax :</span>
             <asp:TextBox CssClass="input_book_250" ID="txtFaxNo" runat="server"></asp:TextBox>
         </div>
         <div class="field" style="color: #2c82ad; float: left; font-size: 12px; margin: 15px 0;
             font-weight: bold;">
-            Trip Information</div>
+            THÔNG TIN CHUYẾN ĐI</div>
         <div class="field_book">
             <span class="span_200">Arrival date:</span>
             <dxe:ASPxDateEdit ID="txtArrivalDate" CssClass="input_book_100" Width="102px" runat="server">
@@ -102,7 +102,7 @@
                 ControlToValidate="txtDateDepart" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
         <div class="field_book">
-            <span class="span_200">Number of Adults travelling :</span>
+            <span class="span_200">Số người lớn :</span>
             <asp:TextBox ID="txtAdultNo" CssClass="input_book_100" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ValidationGroup="abc" runat="server"
                 ControlToValidate="txtAdultNo" ErrorMessage=" ***"></asp:RequiredFieldValidator>
@@ -110,7 +110,7 @@
                 ErrorMessage="Please input a number" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
         </div>
         <div class="field_book">
-            <span class="span_200">Number of Children travelling :</span>
+            <span class="span_200">Số trẻ em :</span>
             <asp:TextBox ID="txtChildNo" CssClass="input_book_100" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ValidationGroup="abc" runat="server"
                 ControlToValidate="txtChildNo" ErrorMessage=" ***"></asp:RequiredFieldValidator>
@@ -118,7 +118,7 @@
                 ErrorMessage="Please input a number" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
         </div>
         <div class="field_book">
-            <span class="span_200">Hotel category you prefer:</span>
+            <span class="span_200">Loại khách sạn bạn muốn đặt:</span>
             <asp:DropDownList CssClass="input_book_180" ID="ddlHotelCat" runat="server">
                 <asp:ListItem Value="0">Standard</asp:ListItem>
                 <asp:ListItem Value="1">Superior</asp:ListItem>
@@ -128,12 +128,12 @@
         </div>
         <div class="field" style="color: #2c82ad; float: left; font-size: 12px; margin: 15px 0;
             font-weight: bold;">
-            Where would you like to visit
+            Bạn muốn du lịch ở đâu
         </div>
         <div class="field_book">
             <div class="regions">
                 <div class="regions-title">
-                    North</div>
+                    Miền Bắc</div>
                 <div class="regions-checkbox">
                     <asp:CheckBoxList runat="server" RepeatColumns="4" ID="cblNorth" DataTextField="Title"
                         DataValueField="DestinationID">
@@ -142,7 +142,7 @@
             </div>
             <div class="regions">
                 <div class="regions-title">
-                    Center</div>
+                    Miền Trung</div>
                 <div class="regions-checkbox">
                     <asp:CheckBoxList runat="server" RepeatColumns="4" ID="cblCenter" DataTextField="Title"
                         DataValueField="DestinationID">
@@ -151,7 +151,7 @@
             </div>
             <div class="regions">
                 <div class="regions-title">
-                    South</div>
+                    Miền Nam</div>
                 <div class="regions-checkbox">
                     <asp:CheckBoxList runat="server" RepeatColumns="4" ID="cblSouth" DataTextField="Title"
                         DataValueField="DestinationID">
@@ -163,8 +163,7 @@
             font-weight: bold;">
             Travel Arrangement</div>
         <div class="field_book">
-            <span class="span_custome" style="width: 700px;">Modes of transportation used for in-country
-                travel?</span>
+            <span class="span_custome" style="width: 700px;">Bạn muốn du lịch bằng phương tiện gì?</span>
             <asp:RadioButtonList RepeatDirection="Horizontal" ID="rdTransport" runat="server">
                 <asp:ListItem Value="Airplane">Airplane</asp:ListItem>
                 <asp:ListItem Value="Car/Bus">Car / Bus</asp:ListItem>
@@ -203,23 +202,23 @@
             </asp:CheckBoxList>
         </div>
         <div class="field_book">
-            <span class="span_custome" style="width: 400px;">Meals to be included in your itinerary?</span>
+            <span class="span_custome" style="width: 400px;">Các bữa ăn được bao gồm trong hành trình của bạn ?</span>
             <asp:CheckBoxList RepeatColumns="4" RepeatDirection="Vertical" ID="chblMeal" runat="server"
                 Width="527px">
-                <asp:ListItem>Breakfast</asp:ListItem>
-                <asp:ListItem>Lunch</asp:ListItem>
-                <asp:ListItem>Diner</asp:ListItem>
+                <asp:ListItem>Bữa sáng</asp:ListItem>
+                <asp:ListItem>Bữa trưa</asp:ListItem>
+                <asp:ListItem>Bữa tối</asp:ListItem>
             </asp:CheckBoxList>
         </div>
         <div class="field_book">
-            <span class="span_120">Food ( Special requirement - diet, allergic,...)? :</span>
+            <span class="span_120">Thức ăn (Các yêu cầu đặc biệt  - diet, allergic,...)? :</span>
             <asp:TextBox ID="txtFood" TextMode="MultiLine" CssClass="textarea_book" runat="server"></asp:TextBox>
         </div>
         <div class="field" style="color: #2c82ad; float: left; font-size: 12px; margin: 5px 0;
             font-weight: bold;">
-            OTHER INFORMATION</div>
+            THÔNG TIN KHÁC</div>
         <div class="field_book">
-            <span class="span_200">Billing Option:</span>
+            <span class="span_200">Hình thức  thanh toán:</span>
             <asp:RadioButtonList ID="rdoBilling" runat="server" RepeatDirection="Horizontal"
                 Width="200px">
                 <asp:ListItem Value="True">Bank transfer</asp:ListItem>
@@ -227,11 +226,11 @@
             </asp:RadioButtonList>
         </div>
         <div class="field_book">
-            <span class="span_120">Other requests :</span>
+            <span class="span_120">Yêu cầu khác :</span>
             <asp:TextBox ID="txtOtherRequest" TextMode="MultiLine" CssClass="textarea_book" runat="server"></asp:TextBox>
         </div>
         <div class="field_book">
-            <span class="span_120">Where did you hear about us?</span>
+            <span class="span_120">Bạn biết chúng tôi qua đâu?</span>
             <asp:DropDownList CssClass="input_book_120" ID="ddlHear" runat="server">
                 <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Just cruizing</asp:ListItem>
@@ -247,8 +246,7 @@
                 ControlToValidate="ddlHear" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
         <div class="field_book">
-            <asp:CheckBox ID="chkAgree" Text="I have read and agreed with your Terms
-                            & Condition *" runat="server" />
+            <asp:CheckBox ID="chkAgree" Text="Tôi đã đọc và đồng ý tuân thủ các điều khoản *" runat="server" />
             <asp:CustomValidator ID="ValTerms" ClientValidationFunction="AcceptTermsCheckBoxValidation"
                 runat="server" ErrorMessage="Please Accept Terms & Condition." ValidationGroup="abc"> </asp:CustomValidator>
         </div>
