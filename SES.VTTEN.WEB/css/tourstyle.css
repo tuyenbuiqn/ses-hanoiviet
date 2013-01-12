@@ -339,6 +339,27 @@ margin-top: 7px;
 	width: 84px;
 }
 
+.contenttourcatx2
+{
+	float: left;
+	width: 495px;
+	margin-top: 16px;
+}
+.contenttourcatx3
+{
+	float: left;
+	width: 250px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #A31D1D;
+}
+.contenttourcatx4
+{
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+}
+
 .Album
 {
 	width: 110px;
