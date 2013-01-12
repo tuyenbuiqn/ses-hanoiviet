@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SES.VTTEN.WEB {
+namespace SES.VTTEN.WEB.Module {
     
     
-    public partial class Tour_Destination {
+    public partial class ucTourDestination {
         
         /// <summary>
-        /// lblTitle control.
+        /// rptTourCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Repeater rptTourCat;
         
         /// <summary>
-        /// ucTourDestination1 control.
+        /// CollectionPager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucTourDestination ucTourDestination1;
+        protected global::SiteUtils.CollectionPager CollectionPager1;
     }
 }
