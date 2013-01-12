@@ -5,7 +5,8 @@
    <div class="DanhSachTour-title">
         <div>
             <p>
-                Tin tức du lịch
+                <a href="/Default.aspx" title="Trang chủ">Trang chủ</a>&nbsp;» &nbsp;
+                <a href="/Travel-News/1/Default.aspx" title="Tin tức du lịch">Tin tức du lịch</a>
             </p>
         </div>
         <img style="border: 0px;" src="/image/ImgTitleIcon.png" />

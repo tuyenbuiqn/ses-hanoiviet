@@ -18,6 +18,17 @@ namespace SES.VTTEN.WEB
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HtmlMeta metaDesc = new HtmlMeta();
+            metaDesc.Name = "description";
+            metaDesc.Content = "Tin tức du lịch - hanoiviettravel";
+            Page.Header.Controls.Add(metaDesc);
+
+            HtmlMeta metaKey = new HtmlMeta();
+            metaKey.Name = "keywords";
+            metaKey.Content = "Tin tức du lịch - hanoiviettravel";
+            Page.Header.Controls.Add(metaKey);
+
+            Page.Title = "Tin tức du lịch - hanoiviettravel";
         }
     }
 }

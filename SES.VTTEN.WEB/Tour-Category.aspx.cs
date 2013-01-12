@@ -47,15 +47,36 @@ namespace SES.VTTEN.WEB
                     {
                         HtmlMeta metaDesc = new HtmlMeta();
                         metaDesc.Name = "description";
-                        metaDesc.Content = objTD.Description;
+                        if ((objTD.Description == "")||(objTD.Description == null))
+                        {
+                            metaDesc.Content = "Danh sách tour - hanoiviettravel";
+                        }
+                        else
+                        {
+                            metaDesc.Content = objTD.Description;
+                        }
                         Page.Header.Controls.Add(metaDesc);
 
                         HtmlMeta metaKey = new HtmlMeta();
                         metaKey.Name = "keywords";
-                        metaKey.Content = objTD.Alias;
+                        if ((objTD.Alias == "")||(objTD.Alias == null))
+                        {
+                            metaKey.Content = "Danh sách tour- hanoiviettravel";
+                        }
+                        else
+                        {
+                            metaKey.Content = objTD.Alias;
+                        }
                         Page.Header.Controls.Add(metaKey);
 
-                        Page.Title = objTD.Title;
+                        if ((objTD.Title == "")||(objTD.Title == null))
+                        {
+                            Page.Title = "Danh sách tour - hanoiviettravel";
+                        }
+                        else
+                        {
+                            Page.Title = objTD.Title;
+                        }
                     }
                 }
             }

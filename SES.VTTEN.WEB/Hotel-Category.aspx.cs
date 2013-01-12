@@ -42,15 +42,36 @@ namespace SES.VTTEN.WEB
 
                     HtmlMeta metaDesc = new HtmlMeta();
                     metaDesc.Name = "description";
-                    metaDesc.Content = objHT.MetaDes;
+                    if ((objHT.MetaDes == "")||(objHT.MetaDes == null))
+                    {
+                        metaDesc.Content = "Danh sách khách sạn - hanoiviettravel";
+                    }
+                    else
+                    {
+                        metaDesc.Content = objHT.MetaDes;
+                    }
                     Page.Header.Controls.Add(metaDesc);
 
                     HtmlMeta metaKey = new HtmlMeta();
                     metaKey.Name = "keywords";
-                    metaKey.Content = objHT.MetaTag;
+                    if ((objHT.MetaTag == "")||(objHT.MetaTag == null))
+                    {
+                        metaKey.Content = "Danh sách khách sạn - hanoiviettravel";
+                    }
+                    else
+                    {
+                        metaKey.Content = objHT.MetaTag;
+                    }
                     Page.Header.Controls.Add(metaKey);
 
-                    Page.Title = objHT.Title;
+                    if ((objHT.Title == "")||(objHT.Title == null))
+                    {
+                        Page.Title = "Danh sách khách sạn - hanoiviettravel";
+                    }
+                    else
+                    {
+                        Page.Title = objHT.Title;
+                    }
                 }
             }
         }
