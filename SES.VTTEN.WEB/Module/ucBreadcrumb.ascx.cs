@@ -134,6 +134,10 @@ namespace SES.VTTEN.WEB.Module
                 }
 
             }
+            else if (Module.Equals("Customer-Reviews"))
+            {
+                lblTitle.Text = "<a href='/Customer-Reviews/0/Default.aspx' title='Cảm nhận khách hàng'> Cảm nhận khách hàng</a>";
+            }
         }
         protected string FriendlyUrl(string strTitle)
         {
