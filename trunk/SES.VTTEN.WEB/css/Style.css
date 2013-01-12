@@ -827,6 +827,7 @@ float:left;
 #Conten #DanhSachTour .divTourDetail .DanhSachTour-box .DanhSachTour-detail
 {
 	width: 50%;
+	padding-right: 5px;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgNho
 {
@@ -836,18 +837,18 @@ float:left;
 #Conten #DanhSachTour .divTourDetail .DetailImgNho img
 {
 	float: left;
-	width: 85px;
+	width: 80px;
 	height: 50px;
 	margin: 3px;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgBig
 {
 	 float: left;
-	 width: 244px;
-	 height: 164px;
+	 width: 236px;
+	 height: 160px;
+	 padding: 2px; border: 1px solid #CCCCCC !important;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgBig img
 {
-	width: 240px; height: 160px;
-	 padding: 2px; border: 1px solid #CCCCCC !important;
+	width: 234px; height: 160px;
 }
