@@ -73,11 +73,11 @@ namespace SES.VTTEN.WEB
             
             if (objTT.ParentID == 0)
             {
-                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias.ToString() + ".aspx\" title=\"" + objTT.Alias.ToString() + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias + ".aspx\" title=\"" + objTT.Alias + "\">" + objTT.Title + "</a>" + sReturn;
             }
             else
             {
-                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias.ToString() + ".aspx\" title=\"" + objTT.Alias.ToString() + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + objTT.Alias + ".aspx\" title=\"" + objTT.Alias + "\">" + objTT.Title + "</a>" + sReturn;
                 TourCate(objTT.ParentID);
             }
             return sReturn;
