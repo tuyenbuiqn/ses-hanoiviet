@@ -13,22 +13,22 @@
     <div class="thinline7">
     </div>
     <div class="field" style="color: #2c82ad; font-size: 12px; margin: 5px 0; font-weight: bold;">
-        CONTACT INFORMATION</div>
+        THÔNG TIN LIÊN HỆ</div>
     <div class="field_book">
-        <span class="span_120">Full name :</span>
+        <span class="span_120">Họ tên(*) :</span>
         <asp:TextBox CssClass="input_book_250" ID="txtFullName" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ValidationGroup="abc" runat="server"
             ControlToValidate="txtFullName" ErrorMessage=" ***"></asp:RequiredFieldValidator>
     </div>
     <div class="field_book">
-        <span class="span_120">Gender :</span>
+        <span class="span_120">Giới tính :</span>
         <asp:RadioButtonList ID="rdoGender" runat="server" RepeatDirection="Horizontal" Width="120px">
-            <asp:ListItem Selected="True" Value="Ông">Male</asp:ListItem>
-            <asp:ListItem Value="Bà">Female</asp:ListItem>
+            <asp:ListItem Selected="True" Value="Ông">Nam</asp:ListItem>
+            <asp:ListItem Value="Bà">Nữ</asp:ListItem>
         </asp:RadioButtonList>
     </div>
     <div class="field_book">
-        <span class="span_120">Day of Birth :</span>
+        <span class="span_120">Ngày sinh :</span>
         <%--<dxe:ASPxDateEdit ID="txtDOB" CssClass="input_book_100" Width="102px" runat="server">
                     </dxe:ASPxDateEdit>--%>
         &nbsp;<asp:DropDownList ID="ddlDay" runat="server" Width="40px" ValidationGroup="DOB">
@@ -41,7 +41,7 @@
                         ControlToValidate="DOB" co ErrorMessage=" ***"></asp:RequiredFieldValidator>--%>
     </div>
     <div class="field_book">
-        <span class="span_120">Email :</span>
+        <span class="span_120">Email(*) :</span>
         <asp:TextBox CssClass="input_book_250" ID="txtEmail" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ValidationGroup="abc" runat="server"
             ControlToValidate="txtEmail" ErrorMessage=" ***"></asp:RequiredFieldValidator>
@@ -50,33 +50,33 @@
             runat="server" ErrorMessage="Please input E-mail"></asp:RegularExpressionValidator>
     </div>
     <div class="field_book">
-        <span class="span_120">Country :</span>
+        <span class="span_120">Quốc gia :</span>
         <asp:TextBox runat="server" ID="txtCountry" CssClass="input_book_250" ValidationGroup="abc"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="abc" runat="server"
             ControlToValidate="txtCountry" ErrorMessage=" ***"></asp:RequiredFieldValidator>
     </div>
     <div class="field_book">
-        <span class="span_120">Address :</span>
+        <span class="span_120">Địa chỉ :</span>
         <asp:TextBox CssClass="input_book_250" ID="txtAddress" runat="server"></asp:TextBox>
     </div>
     <div class="field_book">
-        <span class="span_120">Phone No :</span>
+        <span class="span_120">Số điện thoại(*) :</span>
         <asp:TextBox CssClass="input_book_250" ID="txtPhone" runat="server"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ValidationGroup="abc" runat="server"
             ControlToValidate="txtPhone" ErrorMessage=" ***"></asp:RequiredFieldValidator>
     </div>
     <div class="field_book">
-        <span class="span_120">Fax No :</span>
+        <span class="span_120">Số Fax :</span>
         <asp:TextBox CssClass="input_book_250" ID="txtFaxNo" runat="server"></asp:TextBox>
     </div>
     <div class="field_book">
-        <span class="span_120">Other requests :</span>
+        <span class="span_120">Nội dung :</span>
         <asp:TextBox ID="txtOtherRequest" TextMode="MultiLine" CssClass="textarea_book" runat="server"></asp:TextBox>
     </div>
     <div class="field" style="color: #2c82ad; font-size: 12px; margin: 5px 0; font-weight: bold;">
-        OTHER INFORMATION</div>
+        THÔNG TIN KHÁC</div>
     <div class="field_book">
-        <span class="span_120">Where did you hear about us?</span>
+        <span class="span_120">Bạn biết chúng tôi qua đâu?</span>
         <asp:DropDownList CssClass="input_book_120" ID="ddlHear" runat="server">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Just cruizing</asp:ListItem>
