@@ -27,6 +27,10 @@ li
 	height:auto;
 	margin:auto;
 }	
+#Menu
+{
+	position:relative;
+	}
 .inner
 {
     background: url(../image/background.jpg) repeat-y;
