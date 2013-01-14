@@ -49,6 +49,7 @@
 	z-index:100;
 	float: left;
 	width: 100%;
+	position: relative;
 }
 
 /*
@@ -86,10 +87,10 @@
 
 .pagination {
 	position: absolute;
-	top: 365px;
+	top: 255px;
 	width:100px;
 	z-index: 101;
-	left: 1130px;
+	left: 915px;
 }
 
 .pagination li {
