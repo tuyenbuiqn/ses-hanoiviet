@@ -25,6 +25,44 @@
     <!--Tour slide homepage-->
     <script type="text/javascript" src="/js/jquery.jcarousel.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/skin.css" />
+    <!-- jQuery Plugin scripts -->
+		<script type="text/javascript" src="/js/external/jquery.easing.1.3.min.js"></script>
+		<script type="text/javascript" src="/js/external/jquery.mousewheel.min.js"></script>
+		
+		<!-- Slider Kit scripts -->
+		<script type="text/javascript" src="/js/sliderkit/jquery.sliderkit.1.9.2.pack.js"></script>		
+		<script type="text/javascript" src="/js/sliderkit/addons/sliderkit.delaycaptions.1.1.pack.js"></script>
+		<script type="text/javascript" src="/js/sliderkit/addons/sliderkit.counter.1.0.pack.js"></script>
+		<script type="text/javascript" src="/js/sliderkit/addons/sliderkit.timer.1.0.pack.js"></script>
+		<script type="text/javascript" src="/js/sliderkit/addons/sliderkit.imagefx.1.0.pack.js"></script>
+
+        <!-- Slider Kit launch -->
+		<script type="text/javascript">
+		    $(window).load(function () { //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility				
+		        // Photo gallery > With captions
+		        $(".photosgallery-captions").sliderkit({
+		            mousewheel: false,
+		            keyboard: true,
+		            shownavitems: 4,
+		            auto: true,
+		            delaycaptions: true
+		        });
+		    });	
+		</script>
+		
+		<!-- Slider Kit styles -->
+		<link rel="stylesheet" type="text/css" href="/css/sliderkit-core.css" media="screen, projection" />
+		<link rel="stylesheet" type="text/css" href="/css/sliderkit-demos.css" media="screen, projection" />
+		
+		<!-- Slider Kit compatibility -->
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie6.css" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie7.css" /><![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/css/sliderkit-demos-ie8.css" /><![endif]-->
+
+		<!-- Site styles -->
+		
+
+
     <!--End Tour slide homepage-->
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -37,7 +75,7 @@
         <div class="inner">
             <div class="detail">
                 <div id="head">
-                    <div class="logo-out">
+                  <%--  <div class="logo-out">
                         <div class="logo-left">
                             <a href="/Default.aspx" title="Hanoi vietralvel">
                                 <img src="../image/logo.png" class="logo" alt="hanoiviettravel" />
@@ -54,9 +92,81 @@
                         <li><a href="#">Du lịch Nước ngoài</a></li>
                         <li><a href="#">Thắng cảnh Nổi tiếng</a></li>
                         <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                    <div class="foot-head">
-                    </div>
+                    </ul>--%>
+
+                    <div class="sliderkit photosgallery-captions">
+					<div class="sliderkit-nav">
+						
+						<div class="sliderkit-nav-clip">
+							<ul>
+								<li><a href="#" rel="nofollow" title="[link title]"><img src="/Media/slidex1.jpg" alt="[Alternative text]" /></a></li>
+								<li><a href="#" rel="nofollow" title="[link title]"><img src="/Media/slidex2.jpg" alt="[Alternative text]" /></a></li>
+								<li><a href="#" rel="nofollow" title="[link title]"><img src="/Media/slidex3.jpg" alt="[Alternative text]" /></a></li>
+								<li><a href="#" rel="nofollow" title="[link title]"><img src="/Media/slidex2.jpg" alt="[Alternative text]" /></a></li>
+								<li><a href="#" rel="nofollow" title="[link title]"><img src="/Media/slidex3.jpg" alt="[Alternative text]" /></a></li>
+								
+							</ul>
+						</div>
+						
+						<%--<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-prev"><a rel="nofollow" href="#" title="Previous photo"><span>Previous photo</span></a></div>
+						<div class="sliderkit-btn sliderkit-go-btn sliderkit-go-next"><a rel="nofollow" href="#" title="Next photo"><span>Next photo</span></a></div>--%>
+					</div>
+					<div class="sliderkit-panels">
+						<div class="sliderkit-panel">
+							<img src="/Media/slidex1.jpg" alt="[Alternative text]" />
+							<div class="sliderkit-panel-textbox">
+								<div class="sliderkit-panel-text">
+									<h4>sample-01.jpg</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+								</div>
+								<div class="sliderkit-panel-overlay"></div>
+							</div>
+						</div>
+						<div class="sliderkit-panel">
+							<img src="/Media/slidex2.jpg" alt="[Alternative text]" />
+							<div class="sliderkit-panel-textbox">
+								<div class="sliderkit-panel-text">
+									<h4>sample-02.jpg</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+								</div>
+								<div class="sliderkit-panel-overlay"></div>
+							</div>
+						</div>
+						<div class="sliderkit-panel">
+							<img src="/Media/slidex3.jpg" alt="[Alternative text]" />
+							<div class="sliderkit-panel-textbox">
+								<div class="sliderkit-panel-text">
+									<h4>sample-03.jpg</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+								</div>
+								<div class="sliderkit-panel-overlay"></div>
+							</div>
+						</div>
+						<div class="sliderkit-panel">
+							<img src="/Media/slidex1.jpg" alt="[Alternative text]" />
+							<div class="sliderkit-panel-textbox">
+								<div class="sliderkit-panel-text">
+									<h4>sample-04.jpg</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p>
+								</div>
+								<div class="sliderkit-panel-overlay"></div>
+							</div>
+						</div>
+						<div class="sliderkit-panel">
+							<img src="/Media/slidex2.jpg" alt="[Alternative text]" />
+							<div class="sliderkit-panel-textbox">
+								<div class="sliderkit-panel-text">
+									<h4>sample-05.jpg</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+								</div>
+								<div class="sliderkit-panel-overlay"></div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+                <img style="top:395px; z-index:99; position:absolute;" src="/images/imgontop-l.png" />
+                <img style="top:395px; margin-left:887px; z-index:99; position:absolute;" src="/images/imgontop-r.png" />
                 </div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
