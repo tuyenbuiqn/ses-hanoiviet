@@ -50,7 +50,7 @@
             runat="server" ErrorMessage="Please input E-mail"></asp:RegularExpressionValidator>
     </div>
     <div class="field_book">
-        <span class="span_120">Quốc gia :</span>
+        <span class="span_120">Quốc gia(*) :</span>
         <asp:TextBox runat="server" ID="txtCountry" CssClass="input_book_250" ValidationGroup="abc"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ValidationGroup="abc" runat="server"
             ControlToValidate="txtCountry" ErrorMessage=" ***"></asp:RequiredFieldValidator>
