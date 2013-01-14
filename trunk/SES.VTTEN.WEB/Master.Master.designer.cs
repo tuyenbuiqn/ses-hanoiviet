@@ -49,6 +49,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Label lblscrOut;
         
         /// <summary>
+        /// uc2ucSlide control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SES.VTTEN.WEB.Module.ucSlideHome uc2ucSlide;
+        
+        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
