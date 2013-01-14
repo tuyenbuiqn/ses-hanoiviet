@@ -7,10 +7,10 @@
         <div id="MenuBottom">
             <ul class="bottomlink">
                 <li class="liTop"><a href="/Default.aspx" title="Hanoi vietravel">Trang Chủ</a></li>
-                <li><a href="#">Khuyến mãi</a></li>
-                <li><a href="#">Du lịch</a></li>
-                <li><a href="#">Khách sạn</a></li>
-                <li><a href="#">Dịch vụ khách hang</a></li>
+                <li><a href="/Promotions/0/Default.aspx">Khuyến mãi</a></li>
+                <li><a href="/Tour-Category/0/Vietnam.aspx">Du lịch</a></li>
+                <li><a href="/Hotel-Category/0/Default.aspx">Khách sạn</a></li>
+                <li><a href="/Contact.aspx">Dịch vụ khách hàng</a></li>
             </ul>
         </div>
         <img alt="DoiTac" src="/image/imgDoiTac.png" />
