@@ -75,10 +75,10 @@
         <div class="inner">
             <div class="detail">
                 <div id="head">
-                  <%--  <div class="logo-out">
+                    <div class="logo-out">
                         <div class="logo-left">
                             <a href="/Default.aspx" title="Hanoi vietralvel">
-                                <img src="../image/logo.png" class="logo" alt="hanoiviettravel" />
+                                <img src="../image/logo.png" class="logo" alt="Hanoi Vietravel" />
                             </a><span class="hanoiviettravel">Hanoi Viet Travel </span>
                         </div>
                         <div class="logo-right">
@@ -86,14 +86,13 @@
                                 GIÂY</span>
                         </div>
                     </div>
-                    <ul class="toplink">
-                        <li><a href="/Default.aspx" title="hanoivietravel">Trang Chủ</a></li>
-                        <li><a href="#">Du lịch Việt Nam</a></li>
-                        <li><a href="#">Du lịch Nước ngoài</a></li>
-                        <li><a href="#">Thắng cảnh Nổi tiếng</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>--%>
-
+                   <ul class="toplink">
+                      <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang chủ</a></li>
+                        <li><a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">Du lịch Việt Nam</a></li>
+                        <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
+                        <li><a href="/Vietnam-Destination/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng cảnh nổi tiếng</a></li>
+                        <li><a href="/Contact.aspx" title="Liên hệ với chúng tôi">Liên hệ</a></li>
+                    </ul>
                     <div class="sliderkit photosgallery-captions">
 					<div class="sliderkit-nav">
 						

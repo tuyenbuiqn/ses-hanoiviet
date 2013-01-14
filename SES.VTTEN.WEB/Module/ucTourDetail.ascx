@@ -20,7 +20,9 @@
         </asp:Repeater>
     </div>
     <div class="DetailImgBig" style="margin-top: 3px;">
+    <a rel="group1" class="fancybox-tourimg" id="aTour" runat="server">
         <asp:Image ID="ImgDetail" CssClass="ImgDetail" runat="server" />
+        </a>
     </div>
 </div>
 <div class="DetailLichTrinh" style="float: left; width: 100%; border: 1px solid #5EB7CE; padding-left: 5px; padding-bottom: 10px;">

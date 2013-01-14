@@ -48,15 +48,19 @@ li
 {
  width: 948px;
 float:left;
+position:relative;
 }
 .logo-out
 {
     width: 242px;
-    
-    height: 77px;
+
     background: url(../image/back1.png);
-    margin-top: 30px;
+
     float: left;
+    position:absolute;
+    top:30px;
+    left:0;
+    z-index:999999;
 }
 .logo
 {
@@ -91,11 +95,14 @@ float:left;
 }
 .toplink
 {
- width: 706px;
+ width: 707px;
  height: 31px;
  float: left;
- margin: 52px 0px 30px 0px;
+ position:absolute;
+ top:52px;
+ left:241px;
  background: rgba(0, 0, 0, 0.5);
+ z-index:999999999;
 }
 
 .toplink li
