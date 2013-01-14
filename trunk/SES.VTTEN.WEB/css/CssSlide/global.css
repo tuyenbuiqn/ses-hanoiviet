@@ -87,9 +87,9 @@
 .pagination {
 	position: absolute;
 	top: 365px;
-	right: 115px;
 	width:100px;
 	z-index: 101;
+	left: 1130px;
 }
 
 .pagination li {
