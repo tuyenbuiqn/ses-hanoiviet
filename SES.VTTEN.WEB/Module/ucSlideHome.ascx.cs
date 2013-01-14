@@ -19,12 +19,15 @@ namespace SES.VTTEN.WEB.Module
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            rptSlideDataSource();
+            if (!IsPostBack)
+                rptSlideDataSource();
         }
         protected void rptSlideDataSource()
         {
-            rptSlide.DataSource = new SlideBL().SelectByCategoryID(0);
-            rptSlide.DataBind();
+            rptMainSlide.DataSource = new SlideBL().SelectByCategoryID(0);
+            rptThumbSlide.DataSource = new SlideBL().SelectByCategoryID(0);
+            rptMainSlide.DataBind();
+            rptThumbSlide.DataBind();
         }
     }
 }

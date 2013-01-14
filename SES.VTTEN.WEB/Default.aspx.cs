@@ -19,6 +19,7 @@ namespace SES.VTTEN.WEB
             imgPromo.ImageUrl = "/Media/" + dt.Rows[0][TourDO.TOURIMAGE_FIELD].ToString();
             imgPromo.AlternateText = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
             lblPromo.Text = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
+            Page.Title = Ultility.Webtile();
         }
     }
 }

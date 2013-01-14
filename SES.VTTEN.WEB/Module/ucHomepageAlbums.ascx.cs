@@ -19,8 +19,11 @@ namespace SES.VTTEN.WEB.Module
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            rptBigAlbumDataSource();
-            rptSmallAlbumDataSource();
+            if (!IsPostBack)
+            {
+                rptBigAlbumDataSource();
+                rptSmallAlbumDataSource();
+            }
         }
 
         protected void rptBigAlbumDataSource()
