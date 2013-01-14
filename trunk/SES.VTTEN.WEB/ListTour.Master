@@ -120,7 +120,7 @@
                 <div id="Menu">
                      <div class="logo-out">
                         <div class="logo-left">
-                            <a href="#">
+                            <a href="/Default.aspx">
                                 <img src="/image/logo.png" class="logo" alt="hanoiviettravel" />
                             </a> 
                             <span class="hanoiviettravel">
@@ -134,10 +134,10 @@
                     </div>
                     <ul class="toplink">
                       <li><a href="/Default.aspx" title="hanoivietravel">Trang Chủ</a></li>
-                        <li><a href="#">Du lịch Việt Nam</a></li>
-                        <li><a href="#">Du lịch Nước ngoài</a></li>
-                        <li><a href="#">Thắng cảnh Nổi tiếng</a></li>
-                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx">Du lịch Việt Nam</a></li>
+                        <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx">Du lịch Nước ngoài</a></li>
+                        <li><a href="/Vietnam-Destination/1/Default.aspx">Thắng cảnh Nổi tiếng</a></li>
+                        <li><a href="/Contact.aspx">Liên Hệ</a></li>
                     </ul>
                 </div>
                 <div id="slideListTour">
@@ -158,16 +158,16 @@
                                 <p>Danh mục Tour</p>
                             </div>
                             <ul>
-                                <li><a href="#" title="Thông tin Du lịch">Thông tin Du lịch</a></li>
-                                <li><a href="#" title="TTin tức Du lịch">Tin tức Du lịch</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Du lịch Việt Nam</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Du lịch nước ngoài</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Kinh nghiệm đi Tours</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Danh lam thắng cảnh</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Điều khoản đi Tour</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Hình ảnh</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Blog Du lịch</a></li>
-                                <li><a href="#" title="Thông tin Du lịch">Liên hệ</a></li>
+                                <li><a href="/Travel-Guides/1/Default.aspx" title="Thông tin Du lịch">Thông tin Du lịch</a></li>
+                                <li><a href="/Travel-News/1/Default.aspx" title="Tin tức Du lịch">Tin tức Du lịch</a></li>
+                                <li><a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">Du lịch Việt Nam</a></li>
+                                <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
+                                <li><a href="/Travel-Review/0/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
+                                <li><a href="/Vietnam-Destination/1/Default.aspx" title="Danh lam thắng cảnh">Danh lam thắng cảnh</a></li>
+                                <li><a href="/Travel-Guides/1/Default.aspx" title="Điều khoản đi Tour">Điều khoản đi Tour</a></li>
+                                <li><a href="/Albums/0/Default.aspx" title="Hình ảnh">Hình ảnh</a></li>
+                                <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">Video</a></li>
+                                <li><a href="/Contact.aspx" title="Liên hệ">Liên hệ</a></li>
                             </ul>
                         </div>
                         <div class="box divTimKiemTour">
