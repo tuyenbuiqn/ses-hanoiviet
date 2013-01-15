@@ -7,12 +7,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <span>CONTACT FORM</span>
-    </h1>
-    <div class="thinline7">
-    </div>
-    <div class="field" style="color: #2c82ad; font-size: 12px; margin: 5px 0; font-weight: bold;">
+ <br />
+    <div class="field" style="color: #2c82ad; font-size: 12px; margin: 30px 0; font-weight: bold;">
         THÔNG TIN LIÊN HỆ</div>
     <div class="field_book">
         <span class="span_120">Họ tên(*) :</span>

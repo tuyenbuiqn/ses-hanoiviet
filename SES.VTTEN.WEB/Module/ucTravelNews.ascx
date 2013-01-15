@@ -9,7 +9,7 @@
                 <p class="descriptions">
                     <%#WordCut(Eval("Description").ToString())%>
                     <a href="/News/<%#Eval("NewsID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>">
-                    <span style="color: #4704CE;">Read More</span>
+                    <span style="color: #4704CE;">Xem tiếp</span>
                     </a>
                 </p>
             </div>
@@ -29,7 +29,7 @@
             ID="CollectionPager1" BackNextButtonStyle="" BackNextStyle="margin-left:5px;"
             ControlStyle="" PageNumbersSeparator="&amp;nbsp;" ShowLabel="True">
         </cp:CollectionPager>
-        <div class="collectPage">Page: 
+        <div class="collectPage">Trang: 
         </div>
     </div>
 </div>

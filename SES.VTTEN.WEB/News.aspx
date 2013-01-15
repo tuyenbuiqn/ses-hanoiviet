@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/ListTour.Master" AutoEventWireup="true" CodeBehind="News.aspx.cs" Inherits="SES.VTTEN.WEB.News" Title="Untitled Page" %>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <div class="DanhSachTour-title">
+    <div class="DanhSachTour-title">
         <div>
             <p>
                 <a href="/Default.aspx" title="Trang chủ">Trang chủ</a>&nbsp;» &nbsp;
@@ -34,7 +34,7 @@
                         <div class="in1toursub10" style="width:100%;">
                             <a href='/News/<%#Eval("NewsID")%>/<%#FriendlyUrl(Eval("Alias").ToString())%>'
                                 title='<%#Eval("Title")%>'>
-                                <%#Eval("Title")%>
+                                 » <%#Eval("Title")%>
                             </a>
                         </div>
                     </div>

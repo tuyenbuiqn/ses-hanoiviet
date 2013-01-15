@@ -6,11 +6,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <span>Vietnam Destinations </span>
-    </h1>
-    <div class="thinline7">
-    </div>
     <asp:Repeater ID="rptDestinationCat" runat="server">
         <ItemTemplate>
             <div class="tourcatx">
@@ -29,7 +24,7 @@
                     <div class="contenttourcatx">
                         <div class="contenttourcatx1">
                             <%#WordCut(Eval("Description").ToString())%><a href="/Destination/<%#Eval("DestinationID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>">
-                                Read More </a>
+                                Xem tiếp </a>
                         </div>
                         <div class="contenttourcatx2">
                             <div class="contenttourcatx3" style="width: 100%;">

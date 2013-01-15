@@ -6,17 +6,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
+    <p style="float: left; width: 100%; font-size: 14px; font-weight: bold; margin: 10px 0px 10px 0px; color: #BE2020;">
         <asp:Label runat="server" ID="lblContentName" Text=""></asp:Label>
-    </h1>
-    <div class="thinline7">
-    </div>
+    </p>
     <div class="contentourdt1">
         <asp:Label runat="server" ID="lblDescription" Text=""></asp:Label>
     </div>
     <div class="toursub2">
         <h3>
-            MORE INFORMATIONS</h3>
+            Các thông tin khác</h3>
         <div class="thinline7">
         </div>
     </div>
@@ -24,9 +22,9 @@
         <asp:Repeater runat="server" ID="rptRelatedContent">
             <ItemTemplate>
                 <div class="in1toursub10">
-                    <a href='/Travel-Guide/<%#Eval("ContentID")%>/<%#FriendlyUrl(Eval("Alias").ToString())%>'
+                    <a style="float: left; width: 100%;" href='/Travel-Guide/<%#Eval("ContentID")%>/<%#FriendlyUrl(Eval("Alias").ToString())%>'
                         title='<%#Eval("Title")%>'>
-                        + <%#Eval("Title")%>
+                         » <%#Eval("Title")%>
                     </a>
                 </div>
             </ItemTemplate>

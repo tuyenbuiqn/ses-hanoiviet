@@ -5,11 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucbreadcrumb id="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
+    <p style="float: left; width: 100%; font-size: 14px; font-weight: bold; margin: 10px 0px 10px 0px; color: #BE2020;">
         <asp:Label runat="server" ID="lblDestinationName" Text=""></asp:Label>
-    </h1>
-    <div class="thinline7">
-    </div>
+    </p>
     <div class="img_hotel1">
         <div class="gallery galNoMargin gallhotelDetails">
             <div class="thumbs galleryFB">
@@ -33,7 +31,7 @@
     </div>
     <div class="toursub2">
         <h3>
-            RELATED TOUR</h3>
+            Các tour liên quan</h3>
         <div class="thinline7">
         </div>
     </div>
@@ -49,9 +47,9 @@
                     <div class="in2toursub10">
                         <%#Eval("TourCode") %></div>
                     <div class="in3toursub10">
-                        Price:</div>
+                        Giá: </div>
                     <div class="in4toursub10">
-                        US $<%#Eval("TourPrice") %></div>
+                        <%#Eval("TourPrice", "{0:0,000}")%>đ</div>
                 </div>
             </ItemTemplate>
         </asp:Repeater>

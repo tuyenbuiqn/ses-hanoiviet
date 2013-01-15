@@ -67,6 +67,13 @@ position:relative;
     left:0;
     z-index:999999;
 }
+.TourListMaster .logo-out-TourListMaster
+{
+	 width: 242px;
+    background: url(../image/back1.png);
+    float: left;
+    margin-bottom:10px;
+}
 .logo
 {
     width: 56px;
@@ -109,10 +116,26 @@ position:relative;
  background: rgba(0, 0, 0, 0.5);
  z-index:999999999;
 }
-
+.TourListMaster .toplink-TourListMaster
+{
+ width: 707px;
+ height: 31px;
+ float: left;
+ position:absolute;
+ top:20px;
+ left:241px;
+ background: rgba(0, 0, 0, 0.5);
+ margin-bottom: 20px;
+}
 .toplink li
 {
-	
+	float:left;
+	margin: 0px 0px 0 40px;
+	list-style:none;
+	padding-right:8px;
+}
+.TourListMaster .toplink-TourListMaster li
+{
 	float:left;
 	margin: 0px 0px 0 40px;
 	list-style:none;
@@ -122,10 +145,23 @@ position:relative;
 {
 	border:none;
 }
-
+.TourListMaster .toplink-TourListMaster li:last-child
+{
+	border:none;
+}
 .toplink a
 {
 	color: #dee0e3;
+	font-size: 12px;
+	font-family:Tahoma;
+	font-weight:bold;
+	
+	display: block;
+	margin-top: 8px;
+}
+.TourListMaster .toplink-TourListMaster a
+{
+	color: #FFFFFF;
 	font-size: 12px;
 	font-family:Tahoma;
 	font-weight:bold;
@@ -140,6 +176,11 @@ position:relative;
 .toplink a:hover
 {
 	font-weight:bold;
+}
+.TourListMaster .toplink-TourListMaster a:hover
+{
+	font-weight:bold;
+	color: Red;
 }
 #logoheadleft
 {
@@ -841,8 +882,9 @@ position:relative;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgNho
 {
-	float: left;
+	float: right;
 	width: 93px;
+	height: 170px;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgNho img
 {
@@ -853,7 +895,7 @@ position:relative;
 }
 #Conten #DanhSachTour .divTourDetail .DetailImgBig
 {
-	 float: left;
+	 float: right;
 	 width: 236px;
 	 height: 160px;
 	 padding: 2px; border: 1px solid #CCCCCC !important;
