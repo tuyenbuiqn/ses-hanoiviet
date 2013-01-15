@@ -7,10 +7,11 @@
                 <a href="/Hotel/<%#Eval("HotelID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %></p></a>
                 <p class="Price">Giá Khách sạn: <%#Eval("HotelStartPrice", "{0:0,000}")%>đ</p>
                 <p class="MoTaChung">Mô tả chung:</p>
+                
                 <p class="descriptions">
                     <%#WordCut(Eval("Description").ToString())%>
                     <a href="/Hotel/<%#Eval("HotelID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>">
-                    <span style="color: #4704CE;">Read More</span>
+                    <span style="color: #4704CE;">Xem thêm</span>
                     </a>
                 </p>
                 <div class="Action">

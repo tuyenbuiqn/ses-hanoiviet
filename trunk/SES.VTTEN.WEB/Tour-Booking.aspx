@@ -20,12 +20,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <span>
-        TRAVEL BOOKING FORM</span>
-    </h1>
-    <div class="thinline7">
-    </div>
+
     <div class="contentourdt1">
         <div class="field" style="color: #2c82ad; font-size: 12px; margin: 15px 0; font-weight: bold;">
             THÔNG TIN TOUR</div>

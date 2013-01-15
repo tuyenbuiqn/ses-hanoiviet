@@ -117,8 +117,8 @@
     <div id="wrap">
         <div class="inner">
             <div class="detail">
-                <div id="Menu">
-                     <div class="logo-out">
+                <div id="Menu" class="TourListMaster">
+                     <div class="logo-out-TourListMaster">
                         <div class="logo-left">
                             <a href="/Default.aspx" title="Hanoi Vietravel">
                                 <img src="/image/logo.png" class="logo" alt="Hanoi Viettravel" />
@@ -132,8 +132,8 @@
                             <span class="tungphutgiay">TỪNG PHÚT GIÂY</span>
                         </div>
                     </div>
-                    <ul class="toplink">
-                      <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang Chủ</a></li>
+                    <ul class="toplink-TourListMaster">
+                        <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang Chủ</a></li>
                         <li><a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">Du lịch Việt Nam</a></li>
                         <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
                         <li><a href="/Vietnam-Destination/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng cảnh nổi tiếng</a></li>
@@ -162,7 +162,7 @@
                                 <li><a href="/Travel-News/1/Default.aspx" title="Tin tức Du lịch">Tin tức Du lịch</a></li>
                                 <li><a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">Du lịch Việt Nam</a></li>
                                 <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
-                                <li><a href="/Travel-Review/0/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
+                                <li><a href="/Travel-Review/1/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
                                 <li><a href="/Destinations/1/Default.aspx" title="Danh lam thắng cảnh">Danh lam thắng cảnh</a></li>
                                 <li><a href="/Travel-Guides/1/Default.aspx" title="Điều khoản đi Tour">Điều khoản đi Tour</a></li>
                                 <li><a href="/Albums/0/Default.aspx" title="Hình ảnh">Hình ảnh</a></li>

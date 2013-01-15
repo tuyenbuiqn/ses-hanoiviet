@@ -32,7 +32,7 @@ namespace SES.VTTEN.WEB
                 int ContentTypeID = int.Parse(Request.QueryString["ID"].ToString());
                 rptContentCatDataSource(ContentTypeID);
                 ContentTypeDO objTT = new ContentTypeBL().Select(new ContentTypeDO { ContentTypeID = ContentTypeID });
-                lblCatName.Text = objTT.Title;
+                //lblCatName.Text = objTT.Title;
 
                 Page.Title = objTT.Title + Ultility.Webtile();
                 

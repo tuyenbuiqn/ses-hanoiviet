@@ -25,7 +25,7 @@
             <asp:Label runat="server" ID="lblDescription" Text=""></asp:Label>
         </div>
         <div class="toursub2">
-            <h4 style="color: #2772BC; width: 100%; float: left; border-bottom: 1px solid #CCCCCC; padding-bottom: 10px;">MORE REVIEWS</h4>
+            <h4 style="color: #2772BC; width: 100%; float: left; border-bottom: 1px solid #CCCCCC; padding-bottom: 10px;">CÁC TIN LIÊN QUAN</h4>
         </div>
         <div class="toursub2">
             <asp:Repeater runat="server" ID="rptRelatedReview">

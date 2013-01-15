@@ -8,11 +8,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucbreadcrumb id="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <asp:Label runat="server" ID="lblCatName" Text=""></asp:Label>
-    </h1>
-    <div class="thinline7">
-    </div>
+
     <asp:Repeater ID="rptContentCat" runat="server">
         <ItemTemplate>
             <div class="tourcatx">
@@ -31,7 +27,7 @@
                     <div class="contenttourcatx">
                         <div class="contenttourcatx1">
                             <%#WordCut(Eval("Description").ToString())%><a title="click here to read more" href="/Travel-Guide/<%#Eval("ContentID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>">
-                                Read More </a>
+                                Xem tiếp </a>
                         </div>
                     </div>
                 </div>
@@ -40,14 +36,14 @@
     </asp:Repeater>
     <div style="width: 100%; margin: 20px 0; float: right;">
         <div class="collection">
-            <cp:CollectionPager LabelText="Page:&amp;nbsp;&amp;nbsp;" FirstText="&amp;nbsp;&amp;nbsp;<<"
+            <cp:CollectionPager LabelText="" FirstText="&amp;nbsp;&amp;nbsp;<<"
                 BackText="< &amp;nbsp;" LastText=">>" NextText=">" ShowFirstLast="True" ControlCssClass="collectionpager"
                 PagingMode="PostBack" runat="server" BackNextLinkSeparator="" BackNextLocation="Right"
                 PageNumbersDisplay="Numbers" ResultsLocation="None" BackNextDisplay="HyperLinks"
                 ID="CollectionPager1" BackNextButtonStyle="" BackNextStyle="margin-left:5px;"
                 ControlStyle="" PageNumbersSeparator="&amp;nbsp;" ShowLabel="True">
             </cp:CollectionPager>
-            <div class="collectPage">
+            <div class="collectPage">Trang: 
             </div>
         </div>
     </div>

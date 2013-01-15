@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<link href="/css/skin.css" rel="stylesheet" type="text/css" />
+    <link href="/css/skin.css" rel="stylesheet" type="text/css" />
 <div class="divTourDetail">
     <div class="DanhSachTour-title">
         <div>
@@ -22,9 +22,10 @@
             <p class="Title"><asp:Label runat="server" ID="lblHotelName" Text=""></asp:Label></p>
             <p class="Price">Giá Tour: <asp:Label runat="server" ID="lblHotelPrice" CssClass="Price" Text=""></asp:Label>đ</p>
             <p class="MoTaChung">Mô tả chung:</p>
-            <p class="descriptions"><asp:Label runat="server" ID="lblDescription" Text=""></asp:Label></p>
-        
         </div>
+        <asp:HyperLink CssClass="fancybox-tourimg DetailImgBig" ID="hplImg" runat="server">
+            <asp:Image ID="ImgHotel" CssClass="ImgDetail" runat="server" />
+        </asp:HyperLink>
         <div class="DetailImgNho" style="margin-top: 3px;">
             <asp:Repeater ID="rpImage" runat="server">
                 <ItemTemplate>
@@ -34,25 +35,23 @@
                 </ItemTemplate>
             </asp:Repeater>
         </div>
-        <asp:HyperLink CssClass="fancybox-tourimg DetailImgBig" ID="hplImg" runat="server">
-            <asp:Image ID="ImgHotel" CssClass="ImgDetail" runat="server" />
-        </asp:HyperLink>
+        <p class="descriptions" style="text-align: justify;"><asp:Label runat="server" ID="lblDescription" Text=""></asp:Label></p>
     </div>
     <div class="DetailLichTrinh" style="float: left; width: 100%; border: 1px solid #5EB7CE; padding-left: 5px; padding-bottom: 10px;">
     <div class="contentourdt1">
         <div class="tabmain2">
             <cc1:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0" CssClass="ajax__tab_blueGrad-theme">
-                <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="Hotel Description">
+                <cc1:TabPanel ID="TabPanel1" runat="server" HeaderText="Mô tả về khách sạn">
                     <ContentTemplate>
                         <asp:Label runat="server" ID="lblFullDescription" Text=""></asp:Label>
                     </ContentTemplate>
                 </cc1:TabPanel>
-                <cc1:TabPanel ID="TabPanel2" runat="server" HeaderText="Hotel Information">
+                <cc1:TabPanel ID="TabPanel2" runat="server" HeaderText="Thông tin liên hệ">
                     <ContentTemplate>
                         <asp:Label runat="server" ID="lblHotelInformation"></asp:Label>
                     </ContentTemplate>
                 </cc1:TabPanel>
-                <cc1:TabPanel ID="TabPanel3" runat="server" HeaderText="Recommended">
+                <cc1:TabPanel ID="TabPanel3" runat="server" HeaderText="Thông tin thêm">
                     <ContentTemplate>
                         <asp:Label runat="server" ID="lblRecommended" Text=""></asp:Label>
                     </ContentTemplate>

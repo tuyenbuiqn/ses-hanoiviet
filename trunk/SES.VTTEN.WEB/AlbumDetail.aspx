@@ -5,10 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <asp:Label runat="server" ID="lblAlbum"></asp:Label></h1>
-    <div class="thinline7">
-    </div>
+    <p style="float: left; width: 100%; font-size: 14px; font-weight: bold; margin: 10px 0px 10px 0px; color: #BE2020;">
+        <asp:Label runat="server" ID="lblAlbum"></asp:Label></p>
+    
     <asp:Repeater ID="rptImages" runat="server">
         <ItemTemplate>
             <div class="Album">

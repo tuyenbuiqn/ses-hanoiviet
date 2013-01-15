@@ -6,11 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
-    <h1 class="travel-h1">
-        <span>Videos</span></h1>
-    <div class="thinline7">
-    </div>
-    <asp:Repeater ID="rptImages" runat="server">
+        <asp:Repeater ID="rptImages" runat="server">
         <ItemTemplate>
             <div class="Album">
                 <div class="Album-Cover">
