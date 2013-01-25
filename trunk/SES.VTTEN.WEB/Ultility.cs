@@ -20,7 +20,7 @@ namespace SES.VTTEN.WEB
     {
         public static string Webtile()
         {
-            return " - " + new ConfigBL().Select(new ConfigDO { ConfigID = 1 }).ConfigValue.ToString();
+            return " " + new ConfigBL().Select(new ConfigDO { ConfigID = 1 }).ConfigValue.ToString();
 
         }
         public static void Alert(string msg, string url)

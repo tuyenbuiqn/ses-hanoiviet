@@ -904,3 +904,79 @@ position:relative;
 {
 	width: 234px; height: 160px;
 }
+.toplink li, .toplink-TourListMaster li
+{
+	position:relative;
+}
+.toplink li ul, .toplink-TourListMaster li ul
+{
+	display: none;
+}
+.toplink li:hover ul, .toplink-TourListMaster li:hover ul
+{
+	display: block;
+	
+}
+.toplink li ul, .toplink-TourListMaster li ul
+{
+	float: left;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 200px;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 999;
+}
+.toplink-TourListMaster li ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+.toplink li, .toplink-TourListMaster li
+{
+	height: 31px;
+}
+.toplink li ul li, .toplink-TourListMaster li ul li
+{
+	float: left;
+	width: 100%;
+	margin: 5px 0px 0px 0px !important;
+	padding: 0px !important;
+	border-bottom: 1px solid #BAB6B6;
+	padding: 0px;
+	height: 25px
+}
+.toplink li ul li a, .toplink-TourListMaster li ul li a
+{
+	float: left;
+	width: 100%;
+	margin: 0px 0px 0px 10px !important;
+	padding: 0px;
+}
+.divDanhMucTour ul li
+{
+	position: relative;
+}
+.divDanhMucTour ul li ul
+{
+	padding: 0px !important;
+	float: left;
+	background: none !important;
+}
+.divDanhMucTour ul li ul li
+{
+	padding-top: 7px;
+	padding-bottom: 0px;
+	margin: 0px !important;
+	z-index: 999;
+	float: left;
+	width: 100%;
+	background: #5999DD;
+	border-top: 1px dotted #CCCCCC;
+	border-bottom: none !important;
+}
+.divDanhMucTour ul li ul li a
+{
+	padding-left: 20px;
+	text-transform:none;
+}
