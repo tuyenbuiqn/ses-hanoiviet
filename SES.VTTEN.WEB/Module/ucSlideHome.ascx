@@ -35,5 +35,5 @@
         
     </div>
 </div>
-<img style="top: 395px; z-index: 99; position: absolute;" src="/images/imgontop-l.png" />
-<img style="top: 395px; margin-left: 887px; z-index: 99; position: absolute;" src="/images/imgontop-r.png" />
+<%--<img style="top: 395px; z-index: 99; position: absolute;" src="/images/imgontop-l.png" />--%>
+<%--<img style="top: 395px; margin-left: 887px; z-index: 99; position: absolute;" src="/images/imgontop-r.png" />--%>

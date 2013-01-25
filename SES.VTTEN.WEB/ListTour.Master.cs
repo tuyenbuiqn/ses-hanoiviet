@@ -22,6 +22,26 @@ namespace SES.VTTEN.WEB
         {
             rptListImage.DataSource = slideBL.SelectByCategoryID(1);
             rptListImage.DataBind();
+
+            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListVNTour.DataBind();
+
+            rptListVnTourleft.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListVnTourleft.DataBind();
+            //Ẩn hiện menu con của Du lịch việt nam
+            if (Request.QueryString["P"] != null)
+            {
+                string TourPage = Request.QueryString["P"].ToString();
+                if ((TourPage == "Tour-Category") || (TourPage == "Tour"))
+                {
+                    Full.Visible = true;
+                }
+                else
+                {
+                    Full.Visible = false;
+                }
+            }
+            //end Ẩn hiện menu con của Du lịch việt nam
         }
     }
 }

@@ -40,6 +40,9 @@ namespace SES.VTTEN.WEB
             }
             scrOut += "  });</script>";
             lblscrOut.Text = scrOut;
+
+            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListVNTour.DataBind();
         }
     }
 }

@@ -57,45 +57,80 @@
     <Reference Include="DevExpress.Charts.v9.2.Core, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Charts.v9.2.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Data.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Data.v9.2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Web.ASPxEditors.v9.2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxGridView.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Web.ASPxGridView.v9.2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.ASPxTreeList.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Web.ASPxTreeList.v9.2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Web.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\DevExpress.Web.v9.2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="MSCaptcha, Version=2.0.3733.36001, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MSCaptcha.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Xml.Linq" />
+    <Reference Include="SES.VTTEN.BL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SES.VTTEN.BL\bin\Debug\SES.VTTEN.BL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\UrlRewritingNet.UrlRewriter.dll</HintPath>
@@ -1664,11 +1699,28 @@
     <Content Include="ckfinder\_samples\standalone.html" />
     <Content Include="ckfinder\_samples\standalone_v1.html" />
     <Content Include="Contact.aspx" />
+    <Content Include="css\CssSlide\bar.css" />
+    <Content Include="css\CssSlide\dark.css" />
+    <Content Include="css\CssSlide\default.css" />
+    <Content Include="css\CssSlide\global.css" />
+    <Content Include="css\CssSlide\light.css" />
+    <Content Include="css\CssSlide\nivo-slider.css" />
+    <Content Include="css\CssSlide\style.css" />
+    <Content Include="css\skin.css" />
+    <Content Include="css\sliderkit-core.css" />
+    <Content Include="css\sliderkit-demos-ie6.css" />
+    <Content Include="css\sliderkit-demos-ie7.css" />
+    <Content Include="css\sliderkit-demos-ie8.css" />
+    <Content Include="css\sliderkit-demos.css" />
+    <Content Include="css\sliderkit-site-ltie8.css" />
+    <Content Include="css\sliderkit-site.css" />
     <Content Include="css\Style.css" />
+    <Content Include="css\tourstyle.css" />
     <Content Include="Custom-Tour.aspx" />
     <Content Include="Customer-Reviews.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Destination.aspx" />
+    <Content Include="Destinations.aspx" />
     <Content Include="fancybox\blank.gif" />
     <Content Include="fancybox\demo\1_b.jpg" />
     <Content Include="fancybox\demo\1_s.jpg" />
@@ -1727,6 +1779,14 @@
     <Content Include="Hotel-Category.aspx" />
     <Content Include="Hotel.aspx" />
     <Content Include="images\1312598393_1_banner.jpg" />
+    <Content Include="images\arrows-h-big.png" />
+    <Content Include="images\arrows-h-black.gif" />
+    <Content Include="images\arrows-h-btn.gif" />
+    <Content Include="images\arrows-h-gray.gif" />
+    <Content Include="images\arrows-h.png" />
+    <Content Include="images\arrows-v-black.gif" />
+    <Content Include="images\arrows-v-gray.gif" />
+    <Content Include="images\arrows-v.png" />
     <Content Include="images\Banner-image1.jpg" />
     <Content Include="images\Banner-image2.jpg" />
     <Content Include="images\Banner-image3.jpg" />
@@ -1739,20 +1799,28 @@
     <Content Include="images\Body-image3.jpg" />
     <Content Include="images\booknow.png" />
     <Content Include="images\btnSearch.gif" />
+    <Content Include="images\bullet-off.png" />
+    <Content Include="images\bullet-on.png" />
     <Content Include="images\buttonmenu.jpg" />
     <Content Include="images\buttonmenu2.jpg" />
     <Content Include="images\buttonmenu3.jpg" />
     <Content Include="images\callnow.jpg" />
     <Content Include="images\Caption1.jpg" />
     <Content Include="images\CoVietNam.jpg" />
+    <Content Include="images\doc\doc-elements.jpg" />
+    <Content Include="images\doc\doc-elements_fr.jpg" />
     <Content Include="images\foot-logo.jpg" />
     <Content Include="images\foot-logo2.jpg" />
     <Content Include="images\foot-logo3.jpg" />
     <Content Include="images\green.jpg" />
+    <Content Include="images\h-arrows-round.gif" />
     <Content Include="images\Head-image1.jpg" />
     <Content Include="images\hotel1.jpg" />
     <Content Include="images\hotel2.jpg" />
     <Content Include="images\hotel3.jpg" />
+    <Content Include="images\imgontop-l.png" />
+    <Content Include="images\imgontop-r.png" />
+    <Content Include="images\imgontop.png" />
     <Content Include="images\left1.1.jpg" />
     <Content Include="images\left1.2.jpg" />
     <Content Include="images\left2.1.jpg" />
@@ -1764,11 +1832,63 @@
     <Content Include="images\logotelephone.jpg" />
     <Content Include="images\MuiTen.jpg" />
     <Content Include="images\MuiTen2.jpg" />
+    <Content Include="images\newslider-arrow-up.gif" />
+    <Content Include="images\newslider-arrow.gif" />
     <Content Include="images\next-horizontal-dis.png" />
     <Content Include="images\next-horizontal.png" />
     <Content Include="images\nextpage.png" />
     <Content Include="images\orange.jpg" />
     <Content Include="images\phone.png" />
+    <Content Include="images\photos\medium\sample-01.jpg" />
+    <Content Include="images\photos\medium\sample-02.jpg" />
+    <Content Include="images\photos\medium\sample-03.jpg" />
+    <Content Include="images\photos\medium\sample-04.jpg" />
+    <Content Include="images\photos\medium\sample-05.jpg" />
+    <Content Include="images\photos\medium\sample-06.jpg" />
+    <Content Include="images\photos\medium\sample-07.jpg" />
+    <Content Include="images\photos\medium\sample-08.jpg" />
+    <Content Include="images\photos\medium\sample-09.jpg" />
+    <Content Include="images\photos\medium\sample-10.jpg" />
+    <Content Include="images\photos\mini\sample-01.jpg" />
+    <Content Include="images\photos\mini\sample-02.jpg" />
+    <Content Include="images\photos\mini\sample-03.jpg" />
+    <Content Include="images\photos\mini\sample-04.jpg" />
+    <Content Include="images\photos\mini\sample-05.jpg" />
+    <Content Include="images\photos\mini\sample-06.jpg" />
+    <Content Include="images\photos\mini\sample-07.jpg" />
+    <Content Include="images\photos\mini\sample-08.jpg" />
+    <Content Include="images\photos\mini\sample-09.jpg" />
+    <Content Include="images\photos\mini\sample-10.jpg" />
+    <Content Include="images\photos\sample-01-v.jpg" />
+    <Content Include="images\photos\sample-01.jpg" />
+    <Content Include="images\photos\sample-02-v.jpg" />
+    <Content Include="images\photos\sample-02.jpg" />
+    <Content Include="images\photos\sample-03-v.jpg" />
+    <Content Include="images\photos\sample-03.jpg" />
+    <Content Include="images\photos\sample-04.jpg" />
+    <Content Include="images\photos\sample-05.jpg" />
+    <Content Include="images\photos\sample-06.jpg" />
+    <Content Include="images\photos\sample-07.jpg" />
+    <Content Include="images\photos\sample-08.jpg" />
+    <Content Include="images\photos\sample-09.jpg" />
+    <Content Include="images\photos\sample-10.jpg" />
+    <Content Include="images\photos\small\sample-01.jpg" />
+    <Content Include="images\photos\small\sample-02.jpg" />
+    <Content Include="images\photos\small\sample-03.jpg" />
+    <Content Include="images\photos\small\sample-04.jpg" />
+    <Content Include="images\photos\small\sample-05.jpg" />
+    <Content Include="images\photos\small\sample-06.jpg" />
+    <Content Include="images\photos\small\sample-07.jpg" />
+    <Content Include="images\photos\thumb\sample-01.jpg" />
+    <Content Include="images\photos\thumb\sample-02.jpg" />
+    <Content Include="images\photos\thumb\sample-03.jpg" />
+    <Content Include="images\photos\thumb\sample-04.jpg" />
+    <Content Include="images\photos\thumb\sample-05.jpg" />
+    <Content Include="images\photos\thumb\sample-06.jpg" />
+    <Content Include="images\photos\thumb\sample-07.jpg" />
+    <Content Include="images\photos\thumb\sample-08.jpg" />
+    <Content Include="images\photos\thumb\sample-09.jpg" />
+    <Content Include="images\photos\thumb\sample-10.jpg" />
     <Content Include="images\prev-horizontal-dis.png" />
     <Content Include="images\prev-horizontal.png" />
     <Content Include="images\prevpage.png" />
@@ -1784,8 +1904,15 @@
     <Content Include="images\SearchButton.jpg" />
     <Content Include="images\skype-logo.jpg" />
     <Content Include="images\skype.jpg" />
+    <Content Include="images\slider-arrow-left.gif" />
+    <Content Include="images\slider-arrow-right.gif" />
+    <Content Include="images\slideshow-btns.gif" />
+    <Content Include="images\softpedia_pick_award_m.gif" />
     <Content Include="images\star-blue.png" />
+    <Content Include="images\tabs-menu.gif" />
+    <Content Include="images\timer-img01.gif" />
     <Content Include="images\tripadvisor.png" />
+    <Content Include="images\ui.totop.png" />
     <Content Include="images\VGCC_map-optimised-20-04-2012-095813.jpg" />
     <Content Include="images\yahoo-logo.jpg" />
     <Content Include="images\yahoo.jpg" />
@@ -1806,12 +1933,14 @@
     <Content Include="image\ImgTitleIcon.png" />
     <Content Include="image\ImgTour.png" />
     <Content Include="image\LiveChat.png" />
+    <Content Include="image\loading.gif" />
     <Content Include="image\logo.jpg" />
     <Content Include="image\logo.png" />
     <Content Include="image\Mobile.png" />
     <Content Include="image\muitenphai.jpg" />
     <Content Include="image\muitentrai.jpg" />
     <Content Include="image\next-button.png" />
+    <Content Include="image\pagination.png" />
     <Content Include="image\prev-button.png" />
     <Content Include="image\sky.png" />
     <Content Include="image\TimKiem.png" />
@@ -1825,8 +1954,24 @@
     <Content Include="js\apprise-1.5.full.js" />
     <Content Include="js\common.js" />
     <Content Include="js\dropdown.js" />
+    <Content Include="js\external\jquery-1.6.2.min.js" />
+    <Content Include="js\external\jquery.easing.1.3.min.js" />
+    <Content Include="js\external\jquery.mousewheel.min.js" />
+    <Content Include="js\external\jquery.supertoc.js" />
+    <Content Include="js\external\jquery.supertoc.min.js" />
+    <Content Include="js\external\jquery.ui.totop.js" />
+    <Content Include="js\external\lightbox\jquery-lightbox\css\jquery.lightbox-0.5.css" />
+    <Content Include="js\external\lightbox\jquery-lightbox\images\lightbox-blank.gif" />
+    <Content Include="js\external\lightbox\jquery-lightbox\images\lightbox-btn-close.gif" />
+    <Content Include="js\external\lightbox\jquery-lightbox\images\lightbox-btn-next.gif" />
+    <Content Include="js\external\lightbox\jquery-lightbox\images\lightbox-btn-prev.gif" />
+    <Content Include="js\external\lightbox\jquery-lightbox\images\lightbox-ico-loading.gif" />
+    <Content Include="js\external\lightbox\jquery-lightbox\index.html" />
+    <Content Include="js\external\lightbox\jquery-lightbox\js\jquery.lightbox-0.5.pack.js" />
+    <Content Include="js\external\_oldies\jquery-1.3.min.js" />
     <Content Include="js\fancyboxGallery.js" />
     <Content Include="js\jquery-1.4.2.min.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
     <Content Include="js\jquery.bxSlider.js" />
     <Content Include="js\jquery.fancybox-1.3.1.js" />
     <Content Include="js\jquery.flexslider-min.js" />
@@ -1834,18 +1979,470 @@
     <Content Include="js\jquery.hoverIntent.minified.js" />
     <Content Include="js\jquery.jcarousel.min.js" />
     <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.nivo.slider.js" />
     <Content Include="js\jquery.simplemodal.js" />
     <Content Include="js\jquery.tabify.js" />
     <Content Include="js\jquery.wt-rotator.min.js" />
     <Content Include="js\jquery1.7.js" />
     <Content Include="js\preview-page.js" />
     <Content Include="js\preview.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.counter.1.0.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.counter.1.0.pack.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.delaycaptions.1.1.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.delaycaptions.1.1.pack.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.imagefx.1.0.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.imagefx.1.0.pack.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.timer.1.0.js" />
+    <Content Include="js\sliderkit\addons\sliderkit.timer.1.0.pack.js" />
+    <Content Include="js\sliderkit\jquery.sliderkit.1.9.2.js" />
+    <Content Include="js\sliderkit\jquery.sliderkit.1.9.2.pack.js" />
+    <Content Include="js\slides.min.jquery.js" />
     <Content Include="ListTour.aspx" />
+    <Content Include="Media\%28636%29a1-04-09-2012-052854.jpg" />
+    <Content Include="Media\001-15-10-2012-104951.jpg" />
+    <Content Include="Media\01-14-11-2012-114625.jpg" />
+    <Content Include="Media\01-14-11-2012-114738.jpg" />
+    <Content Include="Media\01-14-11-2012-120906.jpg" />
+    <Content Include="Media\01-15-10-2012-083254.jpg" />
+    <Content Include="Media\01-15-10-2012-093720.jpg" />
+    <Content Include="Media\01-15-10-2012-093802.jpg" />
+    <Content Include="Media\01-17-10-2012-110201.jpg" />
+    <Content Include="Media\01-19-11-2012-104711.jpg" />
+    <Content Include="Media\01-21-10-2012-012359.jpg" />
+    <Content Include="Media\01-21-10-2012-040418.jpg" />
+    <Content Include="Media\01-24-11-2012-053515.jpg" />
+    <Content Include="Media\01-24-11-2012-053708.jpg" />
+    <Content Include="Media\01-24-11-2012-053821.jpg" />
+    <Content Include="Media\01-25-10-2012-062932.png" />
+    <Content Include="Media\02-14-10-2012-054329.jpg" />
+    <Content Include="Media\02-14-11-2012-102931.jpg" />
+    <Content Include="Media\02-14-11-2012-114759.jpg" />
+    <Content Include="Media\02-21-10-2012-010300.jpg" />
+    <Content Include="Media\02-21-10-2012-125759.jpg" />
+    <Content Include="Media\02-24-11-2012-053640.jpg" />
+    <Content Include="Media\02-24-11-2012-055420.jpg" />
+    <Content Include="Media\02-25-10-2012-062800.jpg" />
+    <Content Include="Media\02-30-09-2012-080426.JPG" />
+    <Content Include="Media\03-14-10-2012-054407.jpg" />
+    <Content Include="Media\03-14-11-2012-115054.jpg" />
+    <Content Include="Media\03-15-10-2012-083655.jpeg" />
+    <Content Include="Media\03-17-10-2012-110259.jpg" />
+    <Content Include="Media\03-24-11-2012-053656.jpg" />
+    <Content Include="Media\03-24-11-2012-054032.jpg" />
+    <Content Include="Media\03-25-10-2012-062951.jpg" />
+    <Content Include="Media\04-14-10-2012-054437.jpg" />
+    <Content Include="Media\04-14-11-2012-115110.jpg" />
+    <Content Include="Media\04-15-10-2012-083722.jpeg" />
+    <Content Include="Media\04-17-10-2012-110322.jpg" />
+    <Content Include="Media\04-21-10-2012-050517.jpg" />
+    <Content Include="Media\04-24-11-2012-053726.jpg" />
+    <Content Include="Media\04-24-11-2012-054047.jpg" />
+    <Content Include="Media\05-14-10-2012-054457.JPG" />
+    <Content Include="Media\05-14-11-2012-115128.jpg" />
+    <Content Include="Media\05-15-10-2012-082522.jpeg" />
+    <Content Include="Media\05-15-10-2012-083909.jpeg" />
+    <Content Include="Media\05-17-10-2012-105854.jpg" />
+    <Content Include="Media\05-24-11-2012-054103.jpg" />
+    <Content Include="Media\05-25-10-2012-063017.jpg" />
+    <Content Include="Media\06-14-10-2012-054520.jpg" />
+    <Content Include="Media\06-14-11-2012-115140.jpg" />
+    <Content Include="Media\06-17-10-2012-110354.jpg" />
+    <Content Include="Media\06-21-10-2012-045901.jpg" />
+    <Content Include="Media\06-24-11-2012-054120.jpg" />
+    <Content Include="Media\06-25-10-2012-063045.jpg" />
+    <Content Include="Media\07-17-10-2012-110527.jpg" />
+    <Content Include="Media\07-25-10-2012-063109.png" />
+    <Content Include="Media\08-17-10-2012-110451.jpg" />
+    <Content Include="Media\11-21-10-2012-042022.jpg" />
+    <Content Include="Media\11-25-10-2012-063137.png" />
+    <Content Include="Media\12-05-11-2012-125704.jpg" />
+    <Content Include="Media\12-21-10-2012-050635.jpg" />
+    <Content Include="Media\123-11012013120816.jpg" />
+    <Content Include="Media\1294721650-14-10-2012-052115.jpg" />
+    <Content Include="Media\1303987622_1_images-04-09-2012-053455.jpg" />
+    <Content Include="Media\1310438756_1_images-01-09-2012-065417.jpg" />
+    <Content Include="Media\1310711797_1_imagesc-14-11-2012-105025.jpg" />
+    <Content Include="Media\1310711798_1_imagesd-14-11-2012-104322.jpg" />
+    <Content Include="Media\1312451602_1_images-28-10-2012-085711.jpg" />
+    <Content Include="Media\1312535255_1_images-28-10-2012-085930.jpg" />
+    <Content Include="Media\1312778366_1_imagesb-05-11-2012-090549.jpg" />
+    <Content Include="Media\1312787578_1_imagesa-05-11-2012-125830.jpg" />
+    <Content Include="Media\1312787578_1_imagesa-05-11-2012-125948.jpg" />
+    <Content Include="Media\1312787579_1_imagesc-05-11-2012-125151.jpg" />
+    <Content Include="Media\1312787692_1_imagese-05-11-2012-125853.jpg" />
+    <Content Include="Media\1312946353_1_imagesa-05-11-2012-084915.jpg" />
+    <Content Include="Media\1313031208_1_images-02-11-2012-092636.jpg" />
+    <Content Include="Media\1313031209_1_imagesa-02-11-2012-092705.jpg" />
+    <Content Include="Media\1313031210_1_imagesb-02-11-2012-092834.jpg" />
+    <Content Include="Media\1313031211_1_imagesc-02-11-2012-092752.jpg" />
+    <Content Include="Media\1313031213_1_imagese-02-11-2012-092948.jpg" />
+    <Content Include="Media\1313053545_1_imagesa-28-10-2012-085338.jpg" />
+    <Content Include="Media\1313057230_1_images-10-10-2012-053517.jpg" />
+    <Content Include="Media\1314093557_1_images-05-11-2012-094136.jpg" />
+    <Content Include="Media\1314093557_1_images-05-11-2012-094815.jpg" />
+    <Content Include="Media\1314093558_1_imagesa-05-11-2012-094208.jpg" />
+    <Content Include="Media\1314093558_1_imagesb-05-11-2012-094224.jpg" />
+    <Content Include="Media\1314093558_1_imagesc-05-11-2012-094240.jpg" />
+    <Content Include="Media\1314093558_1_imagesd-05-11-2012-094305.jpg" />
+    <Content Include="Media\1314093559_1_imagese-05-11-2012-094329.jpg" />
+    <Content Include="Media\1314784765_1_images-18-11-2012-111308.jpg" />
+    <Content Include="Media\1314784765_1_imagesa-18-11-2012-111356.jpg" />
+    <Content Include="Media\1314784765_1_imagesb-18-11-2012-111422.jpg" />
+    <Content Include="Media\1314784766_1_imagesc-18-11-2012-111444.jpg" />
+    <Content Include="Media\14-21-10-2012-043303.jpg" />
+    <Content Include="Media\15-21-10-2012-050807.jpg" />
+    <Content Include="Media\16-21-10-2012-050615.jpg" />
+    <Content Include="Media\18-21-10-2012-050852.jpg" />
+    <Content Include="Media\183271611_ed477ef6d8-08-12-2011-121028.jpg" />
+    <Content Include="Media\2-02-11-2012-092854.jpg" />
+    <Content Include="Media\2010712141547Londonbridge-05-12-2011-121537.jpg" />
+    <Content Include="Media\2010712141547Londonbridge-29-11-2011-074126.jpg" />
+    <Content Include="Media\211.jpg" />
+    <Content Include="Media\220px-KingsCollegeChapelWest-29-10-2011-073431.jpg" />
+    <Content Include="Media\3-04-09-2012-054554.jpg" />
+    <Content Include="Media\3-23-12-2011-105122.JPG" />
+    <Content Include="Media\3-23-12-2011-105950.JPG" />
+    <Content Include="Media\300px-CauThuanPhuocvedem2-05-12-2011-025643.JPG" />
+    <Content Include="Media\36825014-05-01-2012-030826.jpg" />
+    <Content Include="Media\3799924042_0c5987eb37.jpg" />
+    <Content Include="Media\4.1.10.1_highlight-21-11-2011-055803.jpg" />
+    <Content Include="Media\4.1.10.1_highlight-21-11-2011-055950.jpg" />
+    <Content Include="Media\4.1.10.2_highlight-21-11-2011-060854.jpg" />
+    <Content Include="Media\4831-81930996_hanoi-overview-05-12-2011-025552.jpg" />
+    <Content Include="Media\4831-81930996_hanoi-overview-05-12-2011-032845.jpg" />
+    <Content Include="Media\5-03102012063749-03-10-2012-042154.JPG" />
+    <Content Include="Media\5-03102012063749-04-10-2012-123303.JPG" />
+    <Content Include="Media\5851_Ariva_MS_Salute_Hanoi_Hotel-01-09-2012-020934.jpg" />
+    <Content Include="Media\6-12-09-2012-054528.jpg" />
+    <Content Include="Media\6-30092012093204.jpg" />
+    <Content Include="Media\600TCAS6W1L9CADUY6LXCADI3EG3CA55N553CAG2MJASCAZVVM7PCARM8XMNCAFG9V5KCA2V8JEXCAO94EN8CA92KVD7CA1T4JABCA4NSJO1CAA13KPECA9UZUY5CACQX4KBCATTHDDLCA9VDA0YCAEYCF17-03-04-2012-100134.JPG" />
+    <Content Include="Media\7-30092012093204.jpg" />
+    <Content Include="Media\8-03102012063749-03-10-2012-051553.JPG" />
+    <Content Include="Media\8-30092012093204.jpg" />
+    <Content Include="Media\abc.jpg" />
+    <Content Include="Media\album-test-1-03122012043654.JPG" />
+    <Content Include="Media\album-test-2-03122012043654.jpg" />
+    <Content Include="Media\album-test-3-03122012044340.jpg" />
+    <Content Include="Media\album-test-4-03122012044657.jpg" />
+    <Content Include="Media\album-test-5-03122012044657.jpg" />
+    <Content Include="Media\Angkor_Wat11-26-12-2011-040746.jpg" />
+    <Content Include="Media\anh-1-30092012092816.jpg" />
+    <Content Include="Media\anh-1-30092012092931.jpg" />
+    <Content Include="Media\anh-2-30092012092931.jpg" />
+    <Content Include="Media\anh-3-30092012092931.jpg" />
+    <Content Include="Media\anh-4-30092012092931.jpg" />
+    <Content Include="Media\anh-5-30092012092931.jpg" />
+    <Content Include="Media\anz-hoi-an-04-09-2012-052931.jpg" />
+    <Content Include="Media\Ariva-Ms-Salute-Hanoi-18092012060421.jpg" />
+    <Content Include="Media\Asianatravelmate_HoChiMinhCity 6-31-10-2012-060959.JPG" />
+    <Content Include="Media\Ba-Na-hills-12-09-2012-055058.jpg" />
+    <Content Include="Media\Bach_ma_3-28-10-2012-112108.jpg" />
+    <Content Include="Media\Bach_ma_4-28-10-2012-112130.jpg" />
+    <Content Include="Media\bai-tho-junk-halong-bay.jpg" />
+    <Content Include="Media\bannermice-20-12-2011-015755.jpg" />
+    <Content Include="Media\BEAUTIFULL--VIETNAM-12112012055408.png" />
+    <Content Include="Media\ben_tre-12-09-2012-054238.jpg" />
+    <Content Include="Media\bhaya_cruises-28-10-2012-103005.jpg" />
+    <Content Include="Media\bhaya_cruises_restaurant-28-10-2012-102643.jpg" />
+    <Content Include="Media\bhaya_cruises_twin-28-10-2012-102703.jpg" />
+    <Content Include="Media\bhaya_deluxe-28-10-2012-102723.jpg" />
+    <Content Include="Media\Bien-02042012021349.jpg" />
+    <Content Include="Media\can tho1-05-12-2011-112448.jpg" />
+    <Content Include="Media\chau-long-sapa-04-09-2012-054406.jpg" />
+    <Content Include="Media\chotet-10-01-2012-105700.jpg" />
+    <Content Include="Media\Chua mot cot-14-10-2012-052152.png" />
+    <Content Include="Media\Chua mot cot-30-09-2012-090117.png" />
+    <Content Include="Media\contact-us.JPG" />
+    <Content Include="Media\Cuc phuong 1-14-10-2012-054155.jpg" />
+    <Content Include="Media\Cu_Chi-02-11-2012-092538.JPG" />
+    <Content Include="Media\da lat-05-12-2011-112507.jpg" />
+    <Content Include="Media\da nang-05-12-2011-112613.jpg" />
+    <Content Include="Media\Da-Lat-20092012071245.jpg" />
+    <Content Include="Media\Da-Lat-21092012075529.jpg" />
+    <Content Include="Media\Da-Nang-21092012075840.jpg" />
+    <Content Include="Media\Da-Nang-21102012043719.jpg" />
+    <Content Include="Media\Deluxe Room-11-10-2012-051032.jpg" />
+    <Content Include="Media\Deluxe Room-11-10-2012-052035.jpg" />
+    <Content Include="Media\Deluxe-15-10-2012-075333.JPG" />
+    <Content Include="Media\DIEN BIEN-21-10-2012-050736.jpg" />
+    <Content Include="Media\dolce-vita-hotel-hanoi-superior-double-04-09-2012-054030.jpg" />
+    <Content Include="Media\Do_quyen_waterfall-28-10-2012-053032.jpg" />
+    <Content Include="Media\Dream hotel 2-24-11-2012-125828.jpg" />
+    <Content Include="Media\Enjoy-with-local-04122012110440.jpg" />
+    <Content Include="Media\Executive room 1-11-10-2012-052710.jpg" />
+    <Content Include="Media\Executive Suite-15-10-2012-075411.jpg" />
+    <Content Include="Media\full%28636%29a1-04-09-2012-052854.jpg" />
+    <Content Include="Media\full01-30-09-2012-080426.JPG" />
+    <Content Include="Media\full01-30-09-2012-081104.JPG" />
+    <Content Include="Media\fullabc-01-09-2012-010441.jpg" />
+    <Content Include="Media\fullanz-hoi-an-04-09-2012-052931.jpg" />
+    <Content Include="Media\fullha-long-dragon-cruise-7-24-09-2012-092214.jpg" />
+    <Content Include="Media\fullHalongbay4-28-10-2012-094605.jpg" />
+    <Content Include="Media\fullmy-son1-04-09-2012-052811.jpg" />
+    <Content Include="Media\fullP1020089-24-09-2012-100657.JPG" />
+    <Content Include="Media\fullp_0002-04-09-2012-053018.jpg" />
+    <Content Include="Media\goc_1345187261 %281%29-03-10-2012-051711.jpg" />
+    <Content Include="Media\golf.jpg" />
+    <Content Include="Media\GREEN-SAPA-12102012084342.png" />
+    <Content Include="Media\Ha long Dream Hotel 5-24-11-2012-125647.jpg" />
+    <Content Include="Media\Ha long Dream Hotel 5-24-11-2012-125953.jpg" />
+    <Content Include="Media\HA long Dream Hotel 6-24-11-2012-010019.jpg" />
+    <Content Include="Media\HA NOI-12-10-2012-091105.jpg" />
+    <Content Include="Media\HA NOI-12-10-2012-092629.jpg" />
+    <Content Include="Media\Ha-long-04-09-2012-053320.jpg" />
+    <Content Include="Media\Ha-noi-02042012020331.jpg" />
+    <Content Include="Media\Ha-noi-02042012020552.jpg" />
+    <Content Include="Media\Ha-Noi-21102012043544.jpg" />
+    <Content Include="Media\ha-noi-dao-cat-ba-ha-noi-2-04-09-2012-053243.jpg" />
+    <Content Include="Media\HA-NOI-EARLY-MORNING-17102012111128.jpg" />
+    <Content Include="Media\Halong Dream Hotel 1-24-11-2012-125806.jpg" />
+    <Content Include="Media\Halong Dream Hotel 3-24-11-2012-125852.jpg" />
+    <Content Include="Media\Halong Dream Hotel 4-24-11-2012-125915.jpg" />
+    <Content Include="Media\halong-08-12-2011-085709.jpg" />
+    <Content Include="Media\halong-21-10-2012-011325.jpg" />
+    <Content Include="Media\HALONG-BAY-12102012075924.png" />
+    <Content Include="Media\HALONG-BAY-15102012104752.png" />
+    <Content Include="Media\Halong-bay-18092012054741.jpg" />
+    <Content Include="Media\Halong-bay-18092012060108.jpg" />
+    <Content Include="Media\halong-bay-18092012060140.jpg" />
+    <Content Include="Media\Halong-bay-26092012075338.jpg" />
+    <Content Include="Media\Halong-bay-26092012075446.jpg" />
+    <Content Include="Media\Halong-bay-26092012075451.jpg" />
+    <Content Include="Media\HALONG-BAY-27092012103505.png" />
+    <Content Include="Media\halong.jpg" />
+    <Content Include="Media\halong_bay_6-12-09-2012-055252.jpg" />
+    <Content Include="Media\halong_phoneix_cruiser-04-09-2012-061830.jpg" />
+    <Content Include="Media\halong_phoneix_cruiser-04-09-2012-061909.jpg" />
+    <Content Include="Media\HANOI---HA-LONG-BAY-3DAYS-18092012060328.jpg" />
+    <Content Include="Media\Hanoi-04-09-2012-053421.jpg" />
+    <Content Include="Media\hanoi-05-12-2011-112555.jpg" />
+    <Content Include="Media\hanoi-amanda-hotel-04-09-2012-053713.jpg" />
+    <Content Include="Media\hanoi-amanda-hotel-04-09-2012-054049.jpg" />
+    <Content Include="Media\hilton2944047-23-11-2011-062232.jpg" />
+    <Content Include="Media\hilton2944047-23-11-2011-062341.jpg" />
+    <Content Include="Media\hilton2944047-23-11-2011-062512.jpg" />
+    <Content Include="Media\hilton2944047-23-11-2011-064242.jpg" />
+    <Content Include="Media\hl-05-12-2011-025443 - Copy.jpg" />
+    <Content Include="Media\hl-05-12-2011-025443.jpg" />
+    <Content Include="Media\hl-05-12-2011-121452.jpg" />
+    <Content Include="Media\hl-29-11-2011-072820.jpg" />
+    <Content Include="Media\Ho-Chi-Minh-City-33-08-12-2011-120701.jpg" />
+    <Content Include="Media\hoalu7634757144938437500-04-09-2012-053347.jpg" />
+    <Content Include="Media\HoChiMinhCity-12-09-2012-054901.jpg" />
+    <Content Include="Media\Hochiminhcity-20-12-2011-112332-05-01-2012-032940.jpg" />
+    <Content Include="Media\Hochiminhcity-20-12-2011-112332.jpg" />
+    <Content Include="Media\hoguom-26-12-2011-040708.jpg" />
+    <Content Include="Media\hoiannight-26-12-2011-041131.JPG" />
+    <Content Include="Media\Hoi_An_7-28-10-2012-112202.jpg" />
+    <Content Include="Media\Hotel lobby 4-11-10-2012-053220.jpg" />
+    <Content Include="Media\Hotel lobby-07-10-2012-104841.jpg" />
+    <Content Include="Media\Hotel Restaurant-11-10-2012-053522.jpg" />
+    <Content Include="Media\hotel-03-39-48-15-02-12-04-09-2012-054249.jpg" />
+    <Content Include="Media\hotel-21908-s-24-11-2012-104542.jpg" />
+    <Content Include="Media\hotels-hanoi-imperial-vip-room-25-10-2012-063519.jpg" />
+    <Content Include="Media\Hue_3-28-10-2012-112222.jpg" />
+    <Content Include="Media\Hue_6-28-10-2012-104656.jpg" />
+    <Content Include="Media\Hue_8-28-10-2012-082228.jpg" />
+    <Content Include="Media\huongpagoda-10-01-2012-110440.jpg" />
+    <Content Include="Media\images %281%29-14-10-2012-051739.jpg" />
+    <Content Include="Media\images %282%29-14-10-2012-051904.jpg" />
+    <Content Include="Media\images-04-09-2012-053200.jpg" />
+    <Content Include="Media\images-14-10-2012-051942.jpg" />
+    <Content Include="Media\image_2202121329878600-25-10-2012-065807.jpg" />
+    <Content Include="Media\image_3105121338483179-25-10-2012-093040.jpg" />
+    <Content Include="Media\IMG_0692-2-23-12-2011-105440.jpg" />
+    <Content Include="Media\IMG_0779-2-23-12-2011-105909.jpg" />
+    <Content Include="Media\IMG_2694-28-10-2012-112828.jpg" />
+    <Content Include="Media\IMG_4486-21-10-2012-034943.JPG" />
+    <Content Include="Media\IMG_4532-21-10-2012-035050.JPG" />
+    <Content Include="Media\IMG_7473-23-12-2011-105047.JPG" />
+    <Content Include="Media\IMG_7566-23-12-2011-105929.jpg" />
+    <Content Include="Media\index-11012013120846.jpg" />
+    <Content Include="Media\inside_perfume_pagoda_complex-12-10-2012-111433.jpg" />
+    <Content Include="Media\intercontinental-12-09-2012-053650.jpg" />
+    <Content Include="Media\Jasmine-cruise-04-09-2012-053120.jpg" />
+    <Content Include="Media\Junior Suite %281%29-15-10-2012-074519.JPG" />
+    <Content Include="Media\Junior Suite %281%29-15-10-2012-074652.JPG" />
+    <Content Include="Media\khu-du-lich-ba-be1-05-01-2012-030230.jpg" />
+    <Content Include="Media\Khuyen-mai-1%24-14082012115341-02-09-2012-095536.jpg" />
+    <Content Include="Media\Lan-1-10102012054350.JPG" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi-05-11-2012-093411.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi1-05-11-2012-093536.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi3-05-11-2012-093606.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi4-05-11-2012-093624.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi5-05-11-2012-093641.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi6-05-11-2012-093715.jpg" />
+    <Content Include="Media\Lan-Vien-Hotel-Hanoi8-05-11-2012-093735.jpg" />
+    <Content Include="Media\left1.2-04-09-2012-042513.jpg" />
+    <Content Include="Media\logo hanoiviet travel-05-10-2012-103416.JPG" />
+    <Content Include="Media\logo hanoiviet travel-05-10-2012-103502.JPG" />
+    <Content Include="Media\logo hanoiviet travel-05-10-2012-103604.JPG" />
+    <Content Include="Media\logo hanoiviet travel-05-10-2012-104121.JPG" />
+    <Content Include="Media\logo hanoiviet travel-05-10-2012-104146.JPG" />
+    <Content Include="Media\Longtan_cross3b-05-11-2012-085706.gif" />
+    <Content Include="Media\mai chau 08-24-11-2012-085855.jpg" />
+    <Content Include="Media\Mai-chau-25112012093542.jpg" />
+    <Content Include="Media\Mai-chau-Home-stay-25112012093542.jpg" />
+    <Content Include="Media\MAI-CHAU-VALLEY-23112012085050.png" />
+    <Content Include="Media\MAI-CHAU-VALLEY-23112012085623.png" />
+    <Content Include="Media\MAI-CHAU-VALLEY-23112012085729.png" />
+    <Content Include="Media\MAI-CHAU-VALLEY-23112012085824.png" />
+    <Content Include="Media\MAI-CHAU-VALLEY-23112012090523.jpg" />
+    <Content Include="Media\MAI-CHAU-VALLEY-TOUR---HANOI-TOURS-12112012052532.png" />
+    <Content Include="Media\maichau92-28-10-2012-095328.jpg" />
+    <Content Include="Media\maichau92-28-10-2012-100110.jpg" />
+    <Content Include="Media\Mai_Chau_Tour-15-10-2012-083928.jpg" />
+    <Content Include="Media\Mekong_3-05-11-2012-010009.jpg" />
+    <Content Include="Media\Mekong_4-05-11-2012-125735.jpg" />
+    <Content Include="Media\melia-hanoi-lobby-12-09-2012-053732.jpg" />
+    <Content Include="Media\MERCURE-HANOI-LA-GARE-HOTEL-deluxe-04-09-2012-054124.jpg" />
+    <Content Include="Media\mui ne-12-09-2012-054702.gif" />
+    <Content Include="Media\muine-05-01-2012-032743.jpg" />
+    <Content Include="Media\my-khe.jpg" />
+    <Content Include="Media\my-son1-04-09-2012-052811.jpg" />
+    <Content Include="Media\news_147du lich-05-12-2011-104828.jpeg" />
+    <Content Include="Media\news_147du lich-05-12-2011-105016.jpeg" />
+    <Content Include="Media\news_147du lich-05-12-2011-105830.jpeg" />
+    <Content Include="Media\news_15metropole hotel-02-12-2011-023311.jpg" />
+    <Content Include="Media\news_24visa-02-12-2011-023646.jpg" />
+    <Content Include="Media\Ngoc-Son-Temple-18092012054719.jpg" />
+    <Content Include="Media\Ngoc-Son-Temple-18092012060033.jpg" />
+    <Content Include="Media\nha trang-05-12-2011-112650.jpg" />
+    <Content Include="Media\Nha-trang-1-30102012100757.jpg" />
+    <Content Include="Media\Nha-trang-2-30102012100757.jpg" />
+    <Content Include="Media\Nha-trang-3-30102012100757.jpg" />
+    <Content Include="Media\Nha-trang-4-30102012100757.jpg" />
+    <Content Include="Media\Nha-trang-5-30102012100757.jpg" />
+    <Content Include="Media\Nha-trang-beach-18092012060231.jpg" />
+    <Content Include="Media\NHA-TRANG-BEACH-21102012045008.png" />
+    <Content Include="Media\Nha-trang-beach-25092012111259.jpg" />
+    <Content Include="Media\Nha-trang-beach-27092012100646.png" />
+    <Content Include="Media\NHA-TRANG-SUN-SET-12102012083336.png" />
+    <Content Include="Media\NHA-TRANG-SUN-SET-12102012083637.png" />
+    <Content Include="Media\NHA-TRANG-SUN-SET-12102012084155.png" />
+    <Content Include="Media\nhatrangbeach-09-12-2011-020251.jpg" />
+    <Content Include="Media\Nhà Hàng For get-15-10-2012-075430.jpg" />
+    <Content Include="Media\Nhà Hàng For get-15-10-2012-075509.jpg" />
+    <Content Include="Media\Novotel%2520halong%2520hotel%2520-%2520the%2520lobby-04-09-2012-054214.jpg" />
+    <Content Include="Media\Novotel-04-09-2012-054503.jpg" />
+    <Content Include="Media\online-support-20-09-2012-104419.jpg" />
+    <Content Include="Media\P1010775-30-09-2012-085815.jpg" />
+    <Content Include="Media\P1010899-30-09-2012-092253.JPG" />
+    <Content Include="Media\P1020087-30-09-2012-100941.JPG" />
+    <Content Include="Media\P1020089-21-10-2012-125957.JPG" />
+    <Content Include="Media\P1020089-24-09-2012-101906.JPG" />
+    <Content Include="Media\P1020587-28-10-2012-100403.JPG" />
+    <Content Include="Media\P1060503-16-10-2012-025138.JPG" />
+    <Content Include="Media\P1060503-16-10-2012-025238.JPG" />
+    <Content Include="Media\Phu Quoc11%281%29-05-01-2012-033306.jpg" />
+    <Content Include="Media\p_0002-04-09-2012-053018.jpg" />
+    <Content Include="Media\quangcao hay-03-01-2012-031521.swf" />
+    <Content Include="Media\quangcao hay-14-12-2011-023238.swf" />
+    <Content Include="Media\quangcaohay-04-01-2012-102900.swf" />
+    <Content Include="Media\quangcaohay-04-01-2012-103139.jpg" />
+    <Content Include="Media\quangcaohay-21-12-2011-085519.swf" />
+    <Content Include="Media\rfgg-12102012044738.jpg" />
+    <Content Include="Media\Sai gon halong Hotel 1-24-11-2012-101651.jpg" />
+    <Content Include="Media\saigon %281%29-31-10-2012-063032.jpg" />
+    <Content Include="Media\saigon %281%29-31-10-2012-063540.jpg" />
+    <Content Include="Media\Saigon-31-10-2012-062801.jpg" />
+    <Content Include="Media\Sapa-1-24112012060656.jpg" />
+    <Content Include="Media\Sapa-19102012094450.JPG" />
+    <Content Include="Media\Sapa-2-24112012060656.jpg" />
+    <Content Include="Media\SAPA-20102012095246.png" />
+    <Content Include="Media\SAPA-21102012051445.png" />
+    <Content Include="Media\Sapa-3-24112012060656.jpg" />
+    <Content Include="Media\Sapa-6-04122012110440.jpg" />
+    <Content Include="Media\Sapa-Market-19102012094750.JPG" />
+    <Content Include="Media\SAPA-TOUR-27092012104258.png" />
+    <Content Include="Media\sapa-vietnam ruong1-19-12-2011-022046.jpeg" />
+    <Content Include="Media\sapa002-05-12-2011-025616.jpg" />
+    <Content Include="Media\sapa002-05-12-2011-103432.jpg" />
+    <Content Include="Media\sapa002-05-12-2011-121628.jpg" />
+    <Content Include="Media\SDC11501-23-09-2012-114607.JPG" />
+    <Content Include="Media\SDC11501-28-10-2012-112844.jpg" />
+    <Content Include="Media\services21-20-12-2011-015556.jpg" />
+    <Content Include="Media\sheraton-hanoi-hotel-05-12-2011-040232.jpg" />
+    <Content Include="Media\Silk_path_hotel_hanoi-19-10-2012-093737.jpg" />
+    <Content Include="Media\SIMPLE--VIETNAM-12112012055432-11012013021833.png" />
+    <Content Include="Media\SIMPLE--VIETNAM-12112012055432-11012013023140.png" />
+    <Content Include="Media\SIMPLE--VIETNAM-12112012055432.png" />
+    <Content Include="Media\Simple-Viet-Nam-28112012111544.jpg" />
+    <Content Include="Media\SIMPLE-VIETNAM-12112012052806.png" />
+    <Content Include="Media\SIMPLE-VIETNAM-12112012053654.png" />
+    <Content Include="Media\slide1.jpg" />
+    <Content Include="Media\slide2.jpg" />
+    <Content Include="Media\slide3.jpg" />
+    <Content Include="Media\slidex1.jpg" />
+    <Content Include="Media\slidex2.jpg" />
+    <Content Include="Media\slidex3.jpg" />
+    <Content Include="Media\spa-09-01-2012-084911.jpg" />
+    <Content Include="Media\spa-09-01-2012-124608.jpg" />
+    <Content Include="Media\SPRING-IN-VIETNAM-28122012110756.png" />
+    <Content Include="Media\SPRING-IN-VIETNAM-28122012111339-11012013021858.png" />
+    <Content Include="Media\SPRING-IN-VIETNAM-28122012111339-11012013023147.png" />
+    <Content Include="Media\SPRING-IN-VIETNAM-28122012111339.png" />
+    <Content Include="Media\ssss-08-12-2011-112538.jpg" />
+    <Content Include="Media\statue_inside_perfume_pagoda-12-10-2012-111748.jpg" />
+    <Content Include="Media\Suite Room 1-11-10-2012-055543.jpg" />
+    <Content Include="Media\sunway_hotel1-19-10-2012-093628.jpg" />
+    <Content Include="Media\sup-10-10-2012-051719.jpg" />
+    <Content Include="Media\tau 03-15-10-2012-093412.jpg" />
+    <Content Include="Media\tau-15-10-2012-093647.jpg" />
+    <Content Include="Media\test-10102012054126.jpg" />
+    <Content Include="Media\test-video-album-10102012054536.JPG" />
+    <Content Include="Media\thacbangioc-05-01-2012-030458.jpg" />
+    <Content Include="Media\thai-lan-2-26-12-2011-040855.jpg" />
+    <Content Include="Media\thien_chu_pagoda-12-10-2012-111825.jpg" />
+    <Content Include="Media\Tirant%27s  lobby 02-09-10-2012-111038.jpg" />
+    <Content Include="Media\tkcn3-05-12-2011-113444.jpg" />
+    <Content Include="Media\tkcn3-29-11-2011-115734.jpg" />
+    <Content Include="Media\Tour cuc phuong 01-14-10-2012-054628.jpg" />
+    <Content Include="Media\tour-nha-trang2-08-12-2011-084932.jpg" />
+    <Content Include="Media\train-08-12-2011-114227.jpg" />
+    <Content Include="Media\travel-guide.jpg" />
+    <Content Include="Media\travelclassic.jpg" />
+    <Content Include="Media\tra_co_dong_hung-05-12-2011-112701.jpg" />
+    <Content Include="Media\tro giup toan cau copy-12-12-2011-022349.jpg" />
+    <Content Include="Media\univer-express-08-12-2011-084344.jpg" />
+    <Content Include="Media\univer-express-08-12-2011-084430.jpg" />
+    <Content Include="Media\Untitled-21-10-2012-010035.png" />
+    <Content Include="Media\Untitled-30-09-2012-093803.png" />
+    <Content Include="Media\Untitled-30-09-2012-093909.png" />
+    <Content Include="Media\Ve-dep-tiem-an-Viet-Nam-02102012024706.jpg" />
+    <Content Include="Media\Ve-dep-tiem-an-Viet-Nam-04102012050355.jpg" />
+    <Content Include="Media\VGCC_map-optimised-20-04-2012-095813.jpg" />
+    <Content Include="Media\Victoria Sapa Resort-12-09-2012-053836.jpg" />
+    <Content Include="Media\vientiane-26-12-2011-040546.jpg" />
+    <Content Include="Media\viet7769.small-15-10-2012-083946.jpeg" />
+    <Content Include="Media\viet7776.small-15-10-2012-084015.jpeg" />
+    <Content Include="Media\VIETNAM--21102012044905.png" />
+    <Content Include="Media\vietnam-05-12-2011-025831.jpg" />
+    <Content Include="Media\vietnam-05-12-2011-115513.jpg" />
+    <Content Include="Media\vietnam-05-12-2011-115524.jpg" />
+    <Content Include="Media\vietnam-05-12-2011-115531.jpg" />
+    <Content Include="Media\VIETNAM-BEACH-12112012055537.png" />
+    <Content Include="Media\vietnam-cookery-center.jpg" />
+    <Content Include="Media\vietnam_family_adventure_6-31-10-2012-063628.gif" />
+    <Content Include="Media\vietnam_tours-04-09-2012-034223.jpg" />
+    <Content Include="Media\Vietran241211021233.swf" />
+    <Content Include="Media\vinh-hang-dua-tp-vung-tau-05-01-2012-033600.jpg" />
+    <Content Include="Media\vspirit-classic-overview-6-15-10-2012-093952.jpg" />
+    <Content Include="Media\waikiki-beach-honolulu-hawai.jpg" />
+    <Content Include="Media\x258115520120820203130sai_gon_-_chua_thien_hau_2.jpg.pagespeed.ic.VfVJRwzxAH-31-10-2012-063713.jpg" />
+    <Content Include="Media\x26155886020120820203129sai_gon_-_nha_tho_duc_ba_1.jpg.pagespeed.ic.gVV1WgwL41-31-10-2012-063435.jpg" />
+    <Content Include="Media\x26155886020120820203129sai_gon_-_nha_tho_duc_ba_1.jpg.pagespeed.ic.gVV1WgwL41-31-10-2012-063932.jpg" />
+    <Content Include="Media\x2912461120120820203130sai_gon_-_cho_lon_1.jpg.pagespeed.ic.TGE7_POiuf-31-10-2012-063740.jpg" />
+    <Content Include="Media\x59258118520120820203130sai_gon_-_nha_hat_lon_3.jpg.pagespeed.ic.aq1RYFCMGZ-31-10-2012-063823.jpg" />
     <Content Include="Module\ucAboutMenu.ascx" />
+    <Content Include="Module\ucBreadcrumb.ascx" />
+    <Content Include="Module\ucFooter.ascx" />
     <Content Include="Module\ucHomeHotelTab.ascx" />
     <Content Include="Module\ucHomepageAlbums.ascx" />
+    <Content Include="Module\ucHomepageTourCate.ascx" />
     <Content Include="Module\ucHomeTopTour.ascx" />
     <Content Include="Module\ucHomeTourCategory.ascx" />
+    <Content Include="Module\ucHotelList.ascx" />
     <Content Include="Module\ucHotTours.ascx" />
     <Content Include="Module\ucLeftBanner.ascx" />
     <Content Include="Module\ucMnuContact.ascx" />
@@ -1853,6 +2450,7 @@
     <Content Include="Module\ucMnuTravel.ascx" />
     <Content Include="Module\ucMnuTravelGuide.ascx" />
     <Content Include="Module\ucPopupLang.ascx" />
+    <Content Include="Module\ucPromotions.ascx" />
     <Content Include="Module\ucRelatedTour.ascx" />
     <Content Include="Module\ucRightBanner.ascx" />
     <Content Include="Module\ucSearchTour.ascx" />
@@ -1863,7 +2461,11 @@
     <Content Include="Module\ucTestimonial.ascx" />
     <Content Include="Module\ucTopStarRatesHotels.ascx" />
     <Content Include="Module\ucTourCateLeftMenu.ascx" />
+    <Content Include="Module\ucTourDestination.ascx" />
+    <Content Include="Module\ucTourDetail.ascx" />
+    <Content Include="Module\ucTourList.ascx" />
     <Content Include="Module\ucTravelGuideHome.ascx" />
+    <Content Include="Module\ucTravelNews.ascx" />
     <Content Include="Module\ucTravelNewsHome.ascx" />
     <Content Include="News.aspx" />
     <Content Include="obj\Debug\SES.VTTEN.WEB.csproj.FileListAbsolute.txt" />
@@ -1873,6 +2475,7 @@
     <Content Include="preview.css" />
     <Content Include="Promotions.aspx" />
     <Content Include="Search.aspx" />
+    <Content Include="SES.VTTEN.WEB.Publish.xml" />
     <Content Include="Tour-Booking.aspx" />
     <Content Include="Tour-Category.aspx" />
     <Content Include="Tour-Destination.aspx" />
@@ -1897,6 +2500,7 @@
   <ItemGroup>
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -2373,30 +2977,35 @@
     </Compile>
     <Compile Include="AlbumDetail.aspx.cs">
       <DependentUpon>AlbumDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AlbumDetail.aspx.designer.cs">
       <DependentUpon>AlbumDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Albums.aspx.cs">
       <DependentUpon>Albums.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Albums.aspx.designer.cs">
       <DependentUpon>Albums.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Custom-Tour.aspx.cs">
       <DependentUpon>Custom-Tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Custom-Tour.aspx.designer.cs">
       <DependentUpon>Custom-Tour.aspx</DependentUpon>
     </Compile>
     <Compile Include="Customer-Reviews.aspx.cs">
       <DependentUpon>Customer-Reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Customer-Reviews.aspx.designer.cs">
       <DependentUpon>Customer-Reviews.aspx</DependentUpon>
@@ -2410,12 +3019,21 @@
     </Compile>
     <Compile Include="Destination.aspx.cs">
       <DependentUpon>Destination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Destination.aspx.designer.cs">
       <DependentUpon>Destination.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Destinations.aspx.cs">
+      <DependentUpon>Destinations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Destinations.aspx.designer.cs">
+      <DependentUpon>Destinations.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HanoiViet.Master.cs">
       <DependentUpon>HanoiViet.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HanoiViet.Master.designer.cs">
       <DependentUpon>HanoiViet.Master</DependentUpon>
@@ -2429,18 +3047,21 @@
     </Compile>
     <Compile Include="Hotel-Booking.aspx.cs">
       <DependentUpon>Hotel-Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Hotel-Booking.aspx.designer.cs">
       <DependentUpon>Hotel-Booking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hotel-Category.aspx.cs">
       <DependentUpon>Hotel-Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Hotel-Category.aspx.designer.cs">
       <DependentUpon>Hotel-Category.aspx</DependentUpon>
     </Compile>
     <Compile Include="Hotel.aspx.cs">
       <DependentUpon>Hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Hotel.aspx.designer.cs">
       <DependentUpon>Hotel.aspx</DependentUpon>
@@ -2451,6 +3072,13 @@
     </Compile>
     <Compile Include="ListTour.aspx.designer.cs">
       <DependentUpon>ListTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListTour.Master.cs">
+      <DependentUpon>ListTour.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListTour.Master.designer.cs">
+      <DependentUpon>ListTour.Master</DependentUpon>
     </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
@@ -2466,6 +3094,20 @@
     <Compile Include="Module\ucAboutMenu.ascx.designer.cs">
       <DependentUpon>ucAboutMenu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Module\ucBreadcrumb.ascx.cs">
+      <DependentUpon>ucBreadcrumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucBreadcrumb.ascx.designer.cs">
+      <DependentUpon>ucBreadcrumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucFooter.ascx.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucFooter.ascx.designer.cs">
+      <DependentUpon>ucFooter.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Module\ucHomeHotelTab.ascx.cs">
       <DependentUpon>ucHomeHotelTab.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2480,6 +3122,13 @@
     <Compile Include="Module\ucHomepageAlbums.ascx.designer.cs">
       <DependentUpon>ucHomepageAlbums.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Module\ucHomepageTourCate.ascx.cs">
+      <DependentUpon>ucHomepageTourCate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucHomepageTourCate.ascx.designer.cs">
+      <DependentUpon>ucHomepageTourCate.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Module\ucHomeTopTour.ascx.cs">
       <DependentUpon>ucHomeTopTour.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2493,6 +3142,13 @@
     </Compile>
     <Compile Include="Module\ucHomeTourCategory.ascx.designer.cs">
       <DependentUpon>ucHomeTourCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucHotelList.ascx.cs">
+      <DependentUpon>ucHotelList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucHotelList.ascx.designer.cs">
+      <DependentUpon>ucHotelList.ascx</DependentUpon>
     </Compile>
     <Compile Include="Module\ucHotTours.ascx.cs">
       <DependentUpon>ucHotTours.ascx</DependentUpon>
@@ -2542,6 +3198,13 @@
     </Compile>
     <Compile Include="Module\ucPopupLang.ascx.designer.cs">
       <DependentUpon>ucPopupLang.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucPromotions.ascx.cs">
+      <DependentUpon>ucPromotions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucPromotions.ascx.designer.cs">
+      <DependentUpon>ucPromotions.ascx</DependentUpon>
     </Compile>
     <Compile Include="Module\ucRelatedTour.ascx.cs">
       <DependentUpon>ucRelatedTour.ascx</DependentUpon>
@@ -2613,12 +3276,40 @@
     <Compile Include="Module\ucTourCateLeftMenu.ascx.designer.cs">
       <DependentUpon>ucTourCateLeftMenu.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Module\ucTourDestination.ascx.cs">
+      <DependentUpon>ucTourDestination.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucTourDestination.ascx.designer.cs">
+      <DependentUpon>ucTourDestination.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucTourDetail.ascx.cs">
+      <DependentUpon>ucTourDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucTourDetail.ascx.designer.cs">
+      <DependentUpon>ucTourDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucTourList.ascx.cs">
+      <DependentUpon>ucTourList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucTourList.ascx.designer.cs">
+      <DependentUpon>ucTourList.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Module\ucTravelGuideHome.ascx.cs">
       <DependentUpon>ucTravelGuideHome.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Module\ucTravelGuideHome.ascx.designer.cs">
       <DependentUpon>ucTravelGuideHome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Module\ucTravelNews.ascx.cs">
+      <DependentUpon>ucTravelNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Module\ucTravelNews.ascx.designer.cs">
+      <DependentUpon>ucTravelNews.ascx</DependentUpon>
     </Compile>
     <Compile Include="Module\ucTravelNewsHome.ascx.cs">
       <DependentUpon>ucTravelNewsHome.ascx</DependentUpon>
@@ -2629,12 +3320,14 @@
     </Compile>
     <Compile Include="News.aspx.cs">
       <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="News.aspx.designer.cs">
       <DependentUpon>News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Promotions.aspx.cs">
       <DependentUpon>Promotions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Promotions.aspx.designer.cs">
       <DependentUpon>Promotions.aspx</DependentUpon>
@@ -2642,54 +3335,63 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Search.aspx.designer.cs">
       <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tour-Booking.aspx.cs">
       <DependentUpon>Tour-Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tour-Booking.aspx.designer.cs">
       <DependentUpon>Tour-Booking.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tour-Category.aspx.cs">
       <DependentUpon>Tour-Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tour-Category.aspx.designer.cs">
       <DependentUpon>Tour-Category.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tour-Destination.aspx.cs">
       <DependentUpon>Tour-Destination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tour-Destination.aspx.designer.cs">
       <DependentUpon>Tour-Destination.aspx</DependentUpon>
     </Compile>
     <Compile Include="Tour.aspx.cs">
       <DependentUpon>Tour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Tour.aspx.designer.cs">
       <DependentUpon>Tour.aspx</DependentUpon>
     </Compile>
     <Compile Include="Travel-Guide.aspx.cs">
       <DependentUpon>Travel-Guide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Travel-Guide.aspx.designer.cs">
       <DependentUpon>Travel-Guide.aspx</DependentUpon>
     </Compile>
     <Compile Include="Travel-Guides.aspx.cs">
       <DependentUpon>Travel-Guides.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Travel-Guides.aspx.designer.cs">
       <DependentUpon>Travel-Guides.aspx</DependentUpon>
     </Compile>
     <Compile Include="Travel-News.aspx.cs">
       <DependentUpon>Travel-News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Travel-News.aspx.designer.cs">
       <DependentUpon>Travel-News.aspx</DependentUpon>
     </Compile>
     <Compile Include="Travel-Review.aspx.cs">
       <DependentUpon>Travel-Review.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Travel-Review.aspx.designer.cs">
       <DependentUpon>Travel-Review.aspx</DependentUpon>
@@ -2697,18 +3399,21 @@
     <Compile Include="Ultility.cs" />
     <Compile Include="VideoDetail.aspx.cs">
       <DependentUpon>VideoDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="VideoDetail.aspx.designer.cs">
       <DependentUpon>VideoDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Videos.aspx.cs">
       <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Videos.aspx.designer.cs">
       <DependentUpon>Videos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vietnam-Destination.aspx.cs">
       <DependentUpon>Vietnam-Destination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vietnam-Destination.aspx.designer.cs">
       <DependentUpon>Vietnam-Destination.aspx</DependentUpon>
@@ -2739,20 +3444,16 @@
     <Content Include="HanoiViet.Master" />
     <None Include="img\slider_fancy.svg" />
     <Content Include="Master.Master" />
+    <Content Include="ListTour.Master" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\ResolveAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Media\" />
     <Folder Include="obj\Debug\Refactor\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SES.VTTEN.BL\SES.VTTEN.BL.csproj">
-      <Project>{87499451-AD2D-4F72-A493-62057252C95B}</Project>
-      <Name>SES.VTTEN.BL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SES.VTTEN.DAL\SES.VTTEN.DAL.csproj">
       <Project>{22AC879F-AC37-4B3C-81B8-C7E1EF4CEB9C}</Project>
       <Name>SES.VTTEN.DAL</Name>
