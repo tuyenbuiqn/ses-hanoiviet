@@ -23,11 +23,18 @@ namespace SES.VTTEN.WEB
             rptListImage.DataSource = slideBL.SelectByCategoryID(1);
             rptListImage.DataBind();
 
-            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);//List theo du lịch trong nước
             rptListVNTour.DataBind();
 
-            rptListVnTourleft.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListENTour.DataSource = new TourTypeBL().SelectByTopID(20);//List theo du lịch nước ngoài
+            rptListENTour.DataBind();
+
+            rptListVnTourleft.DataSource = new TourTypeBL().SelectByTopID(1);//List theo du lịch trong nước
             rptListVnTourleft.DataBind();
+
+            rptListEnTourleft.DataSource = new TourTypeBL().SelectByTopID(20);//List theo du lịch nước ngoài
+            rptListEnTourleft.DataBind();
+
             //Ẩn hiện menu con của Du lịch việt nam
             if (Request.QueryString["P"] != null)
             {

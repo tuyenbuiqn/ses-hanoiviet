@@ -41,8 +41,11 @@ namespace SES.VTTEN.WEB
             scrOut += "  });</script>";
             lblscrOut.Text = scrOut;
 
-            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);
+            rptListVNTour.DataSource = new TourTypeBL().SelectByTopID(1);//List theo du lịch trong nước
             rptListVNTour.DataBind();
+
+            rptListENTour.DataSource = new TourTypeBL().SelectByTopID(20);//List theo du lịch nước ngoài
+            rptListENTour.DataBind();
         }
     }
 }

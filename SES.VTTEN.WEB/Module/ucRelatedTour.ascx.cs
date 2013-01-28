@@ -27,6 +27,7 @@ namespace SES.VTTEN.WEB.Module
             }
 
         }
+        
         public string Duration(string day, string night)
         {
 
@@ -38,6 +39,7 @@ namespace SES.VTTEN.WEB.Module
             else night = night + " nights";
             return day + " " + night;
         }
+        
         protected void rptRelatedTourDataSource(int TourID)
         {
             int TourTypeID = int.Parse(new TourBL().Select(new TourDO{TourID = TourID}).TourTypeID.ToString());
@@ -51,5 +53,11 @@ namespace SES.VTTEN.WEB.Module
         {
             return Ultility.Change_AV(s);
         }
+
+        public string WordCut(string text)
+        {
+            return Ultility.WordCut(text, 50, new char[] { ' ', '.', ',', ';' }) + "...";
+        }
+
     }
 }

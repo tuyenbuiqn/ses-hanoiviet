@@ -29,5 +29,14 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SES.VTTEN.WEB.Module.ucTourDetail ucTourDetail1;
+        
+        /// <summary>
+        /// ucRelatedTour1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SES.VTTEN.WEB.Module.ucRelatedTour ucRelatedTour1;
     }
 }
