@@ -129,6 +129,11 @@ namespace SES.VTTEN.BL
         {
             return objTourDAL.Search(DesID, TourTypeID, TourCatID, DurationID);
         }
+
+        public DataTable SearchGiaTour(int DesID, int TourTypeID, int TourGiaTourID, int DurationID)
+        {
+            return objTourDAL.SearchGiaTour(DesID, TourTypeID, TourGiaTourID, DurationID);
+        }
     }
 
 }
