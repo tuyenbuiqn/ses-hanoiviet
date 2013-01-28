@@ -984,13 +984,13 @@ position:relative;
 
 .TourLienQuan, .ListTourBox, .MoTa-ListTourBox
 {
-	float:left; width: 100%;
+	float:left; width: 700px;
 }
 .TourLienQuan .ListTourBox
 {
 	float: left;
 	height: 200px;
-    width: 220px;
+    width: 210px;
     margin-right: 10px;
 }
 .TourLienQuan .ListTourBox p.ListTourBox-title
@@ -1017,7 +1017,7 @@ position:relative;
 	float: left;
 	height: 100px;
 	padding: 2px;
-	width: 220px;
+	width: 210px;
 }
 .TourLienQuan .ListTourBox .Time-Price-ListTourBox
 {
