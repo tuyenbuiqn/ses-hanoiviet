@@ -981,3 +981,77 @@ position:relative;
 	padding-left: 20px;
 	text-transform:none;
 }
+
+.TourLienQuan, .ListTourBox, .MoTa-ListTourBox
+{
+	float:left; width: 100%;
+}
+.TourLienQuan .ListTourBox
+{
+	float: left;
+	height: 200px;
+    width: 220px;
+    margin-right: 10px;
+}
+.TourLienQuan .ListTourBox p.ListTourBox-title
+{
+	float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.TourLienQuan .ListTourBox p.ListTourBox-title a
+{
+	color: #0075A6;
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+}
+.TourLienQuan .ListTourBox .ImagesTour
+{
+	float: left;
+	width: 100%;
+}
+.TourLienQuan .ListTourBox .ImagesTour a img
+{
+	border: 1px solid #5EB7CE;
+	float: left;
+	height: 100px;
+	padding: 2px;
+	width: 220px;
+}
+.TourLienQuan .ListTourBox .Time-Price-ListTourBox
+{
+	float: left;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    width: 100%;
+}
+.TourLienQuan .ListTourBox .Time-Price-ListTourBox p.Time-ListTourBox
+{
+	color: #BC2A05;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.TourLienQuan .ListTourBox .Time-Price-ListTourBox p.Price-ListTourBox
+{
+	color: #BC2A05;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    width: 50%;
+    text-align:right;
+}
+.TourLienQuan .ListTourBox .MoTa-ListTourBox
+{
+	float: left;
+    width: 100%;
+}
+.TourLienQuan .ListTourBox .MoTa-ListTourBox p
+{
+	 color: #111111;
+    font-size: 11px;
+    text-align: left;
+}

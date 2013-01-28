@@ -40,6 +40,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListVNTour;
         
         /// <summary>
+        /// rptListENTour control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptListENTour;
+        
+        /// <summary>
         /// rptListImage control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,24 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptListVnTourleft;
+        
+        /// <summary>
+        /// Ul1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Ul1;
+        
+        /// <summary>
+        /// rptListEnTourleft control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptListEnTourleft;
         
         /// <summary>
         /// ucSearch1 control.

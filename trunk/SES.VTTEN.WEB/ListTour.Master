@@ -163,7 +163,16 @@
                                 </asp:Repeater>    
                             </ul>
                         </li>
-                        <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
+                        <li>
+                            <a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a>
+                            <ul>
+                                <asp:Repeater ID="rptListENTour" runat="server">
+                                    <ItemTemplate>
+                                        <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>    
+                            </ul>
+                        </li>
                         <li><a href="/Destinations/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng cảnh nổi tiếng</a></li>
                         <li><a href="/Contact.aspx" title="Liên hệ với chúng tôi">Liên hệ</a></li>
                     </ul>
@@ -198,7 +207,16 @@
                                         </asp:Repeater>    
                                     </ul>
                                 </li>
-                                <li><a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a></li>
+                                <li>
+                                    <a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">Du lịch nước ngoài</a>
+                                    <ul id="Ul1" runat="server">
+                                        <asp:Repeater ID="rptListEnTourleft" runat="server">
+                                            <ItemTemplate>
+                                                <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>">» <%# Eval("Title") %></a></li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>    
+                                    </ul>
+                                </li>
                                 <li><a href="/Travel-Review/1/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
                                 <li><a href="/Destinations/1/Default.aspx" title="Danh lam thắng cảnh">Danh lam thắng cảnh</a></li>
                                 <li><a href="/Travel-Guides/1/Default.aspx" title="Điều khoản đi Tour">Điều khoản đi Tour</a></li>
