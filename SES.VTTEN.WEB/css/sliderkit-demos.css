@@ -50,3 +50,17 @@
 	height: 90px;
 	width: 115px;
 }
+
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-btn{position:absolute;top:0;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-btn span{display:none;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-btn a{display:block;width:15px;height:84px;background:transparent url("../images/arrows-h.png") no-repeat center 0;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-prev{left:-20px;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-next{right:-10px;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-prev a{background-position:-89px center;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-next a{background-position:-108px center;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-prev a:hover,
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-prev a:focus{background-position:-126px center;}
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-next a:hover,
+.carousel-demo2 .sliderkit-nav .sliderkit-nav-next a:focus{background-position:-145px center;}
+
+.TourLienQuan .sliderkit .sliderkit-nav{z-index:10;position:absolute;text-align:center; margin-left: 30px;}

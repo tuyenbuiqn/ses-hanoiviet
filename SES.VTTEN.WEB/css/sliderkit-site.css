@@ -26,7 +26,7 @@ img{border:none;}
 
 #page{padding:15px 0 0;border:1px solid #FFFFFF;}
 #content{width:570px;}
-.inner{width:800px;margin:0 auto;text-align:left;}
+.inner{margin:0 auto;text-align:left;}
 .layout-1col #content{float:none;}
 .layout-1col #content.wide{width:auto;}
 
