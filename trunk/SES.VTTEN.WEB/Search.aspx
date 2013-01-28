@@ -1,24 +1,59 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/HanoiViet.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="SES.VTTEN.WEB.Search" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/ListTour.Master" AutoEventWireup="true" CodeBehind="Search.aspx.cs" Inherits="SES.VTTEN.WEB.Search" Title="Untitled Page" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
-<%@ Register Src="Module/ucTourCateLeftMenu.ascx" TagName="ucTourCateLeftMenu" TagPrefix="uc1" %>
-<%@ Register Src="Module/ucSearchTour.ascx" TagName="ucSearchTour" TagPrefix="uc2" %>
-<%@ Register Src="Module/ucSendContact.ascx" TagName="ucSendContact" TagPrefix="uc3" %>
-<%@ Register Src="Module/ucRelatedTour.ascx" TagName="ucRelatedTour" TagPrefix="uc4" %>
-<%@ Register Src="Module/ucHotTours.ascx" TagName="ucHotTours" TagPrefix="uc5" %>
-<%@ Register Src="Module/ucTopStarRatesHotels.ascx" TagName="ucTopStarRatesHotels"
-    TagPrefix="uc6" %>
-<%@ Register Src="Module/ucLeftBanner.ascx" TagName="ucLeftBanner" TagPrefix="uc7" %>
-<%@ Register src="Module/ucRightBanner.ascx" tagname="ucRightBanner" tagprefix="uc8" %>
+<%@ Register TagPrefix="cp" Namespace="SiteUtils" Assembly="CollectionPager" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="/css/tourstyle.css" rel="stylesheet" type="text/css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-    <div id="Panel">
-        <div class="menuleftmain1">
-            <uc1:ucTourCateLeftMenu ID="ucTourCateLeftMenu1" runat="server" />
-            <uc7:ucLeftBanner ID="ucLeftBanner1" runat="server" />
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="DanhSachTour-title">
+        <div>
+            <p>
+                <asp:Label ID="lblTitle" runat="server" Text="Tìm Kiếm"></asp:Label></p>
         </div>
+        <img style="border: 0px;" src="/image/ImgTitleIcon.png" />
+    </div>
+    <asp:Repeater ID="rptTourCat" runat="server">
+        <ItemTemplate>
+            <div class="DanhSachTour-box">
+                <div class="DanhSachTour-detail">
+                    <a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %> (<%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>)</p></a>
+                    <p class="Price">Giá Tour: <%#Eval("TourPrice", "{0:0,000}")%>đ</p>
+                    <p class="Time">Duration: <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%></p>
+                    <p class="Code">Trip Code: <%#Eval("TourCode")%></p>
+                    <p class="MoTaChung">Mô tả chung:</p>
+                    <p class="descriptions"><%#WordCut(Eval("MetaDes").ToString())%></p>
+                    <div class="Action">
+                        <a href="/Tour-Booking/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>">
+                            <img  alt="lnkBookNow" title="BookNow" style="border: 0px;" src="/image/IconBookNow.png" />
+                        </a>
+                        <a href="/Custom-Tour/0/Customize-your-own-trips.aspx">
+                            <img  alt="lnkCustomizeTour" title="CustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                        </a>
+                    </div>
+                </div>
+                <a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" class="DanhSachTourImg" >
+                    <img alt="<%#Eval("Title") %>" title="<%#Eval("Title") %>" src="/Media/<%#Eval("TourImage") %>" />
+                </a>
+            </div>
+        </ItemTemplate>
+    </asp:Repeater>
+    <div style="width: 100%;float: right; text-align: right;">
+        <div class="collection">
+            <cp:CollectionPager LabelText="" 
+                FirstText="&amp;nbsp;&amp;nbsp;<<" BackText="< &amp;nbsp;"
+                LastText=">>" NextText=">" ShowFirstLast="True" ControlCssClass="collectionpager"
+                PagingMode="PostBack" runat="server" BackNextLinkSeparator="" BackNextLocation="Split"
+                PageNumbersDisplay="Numbers" ResultsLocation="None" BackNextDisplay="HyperLinks"
+                ID="CollectionPager1" BackNextButtonStyle="" BackNextStyle="margin-left:5px;"
+                ControlStyle="" PageNumbersSeparator="&amp;nbsp;" ShowLabel="True">
+            </cp:CollectionPager>
+            <div class="collectPage">Page: 
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<%--
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="Panel">
         <div class="left-content">
             <div class="content">
                 <h1>
@@ -68,26 +103,5 @@
                 </div>
             </div>
         </div>
-        <div class="mainR">
-            <uc2:ucSearchTour ID="ucSearchTour1" runat="server" />
-            <uc3:ucSendContact ID="ucSendContact1" runat="server" />
-            <%--  <div class="modul2">
-                <div class="modul1in">
-                    <div class="titmodul1">
-                        Hot Promotion</div>
-                </div>
-                <div class="modul1list">
-                    <ul>
-                        <li><a href="http://www.southpacifictravel.com.vn/tours/indochina_tours/152/Halong_Bai_Tu_Long_junk.aspx">
-                            Halong Bai Tu Long junk </a></li>
-                    </ul>
-                </div>
-            </div>--%>
-            
-            <uc6:ucTopStarRatesHotels ID="ucTopStarRatesHotels1" runat="server" />
-            <uc5:ucHotTours ID="ucHotTours1" runat="server" />
-            <uc8:ucRightBanner ID="ucRightBanner1" runat="server" />
-        </div>
-        <!----- ### End Right Main ### ----->
     </div>
-</asp:Content>
+</asp:Content>--%>

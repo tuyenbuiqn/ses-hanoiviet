@@ -20,10 +20,12 @@ namespace SES.VTTEN.WEB
         {
             LoadRPT();
         }
+        
         public string FriendlyUrl(string s)
         {
             return Ultility.Change_AV(s);
         }
+        
         public string Duration(string day, string night)
         {
 
@@ -35,6 +37,7 @@ namespace SES.VTTEN.WEB
             else night = night + " nights";
             return day + " " + night;
         }
+        
         private void LoadRPT()
         {
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
@@ -42,24 +45,22 @@ namespace SES.VTTEN.WEB
                 string SearchQuery = Request.QueryString["ID"].ToString();
                 int DesID = 0;
                 int TourTypeID = 0;
-                int TourCatID = 0; 
+                int TourGiaTourID = 0; 
                 int DurationID = 0;
                 DesID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
                 TourTypeID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
-                TourCatID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
+                TourGiaTourID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
                 DurationID = int.Parse(SearchQuery);
 
-                bindatalist(new TourBL().Search(DesID,TourTypeID,TourCatID,DurationID));
-               
+                bindatalist(new TourBL().SearchGiaTour(DesID, TourTypeID, TourGiaTourID, DurationID));
 
                 Page.Title = "Search results" + Ultility.Webtile();
-               
-
             }
         }
+
         public string WordCut(string text)
         {
             return Ultility.WordCut(text, 290, new char[] { ' ', '.', ',', ';' }) + "...";
@@ -83,33 +84,18 @@ namespace SES.VTTEN.WEB
             }
         }
 
-        protected void cmdPrev_Click(object sender, ImageClickEventArgs e)
-        {
-            CurrentPage -= 1;
-
-            // Reload control
-            LoadRPT();
-        }
-        protected void cmdNext_Click(object sender, ImageClickEventArgs e)
-        {
-            CurrentPage += 1;
-            LoadRPT();
-        }
-
         private void bindatalist(DataTable dt)
         {
+            CollectionPager1.MaxPages = 10000;
 
-            PagedDataSource objPds = new PagedDataSource();
-            objPds.DataSource = dt.DefaultView;
-            objPds.AllowPaging = true;
-            objPds.PageSize = 8;
-            objPds.CurrentPageIndex = CurrentPage;
-            cmdPrev.Visible = !objPds.IsFirstPage;
-            cmdNext.Visible = !objPds.IsLastPage;
+            CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
+
+            CollectionPager1.DataSource = dt.DefaultView;
+
+            CollectionPager1.BindToControl = rptTourCat;
             if (dt.Rows.Count > 0)
             {
-
-                rptTourCat.DataSource = objPds;
+                rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
                 rptTourCat.DataBind();
             }
         }

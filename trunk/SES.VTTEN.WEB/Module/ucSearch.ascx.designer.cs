@@ -7,63 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SES.VTTEN.WEB {
+namespace SES.VTTEN.WEB.Module {
     
     
-    public partial class Default {
+    public partial class ucSearch {
         
         /// <summary>
-        /// ucSearch1 control.
+        /// ddlTourType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucSearch ucSearch1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTourType;
         
         /// <summary>
-        /// imgPromo control.
+        /// ddlDestinations control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPromo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDestinations;
         
         /// <summary>
-        /// lblPromo control.
+        /// ddlGiaTour control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPromo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlGiaTour;
         
         /// <summary>
-        /// ucHomepageAlbums1 control.
+        /// ddlDuration control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucHomepageAlbums ucHomepageAlbums1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDuration;
         
         /// <summary>
-        /// ucSupportOnline1 control.
+        /// lnkTimKiem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucSupportOnline ucSupportOnline1;
-        
-        /// <summary>
-        /// ucHomepageTourCate1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucHomepageTourCate ucHomepageTourCate1;
+        protected global::System.Web.UI.WebControls.LinkButton lnkTimKiem;
     }
 }
