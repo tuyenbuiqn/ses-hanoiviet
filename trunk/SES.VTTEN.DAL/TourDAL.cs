@@ -763,6 +763,37 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
+
+        public DataTable SearchGiaTour(int DesID, int TourTypeID, int TourGiaTourID, int DurationID)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spSearch";
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@DestinationID", SqlDbType.Int);
+            Sqlparam.Value = DesID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+            Sqlparam = new SqlParameter("@TourTypeID", SqlDbType.Int);
+            Sqlparam.Value = TourTypeID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+            Sqlparam = new SqlParameter("@TourGiaTourID", SqlDbType.Int);
+            Sqlparam.Value = TourGiaTourID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+            Sqlparam = new SqlParameter("@DurationID", SqlDbType.Int);
+            Sqlparam.Value = DurationID;
+
+            Sqlcomm.Parameters.Add(Sqlparam);
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
     }
 
 }
