@@ -262,7 +262,8 @@ position:relative;
 }
 .detail-box .TimKiemTour td
 {
-	height: 24px;
+	height: 30px;
+	vertical-align:middle;
 }
 .detail-box .TimKiemTour .lnk
 {
