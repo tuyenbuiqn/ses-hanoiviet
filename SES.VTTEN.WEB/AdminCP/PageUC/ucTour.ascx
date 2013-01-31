@@ -133,13 +133,13 @@
                     ErrorMessage="Số" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
             </td>
             <td>
-                Is Promotion</td>
+                Tour Khuyến mãi</td>
             <td>
                 <asp:CheckBox ID="cbIsSaleOff" runat="server" />
                 &nbsp;&nbsp;&nbsp;
-                Is Out Promotion
+                
             
-                <asp:CheckBox ID="cbIsOutPromotion" runat="server" />
+                <asp:CheckBox Visible="false" ID="cbIsOutPromotion" runat="server" />
             </td>
             
 
@@ -156,9 +156,9 @@
                 </asp:RadioButtonList>
             </td>
             <td>
-                Is Menu</td>
+              </td>
             <td>
-            <asp:CheckBox runat="server" ID="cbIsMenu" />
+            <asp:CheckBox runat="server" Visible="false" ID="cbIsMenu" />
                 &nbsp;&nbsp;&nbsp;
                 Tour trong nước
             <asp:CheckBox runat="server" ID="cbIsInboundTour" />
@@ -169,7 +169,7 @@
                 <asp:TabContainer ID="tcDetail" runat="server" ActiveTabIndex="0" Width="100%">
                     <asp:TabPanel runat="server" HeaderText="Description" ID="TabPanel1">
                         <HeaderTemplate>
-                            Description
+                            Mô tả
                         </HeaderTemplate>
                         <ContentTemplate>
                             <asp:TextBox ID="txtMetaDes" TextMode="MultiLine" runat="server" Width="100%" Height="124px"></asp:TextBox>
@@ -177,7 +177,7 @@
                     </asp:TabPanel>
                     <asp:TabPanel ID="TabPanel2" runat="server" HeaderText="Tour itinerary">
                         <HeaderTemplate>
-                            Tour itinerary
+                            Chương trình Tour
                         </HeaderTemplate>
                         <ContentTemplate>
                             <CKEditor:CKEditorControl FilebrowserImageBrowseUrl="/ckfinder/ckfinder.html?type=Images" FilebrowserImageUploadUrl="/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Images" BasePath="/ckeditor/"  ID="txtDes" runat="server" TextMode="MultiLine" Width=""></CKEditor:CKEditorControl>
@@ -185,13 +185,13 @@
                     </asp:TabPanel>
                     <asp:TabPanel runat="server" HeaderText="Tour Prices" ID="TabPanel6">
                         <HeaderTemplate>
-                            Tour Prices
+                           Bảng giá
                         </HeaderTemplate>
                         <ContentTemplate>
                             <CKEditor:CKEditorControl FilebrowserImageBrowseUrl="/ckfinder/ckfinder.html?type=Images" FilebrowserImageUploadUrl="/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Images" BasePath="/ckeditor/"  ID="txtAllPrice" runat="server" TextMode="MultiLine" Width=""></CKEditor:CKEditorControl>
                         </ContentTemplate>
                     </asp:TabPanel>
-                    <asp:TabPanel ID="TabPanel3" runat="server" HeaderText="Tour Note">
+                    <asp:TabPanel ID="TabPanel3" runat="server" HeaderText="Lưu ý">
                         <ContentTemplate>
                             <CKEditor:CKEditorControl FilebrowserImageBrowseUrl="/ckfinder/ckfinder.html?type=Images" FilebrowserImageUploadUrl="/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Images" BasePath="/ckeditor/"  ID="txtNotes" runat="server"></CKEditor:CKEditorControl>
                         </ContentTemplate>
@@ -202,9 +202,9 @@
                             <asp:TextBox ID="txtMetaTag" TextMode="MultiLine" runat="server" Width="85%" Height="124px"></asp:TextBox>
                         </ContentTemplate>
                     </asp:TabPanel>
-                    <asp:TabPanel runat="server" HeaderText="Related Destination" ID="TabPanel5">
+                    <asp:TabPanel runat="server" HeaderText="Địa điểm liên quan" ID="TabPanel5">
                         <HeaderTemplate>
-                            Related Destination
+                            Địa điểm liên quan
                         </HeaderTemplate>
                         <ContentTemplate>
                             <asp:CheckBoxList ID="cblDestination" runat="server" RepeatColumns="6">

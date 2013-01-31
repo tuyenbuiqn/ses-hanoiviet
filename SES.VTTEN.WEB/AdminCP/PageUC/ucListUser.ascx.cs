@@ -11,6 +11,8 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
 {
     public partial class ucListUser : System.Web.UI.UserControl
     {
+        UserBL.PublicAccountSoapClient UBL = new UserBL.PublicAccountSoapClient();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             LoadUser();
@@ -18,7 +20,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
 
         private void LoadUser()
         {
-            gvUser.DataSource = new UsersBL().SelectAll();
+            gvUser.DataSource = UBL.SelectAll();
             gvUser.DataBind();
         }
 
@@ -32,7 +34,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
         {
             try
             {
-                new UsersBL().Delete(new UsersDO { UserID = Convert.ToInt32(gvUser.DataKeys[e.RowIndex].Value) });
+                UBL.Delete(new UserBL.UsersDO { UserID = Convert.ToInt32(gvUser.DataKeys[e.RowIndex].Value) });
                 Functions.Alert("Xóa bản tin thành công!", Request.Url.ToString());
             }
             catch

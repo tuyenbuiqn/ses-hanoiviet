@@ -12,7 +12,9 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
 {
     public partial class ucUser : System.Web.UI.UserControl
     {
-        UsersDO objuser = new UsersDO();
+        UserBL.UsersDO objuser = new UserBL.UsersDO();
+        UserBL.PublicAccountSoapClient UBL = new UserBL.PublicAccountSoapClient();
+
         UserDestinationDO objUserDes = new UserDestinationDO();
 
         protected void Page_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
         }
         private void initForm()
         {
-            objuser = new UsersBL().Select(objuser);
+            objuser = UBL.Select(objuser);
             txtEmail.Text = objuser.Email;
             txtPassword.Text = objuser.Pasword;
             txtUsername.Text = objuser.Username;
@@ -65,7 +67,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             setobject();
             if (objuser.UserID <= 0)
             {
-                objuser.UserID = new UsersBL().Insert(objuser);
+                objuser.UserID = UBL.Insert(objuser);
                 foreach (ListItem item in chblDestination.Items)
                 {
                     if (item.Selected == true)
@@ -79,7 +81,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             }
             else
             {
-                new UsersBL().Update(objuser);
+                UBL.Update(objuser);
                 new UserDestinationBL().DeleteByUserID(objUserDes.UserID);
                 foreach (ListItem item in chblDestination.Items)
                 {
