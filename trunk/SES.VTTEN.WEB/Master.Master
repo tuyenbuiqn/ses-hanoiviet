@@ -42,7 +42,7 @@
             $(".photosgallery-captions").sliderkit({
                 mousewheel: false,
                 keyboard: true,
-                shownavitems: 6,
+                shownavitems: 7,
                 auto: true,
                 delaycaptions: true
             });
@@ -69,15 +69,10 @@
             <div class="detail">
                 <div id="head">
                     <div class="logo-out">
-                        <div class="logo-left">
+                        
                             <a href="/Default.aspx" title="Hanoi vietralvel">
-                                <img src="../image/logo.png" class="logo" alt="Hanoi Vietravel" />
-                            </a><span class="hanoiviettravel">Hanoi Viet Travel </span>
-                        </div>
-                        <div class="logo-right">
-                            <span class="haytanhuong">HÃY TẬN HƯỞNG</span> <span class="tungphutgiay">TỪNG PHÚT
-                                GIÂY</span>
-                        </div>
+                                <img src="/images/logofull.png" alt="Hanoi Vietravel" />
+                            </a>
                     </div>
                     <ul class="toplink">
                         <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang chủ</a></li>
@@ -105,7 +100,12 @@
                         </li>
                         <li><a href="/Destinations/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng
                             cảnh nổi tiếng</a></li>
+
+                             <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">Video</a></li>
+
                         <li><a href="/Contact.aspx" title="Liên hệ với chúng tôi">Liên hệ</a></li>
+
+                        <li><a href="http://www.hanoiviettravel.com/Default.aspx?popup=0" title="English"><image alt="English" width="26px" src="/image/english-flag.png"/></a></li>
                     </ul>
                    <uc2:ucSlideHome runat="server" ID="uc2ucSlide" />
                 </div>
