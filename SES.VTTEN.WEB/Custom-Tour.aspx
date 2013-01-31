@@ -2,6 +2,7 @@
     CodeBehind="Custom-Tour.aspx.cs" Inherits="SES.VTTEN.WEB.Custom_Tour" Title="TRAVEL CUSTOMIZE FORM" %>
 <%@ Register Assembly="DevExpress.Web.ASPxEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
+    <%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 <%@ Register src="Module/ucBreadcrumb.ascx" tagname="ucBreadcrumb" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script language="javascript" type="text/javascript">
@@ -238,6 +239,18 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ValidationGroup="abc" runat="server"
                 ControlToValidate="ddlHear" ErrorMessage=" ***"></asp:RequiredFieldValidator>
         </div>
+
+        <div class="field_book">
+        <span class="span_120">Mã bảo mật</span>
+        <div style="float: left">
+            <asp:TextBox ID="txtCaptcha" runat="server"></asp:TextBox>
+        </div>
+        <div style="float: left; margin-left:2px;">
+            <cc1:CaptchaControl ID="CaptchaControl1" BackColor="#d5e6d6" runat="server" Width="100px" CaptchaWidth="150"
+                CaptchaHeight="31" />
+        </div>
+    </div>
+
         <div class="field_book">
             <asp:CheckBox ID="chkAgree" Text="Tôi đã đọc và đồng ý tuân thủ các điều khoản *" runat="server" />
             <asp:CustomValidator ID="ValTerms" ClientValidationFunction="AcceptTermsCheckBoxValidation"
