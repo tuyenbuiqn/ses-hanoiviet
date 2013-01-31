@@ -6,8 +6,8 @@
             <div class="DanhSachTour-detail">
                 <a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %> (<%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>)</p></a>
                 <p class="Price">Giá Tour: <%#Eval("TourPrice", "{0:0,000}")%>đ</p>
-                <p class="Time">Duration: <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%></p>
-                <p class="Code">Trip Code: <%#Eval("TourCode")%></p>
+                <p class="Time">Thời gian: <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%></p>
+                <p class="Code">Mã Tour: <%#Eval("TourCode")%></p>
                 <p class="MoTaChung">Mô tả chung:</p>
                 <p class="descriptions"><%#WordCut(Eval("MetaDes").ToString())%></p>
                 <div class="Action">
@@ -15,7 +15,7 @@
                         <img  alt="lnkBookNow" title="BookNow" style="border: 0px;" src="/image/IconBookNow.png" />
                     </a>
                     <a href="/Custom-Tour/0/Customize-your-own-trips.aspx">
-                        <img  alt="lnkCustomizeTour" title="CustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
+                        <img style="display:none;"  alt="lnkCustomizeTour" title="CustomizeTour" style="border: 0px;" src="/image/IconCustomizeTour.png" />
                     </a>
                 </div>
             </div>
@@ -35,7 +35,7 @@
             ID="CollectionPager1" BackNextButtonStyle="" BackNextStyle="margin-left:5px;"
             ControlStyle="" PageNumbersSeparator="&amp;nbsp;" ShowLabel="True">
         </cp:CollectionPager>
-        <div class="collectPage">Page: 
+        <div class="collectPage">Trang: 
         </div>
     </div>
 </div>

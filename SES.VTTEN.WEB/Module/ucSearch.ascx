@@ -23,20 +23,17 @@
             </td>
         </tr>
         
-        <tr>
+          <tr>
             <td>
-                <span class="text">Giá tour:</span>
+                <span class="text">Loại Tour:</span>
             </td>
             <td>
-                <asp:DropDownList ID="ddlGiaTour" CssClass="ddl" class="ddlkhoihanh" runat="server">
-                    <asp:ListItem Text="--Chọn giá--" Value="0" Selected="False"></asp:ListItem>
-                    <asp:ListItem Text="Nhỏ hớn 2 triệu" Value="1"></asp:ListItem>
-                    <asp:ListItem Text="2 triệu - 4 triệu" Value="2"></asp:ListItem>
-                    <asp:ListItem Text="4 triệu - 6 triệu" Value="3"></asp:ListItem>
-                    <asp:ListItem Text="6 triệu - 8 triệu" Value="4"></asp:ListItem>
-                    <asp:ListItem Text="8 triệu - 10 triệu" Value="5"></asp:ListItem>
-                    <asp:ListItem Text="Lớn hơn 10 triệu" Value="6"></asp:ListItem>
-                </asp:DropDownList>
+                  <asp:DropDownList ID="ddlTourCat" class="ddl" runat="server">
+                        <asp:ListItem>Please select</asp:ListItem>
+                        <asp:ListItem Value="1">Superior</asp:ListItem>
+                        <asp:ListItem Value="2">Deluxe</asp:ListItem>
+                        <asp:ListItem Value="3">Luxury</asp:ListItem>
+                    </asp:DropDownList>
             </td>
         </tr>
         <tr>

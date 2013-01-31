@@ -34,8 +34,8 @@ namespace SES.VTTEN.WEB.Module
             if (ddlTourType.SelectedIndex > 0)
                 TourTypeID = int.Parse(ddlTourType.SelectedValue.ToString());
             int TourGiaTourID = 0;
-            if (ddlGiaTour.SelectedIndex > 0)
-                TourGiaTourID = ddlGiaTour.SelectedIndex;
+            if (ddlTourCat.SelectedIndex > 0)
+                TourGiaTourID = ddlTourCat.SelectedIndex;
             int DurationID = 0;
             if (ddlDuration.SelectedIndex > 0)
                 DurationID = ddlDuration.SelectedIndex;
