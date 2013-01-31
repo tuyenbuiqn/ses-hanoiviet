@@ -3,7 +3,7 @@
  *---------------------------------*/
 .photosgallery-captions{width:948px;height:425px;padding:0 0 76px;}
 /* Navbar */
-.photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:928px; height:106px; padding:0px 10px 0px 10px;background:#D5E6D6;}
+.photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:928px; height:106px; padding:0px 10px 0px 10px;}
 .photosgallery-captions .sliderkit-nav-clip ul li{float:left;margin:0;}
 .photosgallery-captions .sliderkit-nav-clip ul li a{display:block;width:115px;height:90px;overflow:hidden;margin:5px;padding:3px;}
 .photosgallery-captions .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
@@ -28,8 +28,8 @@
 
 /* Buttons > Go buttons */
 .photosgallery-captions .sliderkit-go-btn{width:10px;}
-.photosgallery-captions .sliderkit-nav .sliderkit-go-prev{left:40px;}
-.photosgallery-captions .sliderkit-nav .sliderkit-go-next{right:40px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-prev{left:6px;top:16px;}
+.photosgallery-captions .sliderkit-nav .sliderkit-go-next{right:6px;top:16px;}
 .photosgallery-captions .sliderkit-nav .sliderkit-go-prev a{background-position:0 center;}
 .photosgallery-captions .sliderkit-nav .sliderkit-go-next a{background-position:-20px center;}
 .photosgallery-captions .sliderkit-nav .sliderkit-go-prev a:hover,
