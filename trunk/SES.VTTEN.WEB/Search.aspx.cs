@@ -45,17 +45,17 @@ namespace SES.VTTEN.WEB
                 string SearchQuery = Request.QueryString["ID"].ToString();
                 int DesID = 0;
                 int TourTypeID = 0;
-                int TourGiaTourID = 0; 
+                int TourCatID = 0; 
                 int DurationID = 0;
                 DesID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
                 TourTypeID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
-                TourGiaTourID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
+                TourCatID = int.Parse(SearchQuery.Substring(0, SearchQuery.IndexOf("-")));
                 SearchQuery = SearchQuery.Substring(SearchQuery.IndexOf("-") + 1);
                 DurationID = int.Parse(SearchQuery);
 
-                bindatalist(new TourBL().SearchGiaTour(DesID, TourTypeID, TourGiaTourID, DurationID));
+                bindatalist(new TourBL().Search(DesID, TourTypeID, TourCatID, DurationID));
 
                 Page.Title = "Search results" + Ultility.Webtile();
             }
