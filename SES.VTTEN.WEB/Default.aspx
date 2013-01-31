@@ -16,10 +16,12 @@
         <div class="box divTinKhuyenMai">
             <div class="box-title">
                 <p>
-                    TIN KHUYẾN MẠI</p>
+                    <a href="/Promotions/0/Default.aspx">TOUR KHUYẾN MẠI</a> </p>
             </div>
             <div class="detail-box">
+            <asp:HyperLink ID="hpKM" runat="server">
                 <asp:Image ID="imgPromo" runat="server" />
+                </asp:HyperLink>
                 <p style="color: Red;">
                     <asp:Label ID="lblPromo" runat="server" Text="Label"></asp:Label>
                 </p>
