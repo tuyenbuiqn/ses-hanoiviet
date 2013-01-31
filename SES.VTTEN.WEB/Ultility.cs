@@ -124,6 +124,18 @@ namespace SES.VTTEN.WEB
 
         }
 
+        public static string Change_AVN(string ip_str_change)
+        {
+            Regex v_reg_regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
+            string v_str_FormD = ip_str_change.Normalize(NormalizationForm.FormD);
+            string rt = v_reg_regex.Replace(v_str_FormD, String.Empty).Replace('\u0111', 'd').Replace('\u0110', 'D').Replace(" ", "-").Replace("/", "-");
+            rt = rt.Replace("\\", "-").Replace("'", "-").Replace(":", "-").Replace("%", "phan-tram").Replace("?", "-").Replace("&", "-");
+           
+            return rt;
+
+        }
+
+
 
         public static string TagDataBindding(string tag, string aclass)
         {
