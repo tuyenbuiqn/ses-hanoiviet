@@ -1,13 +1,15 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/ListTour.Master" AutoEventWireup="true"
     CodeBehind="Contact.aspx.cs" Inherits="SES.VTTEN.WEB.Contact" Title="Untitled Page" %>
+
+<%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 <%@ Register Assembly="DevExpress.Web.ASPxEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dxe" %>
-    <%@ Register Src="Module/ucBreadcrumb.ascx" TagName="ucBreadcrumb" TagPrefix="uc1" %>
+<%@ Register Src="Module/ucBreadcrumb.ascx" TagName="ucBreadcrumb" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
- <br />
+    <uc1:ucBreadcrumb ID="ucBreadcrumb1" runat="server" />
+    <br />
     <div class="field" style="color: #2c82ad; font-size: 12px; margin: 30px 0; font-weight: bold;">
         THÔNG TIN LIÊN HỆ</div>
     <div class="field_book">
@@ -72,7 +74,7 @@
     <div class="field" style="color: #2c82ad; font-size: 12px; margin: 5px 0; font-weight: bold;">
         THÔNG TIN KHÁC</div>
     <div class="field_book">
-        <span class="span_120">Bạn biết chúng tôi qua đâu?</span>
+        <span class="span_120">Bạn biết chúng tôi từ</span>
         <asp:DropDownList CssClass="input_book_120" ID="ddlHear" runat="server">
             <asp:ListItem></asp:ListItem>
             <asp:ListItem>Just cruizing</asp:ListItem>
@@ -86,6 +88,16 @@
         </asp:DropDownList>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ValidationGroup="abc" runat="server"
             ControlToValidate="ddlHear" ErrorMessage=" ***"></asp:RequiredFieldValidator>
+    </div>
+    <div class="field_book">
+        <span class="span_120">Mã bảo mật</span>
+        <div style="float: left">
+            <asp:TextBox ID="txtCaptcha" runat="server"></asp:TextBox>
+        </div>
+        <div style="float: left; margin-left:2px;">
+            <cc1:CaptchaControl ID="CaptchaControl1" BackColor="#d5e6d6" runat="server" Width="100px" CaptchaWidth="150"
+                CaptchaHeight="31" />
+        </div>
     </div>
     <div class="field_book">
         <span class="span_120">&nbsp;</span>
