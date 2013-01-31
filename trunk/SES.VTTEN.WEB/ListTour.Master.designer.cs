@@ -31,6 +31,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// lnkTop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkTop;
+        
+        /// <summary>
         /// rptListVNTour control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptListVNTour;
+        
+        /// <summary>
+        /// lnk2Top control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnk2Top;
         
         /// <summary>
         /// rptListENTour control.
@@ -58,13 +76,22 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListImage;
         
         /// <summary>
-        /// Full control.
+        /// lnk control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Full;
+        protected global::System.Web.UI.WebControls.LinkButton lnk;
+        
+        /// <summary>
+        /// Full1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Full1;
         
         /// <summary>
         /// rptListVnTourleft control.
@@ -76,13 +103,22 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListVnTourleft;
         
         /// <summary>
-        /// Ul1 control.
+        /// lnk2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Ul1;
+        protected global::System.Web.UI.WebControls.LinkButton lnk2;
+        
+        /// <summary>
+        /// Full2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Full2;
         
         /// <summary>
         /// rptListEnTourleft control.

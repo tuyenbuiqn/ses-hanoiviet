@@ -77,23 +77,51 @@
                     <ul class="toplink">
                         <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang chủ</a></li>
                         <li>
-                            <a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">
-                            Du lịch Việt Nam</a>
+                            <%--<a href="/Tour-Category/1/du-lich-Viet-Nam.aspx" title="Du lịch Việt Nam">
+                            Du lịch Việt Nam</a>--%>
+                            <asp:LinkButton ID="lnkTop" runat="server" ToolTip="Du lịch Việt Nam" 
+                                onclick="lnkTop_Click">Du lịch Việt Nam</asp:LinkButton>
                             <ul>
-                                <asp:Repeater ID="rptListVNTour" runat="server">
+                                <asp:Repeater ID="rptListVNTour" runat="server" 
+                                    onitemcommand="rptListVNTour_ItemCommand" 
+                                    onitemdatabound="rptListVNTour_ItemDataBound">
                                     <ItemTemplate>
-                                        <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a></li>
+                                        <li>
+                                            <%--<a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a>--%>
+                                            <asp:LinkButton ID="lnkCategory" runat="server"></asp:LinkButton>
+                                            <asp:Repeater ID="rptListVnTourItem" runat="server">
+                                                <HeaderTemplate><ul class="ItemTop"></HeaderTemplate>
+                                                <ItemTemplate>
+                                                    <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a>
+                                                </ItemTemplate>
+                                                <FooterTemplate></ul></FooterTemplate>
+                                            </asp:Repeater>
+                                        </li>
                                     </ItemTemplate>
                                 </asp:Repeater>    
                             </ul>
                         </li>
                         <li>
-                            <a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">
-                            Du lịch nước ngoài</a>
+                            <%--<a href="/Tour-Category/14/Vietnam-Package-Tours.aspx" title="Du lịch nước ngoài">
+                            Du lịch nước ngoài</a>--%>
+                            <asp:LinkButton ID="lnk2Top" runat="server" ToolTip="Du lịch nước ngoài" 
+                                onclick="lnk2Top_Click">Du lịch nước ngoài</asp:LinkButton>
                            <ul>
-                                <asp:Repeater ID="rptListENTour" runat="server">
+                                <asp:Repeater ID="rptListENTour" runat="server" 
+                                    onitemcommand="rptListENTour_ItemCommand" 
+                                    onitemdatabound="rptListENTour_ItemDataBound">
                                     <ItemTemplate>
-                                        <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a></li>
+                                        <li>
+                                            <%--<a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a>--%>
+                                            <asp:LinkButton ID="lnkCategory" runat="server"></asp:LinkButton>
+                                            <asp:Repeater ID="rptListEnTourItem" runat="server">
+                                                <HeaderTemplate><ul class="ItemTop"></HeaderTemplate>
+                                                <ItemTemplate>
+                                                    <li><a href="/Tour-Category/<%# Eval("TourTypeID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title") %></a>
+                                                </ItemTemplate>
+                                                <FooterTemplate></ul></FooterTemplate>
+                                            </asp:Repeater>
+                                        </li>
                                     </ItemTemplate>
                                 </asp:Repeater>    
                             </ul>

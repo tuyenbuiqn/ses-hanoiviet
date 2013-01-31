@@ -178,6 +178,7 @@ position:relative;
 {
 	font-weight:bold;
 	color: Red;
+	text-decoration: none;
 }
 #logoheadleft
 {
@@ -652,6 +653,7 @@ position:relative;
 	float: left;
 	background: #5999dd;
 	padding: 0px 10px 0px 10px;
+	margin: 0px;
 }
 #Conten .under .divDanhMucTour ul li
 {
@@ -665,6 +667,10 @@ position:relative;
     font-weight: bold;
     width: 100%;
 }
+#Conten .under .divDanhMucTour ul.Item li a
+{
+	padding-left: 30px;
+}
 #Conten .under .divDanhMucTour ul li a
 {
 	float: left;
@@ -674,6 +680,7 @@ position:relative;
 #Conten .under .divDanhMucTour ul li a:hover
 {
 	color: Red;
+	text-decoration:none;
 }
 /*album*/
 #VietNamPhotosCaption
@@ -942,7 +949,19 @@ position:relative;
 	padding: 0px !important;
 	border-bottom: 1px solid #BAB6B6;
 	padding: 0px;
-	height: 25px
+	height: 25px;
+	position: relative;
+}
+.toplink li ul li ul.ItemTop, .toplink-TourListMaster li ul li ul.ItemTop
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 199px;
+}
+.toplink li ul li:hover ul.ItemTop, .toplink-TourListMaster li ul li:hover ul
+{
+	display: block;
 }
 .toplink li ul li a, .toplink-TourListMaster li ul li a
 {
