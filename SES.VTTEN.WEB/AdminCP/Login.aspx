@@ -27,6 +27,17 @@
               <tr bgColor=#ffffff>
                 <TD colSpan=2><IMG height=3 src="images/white_border.gif" 
                   width=3></TD></TR>
+
+                  <tr>
+                <TD class=padding20 style="width: 76px">
+                    Hệ thống:</TD>
+                <TD>
+                    <asp:RadioButton ID="rdoEn" GroupName="site" Text="Tiếng anh" runat="server" 
+                        />
+                    &nbsp;&nbsp;&nbsp;
+                    <asp:RadioButton ID="rdoViet" GroupName="site" Checked="true" Text="Tiếng Việt" runat="server" />
+                  </TD></TR>
+
               <tr>
                 <TD class=padding20 style="width: 76px">
                     Username:</TD>

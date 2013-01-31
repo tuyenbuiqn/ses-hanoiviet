@@ -19,7 +19,9 @@ namespace SES.VTTEN.WEB.AdminCP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session[UsersDO.USERNAME_FIELD] != null)
+            
+
+            if (Session["Username"] != null)
             {
                 lblUsername.Text = Session["Username"].ToString();
                 SetPermission(Session["Permission"].ToString());
