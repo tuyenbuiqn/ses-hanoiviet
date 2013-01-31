@@ -68,7 +68,7 @@ namespace SES.VTTEN.WEB.Module
 
             CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
 
-            CollectionPager1.DataSource = new TourBL().SelectbyTourType(TourTypeID).DefaultView;
+            CollectionPager1.DataSource = new DataView(new TourBL().SelectbyTourType(TourTypeID),"","TourID DESC",DataViewRowState.CurrentRows);
 
             CollectionPager1.BindToControl = rptTourCat;
             rptTourCat.DataSource = CollectionPager1.DataSourcePaged;

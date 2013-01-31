@@ -31,13 +31,13 @@ namespace SES.VTTEN.WEB.Module {
         protected global::System.Web.UI.WebControls.DropDownList ddlDestinations;
         
         /// <summary>
-        /// ddlGiaTour control.
+        /// ddlTourCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlGiaTour;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTourCat;
         
         /// <summary>
         /// ddlDuration control.
