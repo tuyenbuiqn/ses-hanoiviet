@@ -4,7 +4,7 @@
 	margin: 0;
 	padding:0;
 	border:none;
-	background-color:#FFFFFF;
+	background-color:#d2dfe5;
 	
 }
 ul, p, h1, h2, h3, h4, h5
@@ -58,12 +58,9 @@ position:relative;
 .logo-out
 {
     width: 242px;
-
-    background: url(../image/back1.png);
-
     float: left;
     position:absolute;
-    top:30px;
+    top:10px;
     left:0;
     z-index:999999;
 }
@@ -130,14 +127,14 @@ position:relative;
 .toplink li
 {
 	float:left;
-	margin: 0px 0px 0 40px;
+	margin: 0px 0px 0 20px;
 	list-style:none;
 	padding-right:8px;
 }
 .TourListMaster .toplink-TourListMaster li
 {
 	float:left;
-	margin: 0px 0px 0 40px;
+	margin: 0px 0px 0 20px;
 	list-style:none;
 	padding-right:8px;
 }
