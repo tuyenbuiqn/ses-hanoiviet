@@ -17,8 +17,14 @@ namespace SES.VTTEN.BL
 {
     public class UsersBL 
     {
+
     	#region Private Variables
-		UsersDAL objUsersDAL;
+        WUserBL.PublicAccountSoapClient UBL = new WUserBL.PublicAccountSoapClient();
+
+
+
+        WUserBL.UsersDO objUserDO = new WUserBL.UsersDO();
+
 		#endregion
 		
         #region Public Constructors
@@ -27,46 +33,43 @@ namespace SES.VTTEN.BL
             //
             // TODO: Add constructor logic here
             //
-            objUsersDAL=new UsersDAL();
+            UBL = new WUserBL.PublicAccountSoapClient();
         }
         #endregion       
 
         #region Public Methods
-        public int Insert(UsersDO objUsersDO)
+        public int Insert(WUserBL.UsersDO objUsersDO)
         {
-            return objUsersDAL.Insert(objUsersDO);
+            return UBL.Insert(objUsersDO);
         }
 
-        public int Update(UsersDO objUsersDO)
+        public int Update(WUserBL.UsersDO objUsersDO)
         {
-             return objUsersDAL.Update(objUsersDO);
+            return UBL.Update(objUsersDO);
 
         }
 
-        public int Delete(UsersDO objUsersDO)
+        public int Delete(WUserBL.UsersDO objUsersDO)
         {
-             return objUsersDAL.Delete(objUsersDO);
+            return UBL.Delete(objUsersDO);
 
         }
 
          public int DeleteAll()
         {
-             return objUsersDAL.DeleteAll();
+            return UBL.DeleteAll();
         }
 
-        public UsersDO Select(UsersDO objUsersDO)
+         public WUserBL.UsersDO Select(WUserBL.UsersDO objUsersDO)
         {
-            return objUsersDAL.Select(objUsersDO);
+            return UBL.Select(objUsersDO);
         }
 
-        public ArrayList SelectAll1( )
-        {
-         return objUsersDAL.SelectAll1();
-        }
+       
         
         public DataTable SelectAll( )
         {
-         return objUsersDAL.SelectAll();
+            return UBL.SelectAll();
         }
 
 
@@ -74,9 +77,9 @@ namespace SES.VTTEN.BL
 #endregion          
     
     
-        public UsersDO SelectLogin(UsersDO objUser)
+        public WUserBL.UsersDO SelectLogin(WUserBL.UsersDO objUsersDO)
         {
-            return objUsersDAL.SelectLogin(objUser);
+            return UBL.SelectLogin(objUsersDO);
         }
     }
 
