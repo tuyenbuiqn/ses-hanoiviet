@@ -475,7 +475,7 @@ namespace SES.VTTEN.DAL
             Sqlcomm.CommandText = "spTourType_GetByPK";
             SqlParameter Sqlparam;
 
-            Sqlparam = new SqlParameter("@ParentID", SqlDbType.Int);
+            Sqlparam = new SqlParameter("@TourTypeID", SqlDbType.Int);
             Sqlparam.Value = ParentID;
             Sqlcomm.Parameters.Add(Sqlparam);
 

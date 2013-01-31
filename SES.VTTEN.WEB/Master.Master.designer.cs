@@ -49,6 +49,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Label lblscrOut;
         
         /// <summary>
+        /// lnkTop control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkTop;
+        
+        /// <summary>
         /// rptListVNTour control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptListVNTour;
+        
+        /// <summary>
+        /// lnk2Top control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnk2Top;
         
         /// <summary>
         /// rptListENTour control.
