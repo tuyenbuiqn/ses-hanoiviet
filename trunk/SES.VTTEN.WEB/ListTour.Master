@@ -180,7 +180,10 @@
                             </ul>
                         </li>
                         <li><a href="/Destinations/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng cảnh nổi tiếng</a></li>
+                         <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">Video</a></li>
                         <li><a href="/Contact.aspx" title="Liên hệ với chúng tôi">Liên hệ</a></li>
+                        <li><a href="http://www.hanoiviettravel.com/Default.aspx?popup=0" title="English"><image alt="English" width="26px" src="/image/english-flag.png"/></a></li>
+                    
                     </ul>
                 </div>
                 <div id="slideListTour">
@@ -223,6 +226,7 @@
                                         </asp:Repeater>    
                                     </ul>
                                 </li>
+                                <li><a href="/Promotions/0/Default.aspx" title="Tour Khuyến mãi">Khuyến mãi</a></li>
                                 <li><a href="/Travel-Review/1/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
                                 <li><a href="/Destinations/1/Default.aspx" title="Danh lam thắng cảnh">Danh lam thắng cảnh</a></li>
                                 <li><a href="/Travel-Guides/1/Default.aspx" title="Điều khoản đi Tour">Điều khoản đi Tour</a></li>
