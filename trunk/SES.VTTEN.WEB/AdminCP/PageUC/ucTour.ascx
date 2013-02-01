@@ -135,11 +135,11 @@
             <td>
                 Tour Khuyến mãi</td>
             <td>
-                <asp:CheckBox ID="cbIsSaleOff" runat="server" />
+                <asp:CheckBox Visible="false" ID="cbIsSaleOff" runat="server" />
                 &nbsp;&nbsp;&nbsp;
                 
             
-                <asp:CheckBox Visible="false" ID="cbIsOutPromotion" runat="server" />
+                <asp:CheckBox Visible="true" ID="cbIsOutPromotion" runat="server" />
             </td>
             
 
