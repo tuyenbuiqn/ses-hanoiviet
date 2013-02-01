@@ -92,6 +92,11 @@ namespace SES.VTTEN.BL
         {
             return objNewsDAL.SelectNewsIsFrontPage(top);
         }
+
+        public DataTable SelectNewsByModulID(int ModulID)
+        {
+            return objNewsDAL.SelectNewsByModulID(ModulID);
+        }
     }
 
 }
