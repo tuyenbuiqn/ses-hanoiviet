@@ -54,13 +54,13 @@ namespace SES.VTTEN.WEB
                 if ((Request.QueryString["P"] != null)&&((Request.QueryString["ID"] != null)))
                 {
                     string TourPage = Request.QueryString["P"].ToString();
-                    int TourPageID =Int32.Parse( Request.QueryString["ID"].ToString());
+                    string TourPageID = Request.QueryString["ID"].ToString();
                     if (TourPage == "Tour")//Để khi vào chi tiết tour cũng vẫn hiện thì menu bên trái
                     {
                         Full1.Visible = true;
                         Full2.Visible = true;
                     }
-                    else if ((TourPage == "Tour-Category") && (TourPageID != 1) && (TourPageID != 20))//Để khi click vào các item con bên trong menu trái thì menu bên trái vẫn hiện tất
+                    else if ((TourPage == "Tour-Category") && (TourPageID != "1") && (TourPageID != "20"))//Để khi click vào các item con bên trong menu trái thì menu bên trái vẫn hiện tất
                     {
                         Full1.Visible = true;
                         Full2.Visible = true;

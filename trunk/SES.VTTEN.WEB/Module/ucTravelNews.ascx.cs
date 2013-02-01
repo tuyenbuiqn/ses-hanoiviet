@@ -26,8 +26,8 @@ namespace SES.VTTEN.WEB.Module
         {
             if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
             {
-                int DestinationID = int.Parse(Request.QueryString["ID"].ToString());
-                rptHotelCatDataSource(DestinationID);
+                int ModulID = int.Parse(Request.QueryString["ID"].ToString());
+                rptHotelCatDataSource(ModulID);
             }
         }
 
@@ -37,14 +37,14 @@ namespace SES.VTTEN.WEB.Module
             return Ultility.StarRateHome(n);
         }
 
-        protected void rptHotelCatDataSource(int DestinationID)
+        protected void rptHotelCatDataSource(int ModulID)
         {
 
             CollectionPager1.MaxPages = 10000;
 
             CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
 
-            CollectionPager1.DataSource = new NewsBL().SelectAll().DefaultView;
+            CollectionPager1.DataSource = new NewsBL().SelectNewsByModulID(ModulID).DefaultView;
 
             CollectionPager1.BindToControl = rptHotelCat;
             rptHotelCat.DataSource = CollectionPager1.DataSourcePaged;

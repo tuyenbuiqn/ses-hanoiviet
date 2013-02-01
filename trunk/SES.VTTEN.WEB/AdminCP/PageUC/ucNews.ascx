@@ -31,10 +31,10 @@
             <asp:HyperLink runat="server" Target="_blank" ID="hplImage" Text="[Xem ảnh]" Visible="false"></asp:HyperLink>
         </td>
         <td>
-            Hiện trang đầu:
+            <asp:CheckBox ID="cbisFrontPage" runat="server" />&nbsp;Hiện trang đầu
         </td>
         <td>
-            <asp:CheckBox ID="cbisFrontPage" runat="server" />
+            <asp:CheckBox ID="cbActive" runat="server" />&nbsp;Active
         </td>
     </tr>
     <tr>
@@ -45,10 +45,13 @@
             <asp:TextBox ID="txtOder" runat="server" Width="309px"></asp:TextBox>
         </td>
         <td>
-            Active:
+            Modul tin tức
         </td>
         <td>
-            <asp:CheckBox ID="cbActive" runat="server" />
+            <asp:DropDownList ID="ddlModulNews" runat="server">
+                <asp:ListItem Text="0: Tin tức" Value="0"></asp:ListItem>
+                <asp:ListItem Text="1: Lịch khởi hành" Value="1"></asp:ListItem>
+            </asp:DropDownList>
         </td>
     </tr>
     <tr>

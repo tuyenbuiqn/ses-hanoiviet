@@ -19,16 +19,35 @@ namespace SES.VTTEN.WEB
         protected void Page_Load(object sender, EventArgs e)
         {
             HtmlMeta metaDesc = new HtmlMeta();
+            HtmlMeta metaKey = new HtmlMeta();
+            if (Request.QueryString["ID"] != null)
+            {
+                string ID = Request.QueryString["P"].ToString();
+                if (ID == "1")
+                {
+                    metaDesc.Name = "description";
+                    metaDesc.Content = "Lịch khởi hành - hanoiviettravel";
+                    Page.Header.Controls.Add(metaDesc);
+                    
+                    metaKey.Name = "keywords";
+                    metaKey.Content = "Lịch khởi hành - hanoiviettravel";
+                    Page.Header.Controls.Add(metaKey);
+
+                    Page.Title = "Lịch khởi hành - hanoiviettravel";
+
+                    lblTitle.Text = "» Lịch khởi hành";
+                }
+            }
             metaDesc.Name = "description";
             metaDesc.Content = "Tin tức du lịch - hanoiviettravel";
             Page.Header.Controls.Add(metaDesc);
 
-            HtmlMeta metaKey = new HtmlMeta();
             metaKey.Name = "keywords";
             metaKey.Content = "Tin tức du lịch - hanoiviettravel";
             Page.Header.Controls.Add(metaKey);
 
             Page.Title = "Tin tức du lịch - hanoiviettravel";
+            lblTitle.Text = "» Tin tức";
         }
     }
 }
