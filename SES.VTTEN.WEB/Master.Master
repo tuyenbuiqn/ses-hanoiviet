@@ -68,11 +68,25 @@
         <div class="inner">
             <div class="detail">
                 <div id="head">
-                    <div class="logo-out">
+                    <%--<div class="logo-out">
                         
                             <a href="/Default.aspx" title="Hanoi vietralvel">
                                 <img src="/images/logofull.png" alt="Hanoi Vietravel" />
                             </a>
+                    </div>--%>
+                    <div class="logo-out-TourListMaster">
+                        <div class="logo-left">
+                            <a href="/Default.aspx" title="Hanoi Vietravel">
+                                <img src="/image/logo.png" class="logo" alt="Hanoi Viettravel" />
+                            </a> 
+                            <span class="hanoiviettravel">
+                                Hanoi Viet Travel
+                            </span>
+                        </div>
+                        <div class="logo-right">
+                            <span class="haytanhuong">HÃY TẬN HƯỞNG</span> 
+                            <span class="tungphutgiay">TỪNG PHÚT GIÂY</span>
+                        </div>
                     </div>
                     <ul class="toplink">
                         <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang chủ</a></li>

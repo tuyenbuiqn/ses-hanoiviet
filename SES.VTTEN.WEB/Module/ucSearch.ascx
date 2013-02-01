@@ -6,7 +6,7 @@
     <table class="TimKiemTour">
         <tr>
             <td>
-                <span class="text">Loại tour:</span>
+                <span class="text">Danh mục:</span>
             </td>
             <td>
                 <asp:DropDownList ID="ddlTourType" CssClass="ddl" class="ddlkhoihanh" runat="server">
@@ -29,7 +29,7 @@
             </td>
             <td>
                   <asp:DropDownList ID="ddlTourCat" class="ddl" runat="server">
-                        <asp:ListItem>Please select</asp:ListItem>
+                        <asp:ListItem>--Chọn loại tour--</asp:ListItem>
                         <asp:ListItem Value="1">Superior</asp:ListItem>
                         <asp:ListItem Value="2">Deluxe</asp:ListItem>
                         <asp:ListItem Value="3">Luxury</asp:ListItem>
