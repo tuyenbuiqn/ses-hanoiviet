@@ -15,11 +15,13 @@ namespace SES.VTTEN.WEB
         protected void Page_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataView(new TourBL().SelectOutPromotion(),"IsFrontPage=1","",DataViewRowState.CurrentRows).ToTable();
-
-            imgPromo.ImageUrl = "/Media/" + dt.Rows[0][TourDO.TOURIMAGE_FIELD].ToString();
-            hpKM.NavigateUrl = "/Tour/" + dt.Rows[0]["TourID"].ToString() + "/" + Ultility.Change_AV(dt.Rows[0][TourDO.TITLE_FIELD].ToString());
-            imgPromo.AlternateText = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
-            lblPromo.Text = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
+            if ((dt != null) && (dt.Rows.Count > 0))
+            {
+                imgPromo.ImageUrl = "/Media/" + dt.Rows[0][TourDO.TOURIMAGE_FIELD].ToString();
+                hpKM.NavigateUrl = "/Tour/" + dt.Rows[0]["TourID"].ToString() + "/" + Ultility.Change_AV(dt.Rows[0][TourDO.TITLE_FIELD].ToString());
+                imgPromo.AlternateText = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
+                lblPromo.Text = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
+            }
             Page.Title = Ultility.Webtile();
         }
     }

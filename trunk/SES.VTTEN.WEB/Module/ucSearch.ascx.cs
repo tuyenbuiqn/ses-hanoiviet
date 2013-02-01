@@ -21,7 +21,7 @@ namespace SES.VTTEN.WEB.Module
             if (!IsPostBack)
             {
                 Ultility.ddlDatabinder(ddlDestinations, "DestinationID", "Title", new DestinationBL().SelectAll(), "--Chọn điểm đến--");
-                Ultility.ddlDatabinder(ddlTourType, "TourTypeID", "Title", new TourTypeBL().SelectAll(), "--Chọn loại tour--");
+                Ultility.ddlDatabinder(ddlTourType, "TourTypeID", "Title", new TourTypeBL().SelectAll(), "--Chọn danh mục--");
             }
         }
 
