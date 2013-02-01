@@ -11,13 +11,14 @@
                 AllowPaging="True">
                 <RowStyle BackColor="White" ForeColor="#330099" HorizontalAlign="Center" />
                 <Columns>
-                    <asp:BoundField DataField="NewsID" HeaderText="NewsID" Visible="False">
+                    <asp:BoundField DataField="NewsID" HeaderText="Mã" ItemStyle-Width="5%" Visible="true">
                         <HeaderStyle HorizontalAlign="Center" />
                     </asp:BoundField>
-                    <asp:BoundField DataField="Title" HeaderText="Tựa đề" />
-                    <asp:BoundField DataField="MetaDes" HeaderText="Mô tả" />
-                    <asp:BoundField DataField="Published" HeaderText="Trạng thái" />
-                    <asp:TemplateField>
+                    <asp:BoundField DataField="Title" HeaderText="Tựa đề" ItemStyle-Width="20%" ItemStyle-HorizontalAlign="Left"/>
+                    <asp:BoundField DataField="Description" HeaderText="Mô tả"  ItemStyle-HorizontalAlign="Justify" ItemStyle-Width="60%" />
+                    <asp:BoundField DataField="Published" HeaderText="Trạng thái" ItemStyle-Width="5%"/>
+                    <asp:BoundField DataField="ModuleID" HeaderText="Thuộc modul" ItemStyle-Width="5%"/>
+                    <asp:TemplateField ItemStyle-Width="5%" HeaderText="Action">
                         <ItemTemplate>
                             <asp:ImageButton ID="btEdit" runat="server" CommandName="Select" ImageUrl="~/AdminCP/images/edit_16x16.gif" />
                             <asp:ImageButton ID="btDelete" runat="server" CommandArgument='<%#Eval("NewsID") %>'

@@ -136,6 +136,7 @@
         });	
 		</script>
     <!--end Slider Kit scripts -->
+    <!--end Ẩn hiện menu -->
     <script type="text/javascript">
         function show_hide() {
             if(document.getElementById("full").style.display!='block') {
@@ -147,6 +148,18 @@
             return false;
             }
     </script>
+    <script type="text/javascript">
+        function show_hide2() {
+            if (document.getElementById("divShow").style.display != 'block') {
+                document.getElementById("divShow").style.display = 'block';
+            }
+            else {
+                document.getElementById("divShow").style.display = 'none';
+            }
+            return false;
+        }
+    </script>
+    <!--end Ẩn hiện menu -->
 </head>
 <body>
     <form id="form1" runat="server">
@@ -244,7 +257,12 @@
                             </div>
                             <ul>
                                 <li><a href="/Travel-Guides/1/Default.aspx" title="Thông tin Du lịch">Thông tin Du lịch</a></li>
-                                <li><a href="/Travel-News/1/Default.aspx" title="Tin tức Du lịch">Tin tức Du lịch</a></li>
+                                <li><a href="#" title="Tin tức Du lịch"  onclick="return show_hide2()">Tin tức Du lịch</a>
+                                    <ul id="divShow" style="width: 100%; display: none;">
+                                        <li><a href="/Travel-News/0/Default.aspx" title="Tin tức">» Tin tức</a></li>
+                                        <li><a href="/Travel-News/1/Default.aspx" title="Lịch khởi hành">» Lịch khởi hành</a></li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <%--<a onclick="return show_hide()" title="Du lịch Việt Nam">Du lịch Việt Nam</a>--%>
                                     <asp:LinkButton ID="lnk" runat="server" onclick="lnk_Click" ToolTip="Du lịch Việt Nam">Du lịch Việt Nam</asp:LinkButton>

@@ -38,6 +38,14 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 hplImage.Visible = true;
                 hplImage.NavigateUrl = "~/Media/" + objnew.NewsImage;
             }
+            if (objnew.ModuleID == 1)
+            {
+                ddlModulNews.SelectedValue = "1";
+            }
+            else
+            {
+                ddlModulNews.SelectedValue = "0";
+            }
         }
 
         protected void btSave_Click(object sender, EventArgs e)
@@ -71,6 +79,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objnew.Title = txtTitle.Text;
             objnew.Alias = Functions.Change_AV(txtTitle.Text);
             objnew.IsFrontPage = cbisFrontPage.Checked;
+            objnew.ModuleID = int.Parse(ddlModulNews.SelectedValue);
             if (!string.IsNullOrEmpty(fulImage.FileName))
             {
                 string FileName = string.Format("{0}{1}", fulImage.FileName.Substring(0, fulImage.FileName.LastIndexOf(".")) + "-" + DateTime.Now.ToString("dd-MM-yyyy-hhmmss"), fulImage.FileName.Substring(fulImage.FileName.LastIndexOf(".")));

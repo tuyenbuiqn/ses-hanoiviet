@@ -21,6 +21,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             gvNews.DataSource = new NewsBL().SelectAll();
             gvNews.DataBind();
         }
+
         protected void gvNews_SelectedIndexChanged(object sender, EventArgs e)
         {
             int NewsID = Convert.ToInt32(gvNews.DataKeys[gvNews.SelectedIndex].Value);
