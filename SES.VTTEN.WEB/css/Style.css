@@ -30,7 +30,7 @@ li
 #Menu
 {
 	position:relative;
-	}
+}
 .inner
 {
     background: url(../image/background.jpg) repeat-y;
@@ -64,10 +64,26 @@ position:relative;
     left:0;
     z-index:999999;
 }
+#head .logo-out-TourListMaster
+{
+    width: 242px;
+    float: left;
+    position:absolute;
+    top:10px;
+    left:0;
+    z-index:999999;
+}
 .TourListMaster .logo-out-TourListMaster
 {
 	 width: 242px;
     background: url(../image/back1.png);
+    float: left;
+    margin-bottom:10px;
+}
+#head .logo-out-TourListMaster
+{
+	 width: 242px;
+    background: url(../image/back2.png);
     float: left;
     margin-bottom:10px;
 }
@@ -89,16 +105,16 @@ position:relative;
 .haytanhuong
 {
     display: block;
-    color: #c71b4c;
+    color: #014B96;
     font-weight: bold;
     margin-top: 22px;
 }
 .tungphutgiay
 {
-    color: #c71b4c;
+    color: #014B96;
     
     font-weight: bold;
-    margin-left: 27px;
+    margin-left: 15px;
     margin-top: 1px;
     display: block;
 }
@@ -108,7 +124,7 @@ position:relative;
  height: 31px;
  float: left;
  position:absolute;
- top:52px;
+ top:35px;
  left:241px;
  background: rgba(0, 0, 0, 0.5);
  z-index:999999999;
@@ -123,6 +139,7 @@ position:relative;
  left:241px;
  background: rgba(0, 0, 0, 0.5);
  margin-bottom: 20px;
+ z-index: 999;
 }
 .toplink li
 {
