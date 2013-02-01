@@ -419,6 +419,29 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
+
+        public DataTable SelectNewsByModulID(int ModulID)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spNews_GetByModulId";
+
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@ModuleID", SqlDbType.Int);
+            Sqlparam.Value = ModulID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
     }
 
 }
