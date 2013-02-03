@@ -20,9 +20,23 @@ namespace SES.VTTEN.WEB
                 imgPromo.ImageUrl = "/Media/" + dt.Rows[0][TourDO.TOURIMAGE_FIELD].ToString();
                 hpKM.NavigateUrl = "/Tour/" + dt.Rows[0]["TourID"].ToString() + "/" + Ultility.Change_AV(dt.Rows[0][TourDO.TITLE_FIELD].ToString());
                 imgPromo.AlternateText = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
-                lblPromo.Text = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
+                lblPromo.Text = WordCut(dt.Rows[0][TourDO.TITLE_FIELD].ToString(), 27, true);
+                lblDescription.Text = WordCut(dt.Rows[0][TourDO.METADES_FIELD].ToString(), 65, false);
             }
             Page.Title = Ultility.Webtile();
+        }
+
+        public string WordCut(string text, int munber, bool isTitle)
+        {
+            if (isTitle == true)
+            {
+                return Ultility.WordCut(text, munber, new char[] { ' ', '.', ',', ';' });
+            }
+            else
+            {
+                return Ultility.WordCut(text, munber, new char[] { ' ', '.', ',', ';' }) + "...";
+            }
+            
         }
     }
 }
