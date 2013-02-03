@@ -39,7 +39,7 @@
                 <asp:ListItem Text="Slide trang tour" Value="1"></asp:ListItem>
                 <asp:ListItem Text="Slide trang hotel" Value="2"></asp:ListItem>
             </asp:DropDownList>
-            <span style="color: Red;">Kích thước của Slide trang tour: 948 x 300px</span>
+            <span style="color: Red;">Kích thước của Slide trang tour: 948 x 400px</span>
         </td>
     </tr>
    <tr>

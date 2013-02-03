@@ -23,7 +23,10 @@
                 <asp:Image ID="imgPromo" runat="server" />
                 </asp:HyperLink>
                 <p style="color: Red;">
-                    <asp:Label ID="lblPromo" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="lblPromo" runat="server" Text=""></asp:Label>
+                </p>
+                <p>
+                    <asp:Label ID="lblDescription" runat="server" Text=""></asp:Label>
                 </p>
             </div>
         </div>

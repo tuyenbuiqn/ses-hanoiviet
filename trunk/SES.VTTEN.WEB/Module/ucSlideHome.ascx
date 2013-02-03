@@ -22,7 +22,7 @@
     <asp:Repeater runat="server" ID="rptThumbSlide">
         <ItemTemplate>
         <div class="sliderkit-panel">
-            <img src='/Media/<%#Eval("SlideImg") %>' alt='<%#Eval("Title") %>' />
+            <a href='<%#Eval("SlideUrl") %>' rel="nofollow" title='<%#Eval("Title") %>'><img src='/Media/<%#Eval("SlideImg") %>' alt='<%#Eval("Title") %>' /></a>
             <div class="sliderkit-panel-textbox">
                 <div class="sliderkit-panel-text">
                     <h4>
