@@ -134,6 +134,11 @@ namespace SES.VTTEN.BL
         {
             return objTourDAL.SearchGiaTour(DesID, TourTypeID, TourGiaTourID, DurationID);
         }
+
+        public DataTable SelectTourByModuleIdAndRecordNumber(int ModuleId, int RecordNumber, bool IsInboundTour)
+        {
+            return objTourDAL.SelectTourByModuleIdAndRecordNumber(ModuleId, RecordNumber, IsInboundTour);
+        }
     }
 
 }
