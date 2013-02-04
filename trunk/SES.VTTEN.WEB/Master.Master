@@ -144,11 +144,33 @@
                                 </asp:Repeater>    
                             </ul>
                         </li>
-                        <li><a href="/Destinations/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng
+                        <%--<li><a href="/Destinations/1/Default.aspx" title="Thắng cảnh nổi tiếng">Thắng
                             cảnh nổi tiếng</a></li>
 
-                             <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">Video</a></li>
-
+                             <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">Video</a></li>--%>
+                             <li><a href="/Hotel-Category/0/Default.aspx" title="Dịch vụ">Dịch vụ</a>
+                            <ul>
+                                <li><a href="/Hotel-Category/0/Default.aspx" title="Khách sạn">Khách sạn</a>
+                                     <asp:Repeater ID="rptListHotelItemTop" runat="server">
+                                        <HeaderTemplate><ul class="ItemTop"></HeaderTemplate>
+                                        <ItemTemplate>
+                                            <li><a href="/Hotel-Category/<%# Eval("DestinationID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title")%></a>
+                                        </ItemTemplate>
+                                        <FooterTemplate></ul></FooterTemplate>
+                                    </asp:Repeater>
+                                </li>
+                                <li><a href="/Travel-News/4/Default.aspx" title="Máy bay">Máy bay</a></li>
+                                <li><a href="/Travel-News/5/Default.aspx" title="Tầu">Tầu</a></li>
+                                <li><a href="/Travel-News/6/Default.aspx" title="Thuê xe dịch vụ">Thuê xe dịch vụ</a></li>
+                            </ul>
+                         </li>
+                         <li><a href="/Travel-News/0/Default.aspx" title="Tin tức du lịch">Tin tức du lịch</a>
+                            <ul>
+                                <li><a href="/Travel-News/0/Default.aspx" title="Blog du lịch">Blog du lịch</a></li>
+                                <li><a href="/Travel-News/2/Default.aspx" title="Khám phá du lịch">Khám phá du lịch</a></li>
+                                <li><a href="/Travel-News/3/Default.aspx" title="Tư vấn du lịch">Tư vấn du lịch</a></li>
+                            </ul>
+                         </li>
                         <li><a href="/Contact.aspx" title="Liên hệ với chúng tôi">Liên hệ</a></li>
 
                         <li><a href="http://www.hanoiviettravel.com/Default.aspx?popup=0" title="English"><image alt="English" width="26px" src="/image/english-flag.png"/></a></li>

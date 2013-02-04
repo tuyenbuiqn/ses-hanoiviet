@@ -20,8 +20,8 @@ namespace SES.VTTEN.WEB
         SlideBL slideBL = new SlideBL();
         protected void Page_Load(object sender, EventArgs e)
         {
-            rptListImage.DataSource = slideBL.SelectByCategoryID(1);
-            rptListImage.DataBind();
+            //rptListImage.DataSource = slideBL.SelectByCategoryID(1);
+            //rptListImage.DataBind();
 
             rptListVNTour.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(1);//List theo du lịch trong nước
             rptListVNTour.DataBind();
@@ -34,7 +34,12 @@ namespace SES.VTTEN.WEB
 
             rptListEnTourleft.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(20);//List theo du lịch nước ngoài
             rptListEnTourleft.DataBind();
-            
+
+            rptListHotelItemTop.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu top
+            rptListHotelItemTop.DataBind();
+
+            rptListHotelItem.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu left
+            rptListHotelItem.DataBind();
 
             //Ẩn hiện menu con của Du lịch việt nam. Phần này khá lằng nhằng :(
             string sVisible = "0";

@@ -67,13 +67,22 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListENTour;
         
         /// <summary>
-        /// rptListImage control.
+        /// rptListHotelItemTop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptListImage;
+        protected global::System.Web.UI.WebControls.Repeater rptListHotelItemTop;
+        
+        /// <summary>
+        /// ucSlidePage1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SES.VTTEN.WEB.Module.ucSlidePage ucSlidePage1;
         
         /// <summary>
         /// lnk control.
@@ -130,6 +139,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListEnTourleft;
         
         /// <summary>
+        /// rptListHotelItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptListHotelItem;
+        
+        /// <summary>
         /// ucSearch1 control.
         /// </summary>
         /// <remarks>
@@ -155,6 +173,15 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SES.VTTEN.WEB.Module.ucHomepageAlbums ucHomepageAlbums1;
+        
+        /// <summary>
+        /// ucQuangCaoTrai1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::SES.VTTEN.WEB.Module.ucQuangCaoTrai ucQuangCaoTrai1;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

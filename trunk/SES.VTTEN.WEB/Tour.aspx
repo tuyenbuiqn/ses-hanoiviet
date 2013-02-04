@@ -14,7 +14,7 @@
     <div class="divTourDetail">
         <uc1:ucTourDetail ID="ucTourDetail1" runat="server" />
    </div>
-   <p style="float: left; width: 100%; font-size: 14px; margin-bottom: 20px; font-weight: bold; text-transform: uppercase;">Các tour liên quan</p>
+   <p style="float: left; width: 100%; font-size: 14px; margin-bottom: 0px; color: #8E0C0C; padding-bottom: 10px; border-bottom: 2px solid #8E0C0C; font-weight: bold; text-transform: uppercase;">Các tour liên quan</p>
    <div class="TourLienQuan">
         <uc2:ucRelatedTour ID="ucRelatedTour1" runat="server" />
    </div>
