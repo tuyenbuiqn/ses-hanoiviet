@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucRelatedTour.ascx.cs"
     Inherits="SES.VTTEN.WEB.Module.ucRelatedTour" %>
-<div class="sliderkit carousel-demo2" style="width: 700px !important;">
+<div class="sliderkit carousel-demo2" style="width: 700px !important; height: 210px !important;">
 	<div class="sliderkit-nav">
 		<div class="sliderkit-nav-clip">
 			<ul>

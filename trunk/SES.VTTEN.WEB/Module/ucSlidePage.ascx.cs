@@ -38,6 +38,8 @@ namespace SES.VTTEN.WEB.Module
 
         protected void rptSlideDataSource(int CateID)
         {
+            DataTable dt = new DataTable();
+            dt = new SlideBL().SelectByCategoryID(CateID);
             rptSlide.DataSource = new SlideBL().SelectByCategoryID(CateID);
             rptSlide.DataBind();
         }
