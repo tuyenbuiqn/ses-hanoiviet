@@ -69,7 +69,10 @@ namespace SES.VTTEN.BL
          return objConfigDAL.SelectAll();
         }
 
-
+        public DataTable SelectByConfigID(int ConfigID)
+        {
+            return objConfigDAL.SelectByConfigID(ConfigID);
+        }
      
 #endregion          
     
