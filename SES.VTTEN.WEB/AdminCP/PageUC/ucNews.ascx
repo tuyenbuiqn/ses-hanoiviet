@@ -49,8 +49,13 @@
         </td>
         <td>
             <asp:DropDownList ID="ddlModulNews" runat="server">
-                <asp:ListItem Text="0: Tin tức" Value="0"></asp:ListItem>
+                <asp:ListItem Text="0: Blog du lịch" Value="0"></asp:ListItem>
                 <asp:ListItem Text="1: Lịch khởi hành" Value="1"></asp:ListItem>
+                <asp:ListItem Text="2: Khám phá du lịch" Value="2"></asp:ListItem>
+                <asp:ListItem Text="3: Tư vấn du lịch" Value="3"></asp:ListItem>
+                <asp:ListItem Text="4: Máy bay" Value="4"></asp:ListItem>
+                <asp:ListItem Text="5: Tầu" Value="5"></asp:ListItem>
+                <asp:ListItem Text="6: Thuê xe dịch vụ" Value="6"></asp:ListItem>
             </asp:DropDownList>
         </td>
     </tr>

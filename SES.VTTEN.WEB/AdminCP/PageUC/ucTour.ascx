@@ -133,16 +133,13 @@
                     ErrorMessage="Số" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
             </td>
             <td>
-                Tour Khuyến mãi</td>
-            <td>
                 <asp:CheckBox Visible="false" ID="cbIsSaleOff" runat="server" />
-                &nbsp;&nbsp;&nbsp;
-                
-            
                 <asp:CheckBox Visible="true" ID="cbIsOutPromotion" runat="server" />
+                Tour Khuyến mãi
             </td>
-            
-
+            <td>
+                
+            </td>
         </tr>
         <tr>
             <td style="vertical-align: middle">
@@ -156,13 +153,19 @@
                 </asp:RadioButtonList>
             </td>
             <td>
-              </td>
-            <td>
-            <asp:CheckBox runat="server" Visible="false" ID="cbIsMenu" />
-                &nbsp;&nbsp;&nbsp;
+                <asp:CheckBox runat="server" Visible="false" ID="cbIsMenu" />
+                <asp:CheckBox runat="server" ID="cbIsInboundTour" />
                 Tour trong nước
-            <asp:CheckBox runat="server" ID="cbIsInboundTour" />
-                </td>
+            </td>
+            <td>
+                Vị trí hiện thị
+                <asp:DropDownList ID="ddlViTri" runat="server">
+                    <asp:ListItem Text="--Chọn vị trí--" Value="0"></asp:ListItem>
+                    <asp:ListItem Text="1" Value="1"></asp:ListItem>
+                    <asp:ListItem Text="2" Value="2"></asp:ListItem>
+                    <asp:ListItem Text="3" Value="3"></asp:ListItem>
+                </asp:DropDownList>
+            </td>
         </tr>
         <tr>
             <td colspan="4">
