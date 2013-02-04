@@ -13,21 +13,57 @@ namespace SES.VTTEN.WEB.Module {
     public partial class ucHomepageTourCate {
         
         /// <summary>
-        /// rptCategoryInboundTour control.
+        /// rptInboundTour1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCategoryInboundTour;
+        protected global::System.Web.UI.WebControls.Repeater rptInboundTour1;
         
         /// <summary>
-        /// rptCategoryOutboundTour control.
+        /// rptInboundTour2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptCategoryOutboundTour;
+        protected global::System.Web.UI.WebControls.Repeater rptInboundTour2;
+        
+        /// <summary>
+        /// rptInboundTour3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptInboundTour3;
+        
+        /// <summary>
+        /// rptOutboundTour1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptOutboundTour1;
+        
+        /// <summary>
+        /// rptOutboundTour2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptOutboundTour2;
+        
+        /// <summary>
+        /// rptOutboundTour3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptOutboundTour3;
     }
 }

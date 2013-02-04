@@ -1,10 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucSlidePage.ascx.cs"
     Inherits="SES.VTTEN.WEB.Module.ucSlidePage" %>
 <div id="banner">
-    <div class="bannerslide" style="height: 220px; margin-bottom: 10px;">
-        <div class="wt-rotator">
+    <div class="bannerslide">
+        <div class="wt-rotator" style="width: 948px; height: 300px;">
             <a href="#"></a>
-            <div class="desc">
+            <div class="desc" style="top: 20px !important;">
             </div>
             <div class="preloader">
             </div>

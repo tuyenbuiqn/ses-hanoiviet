@@ -21,38 +21,52 @@ namespace SES.VTTEN.WEB.Module
         }
         protected void rptCategoryTourDataSource()
         {
-            rptCategoryInboundTour.DataSource = new TourTypeBL().GetTourCateHomepage(true);
-            rptCategoryInboundTour.DataBind();
-            rptCategoryOutboundTour.DataSource = new TourTypeBL().GetTourCateHomepage(false);
-            rptCategoryOutboundTour.DataBind();
+            //rptCategoryInboundTour.DataSource = new TourTypeBL().GetTourCateHomepage(true);
+            //rptCategoryInboundTour.DataBind();
+            //rptCategoryOutboundTour.DataSource = new TourTypeBL().GetTourCateHomepage(false);
+            //rptCategoryOutboundTour.DataBind();
+            DataTable dt = new DataTable();
+            dt = new TourBL().SelectTourByModuleIdAndRecordNumber(1, 6, true);
+            rptInboundTour1.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(1, 6, true);
+            rptInboundTour1.DataBind();
+            rptInboundTour2.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(2, 6, true);
+            rptInboundTour2.DataBind();
+            rptInboundTour3.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(3, 6, true);
+            rptInboundTour3.DataBind();
+            rptOutboundTour1.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(1, 6, false);
+            rptOutboundTour1.DataBind();
+            rptOutboundTour2.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(2, 6, false);
+            rptOutboundTour2.DataBind();
+            rptOutboundTour3.DataSource = new TourBL().SelectTourByModuleIdAndRecordNumber(3, 6, false);
+            rptOutboundTour3.DataBind();
         }
-        protected void rptCategoryInboundTour_IntemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            RepeaterItem item = e.Item;
-            if (item.ItemType == ListItemType.Item || item.ItemType == ListItemType.AlternatingItem)
-            {
-                DataRowView drv = (DataRowView)item.DataItem;
+        //protected void rptCategoryInboundTour_IntemDataBound(object sender, RepeaterItemEventArgs e)
+        //{
+        //    RepeaterItem item = e.Item;
+        //    if (item.ItemType == ListItemType.Item || item.ItemType == ListItemType.AlternatingItem)
+        //    {
+        //        DataRowView drv = (DataRowView)item.DataItem;
 
-                DataTable dtInboundTour = new TourBL().SelectTourByParentAndRecordNumberHomepage(int.Parse(drv["TourTypeID"].ToString()), 5);
-                Repeater rptInboundTour = (Repeater)item.FindControl("rptInboundTour");
-                rptInboundTour.DataSource = dtInboundTour;
-                rptInboundTour.DataBind();
-            }
-        }
+        //        DataTable dtInboundTour = new TourBL().SelectTourByParentAndRecordNumberHomepage(int.Parse(drv["TourTypeID"].ToString()), 5);
+        //        Repeater rptInboundTour = (Repeater)item.FindControl("rptInboundTour");
+        //        rptInboundTour.DataSource = dtInboundTour;
+        //        rptInboundTour.DataBind();
+        //    }
+        //}
        
-        protected void rptCategoryOutboundTour_IntemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            RepeaterItem item = e.Item;
-            if (item.ItemType == ListItemType.Item || item.ItemType == ListItemType.AlternatingItem)
-            {
-                DataRowView drv = (DataRowView)item.DataItem;
+        //protected void rptCategoryOutboundTour_IntemDataBound(object sender, RepeaterItemEventArgs e)
+        //{
+        //    RepeaterItem item = e.Item;
+        //    if (item.ItemType == ListItemType.Item || item.ItemType == ListItemType.AlternatingItem)
+        //    {
+        //        DataRowView drv = (DataRowView)item.DataItem;
 
-                DataTable dtOutboundTour = new TourBL().SelectTourByParentAndRecordNumberHomepage(int.Parse(drv["TourTypeID"].ToString()), 5);
-                Repeater rptOutboundTour = (Repeater)item.FindControl("rptOutboundTour");
-                rptOutboundTour.DataSource = dtOutboundTour;
-                rptOutboundTour.DataBind();
-            }
-        }
+        //        DataTable dtOutboundTour = new TourBL().SelectTourByParentAndRecordNumberHomepage(int.Parse(drv["TourTypeID"].ToString()), 5);
+        //        Repeater rptOutboundTour = (Repeater)item.FindControl("rptOutboundTour");
+        //        rptOutboundTour.DataSource = dtOutboundTour;
+        //        rptOutboundTour.DataBind();
+        //    }
+        //}
         public string FriendlyUrl(string s)
         {
             return Ultility.Change_AV(s);

@@ -2,8 +2,8 @@ $(document).ready(
 	function() {
 		var $container = $(".bannerslide");
 		$container.wtRotator({
-			width:957,
-			height:335,
+			width:948,
+			height:300,
 			button_width:15,
 			button_height:15,
 			button_margin:4,
