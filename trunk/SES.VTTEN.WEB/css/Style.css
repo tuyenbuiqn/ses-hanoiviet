@@ -1090,3 +1090,17 @@ position:relative;
     font-size: 11px;
     text-align: left;
 }
+#banner {
+    float: left;
+    width: 948px;
+}
+#slideListTour
+{
+    float: left;
+    width: 948px;
+}
+.bannerslide
+{
+    height: 300px;
+    width: 948px;
+}
