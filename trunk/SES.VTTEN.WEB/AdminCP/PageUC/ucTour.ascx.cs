@@ -19,9 +19,9 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
     {
         TourDO objtour = new TourDO();
         TourScheduleDO objtoursche = new TourScheduleDO();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             Functions.DevCboDatabinder(cbTourType, new TourTypeBL().SelectAll(), TourTypeDO.TITLE_FIELD, TourTypeDO.TOURTYPEID_FIELD);
             cblDestination.DataSource = new DestinationBL().SelectAll();
             cblDestination.DataTextField = DestinationDO.TITLE_FIELD;
@@ -32,12 +32,8 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 objtour.TourID = int.Parse(Request.QueryString["TourID"].ToString());
                 initForm();
                 table3.Visible = true;
-               
             }
-            
         }
-
-       
 
         private void initForm()
         {
@@ -62,6 +58,10 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             cbisFrontPage.Checked = objtour.IsFrontPage;
             cbIsMenu.Checked = objtour.IsMenu;
             cbIsInboundTour.Checked = objtour.IsInboundTour;
+            if (objtour.ModuleID != null)
+            {
+                ddlViTri.SelectedValue = objtour.ModuleID.ToString();
+            }
             if (!string.IsNullOrEmpty(objtour.TourImage))
             {
                 hplImage1.Visible = true;
@@ -78,7 +78,9 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 }
             }
         }
+        
         int i;
+        
         protected void btSave_Click(object sender, EventArgs e)
         {
             SetObject();
@@ -123,9 +125,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                     }
                 }
                 Functions.Alert("Cập nhật thành công", "Default.aspx?Page=ListTour");
-                
             }
-            
         }
 
         private void SetObject()
@@ -141,17 +141,16 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objtour.TourAllPrice = txtAllPrice.Text;
             objtour.Notes = txtNotes.Text;
             objtour.TourCategoryID = RadioButtonList1.SelectedIndex;
+            objtour.ModuleID = int.Parse(ddlViTri.SelectedValue);
           
             try
             {
                 objtour.OrderID = int.Parse(txtOder.Text);
-
             }
             catch { }
             
             objtour.Published = cbActive.Checked;
             objtour.Title = txtTitle.Text;
-           
          
             try
             {
@@ -184,13 +183,5 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 objtour.TourPrice = double.Parse(txtPrice.Text);
             }
         }
-        
-      
-        
-        
-     
-      
-
-        
     }
 }

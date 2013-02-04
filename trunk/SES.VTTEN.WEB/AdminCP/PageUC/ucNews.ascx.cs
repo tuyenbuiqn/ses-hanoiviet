@@ -38,14 +38,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 hplImage.Visible = true;
                 hplImage.NavigateUrl = "~/Media/" + objnew.NewsImage;
             }
-            if (objnew.ModuleID == 1)
-            {
-                ddlModulNews.SelectedValue = "1";
-            }
-            else
-            {
-                ddlModulNews.SelectedValue = "0";
-            }
+            ddlModulNews.SelectedValue = objnew.ModuleID.ToString();
         }
 
         protected void btSave_Click(object sender, EventArgs e)
