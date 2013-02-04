@@ -30,8 +30,6 @@ namespace SES.VTTEN.DAL
 					
 				}
 		#endregion       
-
-	
 		
 		#region Public Methods
         public int Insert(ConfigDO objConfigDO)
@@ -206,6 +204,29 @@ arrConfigDO.Add(objConfigDO);
                return dt;
         }
 
+        public DataTable SelectByConfigID(int ConfigID)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spConfig_GetByPK";
+            SqlParameter Sqlparam;
+
+
+            Sqlparam = new SqlParameter("@ConfigID", SqlDbType.Int);
+            Sqlparam.Value = ConfigID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
      
 		#endregion          
     

@@ -794,6 +794,36 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
+
+        public DataTable SelectTourByModuleIdAndRecordNumber(int ModuleId, int RecordNumber, bool IsInboundTour)
+        {
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spTour_SelectByModuleIdAndRecordNumber";
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@ModuleId", SqlDbType.Int);
+            Sqlparam.Value = ModuleId;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@RecordNumber", SqlDbType.Int);
+            Sqlparam.Value = RecordNumber;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
     }
 
 }
