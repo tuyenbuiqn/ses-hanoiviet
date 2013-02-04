@@ -21,7 +21,7 @@ namespace SES.VTTEN.WEB
                 hpKM.NavigateUrl = "/Tour/" + dt.Rows[0]["TourID"].ToString() + "/" + Ultility.Change_AV(dt.Rows[0][TourDO.TITLE_FIELD].ToString());
                 imgPromo.AlternateText = dt.Rows[0][TourDO.TITLE_FIELD].ToString();
                 lblPromo.Text = WordCut(dt.Rows[0][TourDO.TITLE_FIELD].ToString(), 27, true);
-                lblDescription.Text = WordCut(dt.Rows[0][TourDO.METADES_FIELD].ToString(), 65, false);
+                lblDescription.Text = WordCut(dt.Rows[0][TourDO.METADES_FIELD].ToString(), 60, false);
             }
             Page.Title = Ultility.Webtile();
         }

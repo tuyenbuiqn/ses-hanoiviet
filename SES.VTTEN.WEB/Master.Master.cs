@@ -15,23 +15,14 @@ namespace SES.VTTEN.WEB
         protected void Page_Load(object sender, EventArgs e)
         {
             string scr = "<script type='text/javascript'> jQuery(document).ready(function () {";
-            DataTable dtcatcarou = new TourTypeBL().GetTourCateHomepage(true);
-            foreach (DataRow dr in dtcatcarou.Rows)
-            {
-                scr += "jQuery('#carouselTour_" + dr[TourTypeDO.TOURTYPEID_FIELD].ToString() + "').jcarousel({ scroll:1});";
-            
-            }
+            scr += "jQuery('#carouselTour_1').jcarousel({ scroll:1});";
+            scr += "jQuery('#carouselTour_2').jcarousel({ scroll:1});";
+            scr += "jQuery('#carouselTour_3').jcarousel({ scroll:1});";
+            scr += "jQuery('#carouselTourOut_1').jcarousel({ scroll:1});";
+            scr += "jQuery('#carouselTourOut_2').jcarousel({ scroll:1});";
+            scr += "jQuery('#carouselTourOut_3').jcarousel({ scroll:1});";
             scr += "  });</script>";
             lblscr.Text = scr;
-
-            string scrOut = "<script type='text/javascript'> jQuery(document).ready(function () {";
-            DataTable dtcatcarouOut = new TourTypeBL().GetTourCateHomepage(false);
-            foreach (DataRow dr in dtcatcarouOut.Rows)
-            {
-                scrOut += "jQuery('#carouselTourOut_" + dr[TourTypeDO.TOURTYPEID_FIELD].ToString() + "').jcarousel({ scroll:1});";
-            }
-            scrOut += "  });</script>";
-            lblscrOut.Text = scrOut;
 
             rptListVNTour.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(1);//List theo du lịch trong nước
             rptListVNTour.DataBind();
@@ -39,7 +30,8 @@ namespace SES.VTTEN.WEB
             rptListENTour.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(20);//List theo du lịch nước ngoài
             rptListENTour.DataBind();
 
-
+            rptListHotelItemTop.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu top
+            rptListHotelItemTop.DataBind();
         }
 
         protected void lnkTop_Click(object sender, EventArgs e)
