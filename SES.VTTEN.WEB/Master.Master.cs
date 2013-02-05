@@ -30,7 +30,22 @@ namespace SES.VTTEN.WEB
             rptListENTour.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(20);//List theo du lịch nước ngoài
             rptListENTour.DataBind();
 
-            rptListHotelItemTop.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu top
+            DataTable dt = new DataTable("dt");
+            dt = new DestinationBL().SelectAll();//List khachs sạn trên menu top
+
+            if ((dt != null) && (dt.Rows.Count > 0))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DataTable dtHotel = new DataTable("dt");
+                    dtHotel = new HotelBL().SelectbyDestination(int.Parse(dt.Rows[i]["DestinationID"].ToString()));
+                    if ((dtHotel == null) || (dtHotel.Rows.Count == 0))
+                    {
+                        dt.Rows[i].Delete();
+                    }
+                }
+            }
+            rptListHotelItemTop.DataSource = dt;//List khachs sạn trên menu top
             rptListHotelItemTop.DataBind();
         }
 

@@ -35,48 +35,100 @@ namespace SES.VTTEN.WEB
             rptListEnTourleft.DataSource = new TourTypeBL().SelectByTopIDOnlyChild(20);//List theo du lịch nước ngoài
             rptListEnTourleft.DataBind();
 
-            rptListHotelItemTop.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu top
-            rptListHotelItemTop.DataBind();
+            DataTable dt = new DataTable("dt");
+            dt = new DestinationBL().SelectAll();//List khachs sạn trên menu top
 
-            rptListHotelItem.DataSource = new DestinationBL().SelectAll();//List khachs sạn trên menu left
+            if ((dt != null) && (dt.Rows.Count > 0))
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    DataTable dtHotel = new DataTable("dt");
+                    dtHotel = new HotelBL().SelectbyDestination(int.Parse(dt.Rows[i]["DestinationID"].ToString()));
+                    if ((dtHotel == null) || (dtHotel.Rows.Count == 0))
+                    {
+                        dt.Rows[i].Delete();
+                    }
+                }
+            }
+            if ((dt != null) && (dt.Rows.Count > 0))
+            {
+                rptListHotelItemTop.DataSource = dt;//List khachs sạn trên menu top
+                rptListHotelItemTop.DataBind();
+            }
+
+            rptListHotelItem.DataSource = dt;//List khachs sạn trên menu left
             rptListHotelItem.DataBind();
 
             //Ẩn hiện menu con của Du lịch việt nam. Phần này khá lằng nhằng :(
-            string sVisible = "0";
-            if (Session["Visible"] != null)
+            if ((Request.QueryString["P"] != null) && ((Request.QueryString["ID"] != null)))
             {
-                sVisible = Session["Visible"].ToString();
-                Session.Remove("Visible");
-            }
+                string TourPage = Request.QueryString["P"].ToString();
+                string TourPageID = Request.QueryString["ID"].ToString();
+                //string sVisible = "0";
+                //if (Session["Visible"] != null)
+                //{
+                //    sVisible = Session["Visible"].ToString();
+                //    Session.Remove("Visible");
+                //}
 
-            if (sVisible == "1")
-            {
-                Full1.Visible = true;
-                Full2.Visible = true;
-            }
-            else
-            {
-                if ((Request.QueryString["P"] != null)&&((Request.QueryString["ID"] != null)))
-                {
-                    string TourPage = Request.QueryString["P"].ToString();
-                    string TourPageID = Request.QueryString["ID"].ToString();
+                //if (sVisible == "1")
+                //{
+                //    Full1.Visible = true;
+                //    Full2.Visible = true;
+                //}
+                //else
+                //{
+
                     if (TourPage == "Tour")//Để khi vào chi tiết tour cũng vẫn hiện thì menu bên trái
                     {
                         Full1.Visible = true;
                         Full2.Visible = true;
+                        divShowDichVu.Visible = false;
+                        divTinTuc.Visible = false;
+                        divGallery.Visible = false;
                     }
-                    else if ((TourPage == "Tour-Category") && (TourPageID != "1") && (TourPageID != "20"))//Để khi click vào các item con bên trong menu trái thì menu bên trái vẫn hiện tất
+                    //else if ((TourPage == "Tour-Category") && (TourPageID != "1") && (TourPageID != "20"))//Để khi click vào các item con bên trong menu trái thì menu bên trái vẫn hiện tất
+                    else if (TourPage == "Tour-Category")
                     {
                         Full1.Visible = true;
                         Full2.Visible = true;
+                        divShowDichVu.Visible = false;
+                        divTinTuc.Visible = false;
+                        divGallery.Visible = false;
                     }
-                    
+                    else if ((TourPage == "Travel-News")||(TourPage == "News"))
+                    {
+                        divShowDichVu.Visible = false;
+                        divTinTuc.Visible = true;
+                        divGallery.Visible = false;
+                        Full1.Visible = false;
+                        Full2.Visible = false;
+                    }
+                    else if ((TourPage == "Hotel-Category") || (TourPage == "Hotel"))
+                    {
+                        divShowDichVu.Visible = true;
+                        divTinTuc.Visible = false;
+                        divGallery.Visible = false;
+                        Full1.Visible = false;
+                        Full2.Visible = false;
+                    }
+                    else if ((TourPage == "Albums") || (TourPage == "Videos") || (TourPage == "AlbumDetail") || (TourPage == "VideoDetail"))
+                    {
+                        divShowDichVu.Visible = false;
+                        divTinTuc.Visible = false;
+                        divGallery.Visible = true;
+                        Full1.Visible = false;
+                        Full2.Visible = false;
+                    }
                     else
                     {
                         Full1.Visible = false;
                         Full2.Visible = false;
+                        divShowDichVu.Visible = false;
+                        divTinTuc.Visible = false;
+                        divGallery.Visible = false;
                     }
-                }
+                //}
             }
             //end Ẩn hiện menu con của Du lịch việt nam
         }

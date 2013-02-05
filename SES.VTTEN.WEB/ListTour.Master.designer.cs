@@ -139,6 +139,15 @@ namespace SES.VTTEN.WEB {
         protected global::System.Web.UI.WebControls.Repeater rptListEnTourleft;
         
         /// <summary>
+        /// divShowDichVu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divShowDichVu;
+        
+        /// <summary>
         /// rptListHotelItem control.
         /// </summary>
         /// <remarks>
@@ -146,6 +155,24 @@ namespace SES.VTTEN.WEB {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptListHotelItem;
+        
+        /// <summary>
+        /// divTinTuc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divTinTuc;
+        
+        /// <summary>
+        /// divGallery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divGallery;
         
         /// <summary>
         /// ucSearch1 control.

@@ -138,41 +138,6 @@
         });	
 		</script>
     <!--end Slider Kit scripts -->
-    <!--end Ẩn hiện menu -->
-    <script type="text/javascript">
-        function show_hide() {
-            if(document.getElementById("full").style.display!='block') {
-            document.getElementById("full").style.display = 'block';
-            }
-            else {
-            document.getElementById("full").style.display = 'none';
-            }
-            return false;
-            }
-    </script>
-    <script type="text/javascript">
-        function show_hide2() {
-            if (document.getElementById("divShow").style.display != 'block') {
-                document.getElementById("divShow").style.display = 'block';
-            }
-            else {
-                document.getElementById("divShow").style.display = 'none';
-            }
-            return false;
-        }
-    </script>
-    <script type="text/javascript">
-        function show_hide3() {
-            if (document.getElementById("divShowDichVu").style.display != 'block') {
-                document.getElementById("divShowDichVu").style.display = 'block';
-            }
-            else {
-                document.getElementById("divShowDichVu").style.display = 'none';
-            }
-            return false;
-        }
-    </script>
-    
     <script type="text/javascript" src="/js/jquery.wt-rotator.min.js"></script>
     <script type="text/javascript" src="/js/preview.js"></script>
     <link rel="stylesheet" type="text/css" href="/preview.css" /><link rel="stylesheet" type="text/css" href="/wt-rotator.css" />
@@ -260,7 +225,13 @@
                                      <asp:Repeater ID="rptListHotelItemTop" runat="server">
                                         <HeaderTemplate><ul class="ItemTop"></HeaderTemplate>
                                         <ItemTemplate>
-                                            <li><a href="/Hotel-Category/<%# Eval("DestinationID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title")%></a>
+                                            <li><a href="/Hotel-Category/<%# Eval("DestinationID") %>/<%# Eval("Alias") %>.aspx" title="<%# Eval("Title") %>"><%# Eval("Title")%></a></li>
+                                            <%--<asp:Panel ID="pnlHotelItem" runat="server">
+                                            <li>
+                                                <asp:HyperLink ID="hplHotelItem" runat="server"></asp:HyperLink>
+                                            </li>
+                                            </asp:Panel>
+                                            --%>
                                         </ItemTemplate>
                                         <FooterTemplate></ul></FooterTemplate>
                                     </asp:Repeater>
@@ -352,8 +323,8 @@
                                     </ul>
                                 </li>
                                 <li><a href="/Promotions/0/Default.aspx" title="Tour Khuyến mãi">Khuyến mãi</a></li>
-                                <li><a href="#" onclick="return show_hide3()" title="Dịch vụ">Dịch vụ</a>
-                                    <ul id="divShowDichVu" style="width: 100%; display: none;">
+                                <li><a href="/Hotel-Category/0/Default.aspx"title="Dịch vụ">Dịch vụ</a>
+                                    <ul id="divShowDichVu" runat="server" style="width: 100%;">
                                         <li><a href="/Hotel-Category/0/Default.aspx" title="Khách sạn">» Khách sạn</a>
                                              <asp:Repeater ID="rptListHotelItem" runat="server">
                                                 <HeaderTemplate><ul class="Item""></HeaderTemplate>
@@ -368,8 +339,8 @@
                                         <li><a href="/Travel-News/6/Default.aspx" title="Thuê xe dịch vụ">» Thuê xe dịch vụ</a></li>
                                     </ul>
                                  </li>
-                                <li><a href="#" title="Tin tức Du lịch"  onclick="return show_hide2()">Tin tức Du lịch</a>
-                                    <ul id="divShow" class="Item" style="width: 100%; display: none;">
+                                <li><a href="/Travel-News/0/Default.aspx" title="Tin tức Du lịch">Tin tức Du lịch</a>
+                                    <ul id="divTinTuc" runat="server" class="Item" style="width: 100%;">
                                         <li><a href="/Travel-News/0/Default.aspx" title="Blog du lịch">» Blog du lịch</a></li>
                                         <li><a href="/Travel-News/2/Default.aspx" title="Khám phá du lịch">» Khám phá du lịch</a></li>
                                         <li><a href="/Travel-News/3/Default.aspx" title="Tư vấn du lịch">» Tư vấn du lịch</a></li>
@@ -378,8 +349,8 @@
                                 <li><a href="/Travel-Review/1/Default.aspx" title="Kinh nghiệm đi Tours">Kinh nghiệm đi Tours</a></li>
                                 <li><a href="/Destinations/1/Default.aspx" title="Danh lam thắng cảnh">Danh lam thắng cảnh</a></li>
                                 <li><a href="/Travel-Guides/1/Default.aspx" title="Điều khoản đi Tour">Điều khoản đi Tour</a></li>--%>
-                                <li><a href="#" title="Video" onclick="return show_hide()">Gallery</a>
-                                    <ul id="full" style="width: 100%; display: none;">
+                                <li><a href="/Albums/0/Default.aspx" title="Gallery">Gallery</a>
+                                    <ul id="divGallery" runat="server" style="width: 100%;">
                                         <li><a href="/Albums/0/Default.aspx" title="Hình ảnh">» Hình ảnh</a></li>
                                         <li><a href="/Videos/0/Travel-Videos.aspx" title="Video">» Video</a></li>
                                     </ul>
