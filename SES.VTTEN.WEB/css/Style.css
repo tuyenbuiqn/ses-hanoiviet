@@ -97,11 +97,12 @@ position:relative;
 .hanoiviettravel
 {
     margin-top: 5px;
-    
+    position: absolute;
+    bottom: 0px;
     display: block;
     margin-left: 5px;
     color: #8DD6B6;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
 }
 .haytanhuong
