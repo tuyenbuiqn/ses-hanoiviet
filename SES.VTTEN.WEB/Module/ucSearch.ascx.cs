@@ -35,10 +35,10 @@ namespace SES.VTTEN.WEB.Module
                 TourTypeID = int.Parse(ddlTourType.SelectedValue.ToString());
             int TourGiaTourID = 0;
             if (ddlTourCat.SelectedIndex > 0)
-                TourGiaTourID = ddlTourCat.SelectedIndex;
+                TourGiaTourID = int.Parse(ddlTourCat.SelectedValue.ToString());
             int DurationID = 0;
             if (ddlDuration.SelectedIndex > 0)
-                DurationID = ddlDuration.SelectedIndex;
+                DurationID = int.Parse(ddlDuration.SelectedValue.ToString());
 
             Response.Redirect("/Search/" + DesID + "-" + TourTypeID + "-" + TourGiaTourID + "-" + DurationID + "/Vietnam-Travel.aspx");
         }
