@@ -190,10 +190,13 @@
                             <a href="/Default.aspx" title="Hanoi Vietravel">
                                 <img src="/image/logo.png" class="logo" alt="Hanoi Viettravel" />
                             </a> 
-                            <span class="hanoiviettravel">
+                            <%--<span class="hanoiviettravel">
                                 Hanoi Viet Travel
-                            </span>
+                            </span>--%>
                         </div>
+                        <p class="hanoiviettravel">
+                                Hanoi Viet Travel
+                            </p>
                         <div class="logo-right">
                             <span class="haytanhuong">HÃY TẬN HƯỞNG</span> 
                             <span class="tungphutgiay">TỪNG PHÚT GIÂY</span>
