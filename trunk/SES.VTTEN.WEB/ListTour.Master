@@ -185,7 +185,7 @@
         <div class="inner">
             <div class="detail">
                 <div id="Menu" class="TourListMaster">
-                     <div class="logo-out-TourListMaster">
+                     <div class="logo-out-TourListMaster"  style="position: relative;">
                         <div class="logo-left">
                             <a href="/Default.aspx" title="Hanoi Vietravel">
                                 <img src="/image/logo.png" class="logo" alt="Hanoi Viettravel" />
@@ -194,7 +194,7 @@
                                 Hanoi Viet Travel
                             </span>--%>
                         </div>
-                        <p class="hanoiviettravel">
+                        <p class="hanoiviettravel" style="bottom: -7px;">
                                 Hanoi Viet Travel
                             </p>
                         <div class="logo-right">
