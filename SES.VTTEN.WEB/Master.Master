@@ -87,7 +87,7 @@
                                 Hanoi Viet Travel
                             </span>--%>
                         </div>
-                        <p class="hanoiviettravel">
+                        <p class="hanoiviettravel" style="bottom: 0px;">
                                 Hanoi Viet Travel
                             </p>
                         <div class="logo-right">
