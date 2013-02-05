@@ -30,9 +30,9 @@
             <td>
                   <asp:DropDownList ID="ddlTourCat" class="ddl" runat="server">
                         <asp:ListItem>--Chọn loại tour--</asp:ListItem>
-                        <asp:ListItem Value="1">Superior</asp:ListItem>
-                        <asp:ListItem Value="2">Deluxe</asp:ListItem>
-                        <asp:ListItem Value="3">Luxury</asp:ListItem>
+                        <asp:ListItem Value="0">Superior</asp:ListItem>
+                        <asp:ListItem Value="1">Deluxe</asp:ListItem>
+                        <asp:ListItem Value="2">Luxury</asp:ListItem>
                     </asp:DropDownList>
             </td>
         </tr>
