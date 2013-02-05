@@ -43,7 +43,7 @@
                 circular: false,
                 mousewheel: false,
                 keyboard: true,
-                shownavitems: 7,
+                shownavitems: 6,
                 autospeed: 4000,
                 circular: true,
 //                fastchange: false,

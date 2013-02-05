@@ -395,7 +395,7 @@ namespace SES.VTTEN.DAL
                     objTourDO.IsMenu = Convert.ToBoolean(dr["IsMenu"]);
 
                 if (!Convert.IsDBNull(dr["IsOutPromotion"]))
-                    objTourDO.IsMenu = Convert.ToBoolean(dr["IsOutPromotion"]);
+                    objTourDO.IsOutPromotion = Convert.ToBoolean(dr["IsOutPromotion"]);
                 if (!Convert.IsDBNull(dr["IsInboundTour"]))
                     objTourDO.IsInboundTour = Convert.ToBoolean(dr["IsInboundTour"]);
             }
