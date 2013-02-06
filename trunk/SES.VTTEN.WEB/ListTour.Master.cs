@@ -98,11 +98,30 @@ namespace SES.VTTEN.WEB
                     }
                     else if ((TourPage == "Travel-News")||(TourPage == "News"))
                     {
-                        divShowDichVu.Visible = false;
-                        divTinTuc.Visible = true;
-                        divGallery.Visible = false;
-                        Full1.Visible = false;
-                        Full2.Visible = false;
+                        if ((TourPageID == "0") || (TourPageID == "2") || (TourPageID == "3"))
+                        {
+                            divShowDichVu.Visible = false;
+                            divTinTuc.Visible = true;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
+                        else if ((TourPageID == "4") || (TourPageID == "5") || (TourPageID == "6"))
+                        {
+                            divShowDichVu.Visible = true;
+                            divTinTuc.Visible = false;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
+                        else
+                        {
+                            divShowDichVu.Visible = false;
+                            divTinTuc.Visible = false;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
                     }
                     else if ((TourPage == "Hotel-Category") || (TourPage == "Hotel"))
                     {
