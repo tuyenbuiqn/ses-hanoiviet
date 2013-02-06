@@ -69,7 +69,7 @@ namespace SES.VTTEN.WEB.Module
 
             CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
 
-            CollectionPager1.DataSource = new TourBL().SelectSaleOff(20).DefaultView;
+            CollectionPager1.DataSource = new TourBL().SelectOutPromotion().DefaultView;
 
             CollectionPager1.BindToControl = rptTourCat;
             rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
