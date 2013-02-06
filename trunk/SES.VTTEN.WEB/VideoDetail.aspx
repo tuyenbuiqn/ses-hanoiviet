@@ -12,7 +12,7 @@
         <ItemTemplate>
             <div class="Album-video">
                 <div class="Album-Cover-video">
-                    <a id="various3" title='<%#Eval("Title") %>' href='http://www.youtube.com/watch?v=<%#Eval("Url") %>'>
+                    <a id="various3" title='<%#Eval("Title") %>' href='http://www.youtube.com/embed/<%#Eval("Url") %>'>
                         <img src='http://i4.ytimg.com/vi/<%#Eval("Url") %>/default.jpg' height="120px" width="180px"
                             title='<%#Eval("Title") %>' alt='<%#Eval("Title")%>' />
                     </a>
