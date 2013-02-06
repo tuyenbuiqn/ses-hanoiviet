@@ -20,9 +20,12 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
         MediaDO objMedia = new MediaDO();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Functions.ddlDatabinder(cbDestination, DestinationDO.DESTINATIONID_FIELD, DestinationDO.TITLE_FIELD, new DestinationBL().SelectAll());
-            Functions.ddlDatabinder(cbHotel, HotelDO.HOTELID_FIELD, HotelDO.TITLE_FIELD, new HotelBL().SelectAll());
-            Functions.ddlDatabinder(cbTour, TourDO.TOURID_FIELD, TourDO.TITLE_FIELD, new TourBL().SelectAll());
+            if (!IsPostBack)
+            {
+                Functions.ddlDatabinder(cbDestination, DestinationDO.DESTINATIONID_FIELD, DestinationDO.TITLE_FIELD, new DestinationBL().SelectAll());
+                Functions.ddlDatabinder(cbHotel, HotelDO.HOTELID_FIELD, HotelDO.TITLE_FIELD, new HotelBL().SelectAll());
+                Functions.ddlDatabinder(cbTour, TourDO.TOURID_FIELD, TourDO.TITLE_FIELD, new TourBL().SelectAll());
+            }
             if (Request.QueryString["MediaID"] != null)
             {
                 objMedia.MediaID = int.Parse(Request.QueryString["MediaID"]);
@@ -42,10 +45,32 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             txtURL.Text = objMedia.MediaUrl;
             cbActive.Checked = objMedia.Published;
             //cbType.Checked = objMedia.MediaType;
-            cbDestination.SelectedValue = objMedia.DestinationID.ToString();
-            cbHotel.SelectedValue = objMedia.HotelID.ToString();
+            try
+            {
+                cbDestination.SelectedValue = objMedia.DestinationID.ToString();
+            }
+            catch
+            {
+                cbDestination.SelectedValue = "0";
+            }
+            try
+            {
+                cbHotel.SelectedValue = objMedia.HotelID.ToString();
+            }
+            catch
+            {
+                cbHotel.SelectedValue = "0";
+            }
             txtMetaTag.Text = objMedia.MetaTag;
-            cbTour.SelectedValue = objMedia.TourID.ToString();
+            try
+            {
+                cbTour.SelectedValue = objMedia.TourID.ToString();
+            }
+            catch 
+            {
+                cbTour.SelectedValue = "0";
+            }
+            
         }
 
         protected void btSave_Click(object sender, EventArgs e)
