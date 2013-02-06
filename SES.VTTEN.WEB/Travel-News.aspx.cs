@@ -36,35 +36,64 @@ namespace SES.VTTEN.WEB
                     Page.Title = "Lịch khởi hành - hanoiviettravel";
 
                     lblTitle.Text = "» Lịch khởi hành";
+                    hplGoc.Visible = false;
                 }
                 else if (ID == "0")
                 {
                     lblTitle.Text = "» Blog du lịch";
+                    hplGoc.NavigateUrl = "/Travel-News/0/Default.aspx";
+                    hplGoc.Text = "» Tin tức du lịch";
+                    hplGoc.ToolTip = "Tin tức du lịch";
+                    hplGoc.Visible = true;
                 }
                 else if (ID == "2")
                 {
                     lblTitle.Text = "» Khám phá du lịch";
+                    hplGoc.NavigateUrl = "/Travel-News/0/Default.aspx";
+                    hplGoc.Text = "» Tin tức du lịch";
+                    hplGoc.ToolTip = "Tin tức du lịch";
+                    hplGoc.Visible = true;
                 }
                 else if (ID == "3")
                 {
                     lblTitle.Text = "» Tư vấn du lịch";
+                    hplGoc.NavigateUrl = "/Travel-News/0/Default.aspx";
+                    hplGoc.Text = "» Tin tức du lịch";
+                    hplGoc.ToolTip = "Tin tức du lịch";
+                    hplGoc.Visible = true;
                 }
                 else if (ID == "4")
                 {
                     lblTitle.Text = "» Máy bay";
+                    hplGoc.NavigateUrl = "/Hotel-Category/0/Default.aspx";
+                    hplGoc.Text = "» Dịch vụ";
+                    hplGoc.ToolTip = "Dịch vụ";
+                    hplGoc.Visible = true;
                 }
                 else if (ID == "5")
                 {
                     lblTitle.Text = "» Tầu";
+                    hplGoc.NavigateUrl = "/Hotel-Category/0/Default.aspx";
+                    hplGoc.Text = "» Dịch vụ";
+                    hplGoc.ToolTip = "Dịch vụ";
+                    hplGoc.Visible = true;
                 }
                 else if (ID == "6")
                 {
                     lblTitle.Text = "» Thuê xe du lịch";
+                    hplGoc.NavigateUrl = "/Hotel-Category/0/Default.aspx";
+                    hplGoc.Text = "» Dịch vụ";
+                    hplGoc.ToolTip = "Dịch vụ";
+                    hplGoc.Visible = true;
                 }
             }
             else
             {
                 lblTitle.Text = "» Tin tức";
+                hplGoc.NavigateUrl = "/Travel-News/0/Default.aspx";
+                hplGoc.Text = "» Tin tức du lịch";
+                hplGoc.ToolTip = "Tin tức du lịch";
+                hplGoc.Visible = true;
             }
             metaDesc.Name = "description";
             metaDesc.Content = "Tin tức du lịch - hanoiviettravel";
@@ -75,6 +104,7 @@ namespace SES.VTTEN.WEB
             Page.Header.Controls.Add(metaKey);
 
             Page.Title = "Tin tức du lịch - hanoiviettravel";
+            
         }
     }
 }
