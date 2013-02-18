@@ -252,6 +252,14 @@ namespace SES.VTTEN.WEB.AdminCP
                         hplBooking.CssClass = "active";
                         MnuPage = LoadControl("MenuUC/ucMnuBooking.ascx");
                         break;
+                    case "ListServicesBooking":
+                        hplBooking.CssClass = "active";
+                        MnuPage = LoadControl("MenuUC/ucMnuBooking.ascx");
+                        break;
+                    case "ServicesBooking":
+                        hplBooking.CssClass = "active";
+                        MnuPage = LoadControl("MenuUC/ucMnuBooking.ascx");
+                        break;
                     case "ListCustomizeTour":
                         hplBooking.CssClass = "active";
                         MnuPage = LoadControl("MenuUC/ucMnuBooking.ascx");
