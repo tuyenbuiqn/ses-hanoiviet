@@ -47,7 +47,7 @@ namespace SES.VTTEN.DO
 		public const string CHECKOUT_FIELD ="Checkout";
 		public const string INFORMATIONSOURCE_FIELD ="InformationSource";
 		public const string HOTELID_FIELD ="HotelID";
-
+        public const string SERVICESID_FIELD = "ServicesID";
 		#endregion
 		
 		#region Private Variables
@@ -80,7 +80,7 @@ namespace SES.VTTEN.DO
 		private DateTime _Checkout;
 		private String _InformationSource;
 		private Int32 _HotelID;
-
+        private Int32 _ServicesID;
 		#endregion
 
 		#region Public Properties
@@ -403,7 +403,17 @@ namespace SES.VTTEN.DO
 				_HotelID = value;
 			}
 		}
-
+        public Int32 ServicesID
+        {
+            get
+            {
+                return _ServicesID;
+            }
+            set
+            {
+                _ServicesID = value;
+            }
+        }
         #endregion
 
 	}
