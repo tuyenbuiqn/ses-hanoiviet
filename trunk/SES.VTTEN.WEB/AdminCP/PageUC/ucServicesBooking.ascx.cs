@@ -44,7 +44,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             lblCountry.Text = new NationBL().Select(new NationDO { NationID = objBook.Country }).NationName;
 
             // Tour
-            lblAdult.Text = objBook.AdultNo.ToString();
+            lblAdult.Text = objBook.NumberPerson.ToString();
             //lblChildren.Text = objBook.ChildNo.ToString();
             if (objBook.ServicesID == 1)
             {
