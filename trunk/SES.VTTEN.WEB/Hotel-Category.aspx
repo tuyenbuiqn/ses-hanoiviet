@@ -7,7 +7,9 @@
   <div class="DanhSachTour-title">
         <div>
             <p>
-                Khách sạn tại
+                <a href="/Default.aspx" title="Trang chủ">Trang chủ</a>&nbsp;» &nbsp;
+                <a href="/Hotel-Category/0/Default.aspx" title="Danh sách khách sạn">Dịch vụ</a>&nbsp;» &nbsp;
+                <a href="/Hotel-Category/0/Default.aspx" title="Danh sách khách sạn">Khách sạn</a>&nbsp;» &nbsp;
                 <asp:Label ID="lblTitle" runat="server" Text="Label"></asp:Label>
             </p>
         </div>

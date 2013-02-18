@@ -33,7 +33,7 @@ namespace SES.VTTEN.WEB
                 {
                 }
                 int TourTypeID = (int)objTD.TourTypeID;
-                lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID) + "<a href=\"/Tour/" + objTD.TourID.ToString() + "/" + objTD.Alias.ToString() + ".aspx\" title=\"" + objTD.Title.ToString() + "\"> » " + objTD.Title.ToString() + "</a>";
+                lblTitle.Text = "<a href=\"/Default.aspx\" title=\"Trang chủ\">Trang chủ</a>" + TourCate(TourTypeID) + " » <a href=\"/Tour/" + objTD.TourID.ToString() + "/" + objTD.Alias.ToString() + ".aspx\" title=\"" + objTD.Title.ToString() + "\">" + objTD.Title.ToString() + "</a>";
                 if (!IsPostBack)
                 {
                     HtmlMeta metaDesc = new HtmlMeta();
@@ -63,11 +63,11 @@ namespace SES.VTTEN.WEB
 
             if (objTT.ParentID == 0)
             {
-                //sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + Ultility.Change_AVN(objTT.Title) + ".aspx\" title=\"" + objTT.Title + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + Ultility.Change_AVN(objTT.Title) + ".aspx\" title=\"" + objTT.Title + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
             }
             else
             {
-                //sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + Ultility.Change_AVN(objTT.Title) + ".aspx\" title=\"" + objTT.Title + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
+                sReturn = " » " + "<a href=\"/Tour-Category/" + objTT.TourTypeID.ToString() + "/" + Ultility.Change_AVN(objTT.Title) + ".aspx\" title=\"" + objTT.Title + "\">" + objTT.Title.ToString() + "</a>" + sReturn;
                 TourCate(objTT.ParentID);
             }
             return sReturn;

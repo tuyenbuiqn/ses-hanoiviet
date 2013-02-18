@@ -18,6 +18,7 @@ namespace SES.VTTEN.WEB
     public partial class ListTour : System.Web.UI.MasterPage
     {
         SlideBL slideBL = new SlideBL();
+        NewsDO objN = new NewsDO();
         protected void Page_Load(object sender, EventArgs e)
         {
             //rptListImage.DataSource = slideBL.SelectByCategoryID(1);
@@ -96,7 +97,7 @@ namespace SES.VTTEN.WEB
                         divTinTuc.Visible = false;
                         divGallery.Visible = false;
                     }
-                    else if ((TourPage == "Travel-News")||(TourPage == "News"))
+                    else if (TourPage == "Travel-News")
                     {
                         if ((TourPageID == "0") || (TourPageID == "2") || (TourPageID == "3"))
                         {
@@ -107,6 +108,40 @@ namespace SES.VTTEN.WEB
                             Full2.Visible = false;
                         }
                         else if ((TourPageID == "4") || (TourPageID == "5") || (TourPageID == "6"))
+                        {
+                            divShowDichVu.Visible = true;
+                            divTinTuc.Visible = false;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
+                        else
+                        {
+                            divShowDichVu.Visible = false;
+                            divTinTuc.Visible = false;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
+                    }
+                    else if (TourPage == "News")
+                    {
+                        try
+                        {
+                            objN = new NewsBL().Select(new NewsDO { NewsID = int.Parse(TourPageID) });
+                        }
+                        catch (Exception)
+                        {
+                        }
+                        if ((objN.ModuleID == 0) || (objN.ModuleID == 2) || (objN.ModuleID == 3))
+                        {
+                            divShowDichVu.Visible = false;
+                            divTinTuc.Visible = true;
+                            divGallery.Visible = false;
+                            Full1.Visible = false;
+                            Full2.Visible = false;
+                        }
+                        else if ((objN.ModuleID == 4) || (objN.ModuleID == 5) || (objN.ModuleID == 6))
                         {
                             divShowDichVu.Visible = true;
                             divTinTuc.Visible = false;

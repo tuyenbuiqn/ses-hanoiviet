@@ -41,6 +41,19 @@ namespace SES.VTTEN.WEB
 
             objHotel = new HotelBL().Select(objHotel);
 
+            try
+            {
+                DestinationDO objD = new DestinationDO();
+                objD.DestinationID = objHotel.DestinationID;
+                objD = new DestinationBL().Select(objD);
+                hplKhacSanDestination.Text = objD.Title;
+                hplKhacSanDestination.ToolTip = objD.Title;
+                hplKhacSanDestination.NavigateUrl = "/Hotel-Category/" + objHotel.DestinationID + "/" + objD.Alias + ".aspx";
+            }
+            catch 
+            {
+            }
+            
             lblHotelName.Text = objHotel.Title;
             lblHotelNameTitle.Text = objHotel.Title;
             //lblStarRate.Text = objHotel.StarRates.ToString() ;
