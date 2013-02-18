@@ -163,6 +163,10 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objBookingDO.HotelID;
             Sqlcomm.Parameters.Add(Sqlparam);
 
+            Sqlparam = new SqlParameter("@ServicesID", SqlDbType.Int);
+            Sqlparam.Value = objBookingDO.ServicesID;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
             Sqlparam = new SqlParameter("@ID", SqlDbType.Int);
             Sqlparam.Direction = ParameterDirection.ReturnValue;
             Sqlcomm.Parameters.Add(Sqlparam);
@@ -309,7 +313,9 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objBookingDO.HotelID;
             Sqlcomm.Parameters.Add(Sqlparam);
 
-
+            Sqlparam = new SqlParameter("@ServicesID", SqlDbType.Int);
+            Sqlparam.Value = objBookingDO.ServicesID;
+            Sqlcomm.Parameters.Add(Sqlparam);
 
             Sqlparam = new SqlParameter("@ErrorCode", SqlDbType.Int);
             Sqlparam.Direction = ParameterDirection.ReturnValue;
@@ -433,6 +439,8 @@ namespace SES.VTTEN.DAL
                     objBookingDO.InformationSource = Convert.ToString(dr["InformationSource"]);
                 if (!Convert.IsDBNull(dr["HotelID"]))
                     objBookingDO.HotelID = Convert.ToInt32(dr["HotelID"]);
+                if (!Convert.IsDBNull(dr["ServicesID"]))
+                    objBookingDO.ServicesID = Convert.ToInt32(dr["ServicesID"]);
 
             }
             return objBookingDO;

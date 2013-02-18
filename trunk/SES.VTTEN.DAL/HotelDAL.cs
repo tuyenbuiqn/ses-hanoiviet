@@ -380,7 +380,23 @@ namespace SES.VTTEN.DAL
             return dt;
         }
 
+        public DataTable SelectByServices()
+        {
 
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spBooking_GetByServices";
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
         #endregion
 
 
