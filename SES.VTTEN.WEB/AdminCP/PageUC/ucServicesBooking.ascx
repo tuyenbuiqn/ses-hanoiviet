@@ -58,10 +58,6 @@
             <span class="book-lable">Số người</span>
             <asp:Label runat="server" ID="lblAdult" CssClass="book-content" Text=""></asp:Label>
         </div>
-        <div class="book-right">
-            <span class="book-lable">Ngày đến</span>
-            <asp:Label runat="server" ID="lblDeparture" CssClass="book-content" Text=""></asp:Label>
-        </div>
     </div>
     <div class="booktour">
         <div class="book-left">

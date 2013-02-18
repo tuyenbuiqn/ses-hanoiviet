@@ -62,7 +62,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             {
                 lblHotelName.Text = "";
             }
-            lblDeparture.Text = objBook.DepartureDate.ToShortDateString();
+            //lblDeparture.Text = objBook.DepartureDate.ToShortDateString();
             //if (objBook.HotelCat == 0)
             //    lblHotelCat.Text = "Standard";
             //else if (objBook.HotelCat == 1)
