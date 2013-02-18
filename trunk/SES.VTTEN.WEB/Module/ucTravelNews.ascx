@@ -1,6 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucTravelNews.ascx.cs" Inherits="SES.VTTEN.WEB.Module.ucTravelNews" %>
 <%@ Register TagPrefix="cp" Namespace="SiteUtils" Assembly="CollectionPager" %>
-<asp:Repeater ID="rptHotelCat" runat="server">
+<asp:Repeater ID="rptHotelCat" runat="server" 
+    onitemdatabound="rptHotelCat_ItemDataBound">
     <ItemTemplate>
         <div class="DanhSachTour-box">
             <div class="DanhSachTour-detail">
@@ -12,6 +13,14 @@
                     <span style="color: #4704CE;">Xem tiếp</span>
                     </a>
                 </p>
+                <asp:Panel ID="pnlAction" runat="server">
+                    <div class="Action">
+                        <a href="/Services-Booking.aspx">
+                            <img  alt="lnkBookNow" title="BookNow" style="border: 0px;" src="/image/IconBookServices.png" />
+                        </a>
+                    </div>
+                </asp:Panel>
+                
             </div>
             <a href="/News/<%#Eval("NewsID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" class="DanhSachTourImg" >
                 <img alt="<%#Eval("Title") %>" title="<%#Eval("Title") %>" src="/Media/<%#Eval("NewsImage") %>" />

@@ -52,6 +52,10 @@ namespace SES.VTTEN.WEB.Module
                     lblTitle.Text = "<a href='/Hotel-Booking/" + hotelID + "/" + FriendlyUrl(objHotel.Alias) + "' title ='" + objHotel.Title + "'> Booking: " + objHotel.Title + "</a>";
                 }
             }
+            else if (Module.Equals("Services-Booking"))
+            {
+                lblTitle.Text = "Đặt dịch vụ";
+            }
             else if (Module.Equals("Travel-Guides"))
             {
                 if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
