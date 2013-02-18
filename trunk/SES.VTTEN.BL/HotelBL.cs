@@ -69,7 +69,10 @@ namespace SES.VTTEN.BL
          return objHotelDAL.SelectAll();
         }
 
-
+        public DataTable SelectByServices()
+        {
+            return objHotelDAL.SelectByServices();
+        }
      
 #endregion          
     
