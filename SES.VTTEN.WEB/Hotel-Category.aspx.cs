@@ -37,7 +37,7 @@ namespace SES.VTTEN.WEB
                     lblTitle.Text = objHT.Title;
                     if (DestinationID == 0)
                     {
-                        lblTitle.Text = " Việt Nam";
+                        lblTitle.Text = " Danh sách toàn bộ khách sạn";
                     }
 
                     HtmlMeta metaDesc = new HtmlMeta();

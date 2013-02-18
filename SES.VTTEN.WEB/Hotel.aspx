@@ -9,7 +9,9 @@
         <div>
             <p>
                 <a href="/Default.aspx" title="Trang chủ">Trang chủ</a>&nbsp;» &nbsp;
-                <a href="/Hotel-Category/0/Default.aspx" title="Danh sách khách sạn">Danh sách khách sạn</a>&nbsp;» &nbsp;
+                <a href="/Hotel-Category/0/Default.aspx" title="Danh sách khách sạn">Dịch vụ</a>&nbsp;» &nbsp;
+                <a href="/Hotel-Category/0/Default.aspx" title="Danh sách khách sạn">Khách sạn</a>&nbsp;» &nbsp;
+                <asp:HyperLink ID="hplKhacSanDestination" runat="server"></asp:HyperLink>&nbsp;» &nbsp;
                 <asp:Label runat="server" ID="lblHotelNameTitle" Text=""></asp:Label>
             </p>
         </div>

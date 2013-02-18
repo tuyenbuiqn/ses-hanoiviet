@@ -4,7 +4,8 @@
         <div>
             <p>
                 <a href="/Default.aspx" title="Trang chủ">Trang chủ</a>&nbsp;» &nbsp;
-                <a href="/Travel-News/1/Default.aspx" title="Tin tức du lịch">Tin tức du lịch</a>&nbsp;» &nbsp;
+                <asp:HyperLink ID="hplModul" runat="server"></asp:HyperLink>&nbsp;» &nbsp;
+                <%--<a href="/Travel-News/1/Default.aspx" title="Tin tức du lịch">Tin tức du lịch</a>&nbsp;» &nbsp;--%>
                 <asp:Label runat="server" ID="lblNewsTitle" Text=""></asp:Label>
             </p>
         </div>
