@@ -36,42 +36,49 @@ namespace SES.VTTEN.WEB
                     hplModul.NavigateUrl = "/Travel-News/0/Default.aspx";
                     hplModul.ToolTip = "Blog du lịch";
                     hplModul.Text = "Blog du lịch";
+                    pnlAction.Visible = false;
                 }
                 else if (objN.ModuleID == 1)
                 {
                     hplModul.NavigateUrl = "/Travel-News/1/Default.aspx";
                     hplModul.ToolTip = "Lịch khởi hành";
                     hplModul.Text = "Lịch khởi hành";
+                    pnlAction.Visible = false;
                 }
                 else if (objN.ModuleID == 2)
                 {
                     hplModul.NavigateUrl = "/Travel-News/2/Default.aspx";
                     hplModul.ToolTip = "Khám phá du lịch";
                     hplModul.Text = "Khám phá du lịch";
+                    pnlAction.Visible = false;
                 }
                 else if (objN.ModuleID == 3)
                 {
                     hplModul.NavigateUrl = "/Travel-News/3/Default.aspx";
                     hplModul.ToolTip = "Tư vấn du lịch";
                     hplModul.Text = "Tư vấn du lịch";
+                    pnlAction.Visible = false;
                 }
                 else if (objN.ModuleID == 4)
                 {
                     hplModul.NavigateUrl = "/Travel-News/4/Default.aspx";
                     hplModul.ToolTip = "Máy bay";
                     hplModul.Text = "Dịch vụ » Máy bay";
+                    pnlAction.Visible = true;
                 }
                 else if (objN.ModuleID == 5)
                 {
                     hplModul.NavigateUrl = "/Travel-News/5/Default.aspx";
                     hplModul.ToolTip = "Tầu";
                     hplModul.Text = "Dịch vụ » Tầu";
+                    pnlAction.Visible = true;
                 }
                 else if (objN.ModuleID == 6)
                 {
                     hplModul.NavigateUrl = "/Travel-News/6/Default.aspx";
                     hplModul.ToolTip = "Thuê xe du lịch";
                     hplModul.Text = "Dịch vụ » Thuê xe du lịch";
+                    pnlAction.Visible = true;
                 }
 
                 NewsDetailDataSource(NewsID);

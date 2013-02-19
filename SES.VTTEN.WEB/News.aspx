@@ -21,6 +21,13 @@
             </div>
             <asp:Label runat="server" ID="lblDescription" Text=""></asp:Label>
         </div>
+        <asp:Panel ID="pnlAction" runat="server">
+            <div style="float: left; width: 100%">
+                <a href="/Services-Booking/0/Dat-dich-vu.aspx" style="float: right;">
+                    <img  alt="lnkBookNow" title="BookNow" style="border: 0px;" src="/image/IconBookServices.png" />
+                </a>
+            </div>
+        </asp:Panel>
         <div class="toursub2">
             <h3>
                 Các bài liên quan
