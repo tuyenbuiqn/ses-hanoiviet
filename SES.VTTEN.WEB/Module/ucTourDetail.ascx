@@ -4,8 +4,8 @@
         <div class="DanhSachTour-detail">
             <p class="Title"><asp:Label runat="server" ID="lblTourName" Text=""></asp:Label></p>
             <p class="Price">Giá Tour: <asp:Label runat="server" ID="lblPrice" CssClass="Price" Text=""></asp:Label>đ</p>
-            <p class="Time">Duration: <asp:Label runat="server" ID="lblDurationDay" Text=""></asp:Label></p>
-            <p class="Code">Trip Code: <asp:Label runat="server" ID="lblTourCode" Text=""></asp:Label></p>
+            <p class="Time">Thời gian: <asp:Label runat="server" ID="lblDurationDay" Text=""></asp:Label></p>
+            <p class="Code">Mã tour: <asp:Label runat="server" ID="lblTourCode" Text=""></asp:Label></p>
             <p class="MoTaChung">Mô tả chung:</p>
         </div>
         <div class="DetailImgBig" style="margin-top: 3px;">

@@ -37,11 +37,11 @@ namespace SES.VTTEN.WEB.Module
         {
 
             if (day == "1" || day == "0")
-                day = day + " day";
-            else day = day + " days";
+                day = day + " ngày";
+            else day = day + " ngày";
             if (night == "1" || night == "0")
-                night = night + " night";
-            else night = night + " nights";
+                night = night + " đêm";
+            else night = night + " đêm";
             return day + " " + night;
         }
         
