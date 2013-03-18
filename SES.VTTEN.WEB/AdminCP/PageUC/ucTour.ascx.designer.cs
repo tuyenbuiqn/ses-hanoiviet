@@ -76,6 +76,33 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator revNumber;
         
         /// <summary>
+        /// txtPriceUSD control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPriceUSD;
+        
+        /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        
+        /// <summary>
+        /// RegularExpressionValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+        
+        /// <summary>
         /// cbTourType control.
         /// </summary>
         /// <remarks>
@@ -227,6 +254,15 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbIsOutPromotion;
+        
+        /// <summary>
+        /// chkLaLichKhoiHanh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkLaLichKhoiHanh;
         
         /// <summary>
         /// RadioButtonList1 control.

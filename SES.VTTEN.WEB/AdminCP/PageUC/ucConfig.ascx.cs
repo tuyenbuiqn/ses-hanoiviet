@@ -51,7 +51,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                     chkpopup.Checked = false;
             }
             // Sử dụng CKEditor
-            else if (objConfig.ConfigID == 3 || objConfig.ConfigID == 4)
+            else if (objConfig.ConfigID == 3 || objConfig.ConfigID == 4 || objConfig.ConfigID == 11)
             {
                 trDes.Visible = false;
                 trSupport.Visible = true;
