@@ -97,6 +97,7 @@
                     </div>
                     <ul class="toplink">
                         <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang chủ</a></li>
+                        <li><a href="/Intro.aspx" title="Giới thiệu">Giới thiệu</a></li>
                         <li>
                             <%--<a href="/Tour-Category/1/du-lich-Viet-Nam.aspx" title="Du lịch Việt Nam">
                             Du lịch Việt Nam</a>--%>

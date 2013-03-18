@@ -146,14 +146,14 @@ position:relative;
 .toplink li
 {
 	float:left;
-	margin: 0px 0px 0 20px;
+	margin: 0px 0px 0 13px;
 	list-style:none;
 	padding-right:8px;
 }
 .TourListMaster .toplink-TourListMaster li
 {
 	float:left;
-	margin: 0px 0px 0 20px;
+	margin: 0px 0px 0 13px;
 	list-style:none;
 	padding-right:8px;
 }
