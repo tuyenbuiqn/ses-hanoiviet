@@ -166,6 +166,7 @@
                     </div>
                     <ul class="toplink-TourListMaster">
                         <li><a href="/Default.aspx" title="Hanoi Vietravel">Trang Chủ</a></li>
+                        <li><a href="/Intro.aspx" title="Giới thiệu">Giới thiệu</a></li>
                         <li>
                             <%--<a href="/Tour-Category/1/Vietnam-Day-Trip--Excursions.aspx" title="Du lịch Việt Nam">Du lịch Việt Nam</a>--%>
                             <asp:LinkButton ID="lnkTop" runat="server" ToolTip="Du lịch Việt Nam" 
