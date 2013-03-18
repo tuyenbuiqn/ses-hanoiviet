@@ -157,7 +157,7 @@
                             </span>--%>
                         </div>
                         <p class="hanoiviettravel" style="bottom: -7px;">
-                                Hanoi Viet Travel
+                                Vietwind Travel
                             </p>
                         <div class="logo-right">
                             <span class="haytanhuong">HÃY TẬN HƯỞNG</span> 
@@ -269,7 +269,8 @@
                                 <p>Danh mục Tour</p>
                             </div>
                             <ul>
-                                <li><a href="/Travel-News/1/Default.aspx" title="Lịch khởi hành">Lịch khởi hành</a></li>
+                                <%--<li><a href="/Travel-News/1/Default.aspx" title="Lịch khởi hành">Lịch khởi hành</a></li>--%>
+                                <li><a href="/LichKhoiHanh.aspx" title="Lịch khởi hành">Lịch khởi hành</a></li>
                                 <%--<li><a href="/Travel-Guides/1/Default.aspx" title="Thông tin Du lịch">Thông tin Du lịch</a></li>--%>
                                 
                                 <li>
