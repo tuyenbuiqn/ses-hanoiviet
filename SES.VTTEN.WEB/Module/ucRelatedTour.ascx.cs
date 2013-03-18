@@ -58,6 +58,27 @@ namespace SES.VTTEN.WEB.Module
         {
             return Ultility.WordCut(text, 50, new char[] { ' ', '.', ',', ';' }) + "...";
         }
-
+        public string CheckPrice(float PriceVND, float PriceUSD)
+        {
+            string sReturn = "";
+            if ((PriceVND != 0) && (PriceUSD != 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+                sReturn += " (" + PriceUSD + "$)";
+            }
+            if ((PriceVND == 0) && (PriceUSD != 0))
+            {
+                sReturn += PriceUSD + "$";
+            }
+            if ((PriceVND != 0) && (PriceUSD == 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+            }
+            if ((PriceVND == 0) && (PriceUSD == 0))
+            {
+                sReturn += "Giá: Liên hệ";
+            }
+            return sReturn;
+        }
     }
 }

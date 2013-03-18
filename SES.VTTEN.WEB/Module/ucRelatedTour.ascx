@@ -18,7 +18,7 @@
                                     <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>
                                 </p>
                                 <p class="Price-ListTourBox">
-                                    Giá Tour: <%#Eval("TourPrice", "{0:0,000}")%>đ
+                                    Giá Tour: <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                                 </p>
                             </div>
                             <p class="ListTourBox-title">

@@ -7,6 +7,7 @@
         <div id="MenuBottom">
             <ul class="bottomlink">
                 <li class="liTop"><a href="/Default.aspx" title="Hanoi vietravel">Trang Chủ</a></li>
+                <li><a href="/Intro.aspx" title="Giới thiệu">Giới thiệu</a></li>
                 <li><a href="/Promotions/0/Default.aspx" title="Tour khuyến mãi">Khuyến mãi</a></li>
                 <li><a href="/Tour-Category/0/Vietnam.aspx" title="Thông tin du lịch">Du lịch</a></li>
                 <li><a href="/Hotel-Category/0/Default.aspx" title="Thông tin khách sạn">Khách sạn</a></li>

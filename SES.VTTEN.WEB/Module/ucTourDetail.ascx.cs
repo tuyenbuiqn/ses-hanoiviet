@@ -61,7 +61,7 @@ namespace SES.VTTEN.WEB.Module
             Page.Header.Controls.Add(meta);
 
             lblTourCode.Text = objTour.TourCode;
-            lblPrice.Text = string.Format("{0:0,000}", objTour.TourPrice);
+            lblPrice.Text = CheckPrice(float.Parse(objTour.TourPrice.ToString()), float.Parse(objTour.TourPriceUSD.ToString()));
             lblDescription.Text = objTour.MetaDes;
             lblDurationDay.Text = Duration(objTour.DurationDay.ToString(), objTour.DurationNight.ToString());
 
@@ -73,6 +73,29 @@ namespace SES.VTTEN.WEB.Module
             hplBooking.NavigateUrl = "/Tour-Booking/" + objTour.TourID + "/" + FriendlyUrl(objTour.Alias);
             ImgDetail.ImageUrl = "/Media/" + objTour.TourImage.ToString();
             aTour.Attributes.Add("href","/Media/" + objTour.TourImage);
+        }
+
+        public string CheckPrice(float PriceVND, float PriceUSD)
+        {
+            string sReturn = "";
+            if ((PriceVND != 0) && (PriceUSD != 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+                sReturn += " (" + PriceUSD + "$)";
+            }
+            if ((PriceVND == 0) && (PriceUSD != 0))
+            {
+                sReturn += PriceUSD + "$";
+            }
+            if ((PriceVND != 0) && (PriceUSD == 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+            }
+            if ((PriceVND == 0) && (PriceUSD == 0))
+            {
+                sReturn += "Giá: Liên hệ";
+            }
+            return sReturn;
         }
     }
 }

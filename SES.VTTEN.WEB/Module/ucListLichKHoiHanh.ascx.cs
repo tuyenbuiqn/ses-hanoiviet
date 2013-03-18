@@ -15,7 +15,7 @@ using SES.VTTEN.DO;
 
 namespace SES.VTTEN.WEB.Module
 {
-    public partial class ucTourDestination : System.Web.UI.UserControl
+    public partial class ucListLichKHoiHanh : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -41,20 +41,9 @@ namespace SES.VTTEN.WEB.Module
 
         private void LoadRPT()
         {
-            if (!string.IsNullOrEmpty(Request.QueryString["ID"]))
-            {
-                int DestinationID = int.Parse(Request.QueryString["ID"].ToString());
-                //bindatalist(new TourBL().SelectbyTourType(TourTypeID));
-                rptTourCatDataSource(DestinationID);
-                DestinationDO objTT = new DestinationBL().Select(new DestinationDO { DestinationID = DestinationID });
+                rptTourCatDataSource();
 
-                Page.Title = objTT.Title + Ultility.Webtile();
-                HtmlMeta meta = new HtmlMeta();
-                meta.Name = "description";
-                meta.Content = objTT.Description;
-                Page.Header.Controls.Add(meta);
-
-            }
+                Page.Title = "Lịch khởi hành - " + Ultility.Webtile();
         }
 
         public string WordCut(string text)
@@ -62,20 +51,15 @@ namespace SES.VTTEN.WEB.Module
             return Ultility.WordCut(text, 290, new char[] { ' ', '.', ',', ';' }) + "...";
         }
 
-        protected void rptTourCatDataSource(int DestinationID)
+        protected void rptTourCatDataSource()
         {
-
             CollectionPager1.MaxPages = 10000;
-
             CollectionPager1.PageSize = 5; // số items hiển thị trên một trang
-
-            CollectionPager1.DataSource = new TourBL().SelectbyDes(DestinationID).DefaultView;
-
+            CollectionPager1.DataSource =new DataView(new TourBL().GetByLichKhoiHanh(),"","TourID DESC",DataViewRowState.CurrentRows);
             CollectionPager1.BindToControl = rptTourCat;
             rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
             rptTourCat.DataBind();
         }
-
         public string CheckPrice(float PriceVND, float PriceUSD)
         {
             string sReturn = "";
@@ -94,7 +78,7 @@ namespace SES.VTTEN.WEB.Module
             }
             if ((PriceVND == 0) && (PriceUSD == 0))
             {
-                sReturn += "Giá: Liên hệ";
+                sReturn += "Liên hệ";
             }
             return sReturn;
         }
