@@ -4,5 +4,5 @@
 <%--<li><a href="?Page=Module">Module</a></li>
 <li><a href="?Page=ListModule">List Module</a></li>--%>
 <li><a href="?Page=ListConfig">List Config</a></li>
-<li><a href="?Page=Config">Config</a></li>
+<%--<li><a href="?Page=Config">Config</a></li>--%>
 <%--<li><a href="?Page=ListUser">Module</a></li>--%>
