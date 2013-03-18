@@ -33,7 +33,7 @@ li
 }
 .inner
 {
-    background: url(../image/background.jpg) repeat-y;
+    background: url(../image/background.png) repeat-y;
     width: 1006px;
     height: auto;
     float: left;
@@ -455,10 +455,15 @@ position:relative;
 	color: #004a5d;
 	margin-bottom: 20px;
 }
-#footer #copyright, #footer .footerRight
+#footer #copyright
 {
 	float: left;
-	width: 50%;
+	width: 45%;
+}
+ #footer .footerRight
+{
+	float: left;
+	width: 55%;
 }
 #footer #copyright p.company
 {
@@ -493,7 +498,7 @@ position:relative;
 #footer .footerRight #MenuBottom ul.bottomlink li
 {
 	float: left;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding: 0px 9px 0px 9px;
