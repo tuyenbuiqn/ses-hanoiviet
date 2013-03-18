@@ -74,5 +74,27 @@ namespace SES.VTTEN.WEB.Module
             rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
             rptTourCat.DataBind();
         }
+        public string CheckPrice(float PriceVND, float PriceUSD)
+        {
+            string sReturn = "";
+            if ((PriceVND != 0) && (PriceUSD != 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+                sReturn += " (" + PriceUSD + "$)";
+            }
+            if ((PriceVND == 0) && (PriceUSD != 0))
+            {
+                sReturn += PriceUSD + "$";
+            }
+            if ((PriceVND != 0) && (PriceUSD == 0))
+            {
+                sReturn += string.Format("{0:0,000}", PriceVND) + "đ";
+            }
+            if ((PriceVND == 0) && (PriceUSD == 0))
+            {
+                sReturn += "Liên hệ";
+            }
+            return sReturn;
+        }
     }
 }

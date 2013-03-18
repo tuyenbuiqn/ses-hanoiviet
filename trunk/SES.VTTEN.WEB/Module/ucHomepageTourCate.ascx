@@ -16,10 +16,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">
@@ -49,10 +49,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">
@@ -82,10 +82,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">
@@ -117,10 +117,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">
@@ -150,10 +150,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">
@@ -183,10 +183,10 @@
                 </a>
                 <div class="Time-Price-ListTourBox">
                     <p class="Time-ListTourBox">
-                        <%#Eval("DurationDay") %> DAYS / <%#Eval("DurationNight") %> NIGHTS
+                        <%#Eval("DurationDay") %> Ngày / <%#Eval("DurationNight") %> đêm
                     </p>
                     <p class="Price-ListTourBox">
-                        <%#Eval("TourPrice") %> đ
+                        <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                     </p>
                 </div>
                 <div class="MoTa-ListTourBox">

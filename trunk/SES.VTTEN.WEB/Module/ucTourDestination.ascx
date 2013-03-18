@@ -5,7 +5,7 @@
         <div class="DanhSachTour-box">
             <div class="DanhSachTour-detail">
                 <a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %> (<%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>)</p></a>
-                <p class="Price">Giá Tour: <%#Eval("TourPrice", "{0:0,000}")%>đ</p>
+                <p class="Price">Giá Tour: <%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> 
                 <p class="Time">Duration: <%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%></p>
                 <p class="Code">Trip Code: <%#Eval("TourCode")%></p>
                 <p class="MoTaChung">Mô tả chung:</p>
