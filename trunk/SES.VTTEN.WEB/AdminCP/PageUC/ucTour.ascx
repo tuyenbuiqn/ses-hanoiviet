@@ -62,13 +62,18 @@
                 <asp:TextBox ID="txtTourCode" runat="server" Width="235px"></asp:TextBox>
             </td>
             <td>
-                <p style="width: 70px; margin: 0">
-                    Giá:</p>
-            </td>
-            <td>
-                <asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+                <p style="width: 100%; margin: 0">
+                    Giá VNĐ:<asp:TextBox ID="txtPrice" runat="server"></asp:TextBox>
+                    <br />
                 <asp:RequiredFieldValidator ID="rfvTitle0" runat="server" ErrorMessage="****" ControlToValidate="txtPrice"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="revNumber" runat="server" ControlToValidate="txtPrice"
+                    ErrorMessage="Dạng số" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
+                </p>
+            </td>
+            <td>
+                Giá USD:<asp:TextBox ID="txtPriceUSD" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="****" ControlToValidate="txtPrice"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtPriceUSD"
                     ErrorMessage="Dạng số" ValidationExpression="^\d+$"></asp:RegularExpressionValidator>
             </td>
         </tr>
@@ -138,7 +143,7 @@
                 Tour Khuyến mãi
             </td>
             <td>
-                
+                <asp:CheckBox ID="chkLaLichKhoiHanh" Text="Là lịch khởi hành" runat="server" />
             </td>
         </tr>
         <tr>

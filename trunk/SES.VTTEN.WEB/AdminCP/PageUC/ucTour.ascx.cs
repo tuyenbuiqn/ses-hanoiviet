@@ -58,6 +58,8 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             cbisFrontPage.Checked = objtour.IsFrontPage;
             cbIsMenu.Checked = objtour.IsMenu;
             cbIsInboundTour.Checked = objtour.IsInboundTour;
+            chkLaLichKhoiHanh.Checked = objtour.LichKhoiHanh;
+            txtPriceUSD.Text = objtour.TourPriceUSD.ToString();
             if (objtour.ModuleID != null)
             {
                 ddlViTri.SelectedValue = objtour.ModuleID.ToString();
@@ -142,7 +144,15 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objtour.Notes = txtNotes.Text;
             objtour.TourCategoryID = RadioButtonList1.SelectedIndex;
             objtour.ModuleID = int.Parse(ddlViTri.SelectedValue);
-          
+            if (txtPriceUSD.Text == "")
+            {
+                objtour.TourPriceUSD = 0;
+            }
+            else
+            {
+                objtour.TourPriceUSD = int.Parse(txtPriceUSD.Text);
+            }
+            objtour.LichKhoiHanh = chkLaLichKhoiHanh.Checked;
             try
             {
                 objtour.OrderID = int.Parse(txtOder.Text);
@@ -177,7 +187,10 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
                 fulImageFull.SaveAs(SaveLocation);
                 objtour.ImageFull = FileName;
             }
-
+            if (txtPrice.Text == "")
+            {
+                objtour.TourPrice = 0;
+            }
             if (!String.IsNullOrEmpty(txtPrice.Text))
             {
                 objtour.TourPrice = double.Parse(txtPrice.Text);

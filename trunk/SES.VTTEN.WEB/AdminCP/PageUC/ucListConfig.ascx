@@ -23,4 +23,4 @@
     <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
     <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
 </asp:GridView>
-<asp:Button runat="server" ID="btnNewConfig" Text="Thêm mới" OnClick="btnNewConfig_Click" />
+<asp:Button runat="server" ID="btnNewConfig" Visible="false" Text="Thêm mới" OnClick="btnNewConfig_Click" />
