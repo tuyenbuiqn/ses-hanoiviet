@@ -12,10 +12,9 @@ using System.Web.UI.HtmlControls;
 using System.Xml.Linq;
 using SES.VTTEN.BL;
 using SES.VTTEN.DO;
-
 namespace SES.VTTEN.WEB.Module
 {
-    public partial class ucListLichKHoiHanh : System.Web.UI.UserControl
+    public partial class ucListLichKhoiHanhNuocNgoai : System.Web.UI.UserControl
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -41,9 +40,9 @@ namespace SES.VTTEN.WEB.Module
 
         private void LoadRPT()
         {
-                rptTourCatDataSource();
+            rptTourCatDataSource();
 
-                Page.Title = "Lịch khởi hành - " + Ultility.Webtile();
+            Page.Title = "Lịch khởi hành - " + Ultility.Webtile();
         }
 
         public string WordCut(string text)
@@ -55,7 +54,7 @@ namespace SES.VTTEN.WEB.Module
         {
             CollectionPager1.MaxPages = 10000;
             CollectionPager1.PageSize = 20; // số items hiển thị trên một trang
-            CollectionPager1.DataSource =new DataView(new TourBL().GetByLichKhoiHanh(true),"","TourID DESC",DataViewRowState.CurrentRows);
+            CollectionPager1.DataSource = new DataView(new TourBL().GetByLichKhoiHanh(false), "", "TourID DESC", DataViewRowState.CurrentRows);
             CollectionPager1.BindToControl = rptTourCat;
             rptTourCat.DataSource = CollectionPager1.DataSourcePaged;
             rptTourCat.DataBind();
