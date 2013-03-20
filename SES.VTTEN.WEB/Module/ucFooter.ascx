@@ -16,7 +16,7 @@
         </div>
         <img alt="DoiTac" src="/image/imgDoiTac.png" title="Cổng thanh toán" />
         <p class="textCopyright">
-            © 2009 Hanoi VietTravel.
+            © 2009 Vietwind Travel.
         </p>
     </div>
 </div>
