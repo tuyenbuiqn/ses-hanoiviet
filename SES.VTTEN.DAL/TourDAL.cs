@@ -92,8 +92,6 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourDO.Notes;
             Sqlcomm.Parameters.Add(Sqlparam);
 
-          
-
             Sqlparam = new SqlParameter("@ToDestinationID", SqlDbType.Int);
             Sqlparam.Value = objTourDO.ToDestinationID;
             Sqlcomm.Parameters.Add(Sqlparam);
@@ -148,6 +146,18 @@ namespace SES.VTTEN.DAL
 
             Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
             Sqlparam.Value = objTourDO.IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@TourPriceUSD", SqlDbType.Float);
+            Sqlparam.Value = objTourDO.TourPriceUSD;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@LichKhoiHanh", SqlDbType.Bit);
+            Sqlparam.Value = objTourDO.LichKhoiHanh;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.DateTime);
+            Sqlparam.Value = objTourDO.NgayKhoiHanh;
             Sqlcomm.Parameters.Add(Sqlparam);
 
             int result = base.ExecuteNoneQuery(Sqlcomm);
@@ -273,6 +283,18 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourDO.IsInboundTour;
             Sqlcomm.Parameters.Add(Sqlparam);
 
+            Sqlparam = new SqlParameter("@TourPriceUSD", SqlDbType.Float);
+            Sqlparam.Value = objTourDO.TourPriceUSD;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@LichKhoiHanh", SqlDbType.Bit);
+            Sqlparam.Value = objTourDO.LichKhoiHanh;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.DateTime);
+            Sqlparam.Value = objTourDO.NgayKhoiHanh;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
             Sqlparam = new SqlParameter("@ErrorCode", SqlDbType.Int);
             Sqlparam.Direction = ParameterDirection.ReturnValue;
             Sqlcomm.Parameters.Add(Sqlparam);
@@ -349,6 +371,8 @@ namespace SES.VTTEN.DAL
                     objTourDO.TourCode = Convert.ToString(dr["TourCode"]);
                 if (!Convert.IsDBNull(dr["TourPrice"]))
                     objTourDO.TourPrice = Convert.ToDouble(dr["TourPrice"]);
+                if (!Convert.IsDBNull(dr["TourPriceUSD"]))
+                    objTourDO.TourPriceUSD = Convert.ToDouble(dr["TourPriceUSD"]);
                 if (!Convert.IsDBNull(dr["Description"]))
                     objTourDO.Description = Convert.ToString(dr["Description"]);
               
@@ -381,10 +405,12 @@ namespace SES.VTTEN.DAL
                     objTourDO.ModuleID = Convert.ToInt32(dr["ModuleID"]);
                 if (!Convert.IsDBNull(dr["IsFrontPage"]))
                     objTourDO.IsFrontPage = Convert.ToBoolean(dr["IsFrontPage"]);
-
+                if (!Convert.IsDBNull(dr["LichKhoiHanh"]))
+                    objTourDO.LichKhoiHanh = Convert.ToBoolean(dr["LichKhoiHanh"]);
                 if (!Convert.IsDBNull(dr["TourTypeID"]))
                     objTourDO.TourTypeID = Convert.ToInt32(dr["TourTypeID"]);
-
+                if (!Convert.IsDBNull(dr["NgayKhoiHanh"]))
+                    objTourDO.NgayKhoiHanh = Convert.ToDateTime(dr["NgayKhoiHanh"]);
                 if (!Convert.IsDBNull(dr["TourAllPrice"]))
                     objTourDO.TourAllPrice = Convert.ToString(dr["TourAllPrice"]);
 
@@ -502,6 +528,28 @@ namespace SES.VTTEN.DAL
             return dt;
         }
 
+        public DataTable GetByLichKhoiHanh(bool IsInboundTour) 
+        {
+
+            SqlCommand Sqlcomm = new SqlCommand();
+            Sqlcomm.CommandType = CommandType.StoredProcedure;
+            Sqlcomm.CommandText = "spTour_GetByLichKhoiHanh";
+            SqlParameter Sqlparam;
+
+            Sqlparam = new SqlParameter("@IsInboundTour", SqlDbType.Bit);
+            Sqlparam.Value = IsInboundTour;
+            Sqlcomm.Parameters.Add(Sqlparam);
+
+            DataSet ds = base.GetDataSet(Sqlcomm);
+            DataTable dt = null;
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+
+            }
+            return dt;
+        }
 
         #endregion
 
@@ -605,6 +653,7 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
+        
         public DataTable SelectTourByParentAndRecordNumberHomepage(int TourTypeID, int RecordNumber)
         {
             SqlCommand Sqlcomm = new SqlCommand();
@@ -630,7 +679,6 @@ namespace SES.VTTEN.DAL
             }
             return dt;
         }
-
 
         public DataTable SelectbyDes(int ID)
         {
