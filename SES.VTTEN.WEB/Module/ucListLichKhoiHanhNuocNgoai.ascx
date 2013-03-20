@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucListLichKHoiHanh.ascx.cs" Inherits="SES.VTTEN.WEB.Module.ucListLichKHoiHanh" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ucListLichKhoiHanhNuocNgoai.ascx.cs" Inherits="SES.VTTEN.WEB.Module.ucListLichKhoiHanhNuocNgoai" %>
 <%@ Register TagPrefix="cp" Namespace="SiteUtils" Assembly="CollectionPager" %>
 <asp:Repeater ID="rptTourCat" runat="server">
     <HeaderTemplate>

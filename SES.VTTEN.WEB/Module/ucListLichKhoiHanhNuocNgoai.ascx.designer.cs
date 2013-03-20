@@ -7,36 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SES.VTTEN.WEB {
+namespace SES.VTTEN.WEB.Module {
     
     
-    public partial class LichKhoiHanh {
+    public partial class ucListLichKhoiHanhNuocNgoai {
         
         /// <summary>
-        /// lblTitle control.
+        /// rptTourCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Repeater rptTourCat;
         
         /// <summary>
-        /// ucListLichKHoiHanh1 control.
+        /// CollectionPager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucListLichKHoiHanh ucListLichKHoiHanh1;
-        
-        /// <summary>
-        /// ucListLichKhoiHanhNuocNgoai3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SES.VTTEN.WEB.Module.ucListLichKhoiHanhNuocNgoai ucListLichKhoiHanhNuocNgoai3;
+        protected global::SiteUtils.CollectionPager CollectionPager1;
     }
 }

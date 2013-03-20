@@ -1109,3 +1109,32 @@ position:relative;
     height: 300px;
     width: 948px;
 }
+#DanhSachTour p.pLichKhoiHanh
+{
+	float: left;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #FF9000;
+	font-size: 14px;
+	font-weight: bold;
+}
+#DanhSachTour table th
+{
+	line-height: 40px;
+	text-align:center;
+}
+#DanhSachTour table td
+{
+	line-height: 20px;
+}
+#DanhSachTour table tr a
+{
+	color: #BE2020;
+}
+#DanhSachTour table tr a:hover
+{
+	text-decoration:none;
+	color: Red;
+}

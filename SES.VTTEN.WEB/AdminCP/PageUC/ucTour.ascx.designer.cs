@@ -265,6 +265,15 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC {
         protected global::System.Web.UI.WebControls.CheckBox chkLaLichKhoiHanh;
         
         /// <summary>
+        /// txtKhoiHanh control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtKhoiHanh;
+        
+        /// <summary>
         /// RadioButtonList1 control.
         /// </summary>
         /// <remarks>
@@ -443,6 +452,15 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTable table3;
+        
+        /// <summary>
+        /// celander1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender celander1;
         
         /// <summary>
         /// pcTourType control.
