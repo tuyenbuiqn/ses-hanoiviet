@@ -23,18 +23,27 @@ namespace SES.VTTEN.WEB.Module
             {
                 rptBigAlbumDataSource();
                 rptSmallAlbumDataSource();
+                this.rptBindData();
             }
         }
 
         protected void rptBigAlbumDataSource()
         {
-            rptBigAlbum.DataSource = new cmsAlbumBL().SelectTop(3);
-            rptBigAlbum.DataBind();
+            //rptBigAlbum.DataSource = new cmsAlbumBL().SelectTop(3);
+            //rptBigAlbum.DataBind();
         }
         protected void rptSmallAlbumDataSource()
         {
-            rptSmallAlbums.DataSource = new cmsAlbumBL().SelectTop(3);
-            rptSmallAlbums.DataBind();
+            //rptSmallAlbums.DataSource = new cmsAlbumBL().SelectTop(3);
+            //rptSmallAlbums.DataBind();
+        }
+
+        public void rptBindData()
+        {
+            rptMainSlide.DataSource = new cmsAlbumBL().SelectTop(3);
+            rptMainSlide.DataBind();
+            rptThumbSlide.DataSource = new cmsAlbumBL().SelectTop(3);
+            rptThumbSlide.DataBind();
         }
 
         public string FriendlyUrl(string s)

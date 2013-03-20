@@ -20,6 +20,9 @@
 .sliderkit a:hover{text-decoration:none;}
 .sliderkit a:focus{outline:1px dotted #000;/*optional*/}
 .sliderkit img{border:0; width:948px; height:400px}
+.divAlbum .sliderkit img{border:0; width:190px; height:125px}
+.divAlbum .sliderkit .sliderkit-nav-clip img{border:0; width:58px; height:50px}
+
 
 /*---------------------------------
  *  Navigation

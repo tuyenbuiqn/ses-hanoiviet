@@ -1,12 +1,15 @@
 /*---------------------------------
  *  Photos gallery > With captions
  *---------------------------------*/
-.photosgallery-captions{width:948px;height:390px;padding:0 0 86px;}
+#head .photosgallery-captions{width:948px;height:390px;padding:0 0 86px;}
+.divAlbum .photosgallery-captions{width:200px;height:200px; padding: 0px;}
 /* Navbar */
-.photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:928px; height:75px; padding:0px 10px 0px 10px;}
+#head .photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:928px; height:75px; padding:0px 10px 0px 10px;}
+.divAlbum .photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:200px; height:57px; padding:0px;}
 .photosgallery-captions .sliderkit-nav-clip ul li{float:left;margin:0;}
-.photosgallery-captions .sliderkit-nav-clip ul li a{display:block;width:135px;height:58px;overflow:hidden;margin:5px;padding:3px;}
-.photosgallery-captions .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
+#head .photosgallery-captions .sliderkit-nav-clip ul li a{display:block;width:135px;height:58px;overflow:hidden;margin:5px;padding:3px;}
+.divAlbum .photosgallery-captions .sliderkit-nav-clip ul li a{display:block;width:58px;height:50px;overflow:hidden;margin:1px;padding:3px;}
+#head .photosgallery-captions .sliderkit-nav-clip ul li.sliderkit-selected a{padding:0;border:3px solid #fff;}
 
 /* Buttons */
 .photosgallery-captions .sliderkit-btn{position:absolute;top:0;}
@@ -38,14 +41,15 @@
 .photosgallery-captions .sliderkit-nav .sliderkit-go-next a:focus{background-position:-60px center;}
 
 /* Panel */
-.photosgallery-captions .sliderkit-panel{top:0;left:0;width:948px;height:400px;}
+#head .photosgallery-captions .sliderkit-panel{top:0;left:0;width:948px;height:400px;}
+.divAlbum .photosgallery-captions .sliderkit-panel{top:0;left:0;width:200px;height:125px; padding: 5px;}
 
 /* Panel > Textbox */
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-textbox{bottom:0;left:0;width:948px;height:75px;}
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-text{height:65px;margin: 10px 15px 0 35px;font-size:0.9em;color:#fff;}
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-text h4{height:auto;margin:0 0 7px;line-height:1.1em;font-size:1.3em;font-weight:bold;border:none;}
 .photosgallery-captions .sliderkit-panel .sliderkit-panel-overlay{width:948px;height:75px;background:#000;opacity:0.55;}
-.sliderkit-nav-clip ul li a img
+#head .sliderkit-nav-clip ul li a img
 {
 	height: 58px;
 	width: 135px;
