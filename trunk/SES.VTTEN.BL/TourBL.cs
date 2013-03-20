@@ -107,6 +107,10 @@ namespace SES.VTTEN.BL
         {
             return objTourDAL.SelectbyTourType(TourTypeID);
         }
+        public DataTable GetByLichKhoiHanh(bool IsInboundTou)
+        {
+            return objTourDAL.GetByLichKhoiHanh(IsInboundTou);
+        }
         public DataTable SelectTourByParentAndRecordNumber(int TourTypeID, int RecordNumber)
         {
             return objTourDAL.SelectTourByParentAndRecordNumber(TourTypeID, RecordNumber);

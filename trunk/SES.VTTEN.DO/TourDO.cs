@@ -43,6 +43,9 @@ namespace SES.VTTEN.DO
         public const string ISSALEOFF = "IsSaleOff";
         public const string ISMENU = "IsMenu";
         public const string ISOUTPROMOTION = "IsOutPromotion";
+        public const string TOURPRICEUSD_FIELD = "TourPriceUSD";
+        public const string LICHKHOIHANH_FIELD = "LichKhoiHanh";
+        public const string NGAYKHOIHANH_FIELD = "NgayKhoiHanh";
 
 		#endregion
 		
@@ -72,7 +75,9 @@ namespace SES.VTTEN.DO
         private Boolean _IsSaleOff;
         private Boolean _IsMenu;
         private Boolean _IsOutPromotion;
-
+        private Double _TourPriceUSD;
+        private Boolean _LichKhoiHanh;
+        private DateTime _NgayKhoiHanh;
 		#endregion
 
 		#region Public Properties
@@ -342,7 +347,17 @@ namespace SES.VTTEN.DO
                 _IsMenu = value;
             }
         }
-
+        public Double TourPriceUSD
+        {
+            get
+            {
+                return _TourPriceUSD;
+            }
+            set
+            {
+                _TourPriceUSD = value;
+            }
+        }
         public Boolean IsOutPromotion
         {
             get
@@ -352,6 +367,28 @@ namespace SES.VTTEN.DO
             set
             {
                 _IsOutPromotion = value;
+            }
+        }
+        public Boolean LichKhoiHanh
+        {
+            get
+            {
+                return _LichKhoiHanh;
+            }
+            set
+            {
+                _LichKhoiHanh = value;
+            }
+        }
+        public DateTime NgayKhoiHanh
+        {
+            get
+            {
+                return _NgayKhoiHanh;
+            }
+            set
+            {
+                _NgayKhoiHanh = value;
             }
         }
         public Boolean IsInboundTour { get; set; }
