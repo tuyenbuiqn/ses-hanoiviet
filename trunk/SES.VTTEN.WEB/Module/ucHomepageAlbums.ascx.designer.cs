@@ -13,21 +13,21 @@ namespace SES.VTTEN.WEB.Module {
     public partial class ucHomepageAlbums {
         
         /// <summary>
-        /// rptBigAlbum control.
+        /// rptMainSlide control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptBigAlbum;
+        protected global::System.Web.UI.WebControls.Repeater rptMainSlide;
         
         /// <summary>
-        /// rptSmallAlbums control.
+        /// rptThumbSlide control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptSmallAlbums;
+        protected global::System.Web.UI.WebControls.Repeater rptThumbSlide;
     }
 }
