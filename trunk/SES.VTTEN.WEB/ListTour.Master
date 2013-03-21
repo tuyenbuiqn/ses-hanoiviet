@@ -134,6 +134,27 @@
             });
         });	
 		</script>
+    <script type="text/javascript" src="/js/sliderkit/addons/sliderkit.delaycaptions.1.1.pack.js"></script>
+    <script type="text/javascript" src="/js/sliderkit/addons/sliderkit.counter.1.0.pack.js"></script>
+    <script type="text/javascript" src="/js/sliderkit/addons/sliderkit.timer.1.0.pack.js"></script>
+    <script type="text/javascript" src="/js/sliderkit/addons/sliderkit.imagefx.1.0.pack.js"></script>
+    <!-- Slider Kit launch -->
+    <script type="text/javascript">
+        $(window).load(function () { //$(window).load() must be used instead of $(document).ready() because of Webkit compatibility				
+            // Photo gallery > With captions
+            $(".photosgallery-captions").sliderkit({
+                circular: false,
+                mousewheel: false,
+                keyboard: true,
+                shownavitems: 6,
+                autospeed: 4000,
+                circular: true,
+                //                fastchange: false,
+                panelfxspeed: 500,
+                delaycaptions: true
+            });
+        });	
+    </script>
     <!--end Slider Kit scripts -->
     <script type="text/javascript" src="/js/jquery.wt-rotator.min.js"></script>
     <script type="text/javascript" src="/js/preview.js"></script>

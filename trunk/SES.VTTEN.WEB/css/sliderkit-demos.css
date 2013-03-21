@@ -2,7 +2,7 @@
  *  Photos gallery > With captions
  *---------------------------------*/
 #head .photosgallery-captions{width:948px;height:390px;padding:0 0 86px;}
-.divAlbum .photosgallery-captions{width:200px;height:200px; padding: 0px;}
+.divAlbum .photosgallery-captions{width:200px;height:200px; padding: 0px; margin: 0px;}
 /* Navbar */
 #head .photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:928px; height:75px; padding:0px 10px 0px 10px;}
 .divAlbum .photosgallery-captions .sliderkit-nav{left:0;bottom:0;width:200px; height:57px; padding:0px;}
