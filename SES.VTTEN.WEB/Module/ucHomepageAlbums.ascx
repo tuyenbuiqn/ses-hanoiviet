@@ -36,7 +36,7 @@
     </div>
 </div>
 --%>
-<div class="box divAlbum">
+<div class="box divAlbum" style="height: 240px;">
     <div class="box-title">
         <p>
             ALBUM ẢNH</p>

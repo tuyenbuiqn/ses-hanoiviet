@@ -240,10 +240,10 @@ $(document).ready(function() {
             <div class="Support-Nick" id="spnick" style="width: 230px; display:none;">
              <div  style="margin-left:30px; float:left;">
              <span id='liveadmin'></span></div>
-                    <a title="click on the icon chat with Hanoi Viet Travel" href="skype:nguyenlaneliz?chat">
+                    <a title="click on the icon chat with Vietwind Travel" href="skype:nguyenlaneliz?chat">
                         <img src="/images/skype.png" style=" margin-left: 27px;" width="36"
                             height="36" /></a> 
-                    <a title="click on the icon chat with Hanoi Viet Travel" href="ymsgr:SendIM?lannguyen_1981">
+                    <a title="click on the icon chat with Vietwind Travel" href="ymsgr:SendIM?lannguyen_1981">
                         <img src="/images/yahoo.png" style="margin-left: 27px;" width="42"
                                     height="39" /></a>
                 <img style="margin-left: 20px;" src="/images/phone.png" />

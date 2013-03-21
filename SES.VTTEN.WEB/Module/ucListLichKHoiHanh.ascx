@@ -13,9 +13,9 @@
     <ItemTemplate>
         <tr>
         <td><a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %> (<%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>)</p></a></td>
-        <td style="width: 20%;"><%#String.Format("{0:dd/MM/yyyy}", Eval("NgayKhoiHanh")) %></td>
-        <td style="width: 15%;"><p class="Price"><%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> </p></td>
-        <td style="width: 10%;">Còn nhận</td>
+        <td style="width: 20%; text-align: center;"><%#Eval("NgayKhoiHanh") %></td>
+        <td style="width: 15%; text-align: center;"><p class="Price"><%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> </p></td>
+        <td style="width: 10%; text-align: center;">Còn nhận</td>
         </tr>
         <%--<div class="DanhSachTour-box">
             <div class="DanhSachTour-detail">
@@ -42,9 +42,9 @@
     <AlternatingItemTemplate>
     <tr style="background: #A3D7FF;">
         <td><a href="/Tour/<%#Eval("TourID") %>/<%#FriendlyUrl(Eval("Alias").ToString())%>" title="<%#Eval("Title") %>"><p class="Title"><%#Eval("Title") %> (<%#Duration(Eval("DurationDay").ToString(), Eval("DurationNight").ToString())%>)</p></a></td>
-        <td style="width: 20%;"><%#String.Format("{0:dd/MM/yyyy}", Eval("NgayKhoiHanh")) %></td>
-        <td style="width: 15%;"><p class="Price"><%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> </p></td>
-        <td style="width: 10%;">Còn nhận</td>
+        <td style="width: 20%; text-align: center;"><%#Eval("NgayKhoiHanh") %></td>
+        <td style="width: 15%; text-align: center;"><p class="Price"><%# CheckPrice(float.Parse( Eval("TourPrice").ToString()), float.Parse( Eval("TourPriceUSD").ToString())) %> </p></td>
+        <td style="width: 10%; text-align: center;">Còn nhận</td>
         </tr>
     </AlternatingItemTemplate>
     <FooterTemplate>
