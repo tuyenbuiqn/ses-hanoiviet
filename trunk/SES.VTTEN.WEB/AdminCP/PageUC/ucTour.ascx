@@ -258,7 +258,6 @@
         </tr>
     </table>
 </div>
-<asp:CalendarExtender runat="server" ID="celander1" TargetControlID="txtKhoiHanh" Format="MM/dd/yyyy"> </asp:CalendarExtender>
 <dxpc:ASPxPopupControl ID="pcTourType" runat="server" ClientInstanceName="pcTourType"
     CloseAction="CloseButton" ContentUrl="~/AdminCP/TourTypeTL.aspx" HeaderText="Chọn Loại tour"
     PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Height="336px"
