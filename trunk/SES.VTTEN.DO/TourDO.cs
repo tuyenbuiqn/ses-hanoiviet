@@ -77,7 +77,7 @@ namespace SES.VTTEN.DO
         private Boolean _IsOutPromotion;
         private Double _TourPriceUSD;
         private Boolean _LichKhoiHanh;
-        private DateTime _NgayKhoiHanh;
+        private String _NgayKhoiHanh;
 		#endregion
 
 		#region Public Properties
@@ -380,7 +380,7 @@ namespace SES.VTTEN.DO
                 _LichKhoiHanh = value;
             }
         }
-        public DateTime NgayKhoiHanh
+        public String NgayKhoiHanh
         {
             get
             {
