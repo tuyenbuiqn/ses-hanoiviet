@@ -62,7 +62,7 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             txtPriceUSD.Text = objtour.TourPriceUSD.ToString();
             if (objtour.NgayKhoiHanh != null)
             {
-                txtKhoiHanh.Text = objtour.NgayKhoiHanh.ToShortDateString();
+                txtKhoiHanh.Text = objtour.NgayKhoiHanh;
             }
             else
             {
@@ -152,14 +152,8 @@ namespace SES.VTTEN.WEB.AdminCP.PageUC
             objtour.Notes = txtNotes.Text;
             objtour.TourCategoryID = RadioButtonList1.SelectedIndex;
             objtour.ModuleID = int.Parse(ddlViTri.SelectedValue);
-            if (txtKhoiHanh.Text == "")
-            {
-                objtour.NgayKhoiHanh = DateTime.Now;
-            }
-            else
-            {
-                objtour.NgayKhoiHanh = Convert.ToDateTime(txtKhoiHanh.Text);
-            }
+
+            objtour.NgayKhoiHanh = txtKhoiHanh.Text;
             if (txtPriceUSD.Text == "")
             {
                 objtour.TourPriceUSD = 0;
