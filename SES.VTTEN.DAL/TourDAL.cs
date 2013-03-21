@@ -156,7 +156,7 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourDO.LichKhoiHanh;
             Sqlcomm.Parameters.Add(Sqlparam);
 
-            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.DateTime);
+            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.NVarChar);
             Sqlparam.Value = objTourDO.NgayKhoiHanh;
             Sqlcomm.Parameters.Add(Sqlparam);
 
@@ -291,7 +291,7 @@ namespace SES.VTTEN.DAL
             Sqlparam.Value = objTourDO.LichKhoiHanh;
             Sqlcomm.Parameters.Add(Sqlparam);
 
-            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.DateTime);
+            Sqlparam = new SqlParameter("@NgayKhoiHanh", SqlDbType.NVarChar);
             Sqlparam.Value = objTourDO.NgayKhoiHanh;
             Sqlcomm.Parameters.Add(Sqlparam);
 
@@ -410,7 +410,7 @@ namespace SES.VTTEN.DAL
                 if (!Convert.IsDBNull(dr["TourTypeID"]))
                     objTourDO.TourTypeID = Convert.ToInt32(dr["TourTypeID"]);
                 if (!Convert.IsDBNull(dr["NgayKhoiHanh"]))
-                    objTourDO.NgayKhoiHanh = Convert.ToDateTime(dr["NgayKhoiHanh"]);
+                    objTourDO.NgayKhoiHanh = Convert.ToString(dr["NgayKhoiHanh"]);
                 if (!Convert.IsDBNull(dr["TourAllPrice"]))
                     objTourDO.TourAllPrice = Convert.ToString(dr["TourAllPrice"]);
 
