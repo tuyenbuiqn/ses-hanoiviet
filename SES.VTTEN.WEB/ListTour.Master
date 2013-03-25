@@ -168,7 +168,7 @@
         <div class="inner">
             <div class="detail">
                 <div id="Menu" class="TourListMaster">
-                     <div class="logo-out-TourListMaster"  style="position: relative;">
+                     <div class="logo-out-TourListMaster"  style="position: relative; margin: 0px;">
                         <div class="logo-left">
                             <a href="/Default.aspx" title="Hanoi Vietravel">
                                 <img src="/image/logo.png" class="logo" alt="Hanoi Viettravel" />
