@@ -71,7 +71,10 @@ namespace SES.VTTEN.WEB.Module
             rpImage.DataBind();
 
             hplBooking.NavigateUrl = "/Tour-Booking/" + objTour.TourID + "/" + FriendlyUrl(objTour.Alias);
-            ImgDetail.ImageUrl = "/Media/" + objTour.TourImage.ToString();
+            if (objTour.TourImage != null)
+            {
+                ImgDetail.ImageUrl = "/Media/" + objTour.TourImage.ToString();
+            }
             aTour.Attributes.Add("href","/Media/" + objTour.TourImage);
         }
 
